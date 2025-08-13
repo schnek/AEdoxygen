@@ -1,0 +1,111 @@
+#--------------------------------------------------------------------------- 
+# Project-related configuration options
+#---------------------------------------------------------------------------
+
+PROJECT_NAME           = "AscEmu"
+PROJECT_BRIEF          = "OpenSource WoW Emulator"
+PROJECT_LOGO           = images/logo.png
+OUTPUT_DIRECTORY       = build/docs
+CREATE_SUBDIRS         = NO
+
+#--------------------------------------------------------------------------- 
+# Build-related configuration options
+#---------------------------------------------------------------------------
+
+OUTPUT_LANGUAGE        = English
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+EXTRACT_ANON_NSPACES   = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = NO
+
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        =
+STRIP_FROM_INC_PATH    =
+
+TAB_SIZE               = 4
+ALIASES                =
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+
+#--------------------------------------------------------------------------- 
+# Input files configuration
+#---------------------------------------------------------------------------
+
+INPUT                  = AscEmu/src
+
+FILE_PATTERNS          = *.h *.hpp *.c *.cpp
+RECURSIVE              = YES
+EXCLUDE                =
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       =
+EXCLUDE_SYMBOLS        =
+
+#--------------------------------------------------------------------------- 
+# HTML output configuration
+#---------------------------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_STYLESHEET        =
+HTML_EXTRA_STYLESHEET  =
+HTML_EXTRA_FILES       =
+HTML_COLORSTYLE        = LIGHT
+HTML_INDEX_NUM_ENTRIES = 100
+
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+GENERATE_TAGFILE       =
+
+#--------------------------------------------------------------------------- 
+# Source browsing
+#---------------------------------------------------------------------------
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+#--------------------------------------------------------------------------- 
+# Diagram generation via Graphviz
+#---------------------------------------------------------------------------
+
+INPUT                  = AscEmu/src
+FILE_PATTERNS          = *.h *.hpp *.c *.cpp
+RECURSIVE              = YES
+EXCLUDE                = build docs .github
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+CLASS_GRAPH            = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+
+GENERATE_LATEX         = NO
+
