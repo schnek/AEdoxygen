@@ -57,9 +57,8 @@ HTML_HEADER            =
 HTML_FOOTER            =
 HTML_STYLESHEET        =
 FULL_SIDEBAR           = YES
-HTML_EXTRA_STYLESHEET  = doxygen-awesome/doxygen-awesome.css \
-                         doxygen-awesome/doxygen-awesome-sidebar-only.css
-HTML_EXTRA_FILES       = css/AscEmu.css
+HTML_EXTRA_STYLESHEET  = css/AscEmu.css doxygen-awesome/doxygen-awesome.css
+HTML_EXTRA_FILES       = doxygen-awesome/doxygen-awesome.css
 HTML_COLORSTYLE        = LIGHT
 HTML_INDEX_NUM_ENTRIES = 100
 
