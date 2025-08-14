@@ -1,0 +1,37 @@
+:root {
+  /* Основной цвет как в AEsite */
+  --primary-color-hue: 146;
+  --primary-color-saturation: 60%;
+  --primary-color-lightness: 45%;
+
+  /* Цвета кода */
+  --fragment-background: #1e1e1e;
+  --fragment-foreground: #dcdcdc;
+
+  /* Фон и текст */
+  --page-background-color: #0e0e0e;
+  --page-foreground-color: #f4f4f4;
+
+  /* Шрифты */
+  --main-font-family: 'Segoe UI', Tahoma, sans-serif;
+  --code-font-family: 'Fira Code', monospace;
+}
+
+/* Заголовки как в AEsite */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Ссылки — яркий зелёный как на AEsite */
+a {
+  color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 60%);
+}
+a:hover {
+  color: hsl(var(--primary-color-hue), var(--primary-color-saturation), 80%);
+}
+
+/* Меню — фон как на AEsite */
+#side-nav {
+  background-color: #161616;
+}
