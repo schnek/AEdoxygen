@@ -37,7 +37,7 @@ OPTIMIZE_OUTPUT_JAVA   = NO
 # Input files configuration
 #---------------------------------------------------------------------------
 
-INPUT                  = AscEmu/src
+INPUT                  = AscEmu/src AscEmu README.md
 
 FILE_PATTERNS          = *.h *.hpp *.c *.cpp
 RECURSIVE              = YES

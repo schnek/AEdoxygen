@@ -1,4 +1,4 @@
-name: Generate AE Doxygen Docs
+name: generate AE Doxygen Docs
 
 on:
   push:
@@ -6,47 +6,55 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
+  contents: write
+  pages: none
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout AEdoxygen
         uses: actions/checkout@v4
 
-      - name: Clone AscEmu sources
-        run: git clone --depth 1 https://github.com/AscEmu/AscEmu.git
+      - name: Clone AscEmu repository
+        run: |
+          echo "Cloning AscEmu sources..."
+          git clone --depth 1 https://github.com/AscEmu/AscEmu.git
+          cp AscEmu/README.md README.md
 
       - name: Install Doxygen & Graphviz
         run: |
+          echo "Installing Doxygen and Graphviz..."
           sudo apt-get update
-          sudo apt-get install -y doxygen graphviz
+          sudo apt-get install -y doxygen graphviz rsync
 
-      - name: Create output directory
+      - name: Prepare output directory
         run: mkdir -p build/docs
 
-      - name: Generate AE documentation
-        run: doxygen Doxyfile
+      - name: Adjust Doxyfile paths
+        run: |
+          echo "Configuring Doxyfile for AscEmu..."
+          sed -i 's|^INPUT .*|INPUT = AscEmu README.md|' Doxyfile
+          sed -i 's|^OUTPUT_DIRECTORY .*|OUTPUT_DIRECTORY = build/docs|' Doxyfile
+          sed -i 's|^GENERATE_LATEX .*|GENERATE_LATEX = NO|' Doxyfile
 
-      - name: Upload documentation artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: build/docs/html
+      - name: Generate AE Doxygen documentation
+        run: |
+          echo "Generating AscEmu Doxygen documentation..."
+          doxygen Doxyfile
+          echo "Listing generated files:"
+          ls -R build/docs/html | head -n 20 || true
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
-
+      - name: Commit generated docs to main
+        run: |
+          echo "Deploying documentation to /docs..."
+          rm -rf docs
+          mkdir -p docs
+          rsync -av --delete build/docs/html/ docs/
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add docs
+          git diff --cached --quiet || git commit -m "📰 Auto-update AscEmu Doxygen documentation"
+          git push
