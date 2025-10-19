@@ -1,0 +1,28 @@
+var Creatures_8cpp =
+[
+    [ "ExplosiveSheep", "classExplosiveSheep.html", "classExplosiveSheep" ],
+    [ "CrimsonHammersmith", "classCrimsonHammersmith.html", "classCrimsonHammersmith" ],
+    [ "Corrupt_Minor_Manifestation_Water_Dead", "classCorrupt__Minor__Manifestation__Water__Dead.html", "classCorrupt__Minor__Manifestation__Water__Dead" ],
+    [ "SavannahProwler", "classSavannahProwler.html", "classSavannahProwler" ],
+    [ "KirithAI", "classKirithAI.html", "classKirithAI" ],
+    [ "AllianceGryphon", "classAllianceGryphon.html", "classAllianceGryphon" ],
+    [ "AllianceHippogryph", "classAllianceHippogryph.html", "classAllianceHippogryph" ],
+    [ "HordeWyvern", "classHordeWyvern.html", "classHordeWyvern" ],
+    [ "HordeBat", "classHordeBat.html", "classHordeBat" ],
+    [ "DragonhawkMasters", "classDragonhawkMasters.html", "classDragonhawkMasters" ],
+    [ "NeutralMasters", "classNeutralMasters.html", "classNeutralMasters" ],
+    [ "TyrandeWhisperwind", "classTyrandeWhisperwind.html", "classTyrandeWhisperwind" ],
+    [ "ProphetVelen", "classProphetVelen.html", "classProphetVelen" ],
+    [ "KingMagniBronzebeard", "classKingMagniBronzebeard.html", "classKingMagniBronzebeard" ],
+    [ "Thrall", "classThrall.html", "classThrall" ],
+    [ "CairneBloodhoof", "classCairneBloodhoof.html", "classCairneBloodhoof" ],
+    [ "LadySylvanasWindrunner", "classLadySylvanasWindrunner.html", "classLadySylvanasWindrunner" ],
+    [ "TrollRoofStalker", "classTrollRoofStalker.html", "classTrollRoofStalker" ],
+    [ "DISCO", "classDISCO.html", "classDISCO" ],
+    [ "SilithidCreeperEgg", "classSilithidCreeperEgg.html", "classSilithidCreeperEgg" ],
+    [ "DraeneiSurvivor", "classDraeneiSurvivor.html", "classDraeneiSurvivor" ],
+    [ "GuardRoberts", "classGuardRoberts.html", "classGuardRoberts" ],
+    [ "SotaAntiPersonnalCannon", "classSotaAntiPersonnalCannon.html", "classSotaAntiPersonnalCannon" ],
+    [ "NestlewoodOwlkin", "classNestlewoodOwlkin.html", "classNestlewoodOwlkin" ],
+    [ "SetupMiscCreatures", "Creatures_8cpp.html#a0906891653356c3e8a58df5f193beca6", null ]
+];

@@ -1,0 +1,36 @@
+var SkillNameMgr_8h =
+[
+    [ "SkillNameMgr", "classSkillNameMgr.html", "classSkillNameMgr" ],
+    [ "SpellTreeName", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbd", [
+      [ "SPELLTREE_MAGE_ARCANE", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda2c7e734403b72cc9b7128ce6c0405e7c", null ],
+      [ "SPELLTREE_MAGE_FIRE", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda14e9c0fee2cc31f2754b4d3d980fca8c", null ],
+      [ "SPELLTREE_MAGE_FROST", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda7e8f19268021243754027f580da5b2a3", null ],
+      [ "SPELLTREE_ROGUE_ASSASSINATION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdaf15fbffb2592bbe4cee46a8abd838f80", null ],
+      [ "SPELLTREE_ROGUE_COMBAT", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdaab18f9f8a2923d32d29bac82ee9c04e9", null ],
+      [ "SPELLTREE_ROGUE_SUBTLETY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda1451d42678e8761d8c4ca641e7d8b6e4", null ],
+      [ "SPELLTREE_WARLOCK_AFFLICTION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda4e49a1e0393f44ee9a0359ab575f6688", null ],
+      [ "SPELLTREE_WARLOCK_DEMONOLOGY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdafefc0762bdea2efc4168afd8518a2b7b", null ],
+      [ "SPELLTREE_WARLOCK_DESTRUCTION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda57a79adefc49cfdb91acd89eda0d7959", null ],
+      [ "SPELLTREE_WARRIOR_ARMS", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdad8e7a432e4a1c2742c1703ba5dcf416c", null ],
+      [ "SPELLTREE_WARRIOR_FURY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdacf741a71cf8f2f445c8e9b3298a6a634", null ],
+      [ "SPELLTREE_WARRIOR_PROTECTION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda6f1cb16d73388499a84340fc7e42f65c", null ],
+      [ "SPELLTREE_SHAMAN_ELEMENTAL", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda3b4d14a1806f4d52b59994ffa7b07e5b", null ],
+      [ "SPELLTREE_SHAMAN_ENHANCEMENT", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda23c8859efede5a392748fd4b1f57ccff", null ],
+      [ "SPELLTREE_SHAMAN_RESTORATION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdaf3b258e1f5f306e7d3336586bd1c655f", null ],
+      [ "SPELLTREE_PALADIN_HOLY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdabfd9e5c182527a26204e998c66192fa8", null ],
+      [ "SPELLTREE_PALADIN_PROTECTION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda21543ea06625baeb4cc9b069b529e736", null ],
+      [ "SPELLTREE_PALADIN_RETRIBUTION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda835198d129048f011004094b7c432361", null ],
+      [ "SPELLTREE_DEATHKNIGHT_BLOOD", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda11efb2de0c88a7d8a164a2dd31f47180", null ],
+      [ "SPELLTREE_DEATHKNIGHT_FROST", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdae68253be48f27a537c1bab3e12971f26", null ],
+      [ "SPELLTREE_DEATHKNIGHT_UNHOLY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda65d8eada8040b161d34a3c7c84ce5e90", null ],
+      [ "SPELLTREE_PRIEST_DISCIPLINE", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda0f93222994df3e33c14e02ebc047d7c3", null ],
+      [ "SPELLTREE_PRIEST_HOLY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdad723d327a32f1773505328d60aff8829", null ],
+      [ "SPELLTREE_PRIEST_SHADOW", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda704c0ef4b5f05597eeffe08f214fce71", null ],
+      [ "SPELLTREE_HUNTER_BEASTMASTERY", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda9529e9728cbd396d2e8dfdde8fbbdf7e", null ],
+      [ "SPELLTREE_HUNTER_MARKSMANSHIP", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda6b53bf58a9b8ea6ad689c59bd392cd52", null ],
+      [ "SPELLTREE_HUNTER_SURVIVAL", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbdaf21105bba5e558ed7ec8c65d616d0e9a", null ],
+      [ "SPELLTREE_DRUID_BALANCE", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda4e050cc0b83eced683334f00e2c3b108", null ],
+      [ "SPELLTREE_DRUID_FERAL_COMBAT", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda9e82dc90de355ad6cc9de6dd77ff2b13", null ],
+      [ "SPELLTREE_DRUID_RESTORATION", "SkillNameMgr_8h.html#ad5037c65f58a1fe9599180cb14321cbda8577c26b3a20b3f3b83a5c4fe3b01123", null ]
+    ] ]
+];

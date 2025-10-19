@@ -1,0 +1,26 @@
+var classLuaSpell =
+[
+    [ "CanCast", "classLuaSpell.html#a0a9dc8bc28008349b08bce5e1f212fb9", null ],
+    [ "Cancel", "classLuaSpell.html#a3bead4046054c480f5d42e477693ddf5", null ],
+    [ "Cast", "classLuaSpell.html#a546ca0002f085c2a87d1cce1cf1a3911", null ],
+    [ "Finish", "classLuaSpell.html#a88aaec6561f8e867d55c5a3c8cd54937", null ],
+    [ "GetCastedItemId", "classLuaSpell.html#a3f67a7f037c66707e9c583da1ef6c0f3", null ],
+    [ "GetCaster", "classLuaSpell.html#a229723c9d276ad3d21ae6a451a82ef34", null ],
+    [ "GetEntry", "classLuaSpell.html#a9cf29aade815c5240967a42e211556c0", null ],
+    [ "GetObjectType", "classLuaSpell.html#a1f3289641a68c25e31072fcc48113fff", null ],
+    [ "GetPossibleEnemy", "classLuaSpell.html#a6bcd1a0622ab40590020c8f4c1b40328", null ],
+    [ "GetPossibleFriend", "classLuaSpell.html#a7e98bde610fdf9f6b565b71c2630a418", null ],
+    [ "GetSpellState", "classLuaSpell.html#a99ff3fa215d4b76821a108dce8cce26f", null ],
+    [ "GetSpellType", "classLuaSpell.html#a01d1927b139fb3669560b36820c952ec", null ],
+    [ "GetTarget", "classLuaSpell.html#a032f88a53d7949b824e5f7d07bff47f0", null ],
+    [ "GetVar", "classLuaSpell.html#ac15a841676f64428e067defa4432da57", null ],
+    [ "HasPower", "classLuaSpell.html#a07a5933afa663ce84f50474f4c9596d5", null ],
+    [ "IsAspect", "classLuaSpell.html#a1a8e0966837266b746c591fd837aec55", null ],
+    [ "IsDuelSpell", "classLuaSpell.html#a9b5241aa0c586081f4c56ce023e35c4e", null ],
+    [ "IsInvisibilitySpell", "classLuaSpell.html#a63864f04823d1f3156ba1f0cc1614db0", null ],
+    [ "IsSeal", "classLuaSpell.html#abdb391ad51a84fe515575a81e5dace28", null ],
+    [ "IsStealthSpell", "classLuaSpell.html#ac1341c6098160553ff5703a872be3e69", null ],
+    [ "ResetAllVars", "classLuaSpell.html#a8312063a4b98ed4c405f2ab678278365", null ],
+    [ "ResetVar", "classLuaSpell.html#acff25860900dfcd750e20b36e24d060e", null ],
+    [ "SetVar", "classLuaSpell.html#a51ea82ab630b2a140228d170f5d3bd39", null ]
+];

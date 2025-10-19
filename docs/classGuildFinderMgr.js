@@ -1,0 +1,28 @@
+var classGuildFinderMgr =
+[
+    [ "GuildFinderMgr", "classGuildFinderMgr.html#a1d3323a6e547b604cfe93dfb8ba23eb4", null ],
+    [ "~GuildFinderMgr", "classGuildFinderMgr.html#ad4aa1018defd0fbb86e1cec4c679268a", null ],
+    [ "GuildFinderMgr", "classGuildFinderMgr.html#aed86d02f6ae61dd217c406557f0ded5f", null ],
+    [ "GuildFinderMgr", "classGuildFinderMgr.html#ac097f61d75975163b91be51f4e160da4", null ],
+    [ "addMembershipRequest", "classGuildFinderMgr.html#a10573b65f83547a8fd698c836547ad98", null ],
+    [ "countRequestsFromPlayer", "classGuildFinderMgr.html#a2b15a06f0851c005e66eff361d3b1010", null ],
+    [ "deleteGuild", "classGuildFinderMgr.html#a15e04a2509ddb21e0e48a7ecac35af85", null ],
+    [ "getAllMembershipRequestsForGuild", "classGuildFinderMgr.html#a2195efa96c3e7dd08c3eef73571a9162", null ],
+    [ "getAllMembershipRequestsForPlayer", "classGuildFinderMgr.html#ab3946e65cd07a127f9ccd054e51d0599", null ],
+    [ "getGuildSettings", "classGuildFinderMgr.html#afcfe3b9b707e8954cf0a4b5c9fddce1f", null ],
+    [ "getGuildsMatchingSetting", "classGuildFinderMgr.html#a338228760c4796430381a3bee8727a4d", null ],
+    [ "getInstance", "classGuildFinderMgr.html#a9e8d9ca6b4ba9083d282b39ca18e6413", null ],
+    [ "hasRequest", "classGuildFinderMgr.html#aac5de7d8798d443ef3cc3990b1aed0e2", null ],
+    [ "loadGuildFinderDataFromDB", "classGuildFinderMgr.html#ac4f0d81efdb65cb73523be2d862fac48", null ],
+    [ "loadGuildSettingsFromDB", "classGuildFinderMgr.html#a6dc699919345f4bfe6b339c9bd2cfc7f", null ],
+    [ "loadMembershipRequestsFromDB", "classGuildFinderMgr.html#a4a3b47f56f063c5d4bd778e24dbf20ec", null ],
+    [ "operator=", "classGuildFinderMgr.html#aee5aabde2872b68de893d0b3ed22ac4b", null ],
+    [ "operator=", "classGuildFinderMgr.html#aa8a82cf726356276af95ed2ab934c5f2", null ],
+    [ "removeAllMembershipRequestsFromPlayer", "classGuildFinderMgr.html#af8c86baa2513ecbb3004404c7ec55d76", null ],
+    [ "removeMembershipRequest", "classGuildFinderMgr.html#aee75b9314c0aca4b9513d79c370aac82", null ],
+    [ "sendApplicantListUpdate", "classGuildFinderMgr.html#a78ce3d7d34882cd36ab70bc8b68bff3a", null ],
+    [ "sendMembershipRequestListUpdate", "classGuildFinderMgr.html#a2dde329961c140f2f393ace58d70b684", null ],
+    [ "setGuildSettings", "classGuildFinderMgr.html#a480b47c903cbc53a5a1118ffa910fa7e", null ],
+    [ "_lfgGuildStore", "classGuildFinderMgr.html#ac98b494fd7e07ac69deb57c4ca6c4d04", null ],
+    [ "_membershipRequestStore", "classGuildFinderMgr.html#a2cf719d7ba4dff8eec0866bdcf9d2410", null ]
+];

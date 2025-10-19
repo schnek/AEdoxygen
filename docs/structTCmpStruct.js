@@ -1,0 +1,25 @@
+var structTCmpStruct =
+[
+    [ "ctype", "structTCmpStruct.html#ab17cc43a37a102199c53ae0e2eaea1cb", null ],
+    [ "dist_bits", "structTCmpStruct.html#a4768a63fbaac56b3bd494446ba046223", null ],
+    [ "dist_codes", "structTCmpStruct.html#a98b836eb79ac9faf27a1c73a7f25ec79", null ],
+    [ "distance", "structTCmpStruct.html#a8d11b75b4a811c9d9bbb88bf7f1ae21d", null ],
+    [ "dsize_bits", "structTCmpStruct.html#a9cfef4222ca64ef8aa1208e12a05d062", null ],
+    [ "dsize_bytes", "structTCmpStruct.html#a98e1827ff5c2360f33401bf6844d70c7", null ],
+    [ "dsize_mask", "structTCmpStruct.html#a51f9848484ef3b06c53d01310ac7ac01", null ],
+    [ "nChBits", "structTCmpStruct.html#a8150df58d206b9c0f93e1b0ead49121e", null ],
+    [ "nChCodes", "structTCmpStruct.html#a0b79dff2bd649785e0d08d99e26b12cf", null ],
+    [ "offs09AE", "structTCmpStruct.html#aaccac93557adeb77a22894dba304ceac", null ],
+    [ "offs09BC", "structTCmpStruct.html#abacae6888ad1f3b4f47c09829d684b34", null ],
+    [ "offs0DC4", "structTCmpStruct.html#ac11da01cf883bacefcadcb0118ed0c8d", null ],
+    [ "out_bits", "structTCmpStruct.html#a7fab541bf6f1bb85b275f1e28c6ad7a0", null ],
+    [ "out_buff", "structTCmpStruct.html#ad6c47d34edcbea6766a76a373cd2fd5a", null ],
+    [ "out_bytes", "structTCmpStruct.html#a663197a00f556ff09f428183ecab8238", null ],
+    [ "param", "structTCmpStruct.html#ac5b8213e9e68bc90c52e761138e75cb1", null ],
+    [ "phash_offs", "structTCmpStruct.html#a1b56f6f133fce0503b45c804fd005716", null ],
+    [ "phash_to_index", "structTCmpStruct.html#add34aa026ae704aa043aa5c1cc22b405", null ],
+    [ "phash_to_index_end", "structTCmpStruct.html#a734b6136bc3d234cf19ccfad764ec82d", null ],
+    [ "read_buf", "structTCmpStruct.html#a4e4016178511c90964399d4b638d2081", null ],
+    [ "work_buff", "structTCmpStruct.html#ad457723e6df7f0a5f47c5f518641c407", null ],
+    [ "write_buf", "structTCmpStruct.html#ad0d03032c0c68e21277b3e0232f16b9a", null ]
+];

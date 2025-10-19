@@ -1,0 +1,28 @@
+var structWDB_1_1Structures_1_1SpellEffectEntry =
+[
+    [ "GetRadiusIndex", "structWDB_1_1Structures_1_1SpellEffectEntry.html#af66cc0c93acfdcaa55e649ee790fe979", null ],
+    [ "Effect", "structWDB_1_1Structures_1_1SpellEffectEntry.html#ad5e30263191a3e317611a363589f5d2d", null ],
+    [ "EffectAmplitude", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a0af6062ecaf523720bc1a38981fd31ee", null ],
+    [ "EffectApplyAuraName", "structWDB_1_1Structures_1_1SpellEffectEntry.html#ab871955db66c339e1371f0059736b711", null ],
+    [ "EffectBasePoints", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a0dea5b3b91b75c277d3ff59735249eb3", null ],
+    [ "EffectBonusMultiplier", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a092bbecd32a527e7a4e54caa8c73ecb9", null ],
+    [ "EffectChainTarget", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a286fcabfa90808f6737b2fe105019d6f", null ],
+    [ "EffectDamageMultiplier", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a7c2fc55ecba430f30bf1da5069b073f7", null ],
+    [ "EffectDieSides", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a7c6c66f1b20f7e4b78e87c64baca19d2", null ],
+    [ "EffectImplicitTargetA", "structWDB_1_1Structures_1_1SpellEffectEntry.html#ad4aac01ecba6a39841af628c0ad0d2e5", null ],
+    [ "EffectImplicitTargetB", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a9ee3ce31a587a110d46fb7462f0e5460", null ],
+    [ "EffectIndex", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a9171f0cf15d69aada71d6fd877afd6a3", null ],
+    [ "EffectItemType", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a1cf55121eccedf5c53f59100bee4f020", null ],
+    [ "EffectMechanic", "structWDB_1_1Structures_1_1SpellEffectEntry.html#aa4ffd6a22cd3660c172b98176f3afaa8", null ],
+    [ "EffectMiscValue", "structWDB_1_1Structures_1_1SpellEffectEntry.html#aeda9c29f8996de5b2c489016e2ec0462", null ],
+    [ "EffectMiscValueB", "structWDB_1_1Structures_1_1SpellEffectEntry.html#aafc8565c6cce03e7c1eb7d59116471db", null ],
+    [ "EffectMultipleValue", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a6fdb32fe42a268ea2718ad5b8dd5931c", null ],
+    [ "EffectPointsPerComboPoint", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a88bba6b6fb13c8d43be00a0048590d6b", null ],
+    [ "EffectRadiusIndex", "structWDB_1_1Structures_1_1SpellEffectEntry.html#aa4e19991406e6aa915df792925b0cd79", null ],
+    [ "EffectRadiusMaxIndex", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a4c8ac83db6646405fab38db93aa8d2ce", null ],
+    [ "EffectRealPointsPerLevel", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a2503d8ac1a649e3f512394e8535968bc", null ],
+    [ "EffectSpellClassMask", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a2927979d83a8de8b63579bdcc8adeead", null ],
+    [ "EffectSpellId", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a16d9b07c9ecea7c2ae25ee66e2bfabe8", null ],
+    [ "EffectTriggerSpell", "structWDB_1_1Structures_1_1SpellEffectEntry.html#a6cc0b227f44ee23d558c3a59e7cc2ed9", null ],
+    [ "id", "structWDB_1_1Structures_1_1SpellEffectEntry.html#ae2372801791d16bb2d0192cf490f7b98", null ]
+];

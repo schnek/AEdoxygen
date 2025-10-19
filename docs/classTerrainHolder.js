@@ -1,0 +1,25 @@
+var classTerrainHolder =
+[
+    [ "TerrainHolder", "classTerrainHolder.html#aa9050869194db888697a4c4898fb49c6", null ],
+    [ "~TerrainHolder", "classTerrainHolder.html#ab36943584ac5162f0f877e9d8e0020b7", null ],
+    [ "areTilesValid", "classTerrainHolder.html#abd165e1bc8bd27cd5beca3ad7f36bdf9", null ],
+    [ "getCellLimits", "classTerrainHolder.html#a6e662961822f9a82b01ef625a176cbca", null ],
+    [ "getTile", "classTerrainHolder.html#a9c070c93a7509d714efc5af3e29b9f4a", null ],
+    [ "getTile", "classTerrainHolder.html#a6964c2edc4e5a7835e4122cf439129d5", null ],
+    [ "loadTile", "classTerrainHolder.html#a98097dbc539d41bc8d2deeac6c15c254", null ],
+    [ "loadTile", "classTerrainHolder.html#a239ad82ecc51cd59ede5b6e9febeb39f", null ],
+    [ "tileLoaded", "classTerrainHolder.html#affc67b3c5a2782f7d81ad6a290c66301", null ],
+    [ "unloadTile", "classTerrainHolder.html#a8e11f2a3b88f7b1b376241c51e50a7e0", null ],
+    [ "unloadTile", "classTerrainHolder.html#a28fb0387582b51c69f2608fbd33627df", null ],
+    [ "m_lock", "classTerrainHolder.html#ab0365d5356e5e69e6fc507c87a558314", null ],
+    [ "m_mapid", "classTerrainHolder.html#a4db29853ca969ca5228cf8e7f0653468", null ],
+    [ "m_tilerefs", "classTerrainHolder.html#ac9eb759a215f1d73347c036e294bf83e", null ],
+    [ "m_tiles", "classTerrainHolder.html#af3a966788397a22c05c796339708a655", null ],
+    [ "TileCountX", "classTerrainHolder.html#a23369f507310f64f89b7c545dfd195bf", null ],
+    [ "TileCountY", "classTerrainHolder.html#a8f3ecf40633e597d66a55d2161bbdb33", null ],
+    [ "TileEndX", "classTerrainHolder.html#a8457ff9ac25cd6bc20c64b6dc7abf28b", null ],
+    [ "TileEndY", "classTerrainHolder.html#a07b6a9d9b4c8df0230d79bb61e74cd01", null ],
+    [ "TileOffsets", "classTerrainHolder.html#ac9f85eaeaaa5ea26b787cd0ce38f15d4", null ],
+    [ "TileStartX", "classTerrainHolder.html#ac6a11f02233ce4ab48f6a14bb8778a34", null ],
+    [ "TileStartY", "classTerrainHolder.html#aead80a241218100f1d3635b2b1b1e511", null ]
+];

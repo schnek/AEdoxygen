@@ -1,0 +1,25 @@
+var classGameObjectAIScript =
+[
+    [ "GameObjectAIScript", "classGameObjectAIScript.html#a649a9f28d87625a316bbb78af72825d5", null ],
+    [ "~GameObjectAIScript", "classGameObjectAIScript.html#a51814a57d73dbdda2f0989112b93f3a2", null ],
+    [ "AIUpdate", "classGameObjectAIScript.html#a30cf3e332c7dc8d40d5b6075da668f36", null ],
+    [ "Destroy", "classGameObjectAIScript.html#a281b0134bd7a66822cc406e4044368e3", null ],
+    [ "getGameObjectData", "classGameObjectAIScript.html#ab4d2930819bab12ed0ffce624b78c8f0", null ],
+    [ "getGuidData", "classGameObjectAIScript.html#a06134621ba46b6224cc63acf26899f3c", null ],
+    [ "getInstanceScript", "classGameObjectAIScript.html#af26bb66c784c9eab9f7b01481e9838b4", null ],
+    [ "getRaidModeValue", "classGameObjectAIScript.html#ab5b42dd0e29324b8e3f9a4c741f4395e", null ],
+    [ "isHeroic", "classGameObjectAIScript.html#afa53df4b04e41abac6b0ac5d4a53ac17", null ],
+    [ "ModifyAIUpdateEvent", "classGameObjectAIScript.html#adc4d8a588b046e0b2c6faaed03324c0c", null ],
+    [ "OnActivate", "classGameObjectAIScript.html#a8dcf5b844e3282c6fc77d5db0bdb173e", null ],
+    [ "OnCreate", "classGameObjectAIScript.html#ae6f7c1df44fc620340b30542d3a3a6db", null ],
+    [ "OnDamaged", "classGameObjectAIScript.html#aeb9a3c2fbd9d8ffff1a6cd2345b33408", null ],
+    [ "OnDespawn", "classGameObjectAIScript.html#a8eb2970d871d827a252781e275ec7bfc", null ],
+    [ "OnDestroyed", "classGameObjectAIScript.html#a91f3eea19276a45edd905fa6c04c1ae2", null ],
+    [ "OnLootTaken", "classGameObjectAIScript.html#a9e0baeba2813dab2be600778495c5146", null ],
+    [ "OnSpawn", "classGameObjectAIScript.html#ac94989626d4831df28d87bb9e07bf905", null ],
+    [ "RegisterAIUpdateEvent", "classGameObjectAIScript.html#ac735a5116d28a75faf197147e9a2bbc2", null ],
+    [ "RemoveAIUpdateEvent", "classGameObjectAIScript.html#af21063ea179ca0e05ccf8665508bc5d7", null ],
+    [ "setGameObjectData", "classGameObjectAIScript.html#a6c7df2ae7855881500d79e710c4f20b2", null ],
+    [ "setGuidData", "classGameObjectAIScript.html#aae29a50ffd2265a7464d526701ec5019", null ],
+    [ "_gameobject", "classGameObjectAIScript.html#a1187621b3a208a0cfd0934989c470c92", null ]
+];

@@ -1,0 +1,26 @@
+var classWaypointMovementGenerator_3_01Creature_01_4 =
+[
+    [ "WaypointMovementGenerator", "classWaypointMovementGenerator_3_01Creature_01_4.html#a9cf777b45bcace285d879678a7fefd5d", null ],
+    [ "WaypointMovementGenerator", "classWaypointMovementGenerator_3_01Creature_01_4.html#a40e51e600c2e50fc3f0f51a7f9d801ac", null ],
+    [ "~WaypointMovementGenerator", "classWaypointMovementGenerator_3_01Creature_01_4.html#a593c784ebcca7f8c431df4573fa874c6", null ],
+    [ "computeNextNode", "classWaypointMovementGenerator_3_01Creature_01_4.html#a6f4f74b7bc23bf9a5300f1c9fcf3b1f6", null ],
+    [ "doDeactivate", "classWaypointMovementGenerator_3_01Creature_01_4.html#af53f54b3db5ced58088b3026fd038c70", null ],
+    [ "doFinalize", "classWaypointMovementGenerator_3_01Creature_01_4.html#a6709c9b7d95f03e4b2d8d36a32c83c38", null ],
+    [ "doInitialize", "classWaypointMovementGenerator_3_01Creature_01_4.html#aceb45b9e0e7b2d819fb2db0014cb3ef6", null ],
+    [ "doReset", "classWaypointMovementGenerator_3_01Creature_01_4.html#a7dc2f6b319e6374a5b336208a2ee1af0", null ],
+    [ "doUpdate", "classWaypointMovementGenerator_3_01Creature_01_4.html#aaf28c66790216a0317445f7b13d4c9c7", null ],
+    [ "getDebugInfo", "classWaypointMovementGenerator_3_01Creature_01_4.html#a1464ef3de2fc7f1438f6f8b19779ea43", null ],
+    [ "getMovementGeneratorType", "classWaypointMovementGenerator_3_01Creature_01_4.html#a37ba5644d4b5640e33f7b337a284fa5e", null ],
+    [ "getResetPosition", "classWaypointMovementGenerator_3_01Creature_01_4.html#a7d88f39c056a83d335c0b6b5837b5b49", null ],
+    [ "movementInform", "classWaypointMovementGenerator_3_01Creature_01_4.html#a307351a2c687bd0353f02bfa5c61034e", null ],
+    [ "onArrived", "classWaypointMovementGenerator_3_01Creature_01_4.html#a5adcc52b5568b2438a47402eaba1b661", null ],
+    [ "pause", "classWaypointMovementGenerator_3_01Creature_01_4.html#a4b4e2e0fe5afd5730e10a5ae7441968b", null ],
+    [ "resume", "classWaypointMovementGenerator_3_01Creature_01_4.html#a8f1e8358ba5943ca15e4067427f8bfd4", null ],
+    [ "startMove", "classWaypointMovementGenerator_3_01Creature_01_4.html#a157b2ed8a6e6d52fcf069ce5c3c28cd0", null ],
+    [ "unitSpeedChanged", "classWaypointMovementGenerator_3_01Creature_01_4.html#ac0d60b7565cd2636ecb0c15d5ecf1600", null ],
+    [ "updateTimer", "classWaypointMovementGenerator_3_01Creature_01_4.html#ae5b47ca53d66bd77c13c795b4a7014cc", null ],
+    [ "_loadedFromDB", "classWaypointMovementGenerator_3_01Creature_01_4.html#a65890f361fa1a8619a9097d6a0d51fbe", null ],
+    [ "_nextMoveTime", "classWaypointMovementGenerator_3_01Creature_01_4.html#a636bf5c78df0ade109bbea90ce09899e", null ],
+    [ "_pathId", "classWaypointMovementGenerator_3_01Creature_01_4.html#aeb091e064dc384e2d66fe3115eada9ac", null ],
+    [ "_repeating", "classWaypointMovementGenerator_3_01Creature_01_4.html#aaf8c25b3cd8b77dba7212b0ab3a65791", null ]
+];

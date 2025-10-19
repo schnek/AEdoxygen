@@ -1,0 +1,28 @@
+var classTirionAI =
+[
+    [ "TirionAI", "classTirionAI.html#a7d1f58a7b286a9ddd57bbdc7af8c9673", null ],
+    [ "ChampionsStart", "classTirionAI.html#afa78e400bac850c74aa2719c51d36525", null ],
+    [ "Create", "classTirionAI.html#a3ed52283bb99bb7b2f68954bb198c87f", null ],
+    [ "DoAction", "classTirionAI.html#ab0283c56cf33c385ec850b5da6fc6fa4", null ],
+    [ "GormokIntro", "classTirionAI.html#a206274a0b79e3c98443fa7a1742719fb", null ],
+    [ "GormokSpawn", "classTirionAI.html#a4c197202b8c3d7b1e870cbe3bc16ab5d", null ],
+    [ "handleBarrettSummon", "classTirionAI.html#a614fa35defc26eefcf1d59795c20b1ee", null ],
+    [ "IcehowlIntro", "classTirionAI.html#abdd0b726957b63593e925f4e1b073ea4", null ],
+    [ "IcehowlSpawn", "classTirionAI.html#a99e138bc617f42eec3a36755bfae93ef", null ],
+    [ "JaraxxusIntro", "classTirionAI.html#a6235015dbedb7a655859742a3553837e", null ],
+    [ "JaraxxusSpawn", "classTirionAI.html#a5cebf83f1b268fa4059c1ec591b04207", null ],
+    [ "JormungarsIntro", "classTirionAI.html#aab3e486f8fc39d91c940ccfcaa67c841", null ],
+    [ "JormungarsSpawn", "classTirionAI.html#a82605dfd83a71b4d6f4e2a7dbb912fd8", null ],
+    [ "Lamet", "classTirionAI.html#a6a227b6749ea2b340c32491791a472b1", null ],
+    [ "lichkingSouls", "classTirionAI.html#a6371125768913cdb4766b8b4fee4f070", null ],
+    [ "lickkingChallenge", "classTirionAI.html#a1b5b0ec94dc3d86e92b4fc40c3f58bf7", null ],
+    [ "OnLoad", "classTirionAI.html#a79dd4abbd60574f38ba5baf210696019", null ],
+    [ "onSummonedCreature", "classTirionAI.html#a30e32848488750d3b14b74b52167267f", null ],
+    [ "summonChampions", "classTirionAI.html#a6346755358c62904da213c3f3412477f", null ],
+    [ "summonLickKing", "classTirionAI.html#ad70e0726e27fb7745fab4eda8f2f615d", null ],
+    [ "valkyrSummon", "classTirionAI.html#a2c20fc3efdd24e9db670e250e094640c", null ],
+    [ "mFactionLeaderData", "classTirionAI.html#ae8ace307b48f4f5a44aa1071646e1355", null ],
+    [ "mIcehowlSummoned", "classTirionAI.html#a7fc58f7cd419ee4826c5203e0b020305", null ],
+    [ "mInstance", "classTirionAI.html#a7ae13ad979d7d401f53ea3076bd1bc8b", null ],
+    [ "mJormungarsSummoned", "classTirionAI.html#aeeeb94560ff9ae8ae05fcc67bca718d3", null ]
+];

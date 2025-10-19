@@ -1,0 +1,26 @@
+var SpellMgr_8hpp =
+[
+    [ "SpellArea", "structSpellArea.html", "structSpellArea" ],
+    [ "SpellMgr", "classSpellMgr.html", "classSpellMgr" ],
+    [ "sSpellMgr", "SpellMgr_8hpp.html#aa21e14d8e1145507b746a69b5487109d", null ],
+    [ "AuraScriptLinker", "SpellMgr_8hpp.html#ab4442b79506a9b08714b3628a7281692", null ],
+    [ "SkillSkillAbilityMap", "SpellMgr_8hpp.html#a2d73cd1509ba52bd2351fccc39507262", null ],
+    [ "SkillSkillAbilityMapRange", "SpellMgr_8hpp.html#aec6b3dc4ad76d06b6525a050f135009b", null ],
+    [ "SpellAreaForAreaMap", "SpellMgr_8hpp.html#aed367f31f60df3be311c904d6c74742c", null ],
+    [ "SpellAreaForAreaMapBounds", "SpellMgr_8hpp.html#a69bbd3906e9d334176d6a0ffde617490", null ],
+    [ "SpellAreaForAuraMap", "SpellMgr_8hpp.html#a904155608ad4dbd91425f1a78dd69d7a", null ],
+    [ "SpellAreaForAuraMapBounds", "SpellMgr_8hpp.html#ac0bf7c1f4212d9675abaaa9b3ca6f33d", null ],
+    [ "SpellAreaForQuestMap", "SpellMgr_8hpp.html#af78d0dbeec611b017b689fe4126b50d2", null ],
+    [ "SpellAreaForQuestMapBounds", "SpellMgr_8hpp.html#aebca17b4bc1b0129c26a7c769d90159b", null ],
+    [ "SpellAreaMap", "SpellMgr_8hpp.html#aed5b538f9cad4daaee2b3a328c74ef3b", null ],
+    [ "SpellAreaMapBounds", "SpellMgr_8hpp.html#a4edcdc3e020b29d06505e8048874c414", null ],
+    [ "SpellInfoMap", "SpellMgr_8hpp.html#ae4dd701cb90637789f4b8570492d0665", null ],
+    [ "SpellRequiredMap", "SpellMgr_8hpp.html#af9a8a530dd82e6512620fd9f20f70477", null ],
+    [ "SpellRequiredMapRange", "SpellMgr_8hpp.html#a5c0d7bb1666ce085d715ef289ee5d9bb", null ],
+    [ "SpellScriptLinker", "SpellMgr_8hpp.html#a383ad20b211fd54eb09a31fe7d5fb44d", null ],
+    [ "SpellSkillAbilityMap", "SpellMgr_8hpp.html#a900ef2f7b88a66f8f1d336f43406d4e2", null ],
+    [ "SpellSkillAbilityMapRange", "SpellMgr_8hpp.html#ab1561f4df30b415e8ddc3062a1e26fd1", null ],
+    [ "SpellsRequiringSpellMap", "SpellMgr_8hpp.html#a57a7631605f2a6c3b7f36bfe2ca7e4ba", null ],
+    [ "SpellsRequiringSpellMapRange", "SpellMgr_8hpp.html#afe70aee10a48c86a44cacc176376ec01", null ],
+    [ "SpellTargetConstraintMap", "SpellMgr_8hpp.html#afb0c45d681db78a4099a205357e18408", null ]
+];

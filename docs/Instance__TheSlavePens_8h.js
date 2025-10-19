@@ -1,0 +1,55 @@
+var Instance__TheSlavePens_8h =
+[
+    [ "CreatureEntry", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21", [
+      [ "CN_COILFANG_CHAMPION", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21ab130b04e5d3dd4d800739dd53358d5a5", null ],
+      [ "CN_COILFANG_OBSERVER", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a7de46b119a918e7b7bae3208e976e9df", null ],
+      [ "CN_COILFANG_DEFENDER", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a7e5c5496ae5deebc0fb5457d43719135", null ],
+      [ "CN_COILFANG_SCALE_HEALER", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a8432ceca82b42d737cdabe1d55b32288", null ],
+      [ "CN_COILFANG_SOOTHSAYER", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21ab69f25df3a44a6b0239c43a13693d793", null ],
+      [ "CN_COILFANG_TECHNICIAN", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a88c113ae24e3d72dba39fe9fab1ce77f", null ],
+      [ "CN_COILFANG_RAY", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21ae02cbae7b51308e3e5e5f4b13856f8e7", null ],
+      [ "CN_MENNUS_HEALING_WARD", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a054c94986b874bd315a46e21ecbf2819", null ],
+      [ "CN_TAINED_EARTHGRAB_TOTEM", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21ae9238bb2550e2ff8e62be1efcbbcf12b", null ],
+      [ "CN_TAINED_STONESKIN_TOTEM", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a10152e2cb2bbc8d647c35c4343c00ff6", null ],
+      [ "CN_CORRUPTED_NOVA_TOTEM", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21a45328c4409cf616f2f614276a0e4b04a", null ],
+      [ "CN_MENNU_THE_BETRAYER", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21aa808802ce1631529f014f0f029e2121a", null ],
+      [ "CN_ROKMAR_THE_CRACKLER", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21ad0b033cf77b9e6505cf48476c998be69", null ],
+      [ "CN_QUAGMIRRAN", "Instance__TheSlavePens_8h.html#ac9b092a6e51f4f210395308578cabf21adc560f35cab6434df0d8b6b8864b4afc", null ]
+    ] ],
+    [ "CreatureSay", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6", [
+      [ "SAY_MENNU_BETRAYER_01", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6ab2762aeb25b45831b78fc1e35ed74950", null ],
+      [ "SAY_MENNU_BETRAYER_02", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6a6c3e10905086635dd382b3a4ac1857dd", null ],
+      [ "SAY_MENNU_BETRAYER_03", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6a50ae10a20b1d29eb9109f8ea63d74fa9", null ],
+      [ "SAY_MENNU_BETRAYER_04", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6a811ddd2ad0e6f5bbe41e62dc576b6794", null ],
+      [ "SAY_MENNU_BETRAYER_05", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6ab5f4d6bfab460f3c5e2c396ef4726007", null ],
+      [ "SAY_MENNU_BETRAYER_06", "Instance__TheSlavePens_8h.html#af77674e33a6437e2499c86a6d61697f6a1f674580be11877edba3a4abdeb9c05e", null ]
+    ] ],
+    [ "CreatureSpells", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97f", [
+      [ "INTIMIDATING_SHOUT", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa367f8fd052fab16bc1be4c4a60b43d29", null ],
+      [ "IMMOLATE", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fae6675f136d6b8bf7f00fd2665fcfb5a3", null ],
+      [ "REFLECTIVE_SHIELD", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fae19aa8ceffff39455299d710a6c9a67d", null ],
+      [ "HOLY_NOVA", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fadf313f8c802776c802e775f7dfc4fb7a", null ],
+      [ "POWER_WORD_SHIELD", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa7c1aab405181e8b108a9d166769f4b61", null ],
+      [ "GREATER_HEAL", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa34523f41235b7f9ffde22f05b13ef833", null ],
+      [ "MIND_CONTROL", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa6826c9b549b47a46b4909ba0874905a7", null ],
+      [ "RAIN_OF_FIRE", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa5df74aff90317faa239889ef99870027", null ],
+      [ "BLIZZARD", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97faf35405262f960a7ea7b759ced32e3ddd", null ],
+      [ "HOWL_OF_TERROR", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa6fa26c7888b75b98bbc3d42c998829ec", null ],
+      [ "HW_MENNUS_HEALING_WARD", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa7f6512e64de7b47d706bda8c0189d1a8", null ],
+      [ "ET_ENTANGLING_ROOTS", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa0e47cf67f3302ea228c8856389fbe8e3", null ],
+      [ "ST_", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa1985eabc3cffde1b9bc176a26bb70ce7", null ],
+      [ "NT_", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa952d2ea445d7bbc9f2f4945ed55a3425", null ],
+      [ "MENNUS_HEALING_WARD", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa9d41074773f1b6ae6ea00234325b351c", null ],
+      [ "TAINTED_EARTHGRAB_TOTEM", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa06f6a48df126c91f6f8d8eed3dfad3db", null ],
+      [ "TAINTED_STONESKIN_TOTEM", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa92407fd2e6ef769e5bc205640ddaf7c5", null ],
+      [ "CORRUPTED_NOVA_TOTEM", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97faf770fb8d0d46e57f7fb097d47571d3dd", null ],
+      [ "LIGHTNING_BOLT", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa85954a9fb8dca39cc74db6f78e807086", null ],
+      [ "GRIEVOUS_WOUND", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa4d0dac0830c09aed55d6eac6fb65e2fc", null ],
+      [ "WATER_SPIT", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa3b9f44547af8fa4a0f89458e2a817ade", null ],
+      [ "ENSNARING_MOSS", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa37e20c08ff993b648ab62032baa8cd9d", null ],
+      [ "ENRAGE", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa186cdbf46a38418a20cf49c34503ba2b", null ],
+      [ "ACID_GEYSER", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa283d0c0e0a11daa5ff7a94d24d3e1339", null ],
+      [ "POISON_BOLT_VOLLEY", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fa92f2e9942a54863ab2bcf4308efb2d4d", null ],
+      [ "CLEAVE", "Instance__TheSlavePens_8h.html#a5ac557a794c7fe7be946d95b24a1d97fad5aca17dd7ff0784a130b53eea0c1c7e", null ]
+    ] ]
+];

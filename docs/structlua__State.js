@@ -1,0 +1,25 @@
+var structlua__State =
+[
+    [ "allowhook", "structlua__State.html#ac2903d4a712ca1c2d114f541636490f5", null ],
+    [ "base_ci", "structlua__State.html#a8c707493c7e45c7e0467381f5a80175d", null ],
+    [ "basehookcount", "structlua__State.html#a5d760c922e94390cd270ebb4ca4bc848", null ],
+    [ "ci", "structlua__State.html#a7fbb5727050853f411ad64b4be9ab5c8", null ],
+    [ "CommonHeader", "structlua__State.html#ad5311df12c1bfa3c4e11b7a1dbecaeda", null ],
+    [ "errfunc", "structlua__State.html#a09de3a7c6d3bcb6c2b0d26a81bb8d44b", null ],
+    [ "errorJmp", "structlua__State.html#ae4bbd2199ffd804fe64142c3d5ecb249", null ],
+    [ "gclist", "structlua__State.html#a0d446661e92287c8409076c970771217", null ],
+    [ "hook", "structlua__State.html#ad4c84ca6425b0073ab2d83f05a05e788", null ],
+    [ "hookcount", "structlua__State.html#a8824aded162dcdb9d3a142a90819e372", null ],
+    [ "hookmask", "structlua__State.html#a4f5ccabdfc6b9eb66eb5534c85270f2b", null ],
+    [ "l_G", "structlua__State.html#a63c9e91949432bcef6251366fbac6c9e", null ],
+    [ "nCcalls", "structlua__State.html#a9c4a565a35bed2d76dd84d9fb628853b", null ],
+    [ "nci", "structlua__State.html#affc91cc87a077d30cc812fed4769d967", null ],
+    [ "oldpc", "structlua__State.html#adfbafe57a78fbff8df33ba008315fb92", null ],
+    [ "openupval", "structlua__State.html#aa1f4a24dc6645e10ba8d6f2713e446bc", null ],
+    [ "stack", "structlua__State.html#a27e1d5122ef7fffae7542814c72fdd2f", null ],
+    [ "stack_last", "structlua__State.html#a797a585a2bdb638bd1ca78c15bbe46fb", null ],
+    [ "status", "structlua__State.html#a563f8f114867e0b03405680633672102", null ],
+    [ "tbclist", "structlua__State.html#ac80e7abfd3936928a7af86ceae44c952", null ],
+    [ "top", "structlua__State.html#a195f448e76fd404953fa1962d28212a3", null ],
+    [ "twups", "structlua__State.html#ae1da80ba9fa9d9adad4deb8ae5b42ba0", null ]
+];

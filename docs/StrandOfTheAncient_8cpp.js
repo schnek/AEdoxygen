@@ -1,0 +1,27 @@
+var StrandOfTheAncient_8cpp =
+[
+    [ "CanonLocations", "StrandOfTheAncient_8cpp.html#a487c856bbf3df8f2fa1248a2637e88e6", null ],
+    [ "ControlPointNames", "StrandOfTheAncient_8cpp.html#ac0d94d9dd9751d5c29718dc1afdeba6b", null ],
+    [ "CPWorldstates", "StrandOfTheAncient_8cpp.html#a76eac54aa1bb6a6483d606ff5a9878a7", null ],
+    [ "DemolisherLocations", "StrandOfTheAncient_8cpp.html#a8753000284df91875db36bad39ab47f8", null ],
+    [ "FlagIDs", "StrandOfTheAncient_8cpp.html#a479f2518b7591dccbe5c6e28f5ea14e4", null ],
+    [ "FlagPolePositions", "StrandOfTheAncient_8cpp.html#ae6c75f5475b460423b978e8d8f84e67c", null ],
+    [ "FlagPositions", "StrandOfTheAncient_8cpp.html#a2f9104d0fea0d8b4bea7acc529016e4a", null ],
+    [ "GateGOIds", "StrandOfTheAncient_8cpp.html#aadf00abf5042537555748f881b083f25", null ],
+    [ "GateSigilGOIds", "StrandOfTheAncient_8cpp.html#a96ed9889039d987722d89afbdcb120c8", null ],
+    [ "GraveyardLocations", "StrandOfTheAncient_8cpp.html#a7d59cfd83993e69286947ee6ee76517e", null ],
+    [ "SOTA_FLAGPOLE_ID", "StrandOfTheAncient_8cpp.html#a138d809b3244b9595d8541c2bf7fd175", null ],
+    [ "sotaAttackerStartingPosition", "StrandOfTheAncient_8cpp.html#aa9b307d648624369723ea64bed388ba8", null ],
+    [ "sotaBoats", "StrandOfTheAncient_8cpp.html#a1ea25094b79bc9e34649827dd82e5f03", null ],
+    [ "sotaBombsLocations", "StrandOfTheAncient_8cpp.html#ae4f1df945a8860b300f9464c4540634b", null ],
+    [ "sotaChamberGate", "StrandOfTheAncient_8cpp.html#ae2877e24f598118f6cd3d2d424644d69", null ],
+    [ "sotaDefenderStartingPosition", "StrandOfTheAncient_8cpp.html#aad32b673e7ad22f4c7408b84c804daca", null ],
+    [ "sotaGates", "StrandOfTheAncient_8cpp.html#a8819a42b0ee09254df6642676ce99e7c", null ],
+    [ "sotaGateSigils", "StrandOfTheAncient_8cpp.html#a1cb1bd05d3b415233eb16f4871f51af6", null ],
+    [ "sotaNPCsIds", "StrandOfTheAncient_8cpp.html#a5ccef6643517ace03b6b3bffb6199091", null ],
+    [ "sotaNPCSLocations", "StrandOfTheAncient_8cpp.html#a40bcfe76b18539c5ae9ca927e1806b58", null ],
+    [ "sotaTitanRelic", "StrandOfTheAncient_8cpp.html#a557e6c03d04dd6f681fcca7c4fcd7a51", null ],
+    [ "sotaTransporterDestination", "StrandOfTheAncient_8cpp.html#aa4c98126c85bdb82c21ccbc678a64b67", null ],
+    [ "sotaTransporters", "StrandOfTheAncient_8cpp.html#a69a75ef0bc98a9f30e4d470360deca03", null ],
+    [ "TeamFactions", "StrandOfTheAncient_8cpp.html#a1f42dd0261ad0ab0d27a448446cbe903", null ]
+];

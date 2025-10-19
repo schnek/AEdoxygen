@@ -1,0 +1,25 @@
+var structFilterArgs =
+[
+    [ "FilterArgs", "structFilterArgs.html#a7eb55b18cfaa89cb0451d1bd36bac143", null ],
+    [ "FilterArgs", "structFilterArgs.html#ac1c7cbd211261d87b27910e560c1c06f", null ],
+    [ "FilterArgs", "structFilterArgs.html#a420a004eaaef8cb0f6b400cad26d9b0f", null ],
+    [ "FilterArgs", "structFilterArgs.html#a7214bd07e26dcd4510ba4fbd4e8938e9", null ],
+    [ "addFilter", "structFilterArgs.html#a53f330829439b64b7378dc40303906d6", null ],
+    [ "getAuraId", "structFilterArgs.html#abe91776ef11712a62aa478ff6b2a86b3", null ],
+    [ "getMaxHPRange", "structFilterArgs.html#a05b394c0a8b29805b167cf4208e5c5e6", null ],
+    [ "getMaxRange", "structFilterArgs.html#a6611558c174fe28ff71f517630851c5f", null ],
+    [ "getMinHPRange", "structFilterArgs.html#a0470db26a275ad5b0e921488625e57cc", null ],
+    [ "getMinRange", "structFilterArgs.html#a326fe10fcbae3efa5bd8fc2165a1fbf6", null ],
+    [ "getTargetFilter", "structFilterArgs.html#a58a076f3834b097b138f17bc425ec76c", null ],
+    [ "hasFilter", "structFilterArgs.html#a2cf6903bf3ee3d00f930517ab17142de", null ],
+    [ "removeFilter", "structFilterArgs.html#afd4c5a4a6e283fcf67ae5a04c8f1c4d6", null ],
+    [ "setAuraId", "structFilterArgs.html#a109357b01417b7052156c7f647911e63", null ],
+    [ "setMinMaxHPRange", "structFilterArgs.html#a22d586b1bbf3a5e884d480f5437cb6eb", null ],
+    [ "setMinMaxRange", "structFilterArgs.html#a63d5215fc94c4731c6c82032f30679fe", null ],
+    [ "auraId", "structFilterArgs.html#a037ec5211cc02eef8780bab789aec007", null ],
+    [ "maxHPRange", "structFilterArgs.html#a643f586bf114a8f47b3de603650867e9", null ],
+    [ "maxRange", "structFilterArgs.html#aa9c60fd24a5a14a075bca078de1bfabc", null ],
+    [ "minHPRange", "structFilterArgs.html#af83fa295db0c7ef89006ab449c41e467", null ],
+    [ "minRange", "structFilterArgs.html#ace8e0ae650f312adcc910a2c3a62ddf9", null ],
+    [ "pFilter", "structFilterArgs.html#ae6f944332d94c6df528a7f380bfda37d", null ]
+];

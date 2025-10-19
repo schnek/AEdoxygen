@@ -1,0 +1,25 @@
+var structWoWGameObject =
+[
+    [ "field_dynamic_union", "unionWoWGameObject_1_1field__dynamic__union.html", "unionWoWGameObject_1_1field__dynamic__union" ],
+    [ "gameobject_bytes_2_union", "unionWoWGameObject_1_1gameobject__bytes__2__union.html", "unionWoWGameObject_1_1gameobject__bytes__2__union" ],
+    [ "gameobject_bytes_union", "unionWoWGameObject_1_1gameobject__bytes__union.html", "unionWoWGameObject_1_1gameobject__bytes__union" ],
+    [ "animation_progress", "structWoWGameObject.html#a5a1c212597d009a0907594eb66031e6f", null ],
+    [ "art_kit", "structWoWGameObject.html#aeb26f4b2706ca17b57233d76248256fa", null ],
+    [ "bytes_1", "structWoWGameObject.html#af5a3f183334622f7b1b8c0fb199adc3e", null ],
+    [ "bytes_2", "structWoWGameObject.html#a2c32b4dded58f71b464a38a79bd95a66", null ],
+    [ "display_id", "structWoWGameObject.html#a7e3bba4940ded35fbba5e74ff57ca131", null ],
+    [ "dynamic", "structWoWGameObject.html#a7c76939047cc7c3b5bede73d042fd198", null ],
+    [ "dynamic", "structWoWGameObject.html#a7c76939047cc7c3b5bede73d042fd198", null ],
+    [ "faction_template", "structWoWGameObject.html#a5ca2f35c6a90ab1651316d186e8c0dd0", null ],
+    [ "flags", "structWoWGameObject.html#a75a3c56afcec878cc6e16fb113a9b522", null ],
+    [ "gameobject_padding", "structWoWGameObject.html#ae3410806c5b62e8fd76c1cbfbf86b023", null ],
+    [ "level", "structWoWGameObject.html#abdb0c4014854787741ebabecaedb18cd", null ],
+    [ "o", "structWoWGameObject.html#a9e3822d4c9461fc409b497bd994a0cee", null ],
+    [ "object_field_created_by", "structWoWGameObject.html#a04e95d047378e605f55e0079b57386e8", null ],
+    [ "rotation", "structWoWGameObject.html#add904bd1b64a7409a67c9110da615644", null ],
+    [ "state", "structWoWGameObject.html#a6bb71e8c90a5f86734d07774d79ec7ee", null ],
+    [ "type", "structWoWGameObject.html#aaa6436f063b6a03830bee7c1be592588", null ],
+    [ "x", "structWoWGameObject.html#a57bb0e08379f7c1a67cdbbec23f98ec9", null ],
+    [ "y", "structWoWGameObject.html#a170b0ab01297522f99be1e669dde48fe", null ],
+    [ "z", "structWoWGameObject.html#ae5bc52412bde6a0c2d092a39c8a8d28b", null ]
+];

@@ -1,0 +1,28 @@
+var stringutils_8h =
+[
+    [ "beginsWith", "stringutils_8h.html#a4f9cce2b618dc4aa9da295eb3a0f9abf", null ],
+    [ "countNewlines", "stringutils_8h.html#a0fa45f74c7f1f1381cbb7918f856e897", null ],
+    [ "endsWith", "stringutils_8h.html#a099ad667c3d882502da845397741fafc", null ],
+    [ "findLastSlash", "stringutils_8h.html#a142152311de10d8595e1d8bfe8daf5ca", null ],
+    [ "findSlash", "stringutils_8h.html#a7bffa4b07bdf42ee62766b992f2553c7", null ],
+    [ "isDigit", "stringutils_8h.html#abf14bbddcbcabba8c5f6cbf75f16b7a0", null ],
+    [ "isLetter", "stringutils_8h.html#a42821b62bfb515bbef75d1178eb9a5f4", null ],
+    [ "isNewline", "stringutils_8h.html#ac49775d7159dfff4fe6424fd82f63e68", null ],
+    [ "isQuote", "stringutils_8h.html#a68597c0c2daf9bfd637428fdcc4654ac", null ],
+    [ "isSlash", "stringutils_8h.html#ac04d920621daeb663fa63bfba7ca1192", null ],
+    [ "isValidIdentifier", "stringutils_8h.html#a983f6aecd96c17a91c2b214256d5ebd7", null ],
+    [ "isWhiteSpace", "stringutils_8h.html#a80ac20d595d74b54d49ed1fc319fe9e5", null ],
+    [ "maxNotNPOS", "stringutils_8h.html#a1b8600ff99633cddfd79bdcfbd5d0d4a", null ],
+    [ "parseCommaSeparated", "stringutils_8h.html#adaa9c579173d8b1beb4a238b4b33bcf6", null ],
+    [ "replace", "stringutils_8h.html#aa09ba3ef3c59670eb815c5f796223882", null ],
+    [ "stringCompare", "stringutils_8h.html#afd20c28e6100e6a28411a5a2e8819bc4", null ],
+    [ "stringJoin", "stringutils_8h.html#a9e455f7debbcecf332533cd2261633cf", null ],
+    [ "stringJoin", "stringutils_8h.html#ab9097e8f865b8b19db4b7293ef87a761", null ],
+    [ "stringPtrCompare", "stringutils_8h.html#ad8b84a537bae3678f830fed0ba041d9d", null ],
+    [ "stringSplit", "stringutils_8h.html#af87172380a570d7cb77cb981b0674c6c", null ],
+    [ "toLower", "stringutils_8h.html#aa3b94c92cc334739473c9b295923ffce", null ],
+    [ "toUpper", "stringutils_8h.html#ac10acb2787daeb05f31b54a2cd7fa3d7", null ],
+    [ "trimWhitespace", "stringutils_8h.html#ade0386b7cbf0c4d67a8fa024edd09e2d", null ],
+    [ "wordWrap", "stringutils_8h.html#a45dc0f8dd2fad63fee9acd4a25b4a42c", null ],
+    [ "NEWLINE", "stringutils_8h.html#ab707275614ecca644ab588c209546d44", null ]
+];

@@ -1,0 +1,25 @@
+var classTwinsAI =
+[
+    [ "TwinsAI", "classTwinsAI.html#a7896fa1e532e9f8155d14963ba31c898", null ],
+    [ "Create", "classTwinsAI.html#ad863da6cbd7faf51e3b38869ce307b11", null ],
+    [ "DoAction", "classTwinsAI.html#ab63ae402e486cf223e7ac9c73ebb3de3", null ],
+    [ "enableDualWield", "classTwinsAI.html#a0e346319b24ef54651d227b1bbf8f332", null ],
+    [ "handleRemoveAuras", "classTwinsAI.html#a086b758821c6b345b79433f62cf3fcb7", null ],
+    [ "InitOrReset", "classTwinsAI.html#a7a3869914f50d4be22a5a2b1fff1ef1e", null ],
+    [ "intro", "classTwinsAI.html#a6ee9de44c6566bbb550e38d831c1d838", null ],
+    [ "justReachedSpawn", "classTwinsAI.html#aa203c6d02221eb0b1d7daf5a276a3aca", null ],
+    [ "OnCombatStart", "classTwinsAI.html#a39a3eb26a991277cd3777c87a1fac885", null ],
+    [ "OnDied", "classTwinsAI.html#ace37db9bdc67b003e2dab59d6f90ff49", null ],
+    [ "OnLoad", "classTwinsAI.html#ae5a54acbd690b59b1c2e9a9620b73ffc", null ],
+    [ "OnReachWP", "classTwinsAI.html#a2fd49552f21081c14b1944e6bfd5de81", null ],
+    [ "AuraState", "classTwinsAI.html#a4a7cb1949124399b1d66cd132acad081", null ],
+    [ "MyEmphatySpellId", "classTwinsAI.html#aca3fcc9132aef7f60a37854af00bf859", null ],
+    [ "OtherEssenceSpellId", "classTwinsAI.html#ab6a9a88430d3de10ef8e7afcbbc331cf", null ],
+    [ "ShieldSpellId", "classTwinsAI.html#a45d87fa5fbf35b9ae3362a7b4f749c2f", null ],
+    [ "SpikeSpellId", "classTwinsAI.html#add0e9229a4aee0b14a8ad78e2f6b724c", null ],
+    [ "SurgeSpellId", "classTwinsAI.html#a070d6eb6f60e229fa7a34f45fcbaf138", null ],
+    [ "TouchSpellId", "classTwinsAI.html#acf568955eb772b2ab45488c2a98111b9", null ],
+    [ "TwinPactSpellId", "classTwinsAI.html#a813731f26dea73b3e75f0b44f692996c", null ],
+    [ "VortexSpellId", "classTwinsAI.html#a573bf0d6eafb6076de7f3692d38505e3", null ],
+    [ "Weapon", "classTwinsAI.html#a98fbd27a2774840f1fec27e12b2bf6a3", null ]
+];

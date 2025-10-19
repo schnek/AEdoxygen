@@ -1,0 +1,4 @@
+var structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1has__format__as_3_01T_01_4_1_1value_01_4_01_4 =
+[
+    [ "format", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1has__format__as_3_01T_01_4_1_1value_01_4_01_4.html#af10e3ca62d3e89c3c7f0a594ee3f7337", null ]
+];

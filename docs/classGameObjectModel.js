@@ -1,0 +1,28 @@
+var classGameObjectModel =
+[
+    [ "GameObjectModel", "classGameObjectModel.html#ac24a1a85d91ff49da1b1125571d300fb", null ],
+    [ "~GameObjectModel", "classGameObjectModel.html#a9473e6c816f412408c2f46e407fba6ca", null ],
+    [ "Create", "classGameObjectModel.html#ae866a739b572a60e2edd7674b027c289", null ],
+    [ "disable", "classGameObjectModel.html#a09d7c38bf6b01fb8f743dbf7130df396", null ],
+    [ "enable", "classGameObjectModel.html#a9ebf4198bf3dfe0435b7f94acd164d95", null ],
+    [ "getBounds", "classGameObjectModel.html#a84d1cf4933eabcff30683d6ab5cc36d1", null ],
+    [ "getLiquidLevel", "classGameObjectModel.html#a329eb429edd6962934328d1fe3455fae", null ],
+    [ "getLocationInfo", "classGameObjectModel.html#a3c2ccbd00110b1c4616d0fb409552cf6", null ],
+    [ "getPosition", "classGameObjectModel.html#a8b9f422a082553ce332599efc666da59", null ],
+    [ "initialize", "classGameObjectModel.html#affb481343e6c849a3d133598749e0e70", null ],
+    [ "intersectPoint", "classGameObjectModel.html#a8cb072a55554c8b93f5416ee55101b08", null ],
+    [ "intersectRay", "classGameObjectModel.html#a872d1383660ca8f185fb2a7b4c2778ca", null ],
+    [ "isEnabled", "classGameObjectModel.html#a77b0c074ae20733d663fdf73169c343d", null ],
+    [ "isMapObject", "classGameObjectModel.html#acb22a9ba8dadddeb6b232b255edd88de", null ],
+    [ "UpdatePosition", "classGameObjectModel.html#aa1c78a367e3706ac82f30b34ff100667", null ],
+    [ "iBound", "classGameObjectModel.html#ab8c4c51baf86d39e230ab8b8793658a3", null ],
+    [ "iInvRot", "classGameObjectModel.html#a8c9f3297a5779831d7ba9251f79eb2f0", null ],
+    [ "iInvScale", "classGameObjectModel.html#af41878cd24e4208de2630f5a91d001e3", null ],
+    [ "iModel", "classGameObjectModel.html#a8d57c07682f5fecfa8160d47197044eb", null ],
+    [ "iPos", "classGameObjectModel.html#a6c290e3dbcfb5eab05771f4da5e717b0", null ],
+    [ "iScale", "classGameObjectModel.html#abbde1836561761b858f08b436edb3b53", null ],
+    [ "isWmo", "classGameObjectModel.html#a83c4f6f0c45910fb6b86288bb809e787", null ],
+    [ "name", "classGameObjectModel.html#ab20fa753c8967a4074798d6ded4f5925", null ],
+    [ "owner", "classGameObjectModel.html#af1b565e8ee52c9c19d6f945bfb06b889", null ],
+    [ "phasemask", "classGameObjectModel.html#a59c35dda121430f5b3eb8a0644c22079", null ]
+];

@@ -1,0 +1,25 @@
+var GameObject_8h =
+[
+    [ "GameObject", "classGameObject.html", "classGameObject" ],
+    [ "GameObject_Lootable", "classGameObject__Lootable.html", "classGameObject__Lootable" ],
+    [ "GameObject_Door", "classGameObject__Door.html", "classGameObject__Door" ],
+    [ "GameObject_Button", "classGameObject__Button.html", "classGameObject__Button" ],
+    [ "GameObject_QuestGiver", "classGameObject__QuestGiver.html", "classGameObject__QuestGiver" ],
+    [ "GameObject_Chest", "classGameObject__Chest.html", "classGameObject__Chest" ],
+    [ "GameObject_Trap", "classGameObject__Trap.html", "classGameObject__Trap" ],
+    [ "GameObject_Chair", "classGameObject__Chair.html", "classGameObject__Chair" ],
+    [ "GameObject_SpellFocus", "classGameObject__SpellFocus.html", "classGameObject__SpellFocus" ],
+    [ "GameObject_Goober", "classGameObject__Goober.html", "classGameObject__Goober" ],
+    [ "GameObject_Transport", "classGameObject__Transport.html", "classGameObject__Transport" ],
+    [ "GameObject_Camera", "classGameObject__Camera.html", "classGameObject__Camera" ],
+    [ "GameObject_FishingNode", "classGameObject__FishingNode.html", "classGameObject__FishingNode" ],
+    [ "GameObject_Ritual", "classGameObject__Ritual.html", "classGameObject__Ritual" ],
+    [ "GameObject_Ritual::RitualStruct", "structGameObject__Ritual_1_1RitualStruct.html", "structGameObject__Ritual_1_1RitualStruct" ],
+    [ "GameObject_SpellCaster", "classGameObject__SpellCaster.html", "classGameObject__SpellCaster" ],
+    [ "GameObject_Meetingstone", "classGameObject__Meetingstone.html", "classGameObject__Meetingstone" ],
+    [ "GameObject_FlagStand", "classGameObject__FlagStand.html", "classGameObject__FlagStand" ],
+    [ "GameObject_FishingHole", "classGameObject__FishingHole.html", "classGameObject__FishingHole" ],
+    [ "GameObject_FlagDrop", "classGameObject__FlagDrop.html", "classGameObject__FlagDrop" ],
+    [ "GameObject_BarberChair", "classGameObject__BarberChair.html", "classGameObject__BarberChair" ],
+    [ "GameObject_Destructible", "classGameObject__Destructible.html", "classGameObject__Destructible" ]
+];

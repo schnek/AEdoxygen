@@ -1,0 +1,28 @@
+var classEventMgr =
+[
+    [ "EventMgr", "classEventMgr.html#a3f8d17aa926571f2bbd3476db05c9ef2", null ],
+    [ "~EventMgr", "classEventMgr.html#a1b736c3f59629d4d8b31b20f7d77e1e3", null ],
+    [ "EventMgr", "classEventMgr.html#ada1f38ef04f326c18516a8fe052d7606", null ],
+    [ "EventMgr", "classEventMgr.html#abbc85adaf7101fd2d443be37b3b20dea", null ],
+    [ "AddEvent", "classEventMgr.html#a96bdf9a3b92a9fbd2a19c634ac731140", null ],
+    [ "AddEvent", "classEventMgr.html#af4e3140d08c4578fc9e4b11d7eb3db14", null ],
+    [ "AddEvent", "classEventMgr.html#a0dc4e0930b8f3bf3c523e72a873d2b38", null ],
+    [ "AddEvent", "classEventMgr.html#aa852904ef59e3b292711b6b8f981987e", null ],
+    [ "AddEvent", "classEventMgr.html#aa521c15fbe60ea3f67b3e97f57f07987", null ],
+    [ "AddEventHolder", "classEventMgr.html#a234919984ccab2f2b131c3087ea78052", null ],
+    [ "GetEventHolder", "classEventMgr.html#a947d2e2c223089d029fc457c1170f607", null ],
+    [ "getInstance", "classEventMgr.html#aacd4ff94309803b225136951a6bd8020", null ],
+    [ "HasEvent", "classEventMgr.html#a13863972de3868f20911ea0f0d9e6634", null ],
+    [ "ModifyEventTime", "classEventMgr.html#a0c35e2e505eddd000e1d472df105ab32", null ],
+    [ "ModifyEventTimeAndTimeLeft", "classEventMgr.html#a51c19af0823c0ff15964f7f5fc70d16c", null ],
+    [ "ModifyEventTimeLeft", "classEventMgr.html#a8e578d6ec6fa401cb40ed669766d705a", null ],
+    [ "operator=", "classEventMgr.html#a25b2cd62d5853b63b2e08b60e7b0e95e", null ],
+    [ "operator=", "classEventMgr.html#ad838bbac09bc1e503edca2cae62a84fc", null ],
+    [ "RemoveEventHolder", "classEventMgr.html#ade0208f07f14b90133d6b0f6c728480c", null ],
+    [ "RemoveEventHolder", "classEventMgr.html#adaff2f518baab990666794b269ce28bd", null ],
+    [ "RemoveEvents", "classEventMgr.html#a2957df437014192ab68ddfed2e750295", null ],
+    [ "RemoveEvents", "classEventMgr.html#a34bea6c8c7da00be125fe032f06ae726", null ],
+    [ "MiniEventMgr", "classEventMgr.html#ad55a23736d8bd5f2ae9342fbcc3ffd73", null ],
+    [ "holderLock", "classEventMgr.html#a0df4992264e0241151dfcdf9eb91ad84", null ],
+    [ "mHolders", "classEventMgr.html#a5da091b8c13ff93b290e9d4bbfd792e1", null ]
+];

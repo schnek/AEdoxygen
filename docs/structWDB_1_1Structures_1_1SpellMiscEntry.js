@@ -1,0 +1,28 @@
+var structWDB_1_1Structures_1_1SpellMiscEntry =
+[
+    [ "activeIconID", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a2bf05429eee225fa05957d2abdedc3f5", null ],
+    [ "Attributes", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a1621fb1d2bf7c1149de600477a03bc20", null ],
+    [ "AttributesEx", "structWDB_1_1Structures_1_1SpellMiscEntry.html#aae567553cbde29a3c28ab409bf9f1ff3", null ],
+    [ "AttributesExB", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a95194d98c2c7ae39debdc42eaad49943", null ],
+    [ "AttributesExC", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a38b7e4193267513fa1a819ac354a6bbc", null ],
+    [ "AttributesExD", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a585798b0ddcef462540ce69acc6a99a0", null ],
+    [ "AttributesExE", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a7bc14826108c12ac79ca54b02928e132", null ],
+    [ "AttributesExF", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a1a8d2f4c36aeae591bbb8b34d6c61b72", null ],
+    [ "AttributesExG", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a787948ea3948bedb04467a190324c941", null ],
+    [ "AttributesExH", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a8b8c44680c45138c7059501f1b2a46f4", null ],
+    [ "AttributesExI", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a71cf6cbdc0a1950d307efd74e13ccc01", null ],
+    [ "AttributesExJ", "structWDB_1_1Structures_1_1SpellMiscEntry.html#aa9f78157145ea4f9ef684968af69401d", null ],
+    [ "AttributesExK", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a06e56712659754959db4ec46d0f60640", null ],
+    [ "AttributesExL", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a35bd03cb507fc3cf689a2b97f530326f", null ],
+    [ "AttributesExM", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a62d42d0af096460888ca3d6db4683bfa", null ],
+    [ "CastingTimeIndex", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a8def216b998f1bdb568090d4b4b6fdc0", null ],
+    [ "DurationIndex", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a68e244b689574e6def1e2ff90e65d33d", null ],
+    [ "Id", "structWDB_1_1Structures_1_1SpellMiscEntry.html#ac6e041b35cf3ab480a3f2d00e3cd1da4", null ],
+    [ "rangeIndex", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a8f8e9ed1d58a8f735cf1f5deae478770", null ],
+    [ "School", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a0133a63c2dff07fa8b19437512eefff8", null ],
+    [ "speed", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a9a4f84d7b6cd1b41014db9088eea9ae4", null ],
+    [ "SpellDifficultyId", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a309d0399690b1b93bc731d5ae702308b", null ],
+    [ "spellIconID", "structWDB_1_1Structures_1_1SpellMiscEntry.html#aaf0f719d4d61869b0e9e6eb4f5ceec24", null ],
+    [ "SpellVisual", "structWDB_1_1Structures_1_1SpellMiscEntry.html#a1fdc7b7b02840fc045f4382329d769fa", null ],
+    [ "SpellVisual1", "structWDB_1_1Structures_1_1SpellMiscEntry.html#ad7eda8e085e07c17b2372ea5049b567e", null ]
+];

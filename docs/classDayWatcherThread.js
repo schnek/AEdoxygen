@@ -1,0 +1,25 @@
+var classDayWatcherThread =
+[
+    [ "DayWatcherThread", "classDayWatcherThread.html#a21ff0e4eee16b6f0003768012ee310bc", null ],
+    [ "~DayWatcherThread", "classDayWatcherThread.html#a0b6ddd0994c2194e9bc9d7287b705522", null ],
+    [ "dupe_tm_pointer", "classDayWatcherThread.html#a8ca9865177c35284224663e76f4c48ae", null ],
+    [ "get_timeout_from_string", "classDayWatcherThread.html#a39f75b1b655298e4c0084e7cc06b76eb", null ],
+    [ "has_timeout_expired", "classDayWatcherThread.html#a0911dbd18cc2a23780945f92a7879d22", null ],
+    [ "load_settings", "classDayWatcherThread.html#a7bcad5d7a0c3063796cc58f10c731a7f", null ],
+    [ "set_tm_pointers", "classDayWatcherThread.html#ac5ce80ac0a1770635bd8f422e8b319fe", null ],
+    [ "threadInit", "classDayWatcherThread.html#aa8855119e590a534a6c1deedb0bb7e06", null ],
+    [ "threadRunner", "classDayWatcherThread.html#af668c677ef84136c7d8d2781b82d752d", null ],
+    [ "update_arena", "classDayWatcherThread.html#a43623a65ed433f12cdf66d2d2fd96853", null ],
+    [ "update_daily", "classDayWatcherThread.html#a275cca341b098c2beebc4cbc6ab6f998", null ],
+    [ "update_settings", "classDayWatcherThread.html#a76e6d7fe5d6003fd158b39e3d39b2e83", null ],
+    [ "m_arenaPeriod", "classDayWatcherThread.html#aca4c47329b1e03d4f8e678ab6202be18", null ],
+    [ "m_currenttime", "classDayWatcherThread.html#a207f22c7951b6265011babbe03e31316", null ],
+    [ "m_dailyPeriod", "classDayWatcherThread.html#a5692a1a0be283804cf730b25edd326f9", null ],
+    [ "m_lastArenaTime", "classDayWatcherThread.html#a8a24a87e0ce48269041f0e9c1109072d", null ],
+    [ "m_lastDailyTime", "classDayWatcherThread.html#a7534c33ff13ca3c64c29b2d81a667a46", null ],
+    [ "m_localCurrenttime", "classDayWatcherThread.html#a897ba545a42e58d9136f60497fbda928", null ],
+    [ "m_localLastArenaTime", "classDayWatcherThread.html#ae804edd5ab9b5baea64af881f123fd37", null ],
+    [ "m_localLastDailyTime", "classDayWatcherThread.html#ad7b0ae52cc9cf3d1d23658ca04b279bc", null ],
+    [ "m_thread", "classDayWatcherThread.html#a4ca9dcaaa7f499c24f8ffdd50dbacf15", null ],
+    [ "m_updateDBSettings", "classDayWatcherThread.html#aa8cf088380b40f83de34edc50fc3fa85", null ]
+];

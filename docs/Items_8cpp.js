@@ -1,0 +1,35 @@
+var Items_8cpp =
+[
+    [ "ItemInternalCooldown", "classItemInternalCooldown.html", "classItemInternalCooldown" ],
+    [ "DeathbringersWill", "classDeathbringersWill.html", "classDeathbringersWill" ],
+    [ "MurlocCostume", "classMurlocCostume.html", "classMurlocCostume" ],
+    [ "OrbOfDeception", "classOrbOfDeception.html", "classOrbOfDeception" ],
+    [ "Shadowmourne", "classShadowmourne.html", "classShadowmourne" ],
+    [ "SoulFragment", "classSoulFragment.html", "classSoulFragment" ],
+    [ "SpellItems", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282ef", [
+      [ "SPELL_CHAOS_BANE_AOE", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaf2a7dd6184a9dfa862dc75b9247b87d5", null ],
+      [ "SPELL_CHAOS_BANE_BUFF", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa8f15a1b42f9f1e26d66a7fd58f054315", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_NORMAL_DUMMY", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaf12dff7bb24d2bbebc128e60ab7d6f8a", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_NORMAL_STRENGTH", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa65830dc65872b1a8510f3d1049d39520", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_NORMAL_AGILITY", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa269364be9a426a19ca541d11212356c3", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_NORMAL_ATTACKPOW", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa76d9b140ade83f86ed95cdc53f7e22ce", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_NORMAL_CRIT", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa5978404cb42124e165c7f49bfa4a165f", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_NORMAL_HASTE", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa61757777f0b5befc5353823dd0871194", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_HEROIC_DUMMY", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa620c8a268a8d600b7709f2dbd5563644", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_HEROIC_AGILITY", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa6870fdabdaeafe7673b5c32ac37199a0", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_HEROIC_ATTACKPOW", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaf59bf5000322f5b08f719039e46dfdfa", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_HEROIC_CRIT", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa20b1edc5c84f52a0da7e92cd9e46b822", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_HEROIC_HASTE", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa7393ad288f4a9fb4c064bd20dacc533f", null ],
+      [ "SPELL_DEATHBRINGERS_WILL_HEROIC_STRENGTH", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa4a9e1b3301ceb332c02baa131a9f06cb", null ],
+      [ "SPELL_MURLOC_COSTUME", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa7a1a8d6b16cefc0a44f4ed821ee5250b", null ],
+      [ "SPELL_ORB_OF_DECEPTION", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaf2377f09a2fc2329a291e2dbf331a033", null ],
+      [ "SPELL_SHADOWMOURNE_DUMMY", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efad15e20581c9557e4d1bf580fdd378e84", null ],
+      [ "SPELL_SOUL_FRAGMENT", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaef2940b6fed69d4a8cde704a1a5d1549", null ],
+      [ "SPELL_SOUL_FRAGMENT_VISUAL_BIG", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaceda840162ebd5afa2e81d81b3f13745", null ],
+      [ "SPELL_SOUL_FRAGMENT_VISUAL_SMALL", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa3109b85a8965f2295ffe344d2bdc5f01", null ],
+      [ "ITEM_DEATHBRINGERS_WILL_NORMAL", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efabc37372264a046b65e6848e06a25d393", null ],
+      [ "ITEM_DEATHBRINGERS_WILL_HEROIC", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efab31a6a7e26d71f7ff1c7c33f1f8bdfae", null ],
+      [ "CREATURE_MURLOC_COSTUME", "Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa6db3a546cd72c053d8c8422e15043013", null ]
+    ] ],
+    [ "setupItemSpells", "Items_8cpp.html#a16c7308c4f6e8309b794113c70399195", null ]
+];

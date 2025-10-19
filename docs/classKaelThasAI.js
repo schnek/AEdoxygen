@@ -1,0 +1,26 @@
+var classKaelThasAI =
+[
+    [ "KaelThasAI", "classKaelThasAI.html#a23229e4a72152cb6091bc65170c447fa", null ],
+    [ "AIUpdate", "classKaelThasAI.html#ad1443ec21d334d6e7ef7d7bd7987d6d0", null ],
+    [ "CheckAdvisorState", "classKaelThasAI.html#ad8730187f2cc74e17e5e1c202dc2df8e", null ],
+    [ "Create", "classKaelThasAI.html#af85301e060162066eaf82ce584ba38c7", null ],
+    [ "GetRandomPlayer", "classKaelThasAI.html#a3f28bd97f619e70b85b56c4906465d3c", null ],
+    [ "OnCombatStart", "classKaelThasAI.html#a4fa5a838861c5f82509990b87a8ec1c5", null ],
+    [ "OnCombatStop", "classKaelThasAI.html#a82cee5511bfda7f5545aa04dad17b330", null ],
+    [ "SendAdvisorEmote", "classKaelThasAI.html#a66acfadce0af1472da3b1970ff4d5f10", null ],
+    [ "SendAdvisorToFight", "classKaelThasAI.html#a1b32a1116f9d10ec35bfec2016c90816", null ],
+    [ "mAdvCoords", "classKaelThasAI.html#a88ffbb43a760a9d9a6beef1fa574b36b", null ],
+    [ "mAdvisorPhase", "classKaelThasAI.html#ae7654dca1bdc306fd383798ab6acaeb4", null ],
+    [ "mArcaneDisruption", "classKaelThasAI.html#a97b4e5278f276edd27ffc9e33f2fca34", null ],
+    [ "mArcaneDisruptionTimer", "classKaelThasAI.html#abd8ae0feae560bc5ea856e5791d1b5fe", null ],
+    [ "mEventTimer", "classKaelThasAI.html#a81e12715d286e4ef27c4c79b77528161", null ],
+    [ "mFlameStrike", "classKaelThasAI.html#a6711c0336028def51b5cab1727cfb3d3", null ],
+    [ "mFlameStrikeTimer", "classKaelThasAI.html#a5a1999a2215c1c743874e2ec21669509", null ],
+    [ "mNetherBeam", "classKaelThasAI.html#ae748728281fdac2f6aae17079b42eba3", null ],
+    [ "mPhoenix", "classKaelThasAI.html#aa3b08123215394517842dec87c581d67", null ],
+    [ "mPhoenixTimer", "classKaelThasAI.html#a1fda848a0dc529b986ae5c3598d4a395", null ],
+    [ "mPyroblast", "classKaelThasAI.html#a487b9d03f496af1e233fc6c0f396c5e9", null ],
+    [ "mShockBarrier", "classKaelThasAI.html#ad7a5ee8ddb37b011629dda1bc2960c47", null ],
+    [ "mShockBarrierTimer", "classKaelThasAI.html#add3c1b4f1d0a5526ac4750c0a3ae9d4a", null ],
+    [ "mSummonWeapons", "classKaelThasAI.html#a567f52a22af66873f57e86cae692442f", null ]
+];

@@ -1,0 +1,26 @@
+var classCircularBuffer =
+[
+    [ "CircularBuffer", "classCircularBuffer.html#a8c5de0e610bb50bac684f4707e23431c", null ],
+    [ "~CircularBuffer", "classCircularBuffer.html#a916f9506cf86010056d189b51fd72c91", null ],
+    [ "Allocate", "classCircularBuffer.html#a1fcf808666891489b58d3c9536820e44", null ],
+    [ "AllocateB", "classCircularBuffer.html#a1a7b35478fc3aa45bd523c7e370be558", null ],
+    [ "GetAFreeSpace", "classCircularBuffer.html#a6ee48e9ae9b0b1d14ecfb3303b4a3258", null ],
+    [ "GetBFreeSpace", "classCircularBuffer.html#a9773ab7c19eb952a4b8fa151dffee1a3", null ],
+    [ "GetBuffer", "classCircularBuffer.html#a5b7734a0ff44e60334537300a0b0af70", null ],
+    [ "GetBufferStart", "classCircularBuffer.html#abcd16a19b357d7f96be03da676237e1f", null ],
+    [ "GetContiguiousBytes", "classCircularBuffer.html#a225adcb236f258511d8dc26c62143c83", null ],
+    [ "GetSize", "classCircularBuffer.html#adcc8bdd0dd4d13db4a1fea295b02acbf", null ],
+    [ "GetSpace", "classCircularBuffer.html#a79b4745d457b6b7ebe474ac159622961", null ],
+    [ "GetSpaceAfterA", "classCircularBuffer.html#ab3541e471b840169a8075ea8fdb158a8", null ],
+    [ "GetSpaceBeforeA", "classCircularBuffer.html#a6cd3e6603e9fe5dbd936e3caf7502066", null ],
+    [ "IncrementWritten", "classCircularBuffer.html#a39ee660b24605847951f22e12a0352c9", null ],
+    [ "Read", "classCircularBuffer.html#a083ef9703ed5abcb0c72b73d5b8ae561", null ],
+    [ "Remove", "classCircularBuffer.html#ac102cda706c410ddfb3b9a14c6f7ca80", null ],
+    [ "Write", "classCircularBuffer.html#a200a74ba910181da4520d2862d1d9ac2", null ],
+    [ "m_buffer", "classCircularBuffer.html#a7fae332a512caf905380d0ae0bb0ea82", null ],
+    [ "m_bufferEnd", "classCircularBuffer.html#adf28b080a74a9ce39e101aa3d78d54ac", null ],
+    [ "m_regionAPointer", "classCircularBuffer.html#a2bf89c7b3ce63d10be1b451bc0d33b46", null ],
+    [ "m_regionASize", "classCircularBuffer.html#a8f0001895cf5d0113825c942417fe2f9", null ],
+    [ "m_regionBPointer", "classCircularBuffer.html#ab15ba98a7a0795d560020194b0697c58", null ],
+    [ "m_regionBSize", "classCircularBuffer.html#adc892b99f618733655800b714c67d9a2", null ]
+];

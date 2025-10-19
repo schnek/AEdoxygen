@@ -1,0 +1,25 @@
+var structCharEnumData =
+[
+    [ "banned", "structCharEnumData.html#a6e19f25d604b8d8a53389f87b181cc19", null ],
+    [ "bytes", "structCharEnumData.html#a57ae4119f27382d824c6ddf2f7569133", null ],
+    [ "bytes2", "structCharEnumData.html#a9b56b95b90d58afb08c4444194b2a92e", null ],
+    [ "char_flags", "structCharEnumData.html#a8fe2fda7713655c53d3c5d6e6c22a6af", null ],
+    [ "Class", "structCharEnumData.html#aa95e359d27de2f57c6e15cc96288049c", null ],
+    [ "customization_flag", "structCharEnumData.html#a296c209665b6f3fa2377106f3671b7ce", null ],
+    [ "deathState", "structCharEnumData.html#af86825428f5e66101aadae14244ead3d", null ],
+    [ "flags", "structCharEnumData.html#ad1c9f27e4fbe87f68305a3e029c698ae", null ],
+    [ "gender", "structCharEnumData.html#a2339cf295f12c2b61a4946a581d2ceb2", null ],
+    [ "guid", "structCharEnumData.html#a3e149c1d14cce50caacc9eaac3d969b1", null ],
+    [ "guildId", "structCharEnumData.html#a571a937448eea5ac98c1826b8a88b644", null ],
+    [ "level", "structCharEnumData.html#a4da84437d3f4a6e0c0c14cb168692c31", null ],
+    [ "loginFlags", "structCharEnumData.html#ab2cdbddc83b891d9cbb0876406b21663", null ],
+    [ "mapId", "structCharEnumData.html#af6abe8b053a46ddca7332b9e6ac2dc7c", null ],
+    [ "name", "structCharEnumData.html#a9d95dd54ea2c461ebb432b1b2ec6c622", null ],
+    [ "pet_data", "structCharEnumData.html#a80da0d639efd49e8462414ab3d84fbde", null ],
+    [ "player_items", "structCharEnumData.html#a9501a13c8253d208e19d1ab3454cd573", null ],
+    [ "race", "structCharEnumData.html#ab66ee46d0f356b02b15539dec99c535e", null ],
+    [ "x", "structCharEnumData.html#a3e1294c607164c7eca908ce4894864d3", null ],
+    [ "y", "structCharEnumData.html#afc982a2c499ead90a95e6d132d4b22de", null ],
+    [ "z", "structCharEnumData.html#ac08ec2a89c2801e740b62e0ba47670d3", null ],
+    [ "zoneId", "structCharEnumData.html#a3432cb99fda306b4c2d1309a89415fe1", null ]
+];

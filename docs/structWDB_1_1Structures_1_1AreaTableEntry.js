@@ -1,0 +1,26 @@
+var structWDB_1_1Structures_1_1AreaTableEntry =
+[
+    [ "AmbienceID", "structWDB_1_1Structures_1_1AreaTableEntry.html#abd86c83dc3b1b35fde79a31f68f3331d", null ],
+    [ "AmbientMultiplier", "structWDB_1_1Structures_1_1AreaTableEntry.html#a3d387b0cf3cf241d8162179473bbf68e", null ],
+    [ "area_level", "structWDB_1_1Structures_1_1AreaTableEntry.html#a6e58fc0ae57881dc4c83d52f64b4f895", null ],
+    [ "area_name", "structWDB_1_1Structures_1_1AreaTableEntry.html#aa82b82d667cda6e74f48a6686878487f", null ],
+    [ "explore_flag", "structWDB_1_1Structures_1_1AreaTableEntry.html#a97b84e6a34cc3d32ba663afb60da8151", null ],
+    [ "flags", "structWDB_1_1Structures_1_1AreaTableEntry.html#a32f1dbe63072986969607305c0086820", null ],
+    [ "id", "structWDB_1_1Structures_1_1AreaTableEntry.html#aa1d313c6f81e3eb73599e5ebe96dc1e4", null ],
+    [ "IntroSound", "structWDB_1_1Structures_1_1AreaTableEntry.html#a487b398e99e51f6d0eab11f1135c0c36", null ],
+    [ "LightID", "structWDB_1_1Structures_1_1AreaTableEntry.html#ab2990cdd901ac5e3ef28028ba134adff", null ],
+    [ "liquid_type_override", "structWDB_1_1Structures_1_1AreaTableEntry.html#ac2011b6de25f4865452a25010c5e44db", null ],
+    [ "map_id", "structWDB_1_1Structures_1_1AreaTableEntry.html#ac2c0b150833488b2581e881deb90e8a6", null ],
+    [ "MinElevation", "structWDB_1_1Structures_1_1AreaTableEntry.html#a42464081124a39a72bf3bd6267690d7e", null ],
+    [ "MountFlags", "structWDB_1_1Structures_1_1AreaTableEntry.html#a7b30352f9a4e1c85546bc69d4a403b03", null ],
+    [ "PvpCombatWorldStateID", "structWDB_1_1Structures_1_1AreaTableEntry.html#ae0daeb7a2d7dd8db424771ff97f883dd", null ],
+    [ "SoundProviderPref", "structWDB_1_1Structures_1_1AreaTableEntry.html#a4ab24c920ae2cd2ed81f17af5b3c18c2", null ],
+    [ "SoundProviderPrefUnderwater", "structWDB_1_1Structures_1_1AreaTableEntry.html#a8d614826285d1808a655e54d0fa04cda", null ],
+    [ "team", "structWDB_1_1Structures_1_1AreaTableEntry.html#a7c6433d8872d0255d61831f19879498e", null ],
+    [ "UwAmbience", "structWDB_1_1Structures_1_1AreaTableEntry.html#ade361678688548a1a2eea355b637e3f7", null ],
+    [ "UwIntroSound", "structWDB_1_1Structures_1_1AreaTableEntry.html#ab43ef3660d5d3fdbc805d832315e1d4b", null ],
+    [ "UwZoneMusic", "structWDB_1_1Structures_1_1AreaTableEntry.html#abe76bd9f96f6840491b8b63b07450018", null ],
+    [ "World_pvp_ID", "structWDB_1_1Structures_1_1AreaTableEntry.html#a62b5a352bbf0ea00956a59a731d3cb0f", null ],
+    [ "zone", "structWDB_1_1Structures_1_1AreaTableEntry.html#a6b40ce3a75097ee540a187bfd71f83ba", null ],
+    [ "ZoneMusic", "structWDB_1_1Structures_1_1AreaTableEntry.html#a2e28833d2af0cee68baf30f414b0d754", null ]
+];

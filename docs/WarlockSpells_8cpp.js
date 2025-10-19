@@ -1,0 +1,28 @@
+var WarlockSpells_8cpp =
+[
+    [ "DemonicCircleSummon", "WarlockSpells_8cpp.html#a512113b5bb8c6dabceca7522ee8c3482", null ],
+    [ "DemonicHealthStone", "WarlockSpells_8cpp.html#a9cdcddfb46fb729f26535a3daeb556f2", null ],
+    [ "DemonicKnowledge", "WarlockSpells_8cpp.html#ae14d67564b68c9e3b6045edaec2a04b1", null ],
+    [ "FelHealthStone", "WarlockSpells_8cpp.html#a753992e582ee362382e8aa550ca2d601", null ],
+    [ "GreaterHealthStone", "WarlockSpells_8cpp.html#ab9b53229dbdb1ebd4a641b4963ebf748", null ],
+    [ "HealthStone", "WarlockSpells_8cpp.html#af6c48d86cdb38ec90e0ae77c53f3eb8b", null ],
+    [ "ImprovedLifeTap", "WarlockSpells_8cpp.html#ab41e4b0c10a65cd3629870479267af63", null ],
+    [ "LesserHealthStone", "WarlockSpells_8cpp.html#a60485bd5b32b7f2dcf40f230554d4855", null ],
+    [ "LifeTap", "WarlockSpells_8cpp.html#aef70141b21702580c46a6ff7ca737944", null ],
+    [ "MajorHealthStone", "WarlockSpells_8cpp.html#a40606aa76ea1d9d04a1df2bf1ba55bd4", null ],
+    [ "MasterDemonologist1", "WarlockSpells_8cpp.html#a834e7e03c61c6c5bd1624b63c2bf2255", null ],
+    [ "MasterDemonologist2", "WarlockSpells_8cpp.html#adb7907014a808b5de3d7427bb9a2ca31", null ],
+    [ "MasterDemonologist3", "WarlockSpells_8cpp.html#a535b8c9c6b3d4230305ed5cd14af9baf", null ],
+    [ "MasterDemonologist4", "WarlockSpells_8cpp.html#a390921dfa3b81ad47a803b74cf50e526", null ],
+    [ "MasterDemonologist5", "WarlockSpells_8cpp.html#addbe78a785f2c3d8443a5b20c0bd4914", null ],
+    [ "MasterHealthStone", "WarlockSpells_8cpp.html#a7606061959d768894082d8e807b13916", null ],
+    [ "MinorHealthStone", "WarlockSpells_8cpp.html#a17289cb5719a72e75942064cb21606ad", null ],
+    [ "SetupLegacyWarlockSpells", "WarlockSpells_8cpp.html#a26b8f011fa77ed463aa5183ee7ad41c8", null ],
+    [ "SoulLinkParent", "WarlockSpells_8cpp.html#af6ec5e8608223b3b3f2fba67e16ebffc", null ],
+    [ "SoulShatter", "WarlockSpells_8cpp.html#a07f98d9c2af223d83d277fff35f0dca1", null ],
+    [ "SoulSiphon", "WarlockSpells_8cpp.html#a469edbda960ed526b167b0afd8188b96", null ],
+    [ "SoulStoneResurrection", "WarlockSpells_8cpp.html#a7c2d39bd89456f6cb84ceb9a66ab7925", null ],
+    [ "SummonFelHunterQuest", "WarlockSpells_8cpp.html#a5365846bd8ff8809e5b433fbf332cd2d", null ],
+    [ "SummonSuccubusQuest", "WarlockSpells_8cpp.html#ab41c99db6474da556334bf9dda513347", null ],
+    [ "SummonVoidWalkerQuest", "WarlockSpells_8cpp.html#adf6a22740dbd26116481ed2f93319cb1", null ]
+];

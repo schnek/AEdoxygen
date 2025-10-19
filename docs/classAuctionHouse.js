@@ -1,0 +1,28 @@
+var classAuctionHouse =
+[
+    [ "AuctionHouse", "classAuctionHouse.html#a1c0b12272509b7f1d96eed6ecba42c0e", null ],
+    [ "~AuctionHouse", "classAuctionHouse.html#a3af5a64b78e8e1189dbe5c311dd3760a", null ],
+    [ "addAuction", "classAuctionHouse.html#aa1d5db58793f91c575f765ea420d6e81", null ],
+    [ "getAuction", "classAuctionHouse.html#a5333c72f6b5f8848dd50fe0f9ba16c7d", null ],
+    [ "getId", "classAuctionHouse.html#ae8201bbcb247d6e5a98320e84a3f6f0f", null ],
+    [ "loadAuctionsFromDB", "classAuctionHouse.html#a9ef3232e5bf5e818cb0cdd8a16a699d0", null ],
+    [ "queueDeletion", "classAuctionHouse.html#a70e48cf8b0cb63cb4f6e86eeae71a885", null ],
+    [ "removeAuction", "classAuctionHouse.html#a6f28325234e07af7d93bdc993c1d4d99", null ],
+    [ "sendAuctionBuyOutNotificationPacket", "classAuctionHouse.html#afbbab74d14edd1b9b7d6b8df582f5f7d", null ],
+    [ "sendAuctionExpiredNotificationPacket", "classAuctionHouse.html#a8ff20efe57469df348c312d2e474df0d", null ],
+    [ "sendAuctionList", "classAuctionHouse.html#af04a12d52acae2faa25b479cabed42df", null ],
+    [ "sendAuctionOutBidNotificationPacket", "classAuctionHouse.html#a6afe054923de5074ccb298af63ef038d", null ],
+    [ "sendBidListPacket", "classAuctionHouse.html#a7a72bd87d63100908079a9d6f7722fb2", null ],
+    [ "sendOwnerListPacket", "classAuctionHouse.html#a207866753abeaee03f9891491a03dbaf", null ],
+    [ "updateAuctions", "classAuctionHouse.html#a863d2e51b9cca8401564ec2bd5d5020f", null ],
+    [ "updateDeletionQueue", "classAuctionHouse.html#ae4c0e6af3f519f4c682bc3aff86617ff", null ],
+    [ "updateOwner", "classAuctionHouse.html#a790b387aedbcb536b66f28b1a6ea1be3", null ],
+    [ "auctionHouseEntryDbc", "classAuctionHouse.html#a3bd691020d0857baa1fd0baa1d678d6b", null ],
+    [ "auctionLock", "classAuctionHouse.html#a1dee1bf55942571f24dc5b058b76502f", null ],
+    [ "auctions", "classAuctionHouse.html#ae280c33dd6a601bfa537fab1eabca484", null ],
+    [ "cutPercent", "classAuctionHouse.html#a6a79ed29456f8516f22680f3a87faa60", null ],
+    [ "depositPercent", "classAuctionHouse.html#a377c09872710cfe54e167ef5e7bbba2e", null ],
+    [ "isEnabled", "classAuctionHouse.html#a79799f59222d7e31581dc5a6647212d4", null ],
+    [ "removalList", "classAuctionHouse.html#aae804cbab9e484f39ca0e0b29740e626", null ],
+    [ "removalLock", "classAuctionHouse.html#adfd691e32cfd62acd866979d770dbdf1", null ]
+];

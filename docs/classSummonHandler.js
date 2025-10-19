@@ -1,0 +1,26 @@
+var classSummonHandler =
+[
+    [ "SummonHandler", "classSummonHandler.html#a243e7f1f10897c81e600018dcb76039a", null ],
+    [ "~SummonHandler", "classSummonHandler.html#a3bbf0c0d1105018c77bf69f4440ced04", null ],
+    [ "addSummonToHandler", "classSummonHandler.html#ac26b32beea47ad332a9eb1f5f393821b", null ],
+    [ "getPet", "classSummonHandler.html#a4c578cbbf1346808f13b3032104461a0", null ],
+    [ "getSummonInSlot", "classSummonHandler.html#a0236c15e6fcea3f774169e3cf5f3ecb1", null ],
+    [ "getSummons", "classSummonHandler.html#ad8980148430bc661796b28c4d97323d7", null ],
+    [ "getSummonWithEntry", "classSummonHandler.html#a7fc04872903f66bd0323d72e50da5c21", null ],
+    [ "hasTotemInSlot", "classSummonHandler.html#ac60c0c08786bcb3d709575da7a69040a", null ],
+    [ "killAllTotems", "classSummonHandler.html#abc0f93816d05e6ad6218513ac04bee01", null ],
+    [ "notifyOnOwnerAttacked", "classSummonHandler.html#afcdb3972dbf027daf10f3e0eb5c463be", null ],
+    [ "notifyOnOwnerSpeedChange", "classSummonHandler.html#a262b536f611b2bb967714264fe78a649", null ],
+    [ "notifyOnPetDeath", "classSummonHandler.html#ae3a43dd90cbb3c912351874b8d107e5f", null ],
+    [ "operator=", "classSummonHandler.html#a207bdecb138e0a879f744a2c2b8472de", null ],
+    [ "removeAllSummons", "classSummonHandler.html#a9a70b297fbe44633525b1c0742aa0785", null ],
+    [ "removeSummonFromHandler", "classSummonHandler.html#aa295678d59f48cad7245c477d3a7b467", null ],
+    [ "setFFAPvPFlags", "classSummonHandler.html#ae8f493408019f37af401dca2853f601d", null ],
+    [ "setPhase", "classSummonHandler.html#aa79b50e9fa37c3822934372bd9290ffa", null ],
+    [ "setPvPFlags", "classSummonHandler.html#a5d4c0785bfbfb2d9b2cd8adc57ac281a", null ],
+    [ "setSanctuaryFlags", "classSummonHandler.html#a679e1f34c1fc410e4e84ac4f32041a56", null ],
+    [ "m_owner", "classSummonHandler.html#ab2c0eaf9ac8c0eb3999013bb57a05e9a", null ],
+    [ "m_pet", "classSummonHandler.html#a3c51f39ef43b64234398bb5ba420f458", null ],
+    [ "m_summons", "classSummonHandler.html#a8a79916dd0a167391f73e69d81821ad6", null ],
+    [ "m_summonSlots", "classSummonHandler.html#a71a5908d99e400603540146150bcb1b2", null ]
+];

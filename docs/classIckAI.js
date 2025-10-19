@@ -1,0 +1,28 @@
+var classIckAI =
+[
+    [ "IckAI", "classIckAI.html#ac788af5d8c532daad65575ae1cf92942", null ],
+    [ "AIUpdate", "classIckAI.html#a29e619e0779ecc59dd871fa5af592138", null ],
+    [ "CastSpells", "classIckAI.html#acac0d2ab3625e910e506327b3b929f31", null ],
+    [ "Create", "classIckAI.html#a35e7f6b4cadf185bf229631dab73d70e", null ],
+    [ "OnCombatStart", "classIckAI.html#aea010fab09fe9f62e7c8979571326c26", null ],
+    [ "OnCombatStop", "classIckAI.html#a13831964483e24a73da6494bf41f47d8", null ],
+    [ "mConfusion", "classIckAI.html#a7f1199f97ccb35009e2b64513cfa141e", null ],
+    [ "mExplosionBarage", "classIckAI.html#a9dde50698306c41bda7973a6adacc911", null ],
+    [ "mExplosionBarageEndTimer", "classIckAI.html#a6361a095d0183e66d3dfbfd681c4cbd1", null ],
+    [ "mExplosionBarageKrick", "classIckAI.html#ac3cb4c7487bc752a9e024949a6ef6271", null ],
+    [ "mExplosionBarageTimer", "classIckAI.html#a968a064cf6345188dc2328addd9e1037", null ],
+    [ "mInstance", "classIckAI.html#aaa1ebf79ec9a8b834ad7206c67536f8d", null ],
+    [ "mKrickAI", "classIckAI.html#a6d1c70af5ea0ef31f40e566f048d2e64", null ],
+    [ "mMightyKick", "classIckAI.html#abe2016522e0ee01f6515699b57a34fa9", null ],
+    [ "mMightyKickTimer", "classIckAI.html#ab0aa4d98c34ddf9a2d327c47f98b4a36", null ],
+    [ "mPoisonNova", "classIckAI.html#a9b013659d15dde92130bfe3266692896", null ],
+    [ "mPoisonNovaTimer", "classIckAI.html#a2386fa9512575697192aedb816b7994f", null ],
+    [ "mPursue", "classIckAI.html#a8918e4c3c67ddd652f7ba7c6d5b8e078", null ],
+    [ "mPursueTimer", "classIckAI.html#a32d71c3a4c6c85b339c594e2fbaa4458", null ],
+    [ "mShadowBolt", "classIckAI.html#a92d5605728593803d1e4b47a96ed5df6", null ],
+    [ "mShadowBoltTimer", "classIckAI.html#a1a6267b734a7337960e20ea656b028e3", null ],
+    [ "mSpecialAttackTimer", "classIckAI.html#a4e5061d697fb3cc566bbcb251a64a89b", null ],
+    [ "mToxicWaste", "classIckAI.html#a5c305573884076ace03b7f97de84c44b", null ],
+    [ "mToxicWasteTimer", "classIckAI.html#a79471e162e429c365655c4392d530d3f", null ],
+    [ "Phase", "classIckAI.html#a695e10c0b2d72c323d9741d5830d8e73", null ]
+];

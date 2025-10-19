@@ -1,0 +1,27 @@
+var ScriptMacros_8hpp =
+[
+    [ "Target_ClosestCorpse", "ScriptMacros_8hpp.html#a45a789685311cb31e04d65a34f99f2d0", null ],
+    [ "Target_ClosestFriendly", "ScriptMacros_8hpp.html#a606aa172ef2a298092fc03deefc32429", null ],
+    [ "Target_ClosestPlayer", "ScriptMacros_8hpp.html#a7c4579bc2ab3b9dfccf1460c304bf00b", null ],
+    [ "Target_ClosestPlayerNotCurrent", "ScriptMacros_8hpp.html#a0ba1404b766302ae41d2f8ab743b3a47", null ],
+    [ "Target_ClosestUnit", "ScriptMacros_8hpp.html#a5cfa8f599e45a76f8b076fcd392d9a74", null ],
+    [ "Target_ClosestUnitNotCurrent", "ScriptMacros_8hpp.html#a01bf84ca0439151b188004c43ca3b504", null ],
+    [ "Target_Current", "ScriptMacros_8hpp.html#a80ed4684afa93c8c4a18e283aab59912", null ],
+    [ "Target_Destination", "ScriptMacros_8hpp.html#a849078e2ab0ad62bfe2bde2607d583dc", null ],
+    [ "Target_Predefined", "ScriptMacros_8hpp.html#a17c77defda71683b54649924631d5b6a", null ],
+    [ "Target_RandomCorpse", "ScriptMacros_8hpp.html#ac4fc37f10b45b50aa9c6c3c4c03bee69", null ],
+    [ "Target_RandomDestination", "ScriptMacros_8hpp.html#aa3a401c1d6a426051399ba17a48de0b3", null ],
+    [ "Target_RandomFriendly", "ScriptMacros_8hpp.html#af56485b63b8fc6a895a77383811c215d", null ],
+    [ "Target_RandomPlayer", "ScriptMacros_8hpp.html#aa81d89e16ad1b7bed07e974622d5f773", null ],
+    [ "Target_RandomPlayerApplyAura", "ScriptMacros_8hpp.html#a45f21f263c5218100cff3ef98849509e", null ],
+    [ "Target_RandomPlayerDestination", "ScriptMacros_8hpp.html#abab6c9b3d8b6d133c725222c15638f5f", null ],
+    [ "Target_RandomPlayerNotCurrent", "ScriptMacros_8hpp.html#a54f043b552e9f30036cdcab57c2c9674", null ],
+    [ "Target_RandomUnit", "ScriptMacros_8hpp.html#acce4badc20cae604118267f526071b7c", null ],
+    [ "Target_RandomUnitApplyAura", "ScriptMacros_8hpp.html#ac5a513c7a157f15c630b42badf06bb7a", null ],
+    [ "Target_RandomUnitNotCurrent", "ScriptMacros_8hpp.html#a50136b73f92f5a9316afad5253cd7593", null ],
+    [ "Target_SecondMostHated", "ScriptMacros_8hpp.html#a3a721875c6d66e55ae12da1a7c3312aa", null ],
+    [ "Target_Self", "ScriptMacros_8hpp.html#acbed6e943469ac0c1834cc3b0cc466b1", null ],
+    [ "Target_WoundedFriendly", "ScriptMacros_8hpp.html#a6771917b89fed068c6abb3a799e49322", null ],
+    [ "Target_WoundedPlayer", "ScriptMacros_8hpp.html#a4274640edfaf655f0e4aedd43f5c7353", null ],
+    [ "Target_WoundedUnit", "ScriptMacros_8hpp.html#a24b57f88d530340f74a3f2a9feeba033", null ]
+];

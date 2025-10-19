@@ -1,0 +1,27 @@
+var classTicketMgr =
+[
+    [ "TicketMgr", "classTicketMgr.html#a4bee2ddb959387ed191d5610c537afef", null ],
+    [ "~TicketMgr", "classTicketMgr.html#a2808de1e9cb05d2378a98837e579eea9", null ],
+    [ "TicketMgr", "classTicketMgr.html#a70cf541a69fa03b2eea358434d9722a7", null ],
+    [ "TicketMgr", "classTicketMgr.html#ae290eb7c72f929c27cbbc0a8df7a870c", null ],
+    [ "closeTicket", "classTicketMgr.html#acf4c99ce875ed5291d37a64b0cd38080", null ],
+    [ "createGMTicket", "classTicketMgr.html#a88c6be2533e4b25259f4d637cad8de5f", null ],
+    [ "createGMTicket", "classTicketMgr.html#a876b84d4d97b034a5b1c5b83d38d2b8e", null ],
+    [ "deleteAllRemovedGMTickets", "classTicketMgr.html#a170edf68bde4cbb2af3ca5536bdabcf1", null ],
+    [ "deleteGMTicketPermanently", "classTicketMgr.html#a5357521e9a19a25b22ff6b4d1c790526", null ],
+    [ "finalize", "classTicketMgr.html#a278d2b48a8bde1c345dae3d9de27c016", null ],
+    [ "generateNextTicketId", "classTicketMgr.html#a9ac95c3a3fd5c06e78c6cdc1c63ab9fe", null ],
+    [ "getGMTicket", "classTicketMgr.html#a8784ecf002c7e144cfe2ca82b6fdb0fe", null ],
+    [ "getGMTicketByPlayer", "classTicketMgr.html#af8c49e24b4b90080fa8132094020fc07", null ],
+    [ "getInstance", "classTicketMgr.html#aa9801ac063728859e7a3b8b5ab0703cb", null ],
+    [ "initialize", "classTicketMgr.html#a0d723e372f9d84221298f5a9381bf1e4", null ],
+    [ "loadGMTickets", "classTicketMgr.html#a58079792f2fa29c2fd7d9fbd7ef8c56b", null ],
+    [ "operator=", "classTicketMgr.html#a215eb5222734683517088a59f0a01316", null ],
+    [ "operator=", "classTicketMgr.html#a34e9f063aeb19921b75d058840f861f6", null ],
+    [ "removeGMTicket", "classTicketMgr.html#ac3218845ef5ec78ce35fc860db4e3d47", null ],
+    [ "removeGMTicketByPlayer", "classTicketMgr.html#a6801b627b58d4a3e58f0e3005fb0b4bd", null ],
+    [ "saveGMTicket", "classTicketMgr.html#aaac3f11dc42ea471c2946abf8b8bbe23", null ],
+    [ "updateGMTicket", "classTicketMgr.html#ab77ce482f14e8f2e3865020c9d222188", null ],
+    [ "m_nextTicketId", "classTicketMgr.html#a22c75dfa40ab0b6b778ae5c1fd734852", null ],
+    [ "m_ticketList", "classTicketMgr.html#a07c7ba6cc3b7a6782c8847367a475b12", null ]
+];

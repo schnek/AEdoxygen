@@ -1,0 +1,25 @@
+var classTradeData =
+[
+    [ "TradeData", "classTradeData.html#ac2bfab37acbdb9fd955d8f2ee8876b79", null ],
+    [ "getSpell", "classTradeData.html#a98873a28d2994091240d422005b9c61e", null ],
+    [ "getSpellCastItem", "classTradeData.html#a92184fe5eda8ef0c47a9b4099900575a", null ],
+    [ "getTargetTradeData", "classTradeData.html#abd8e88b1ffe6762730e063442828f2ec", null ],
+    [ "getTradeItem", "classTradeData.html#a4eb8776a72eb3110c0bb9539d4f21461", null ],
+    [ "getTradeMoney", "classTradeData.html#a8b9a8ed362b46c46e43554599bf04e77", null ],
+    [ "getTradeTarget", "classTradeData.html#a4836bb099b3489d28b318ff4365a123e", null ],
+    [ "hasPlayerOrTraderItemInTrade", "classTradeData.html#a625562b3e559293520fb5522d5f219fc", null ],
+    [ "hasSpellCastItem", "classTradeData.html#a57d1290c1f0ab8cfbe38d601d81bb5dc", null ],
+    [ "hasTradeItem", "classTradeData.html#a49967a98e21f9b7188b31ba24c651807", null ],
+    [ "isTradeAccepted", "classTradeData.html#aa337cad408ccf374283e0e7ad46c8359", null ],
+    [ "setTradeAccepted", "classTradeData.html#aa7fd40f4f6b5674c9ac90ecf822d1d53", null ],
+    [ "setTradeItem", "classTradeData.html#a3d5ddff9e7e348caad844811b0e5d608", null ],
+    [ "setTradeMoney", "classTradeData.html#a5ff90725177e58777e7b34657b25b5a6", null ],
+    [ "setTradeSpell", "classTradeData.html#a6340e09482990844c5a22b2176b5b08b", null ],
+    [ "m_accepted", "classTradeData.html#af2d924a288687047f4d6a47f81025a00", null ],
+    [ "m_items", "classTradeData.html#ab6a571fdd541acaee010f64e0b8c61d7", null ],
+    [ "m_money", "classTradeData.html#a9dbd7d168c3ae7cf5883ffd0e864e65c", null ],
+    [ "m_player", "classTradeData.html#aa19e7f2622b315f9cc75531999b795f4", null ],
+    [ "m_spell", "classTradeData.html#a36e8c728e04fbb5237fd3e3f9b11194d", null ],
+    [ "m_spellCastItem", "classTradeData.html#a81a54585c58176729f4589f2b2ffc7a1", null ],
+    [ "m_tradeTarget", "classTradeData.html#a948b773294a4d3fc626fee0d0c834264", null ]
+];

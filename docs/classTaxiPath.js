@@ -1,0 +1,25 @@
+var classTaxiPath =
+[
+    [ "TaxiPath", "classTaxiPath.html#a066558e825781147d15d0304d2638dec", null ],
+    [ "~TaxiPath", "classTaxiPath.html#a3001a8907a47e450b49d45a5b88725e0", null ],
+    [ "addTaxiDestination", "classTaxiPath.html#ae2c84086c7995ac25c08af4406efd89e", null ],
+    [ "clearTaxiDestinations", "classTaxiPath.html#a84c4d8e4be4f8a63eb66316a22583542", null ],
+    [ "empty", "classTaxiPath.html#abfe64ff85156a1d33b931da6ace6ee72", null ],
+    [ "getCurrentTaxiPath", "classTaxiPath.html#a130e7abc60aac18b1e0ce040d1ef2b0f", null ],
+    [ "getPath", "classTaxiPath.html#ab0ad4046f9c0de9946541420a41325bb", null ],
+    [ "getTaxiDestination", "classTaxiPath.html#aca16fe1304d5c549d4f65b4454ccf935", null ],
+    [ "getTaxiMask", "classTaxiPath.html#a66016bbd6311cd4c71025dba764bec49", null ],
+    [ "getTaxiSource", "classTaxiPath.html#a08d2e1e7cbe976a311dbc002cf8fa921", null ],
+    [ "initTaxiNodesForLevel", "classTaxiPath.html#a6775a67e8ae55df072f610180263bf26", null ],
+    [ "isTaximaskNodeKnown", "classTaxiPath.html#a6bbb7a8dbaf10cd0ef31c7b550df674c", null ],
+    [ "loadTaxiDestinationsFromString", "classTaxiPath.html#aecd5661214e8fc8a125ae45bc1dee527", null ],
+    [ "loadTaxiMask", "classTaxiPath.html#ae7c795b73a58d3fcf6315be1fdbddf5b", null ],
+    [ "nextTaxiDestination", "classTaxiPath.html#a7fe5c1b077eff10135d52e7b6a55ee55", null ],
+    [ "saveTaxiDestinationsToString", "classTaxiPath.html#acaaba37924f733021b55f4cc7014569b", null ],
+    [ "saveTaximaskNodeToString", "classTaxiPath.html#a4bc91cedafbbe244463485ce04f17e35", null ],
+    [ "setNodeAfterTeleport", "classTaxiPath.html#aabd42fd8f257699dd36368cb46c37bd3", null ],
+    [ "setTaximaskNode", "classTaxiPath.html#aae069f374655708e71e7774b01c14907", null ],
+    [ "m_TaxiDestinations", "classTaxiPath.html#ae2d03a9459621279d9f640c0e2b6a016", null ],
+    [ "m_taximask", "classTaxiPath.html#a594d1033db21a524427614a0161e80f4", null ],
+    [ "nodeAfterTeleport", "classTaxiPath.html#aa3402f4002a94233957df1a7dcaf163d", null ]
+];

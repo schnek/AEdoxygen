@@ -1,0 +1,25 @@
+var lmem_8h =
+[
+    [ "luaM_checksize", "lmem_8h.html#a0ab87210cc8c1a531b9397f6d55b1a97", null ],
+    [ "luaM_error", "lmem_8h.html#ae11aaaf07d13b2f0c3a671b01d7e3822", null ],
+    [ "luaM_free", "lmem_8h.html#ad927ceb6a17a9e89a00b83dcc4482988", null ],
+    [ "luaM_freearray", "lmem_8h.html#a574612879aa6814c76b8b57c41e4af5a", null ],
+    [ "luaM_freemem", "lmem_8h.html#a159fd0a4f45c4aa195990526f9d0bf01", null ],
+    [ "luaM_growvector", "lmem_8h.html#a38823c4cdf0d53b73e1e3015affb06f9", null ],
+    [ "luaM_limitN", "lmem_8h.html#a29ccefa76d4743ffb490cdbc291f708a", null ],
+    [ "luaM_new", "lmem_8h.html#ae72bd363be924fa9a67be67de0802ad7", null ],
+    [ "luaM_newobject", "lmem_8h.html#a0ce640c4b032a327440e3820365d7167", null ],
+    [ "luaM_newvector", "lmem_8h.html#a715cc368a85506c7a104cda58f270f3e", null ],
+    [ "luaM_newvectorchecked", "lmem_8h.html#ab223744a0660c0aa48e388ca51466839", null ],
+    [ "luaM_reallocvchar", "lmem_8h.html#a5904278d180acc29faf199e1d76f3e85", null ],
+    [ "luaM_reallocvector", "lmem_8h.html#ab1174e625ed7a62e5f8ba33a7e1c1917", null ],
+    [ "luaM_shrinkvector", "lmem_8h.html#ab90797c53a311d30154c486b2b8561d5", null ],
+    [ "luaM_testsize", "lmem_8h.html#aaa4ae2ac3a122058ba3e73b1f438a89c", null ],
+    [ "luaM_free_", "lmem_8h.html#a1596632e07c593bd9558ee4920fbe5de", null ],
+    [ "luaM_growaux_", "lmem_8h.html#aa8dc5fd4a8d24f09b96ccf47c7e075b7", null ],
+    [ "luaM_malloc_", "lmem_8h.html#afec71d56433572a98317d256cb6c6c11", null ],
+    [ "luaM_realloc_", "lmem_8h.html#ae5c8a16bb1c249e63cb08e0e2bd5a8d0", null ],
+    [ "luaM_saferealloc_", "lmem_8h.html#af857f53df3465facdda7f0453b04cc46", null ],
+    [ "luaM_shrinkvector_", "lmem_8h.html#ac1d89ab6af7dafe505e6b372f47957d7", null ],
+    [ "luaM_toobig", "lmem_8h.html#a23b8703b7b50e1c5dd37d41569a09a9a", null ]
+];

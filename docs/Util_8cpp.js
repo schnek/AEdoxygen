@@ -1,0 +1,26 @@
+var Util_8cpp =
+[
+    [ "ByteArrayToHexString", "Util_8cpp.html#a3f7e2b7482046beb58c1e4d9a6f5d03a", null ],
+    [ "GetCurrentDateTimeString", "Util_8cpp.html#a000d31a44f300810f16e7c99be7397ea", null ],
+    [ "GetCurrentTimeString", "Util_8cpp.html#ae1649001523f2d54115c690cdfba801c", null ],
+    [ "GetDateStringFromSeconds", "Util_8cpp.html#a8d771d76d6052b9ed5748c4c7721029f", null ],
+    [ "GetDateTimeStringFromTimeStamp", "Util_8cpp.html#a31503edb696e058470ab8194221a995d", null ],
+    [ "getDirectoryContent", "Util_8cpp.html#adc36428c0d0dc56307fac03c15014f5c", null ],
+    [ "getGameTime", "Util_8cpp.html#a9dfd8f4a8884d766f5c746e30e66ce30", null ],
+    [ "getLanguagesIdFromString", "Util_8cpp.html#a23ce2583d69e6a8ac96173444638e23e", null ],
+    [ "getLanguagesStringFromId", "Util_8cpp.html#a8a78bcad6e7fc2709df255c3c05e2213", null ],
+    [ "getLocalHourTimestamp", "Util_8cpp.html#a9840c4ad8d1a313a90a92c15179c24fe", null ],
+    [ "getMSTime", "Util_8cpp.html#a15e1eefda0759ccb5e7f818f9574272b", null ],
+    [ "getNumberFromStringByRange", "Util_8cpp.html#a534127aeb0e0133e26c44b7ab75f5df3", null ],
+    [ "GetTimeDifference", "Util_8cpp.html#a8e9703cc5b352fa75f044c34d1c96d5a", null ],
+    [ "GetTimeDifferenceToNow", "Util_8cpp.html#a9a604a54078fde28181624aa02db063d", null ],
+    [ "getTimeNow", "Util_8cpp.html#a84c5e1ab2efe709b82072f26b8818330", null ],
+    [ "GetTimePeriodFromString", "Util_8cpp.html#ae4992dee3a5c6109f45e1c3ff831dee3", null ],
+    [ "makeIP", "Util_8cpp.html#a15ed4e9dae3f8ca16d0f3b923a01c011", null ],
+    [ "max_consecutive", "Util_8cpp.html#a800d99cb3782d698011332643c696716", null ],
+    [ "parseCIDRBan", "Util_8cpp.html#a883e5745cfe03706e4eeae8e0331a6de", null ],
+    [ "readFileIntoString", "Util_8cpp.html#a4e019241c8591f67b030d69ac31f5510", null ],
+    [ "readMajorVersionFromString", "Util_8cpp.html#ac6a2b3a3e365c85bfcd8937b0e817205", null ],
+    [ "readMinorVersionFromString", "Util_8cpp.html#a32c1eb65cf589486bdfdc43dc378918e", null ],
+    [ "TimeNow", "Util_8cpp.html#aee85a3996bf0f7eb58f931b3d01d3fe7", null ]
+];

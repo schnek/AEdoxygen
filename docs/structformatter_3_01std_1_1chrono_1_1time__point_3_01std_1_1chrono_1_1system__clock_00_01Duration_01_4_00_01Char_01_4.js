@@ -1,0 +1,5 @@
+var structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4 =
+[
+    [ "formatter", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html#ab5427d990dadee68e7a7f06213451832", null ],
+    [ "format", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html#aa6100ddeeee860eeb2a5705d59a1dff1", null ]
+];

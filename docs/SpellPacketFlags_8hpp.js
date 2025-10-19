@@ -1,0 +1,38 @@
+var SpellPacketFlags_8hpp =
+[
+    [ "SpellPacketFlags", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbb", [
+      [ "SPELL_PACKET_FLAGS_NONE", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba831b632eef499c53b6eeb7cfd821a739", null ],
+      [ "SPELL_PACKET_FLAGS_LOCK_PLAYER_CAST_ANIM", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba3d7246d54808dabb0b0b7e697f75b68e", null ],
+      [ "SPELL_PACKET_FLAGS_DEFAULT", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbafcba6521bbccec14bad84fbf24632849", null ],
+      [ "SPELL_PACKET_FLAGS_UNK4", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbae2ad9f5d064ead68070ba5dc23e7df7a", null ],
+      [ "SPELL_PACKET_FLAGS_UNK8", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba5337a933998d5595bd7a1491c03cc63d", null ],
+      [ "SPELL_PACKET_FLAGS_UNK10", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba0356851203dd027dfffa96fcbac4dad4", null ],
+      [ "SPELL_PACKET_FLAGS_RANGED", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbaea1b109c40697f5521b448ec62bd9654", null ],
+      [ "SPELL_PACKET_FLAGS_UNK40", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba5a096cc185880a21daa45a5ed0e5af6b", null ],
+      [ "SPELL_PACKET_FLAGS_UNK80", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba2076322fc129f0e50ca7e3569d2327f6", null ],
+      [ "SPELL_PACKET_FLAGS_ITEM_CASTER", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba9b168fbadc7d6f62d57e5e04bc2ed634", null ],
+      [ "SPELL_PACKET_FLAGS_UNK200", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba6acfc49f93219bce5d0b21ac0615fbd0", null ],
+      [ "SPELL_PACKET_FLAGS_EXTRA_MESSAGE", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbad701a25d58ce6af5e1cf03d1e397b8e6", null ],
+      [ "SPELL_PACKET_FLAGS_POWER_UPDATE", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbac117ea3a18dfd5880a745c1f4914116b", null ],
+      [ "SPELL_PACKET_FLAGS_UNK1000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba2862ac6d49324bb7a4d64b2a5f12db87", null ],
+      [ "SPELL_PACKET_FLAGS_UNK2000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba7e585c295ea147895ec2df976821bb08", null ],
+      [ "SPELL_PACKET_FLAGS_UNK4000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbaa540e641f9c635daac494a6a4d2a9b35", null ],
+      [ "SPELL_PACKET_FLAGS_UNK8000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbaaf12422c15babb82875dcacee8983d79", null ],
+      [ "SPELL_PACKET_FLAGS_UNK10000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbad43b320bac23a5f313e64cbe7aec1118", null ],
+      [ "SPELL_PACKET_FLAGS_UPDATE_MISSILE", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba662c812e355d8de4f3da7ff3b5d9fe0e", null ],
+      [ "SPELL_PACKET_FLAGS_UNK40000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba351c7220eb3d6059c0b7f795987df39b", null ],
+      [ "SPELL_PACKET_FLAGS_UNK80000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba684610f0fcb4877814d497d1db697102", null ],
+      [ "SPELL_PACKET_FLAGS_UNK100000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbafb0b0a71ab12aafbbd1feacaf28cde08", null ],
+      [ "SPELL_PACKET_FLAGS_RUNE_UPDATE", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbafe95f931207d67fab2b19ddf57a3bf5d", null ],
+      [ "SPELL_PACKET_FLAGS_UNK400000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba7318ec2d24ee2e93e1703cb249fb8d51", null ],
+      [ "SPELL_PACKET_FLAGS_UNK800000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba0be412516a6df2a692130e07b4ffd6b7", null ],
+      [ "SPELL_PACKET_FLAGS_UNK1000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba535bea864dabfca60d81d6c65eff8f45", null ],
+      [ "SPELL_PACKET_FLAGS_UNK2000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba9fc136c9aa0225fc1e6d3b8c3f30f295", null ],
+      [ "SPELL_PACKET_FLAGS_UNK4000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbaaa0bb8dcb897c66cf911e1eb623f2181", null ],
+      [ "SPELL_PACKET_FLAGS_UNK8000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbaf3fc3bfde117d476804c2dc3bab0958c", null ],
+      [ "SPELL_PACKET_FLAGS_UNK10000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbae610b8c94896b334e79c7902b0557e3c", null ],
+      [ "SPELL_PACKET_FLAGS_UNK20000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbafdf5651b26df02cda2243b26f7ec8d68", null ],
+      [ "SPELL_PACKET_FLAGS_HEALTH_UPDATE", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbbaf6690d15bd9c1b727d63b8a2bd0cce19", null ],
+      [ "SPELL_PACKET_FLAGS_UNK80000000", "SpellPacketFlags_8hpp.html#aab61672d3c188587c6467fba3391dcbba0dab69f26ff0fadd8e9e3b2d4bd5d03c", null ]
+    ] ]
+];

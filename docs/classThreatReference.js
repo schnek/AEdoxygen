@@ -1,0 +1,46 @@
+var classThreatReference =
+[
+    [ "OnlineState", "classThreatReference.html#a43ab9ac10caef78cdbffa76cc5966136", [
+      [ "ONLINE_STATE_ONLINE", "classThreatReference.html#a43ab9ac10caef78cdbffa76cc5966136a07297cc3bbf383f37c988510a3a7dd42", null ],
+      [ "ONLINE_STATE_SUPPRESSED", "classThreatReference.html#a43ab9ac10caef78cdbffa76cc5966136ae9bc854a73f3ff2c3313e901e6194d3d", null ],
+      [ "ONLINE_STATE_OFFLINE", "classThreatReference.html#a43ab9ac10caef78cdbffa76cc5966136a478f5e04eb6506eb74e35b6d102431b3", null ]
+    ] ],
+    [ "TauntState", "classThreatReference.html#a41188354d2fc75e3e1009d5ad58049dc", [
+      [ "TAUNT_STATE_DETAUNT", "classThreatReference.html#a41188354d2fc75e3e1009d5ad58049dca25093cfbc278cf0c973b289fc96e6adc", null ],
+      [ "TAUNT_STATE_NONE", "classThreatReference.html#a41188354d2fc75e3e1009d5ad58049dcadbbbc767d9c945a1352c15448b46b814", null ],
+      [ "TAUNT_STATE_TAUNT", "classThreatReference.html#a41188354d2fc75e3e1009d5ad58049dcabd016a6664098518b2c315c4ac7d3798", null ]
+    ] ],
+    [ "ThreatReference", "classThreatReference.html#aa6479b1cfc15757d4256a6adadb18d69", null ],
+    [ "ThreatReference", "classThreatReference.html#a99681f92a258647ae89fc3317f24c437", null ],
+    [ "addThreat", "classThreatReference.html#a198eac41d1b8df4be4b4b56b74faf9c5", null ],
+    [ "clearThreat", "classThreatReference.html#a8141697bf0ec9457d100db5e1cfe1e78", null ],
+    [ "flagsAllowFighting", "classThreatReference.html#a8e8f2bdb2c8a900662704afaaefba68c", null ],
+    [ "getOnlineState", "classThreatReference.html#a2196026771af4d3d96c6b304a282d2cf", null ],
+    [ "getOwner", "classThreatReference.html#a7ddf27caf569598dab8fe4c4f38a5fce", null ],
+    [ "getTauntState", "classThreatReference.html#a093487469b34e195bbfda5ead0155890", null ],
+    [ "getThreat", "classThreatReference.html#a6428adbc50220c658fa5758978014a98", null ],
+    [ "getVictim", "classThreatReference.html#a2d5d00807dc1a1399f6c7e25db8951cd", null ],
+    [ "isAvailable", "classThreatReference.html#a1f8070229f87368bbb593657115aefb0", null ],
+    [ "isDetaunted", "classThreatReference.html#ad707c4ddf634019bc36d2f3516c79707", null ],
+    [ "isOffline", "classThreatReference.html#a0ed65595a2894a30423f85912729d5eb", null ],
+    [ "isOnline", "classThreatReference.html#a784e7c8ae21fec6af79a157216c7361d", null ],
+    [ "isSuppressed", "classThreatReference.html#a6af2ce60ef8c5a7d9dcbdfae459cf394", null ],
+    [ "isTaunting", "classThreatReference.html#a4775c53f28eab6e92c76c16a51a2a5b0", null ],
+    [ "modifyThreatByPercent", "classThreatReference.html#afdc7fde1003dc994f89e148580072930", null ],
+    [ "operator=", "classThreatReference.html#abeef186d1e3e3a63ccf26731406f0019", null ],
+    [ "scaleThreat", "classThreatReference.html#a2d3b7e41f93ca7280e392dbf06fb212c", null ],
+    [ "shouldBeOffline", "classThreatReference.html#ae4f9e4d1bbd09b488ec6c10877af3bf4", null ],
+    [ "shouldBeSuppressed", "classThreatReference.html#a9482d7e84475b2f17e4e28ab736649d6", null ],
+    [ "unregisterAndFree", "classThreatReference.html#a48e9d76d90e798dc8ff0f86a1cb32f59", null ],
+    [ "updateOffline", "classThreatReference.html#a11ef4d2c7d8f9518fd0e26a5a28e5798", null ],
+    [ "updateTauntState", "classThreatReference.html#aa7c546e12662867c60146a2a761cc385", null ],
+    [ "CompareThreatLessThan", "classThreatReference.html#aec0e6964906625aed78a2fa2b70bcd53", null ],
+    [ "ThreatManager", "classThreatReference.html#a3ae6c5d55f39ae66627eaddd702b4cb6", null ],
+    [ "_baseAmount", "classThreatReference.html#a3b84571e5a83ab4934c9176c695fc0e6", null ],
+    [ "_mgr", "classThreatReference.html#a4daf2582acdc8cfccd18f6a1e96e3091", null ],
+    [ "_online", "classThreatReference.html#aad1e98407ab158ff4bac75b2bacfd5b5", null ],
+    [ "_owner", "classThreatReference.html#a7d9f03e6953250ea6d6999a41c59e24c", null ],
+    [ "_taunted", "classThreatReference.html#a984afbb4c0fedc24038cb87bd28b75ed", null ],
+    [ "_tempModifier", "classThreatReference.html#a16688d588919cc65a0d3ea6f65d7fd95", null ],
+    [ "_victim", "classThreatReference.html#a94122da9c97d4c8745c0a7450c8932d2", null ]
+];

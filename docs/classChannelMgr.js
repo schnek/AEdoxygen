@@ -1,0 +1,27 @@
+var classChannelMgr =
+[
+    [ "ChannelList", "classChannelMgr.html#aec1b6a66455dd201816ed16c5d2e7e75", null ],
+    [ "ChannelMgr", "classChannelMgr.html#a53ebb1624de55778ac1cebeea56bb39b", null ],
+    [ "~ChannelMgr", "classChannelMgr.html#a2f9099cf528aacae9110d349841e57a7", null ],
+    [ "ChannelMgr", "classChannelMgr.html#a2fe103819a904ab04d8a40965ef2543c", null ],
+    [ "ChannelMgr", "classChannelMgr.html#a9999e798618404ee4370b7ac548444ca", null ],
+    [ "canPlayerJoinDefaultChannel", "classChannelMgr.html#ad19925b210008d7c85e39d32cb29315e", null ],
+    [ "finalize", "classChannelMgr.html#a1c5328d445d2df4179b7ddce26332821", null ],
+    [ "generateChannelName", "classChannelMgr.html#a577cc4872198080d6d92bb510be96a8a", null ],
+    [ "getChannel", "classChannelMgr.html#aa94f309c6581e83910968928da900f5d", null ],
+    [ "getChannel", "classChannelMgr.html#afa9c064b86ee9471cd0a1bcb90f43501", null ],
+    [ "getInstance", "classChannelMgr.html#a858fb03248fd0401e83ca9092f4d9524", null ],
+    [ "getOrCreateChannel", "classChannelMgr.html#a21569d4cc3ea13e2ffef82f37583ac7c", null ],
+    [ "initialize", "classChannelMgr.html#ae22d079705c69cd9e3e1c9e7dddf681f", null ],
+    [ "loadConfigSettings", "classChannelMgr.html#a68a3be8a4a61012ccfc0506fc1f0de99", null ],
+    [ "operator=", "classChannelMgr.html#a974eb7056ed9154888f983ab8955ff4e", null ],
+    [ "operator=", "classChannelMgr.html#afd67a345ffe5e23432055f22a81e3a04", null ],
+    [ "removeChannel", "classChannelMgr.html#a055c9f5ac3b84c4c2515cbf8b0c11430", null ],
+    [ "setSeperatedChannels", "classChannelMgr.html#a1e8fe32f6a23cc7aa8a1ce540d04453d", null ],
+    [ "m_bannedChannels", "classChannelMgr.html#a17bdf2bce21f90b6f50f3e53e7aa00a0", null ],
+    [ "m_channelList", "classChannelMgr.html#a4a1c509f6ee19f388b017ae9e6e5bad0", null ],
+    [ "m_minimumChannel", "classChannelMgr.html#a1a78041e08cfe8d30fdec6889e85d24d", null ],
+    [ "m_mutexChannels", "classChannelMgr.html#a52eae6f17d52b3fc4074ce721a32873a", null ],
+    [ "m_mutexConfig", "classChannelMgr.html#a200dcfa6609389ebe1f8dcd4ca4ebc04", null ],
+    [ "m_seperateChannels", "classChannelMgr.html#a79753d624f2117c1731e8a15efb81438", null ]
+];

@@ -1,0 +1,26 @@
+var classKelthuzadAI =
+[
+    [ "KelthuzadAI", "classKelthuzadAI.html#a61279ad0bb1790eed9c7bf534a65397f", null ],
+    [ "AIUpdate", "classKelthuzadAI.html#a03ca1c55f48441e3f8770d575ef7cdb2", null ],
+    [ "Create", "classKelthuzadAI.html#a1cc546f3bca3ac2846eb4ed360ed88f3", null ],
+    [ "GetDespawnTrash", "classKelthuzadAI.html#ad27a51531ea645b2fceb2a8cb613c498", null ],
+    [ "OnCombatStart", "classKelthuzadAI.html#a87f26c2128ef798ed3b4d317a3a3670e", null ],
+    [ "OnCombatStop", "classKelthuzadAI.html#a5b65df5da2a554ee1541b76737865055", null ],
+    [ "OnDied", "classKelthuzadAI.html#a5f47708782dd61569657acaab72849a8", null ],
+    [ "OnTargetDied", "classKelthuzadAI.html#a9c7ebd72ba7b5c23a8ef1ed2727dba2c", null ],
+    [ "PhaseOne", "classKelthuzadAI.html#af27b94e6fc3c49e77f420f65d2f0a185", null ],
+    [ "PhaseThree", "classKelthuzadAI.html#aa224f0a47dcc624026d518153f0392a1", null ],
+    [ "PhaseTwo", "classKelthuzadAI.html#ab1f4a1251ac20f2f41d53187bf4bcd49", null ],
+    [ "Abominations", "classKelthuzadAI.html#a854d54606d282d226b621dde4528917c", null ],
+    [ "DespawnTrash", "classKelthuzadAI.html#a101aa49f87d56f696279334ff2b4b61b", null ],
+    [ "EventStart", "classKelthuzadAI.html#a63cbc1902bd461d1f4634eae0c178136", null ],
+    [ "FrozenWastes", "classKelthuzadAI.html#a6798c92224b70eab522463fe0e101f5c", null ],
+    [ "GCounter", "classKelthuzadAI.html#a3098705d9ef9b2c062b51a28171d2cac", null ],
+    [ "HelpDialog", "classKelthuzadAI.html#aac6c04bb65b2c436c14730dbb8c2f196", null ],
+    [ "m_phase", "classKelthuzadAI.html#af963825a77795f68cd3bc78dd9ad49f4", null ],
+    [ "PhaseTimer", "classKelthuzadAI.html#a5488f1abd47ab93f60650c2cd7dfd7cb", null ],
+    [ "SoulWeavers", "classKelthuzadAI.html#a2882d414e35496af460afc6b77fb6aa1", null ],
+    [ "SpawnCounter", "classKelthuzadAI.html#ae459a95ffda4e67ee68eba6c2ce29a6b", null ],
+    [ "SpawnTimer", "classKelthuzadAI.html#a03360057d860372b11d003eb9f6a2180", null ],
+    [ "WaveTimer", "classKelthuzadAI.html#ac377ca9abfa1902c9779a7fba836cf55", null ]
+];
