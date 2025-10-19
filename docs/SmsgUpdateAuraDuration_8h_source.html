@@ -118,15 +118,15 @@ $(document).ready(function(){initNavTree('SmsgUpdateAuraDuration_8h_source.html'
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">class </span>SmsgUpdateAuraDuration : <span class="keyword">public</span> ManagedPacket</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> duration;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        uint8_t slot;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        uint32_t duration;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        SmsgUpdateAuraDuration() : SmsgUpdateAuraDuration(0, 0)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        SmsgUpdateAuraDuration(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> duration) :</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            ManagedPacket(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca56fa35e816f8c7cf6c25f6983db4314c">SMSG_UPDATE_AURA_DURATION</a>, sizeof(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) + sizeof(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)),</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        SmsgUpdateAuraDuration(uint8_t slot, uint32_t duration) :</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            ManagedPacket(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca56fa35e816f8c7cf6c25f6983db4314c">SMSG_UPDATE_AURA_DURATION</a>, sizeof(uint8_t) + sizeof(uint32_t)),</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            slot(slot),</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            duration(duration)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
@@ -156,8 +156,6 @@ $(document).ready(function(){initNavTree('SmsgUpdateAuraDuration_8h_source.html'
 <div class="ttc" id="aOpcodes_8hpp_html_abeeee4622d9285fa92e9b61857002caca56fa35e816f8c7cf6c25f6983db4314c"><div class="ttname"><a href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca56fa35e816f8c7cf6c25f6983db4314c">SMSG_UPDATE_AURA_DURATION</a></div><div class="ttdeci">@ SMSG_UPDATE_AURA_DURATION</div><div class="ttdef"><b>Definition</b> <a href="Opcodes_8hpp_source.html#l00355">Opcodes.hpp:355</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Packets_html"><div class="ttname"><a href="namespaceAscEmu_1_1Packets.html">AscEmu::Packets</a></div><div class="ttdef"><b>Definition</b> <a href="AuctionHouse_8h_source.html#l00017">AuctionHouse.h:18</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

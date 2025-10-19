@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 653;
 var viewHeight = 212;
-var sectionId = 'dynsection-14';
+var sectionId = 'dynsection-4';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -102,7 +102,7 @@ var sectionId = 'dynsection-14';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="src_2tools_2ToolsCataMop_2map__extractor_2System_8cpp.html#a8016f13eff3bcda15a3e92c2c2cbd262" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="ToolsCataMop_2map__extractor_2System_8cpp.html#a8016f13eff3bcda15a3e92c2c2cbd262" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="464,-130 352,-130 352,-111 464,-111 464,-130"/>
 <text text-anchor="middle" x="408" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">ExtractCameraFiles</text>
 </a>
@@ -135,30 +135,12 @@ var sectionId = 'dynsection-14';
 </a>
 </g>
 </g>
-<!-- Node11 -->
-<g id="Node000011" class="node">
-<title>Node11</title>
-<g id="a_Node000011"><a xlink:href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2vmapexport_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="428.5,-56 387.5,-56 387.5,-37 428.5,-37 428.5,-56"/>
-<text text-anchor="middle" x="408" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node11 -->
-<g id="edge10_Node000001_Node000011" class="edge">
-<title>Node1&#45;&gt;Node11</title>
-<g id="a_edge10_Node000001_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M533.49,-88.63C500.73,-77.55 454.73,-61.98 428.8,-53.2"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="532.6,-92.03 543.19,-91.92 534.84,-85.4 532.6,-92.03"/>
-</a>
-</g>
-</g>
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="src_2tools_2map__extractor_2System_8cpp.html#ad70e724f4e849f8c864154c27e124014" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="449.5,-19 366.5,-19 366.5,0 449.5,0 449.5,-19"/>
-<text text-anchor="middle" x="408" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ReadMapDBC</text>
+<g id="a_Node000012"><a xlink:href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2vmapexport_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="428.5,-56 387.5,-56 387.5,-37 428.5,-37 428.5,-56"/>
+<text text-anchor="middle" x="408" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
 </g>
 </g>
@@ -166,6 +148,24 @@ var sectionId = 'dynsection-14';
 <g id="edge11_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
 <g id="a_edge11_Node000001_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M533.49,-88.63C500.73,-77.55 454.73,-61.98 428.8,-53.2"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="532.6,-92.03 543.19,-91.92 534.84,-85.4 532.6,-92.03"/>
+</a>
+</g>
+</g>
+<!-- Node13 -->
+<g id="Node000013" class="node">
+<title>Node13</title>
+<g id="a_Node000013"><a xlink:href="map__extractor_2System_8cpp.html#ad70e724f4e849f8c864154c27e124014" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="449.5,-19 366.5,-19 366.5,0 449.5,0 449.5,-19"/>
+<text text-anchor="middle" x="408" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ReadMapDBC</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node13 -->
+<g id="edge12_Node000001_Node000013" class="edge">
+<title>Node1&#45;&gt;Node13</title>
+<g id="a_edge12_Node000001_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M551.92,-85.44C531.15,-69.05 496.87,-43.77 464,-27.5 457.52,-24.29 450.33,-21.46 443.35,-19.06"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="549.96,-88.35 559.95,-91.87 554.33,-82.89 549.96,-88.35"/>
 </a>
@@ -246,7 +246,7 @@ var sectionId = 'dynsection-14';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="src_2tools_2ToolsCataMop_2map__extractor_2System_8cpp.html#ad338a7dbc41dc40bcecd0479377ef207" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="ToolsCataMop_2map__extractor_2System_8cpp.html#ad338a7dbc41dc40bcecd0479377ef207" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="275,-130 234,-130 234,-111 275,-111 275,-130"/>
 <text text-anchor="middle" x="254.5" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
 </a>
@@ -261,30 +261,30 @@ var sectionId = 'dynsection-14';
 </a>
 </g>
 </g>
-<!-- Node13 -->
-<g id="Node000013" class="node">
-<title>Node13</title>
-<g id="a_Node000013"><a xlink:href="src_2tools_2map__extractor_2System_8cpp.html#a71d75eb31bf7e4d81a31bdde92cde089" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="316,-19 193,-19 193,0 316,0 316,-19"/>
-<text text-anchor="middle" x="254.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ExtractMapsFromMpq</text>
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:href="ToolsCataMop_2map__extractor_2System_8cpp.html#a71d75eb31bf7e4d81a31bdde92cde089" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="316,-93 193,-93 193,-74 316,-74 316,-93"/>
+<text text-anchor="middle" x="254.5" y="-81" font-family="Helvetica,sans-Serif" font-size="10.00">ExtractMapsFromMpq</text>
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node13 -->
-<g id="edge12_Node000012_Node000013" class="edge">
-<title>Node12&#45;&gt;Node13</title>
-<g id="a_edge12_Node000012_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M356.34,-9.5C343.46,-9.5 329.49,-9.5 316.17,-9.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="356.4,-13 366.4,-9.5 356.4,-6 356.4,-13"/>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge10_Node000010_Node000011" class="edge">
+<title>Node10&#45;&gt;Node11</title>
+<g id="a_edge10_Node000010_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M377.1,-83.5C359.72,-83.5 337.18,-83.5 316.24,-83.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="377.19,-87 387.19,-83.5 377.19,-80 377.19,-87"/>
 </a>
 </g>
 </g>
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="src_2tools_2map__extractor_2System_8cpp.html#ad338a7dbc41dc40bcecd0479377ef207" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="137.5,-19 96.5,-19 96.5,0 137.5,0 137.5,-19"/>
-<text text-anchor="middle" x="117" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
+<g id="a_Node000014"><a xlink:href="map__extractor_2System_8cpp.html#a71d75eb31bf7e4d81a31bdde92cde089" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="316,-19 193,-19 193,0 316,0 316,-19"/>
+<text text-anchor="middle" x="254.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ExtractMapsFromMpq</text>
 </a>
 </g>
 </g>
@@ -292,6 +292,24 @@ var sectionId = 'dynsection-14';
 <g id="edge13_Node000013_Node000014" class="edge">
 <title>Node13&#45;&gt;Node14</title>
 <g id="a_edge13_Node000013_Node000014"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M356.34,-9.5C343.46,-9.5 329.49,-9.5 316.17,-9.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="356.4,-13 366.4,-9.5 356.4,-6 356.4,-13"/>
+</a>
+</g>
+</g>
+<!-- Node15 -->
+<g id="Node000015" class="node">
+<title>Node15</title>
+<g id="a_Node000015"><a xlink:href="map__extractor_2System_8cpp.html#ad338a7dbc41dc40bcecd0479377ef207" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="137.5,-19 96.5,-19 96.5,0 137.5,0 137.5,-19"/>
+<text text-anchor="middle" x="117" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">main</text>
+</a>
+</g>
+</g>
+<!-- Node14&#45;&gt;Node15 -->
+<g id="edge14_Node000014_Node000015" class="edge">
+<title>Node14&#45;&gt;Node15</title>
+<g id="a_edge14_Node000014_Node000015"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M182.6,-9.5C166.08,-9.5 149.81,-9.5 137.73,-9.5"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="182.88,-13 192.88,-9.5 182.88,-6 182.88,-13"/>
 </a>

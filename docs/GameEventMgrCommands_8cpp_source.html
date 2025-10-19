@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('GameEventMgrCommands_8cpp_source.html'
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classChatCommandHandler.html#a54e221e3c9205249460d1822fb733952">   32</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classChatCommandHandler.html#a54e221e3c9205249460d1822fb733952">ChatCommandHandler::HandleEventStartEvent</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* args, <a class="code hl_class" href="classWorldSession.html">WorldSession</a>* m_session)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> eventid = atoi(args);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    uint32_t eventid = atoi(args);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">if</span> (eventid == 0)</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_function" href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402">systemMessage</a>(m_session, <span class="stringliteral">&quot;Invalid argument: {}&quot;</span>, args);</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('GameEventMgrCommands_8cpp_source.html'
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classChatCommandHandler.html#a35c60646a651195af415983984210e88">   57</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classChatCommandHandler.html#a35c60646a651195af415983984210e88">ChatCommandHandler::HandleEventStopEvent</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* args, <a class="code hl_class" href="classWorldSession.html">WorldSession</a>* m_session)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> eventid = atoi(args);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    uint32_t eventid = atoi(args);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span> (eventid == 0)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_function" href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402">systemMessage</a>(m_session, <span class="stringliteral">&quot;Invalid argument: {}&quot;</span>, args);</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('GameEventMgrCommands_8cpp_source.html'
 <div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classChatCommandHandler.html#ae566c893a2e95df5c4df37ff5965e2ef">   82</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classChatCommandHandler.html#ae566c893a2e95df5c4df37ff5965e2ef">ChatCommandHandler::HandleEventResetEvent</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* args, <a class="code hl_class" href="classWorldSession.html">WorldSession</a>* m_session)</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> eventid = atoi(args);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    uint32_t eventid = atoi(args);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (eventid == 0)</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_function" href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402">systemMessage</a>(m_session, <span class="stringliteral">&quot;Invalid argument: {}&quot;</span>, args);</div>
@@ -258,7 +258,6 @@ $(document).ready(function(){initNavTree('GameEventMgrCommands_8cpp_source.html'
 <div class="ttc" id="aclassWorldSession_html"><div class="ttname"><a href="classWorldSession.html">WorldSession</a></div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8h_source.html#l00092">WorldSession.h:93</a></div></div>
 <div class="ttc" id="anamespaceUtil_html_a9a604a54078fde28181624aa02db063d"><div class="ttname"><a href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a></div><div class="ttdeci">long long GetTimeDifferenceToNow(const std::chrono::high_resolution_clock::time_point &amp;start_time)</div><div class="ttdoc">Returns the difference between start_time and now in milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="Util_8cpp_source.html#l00150">Util.cpp:150</a></div></div>
 <div class="ttc" id="anamespaceUtil_html_aee85a3996bf0f7eb58f931b3d01d3fe7"><div class="ttname"><a href="namespaceUtil.html#aee85a3996bf0f7eb58f931b3d01d3fe7">Util::TimeNow</a></div><div class="ttdeci">std::chrono::high_resolution_clock::time_point TimeNow()</div><div class="ttdoc">Returns the current point in time.</div><div class="ttdef"><b>Definition</b> <a href="Util_8cpp_source.html#l00130">Util.cpp:130</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

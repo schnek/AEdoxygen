@@ -122,9 +122,9 @@ Include dependency graph for TaxiMgr.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a55a78535bc6d249a25754ea680d3b204" id="r_a55a78535bc6d249a25754ea680d3b204"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TaxiMgr_8cpp.html#a55a78535bc6d249a25754ea680d3b204">getFieldForTaxiNode</a> (<a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> nodeId)</td></tr>
+<tr class="memitem:a55a78535bc6d249a25754ea680d3b204" id="r_a55a78535bc6d249a25754ea680d3b204"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TaxiMgr_8cpp.html#a55a78535bc6d249a25754ea680d3b204">getFieldForTaxiNode</a> (uint32_t nodeId)</td></tr>
 <tr class="separator:a55a78535bc6d249a25754ea680d3b204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc172330baf219de2f96ddce3de6746" id="r_a4bc172330baf219de2f96ddce3de6746"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TaxiMgr_8cpp.html#a4bc172330baf219de2f96ddce3de6746">getSubmaskForTaxiNode</a> (<a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> nodeId)</td></tr>
+<tr class="memitem:a4bc172330baf219de2f96ddce3de6746" id="r_a4bc172330baf219de2f96ddce3de6746"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TaxiMgr_8cpp.html#a4bc172330baf219de2f96ddce3de6746">getSubmaskForTaxiNode</a> (uint32_t nodeId)</td></tr>
 <tr class="separator:a4bc172330baf219de2f96ddce3de6746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -151,9 +151,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> getFieldForTaxiNode </td>
+          <td class="memname">static uint8_t getFieldForTaxiNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>nodeId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -168,12 +168,11 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaxiMgr_8cpp_source.html#l00028">28</a> of file <a class="el" href="TaxiMgr_8cpp_source.html">TaxiMgr.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
 <div class="line"><span class="lineno">   30</span><span class="preprocessor">#if VERSION_STRING &lt; Cata</span></div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a><span class="keyword">&gt;</span>((nodeId - 1) / 32);</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((nodeId - 1) / 32);</div>
 <div class="line"><span class="lineno">   32</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a><span class="keyword">&gt;</span>((nodeId - 1) / 8);</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((nodeId - 1) / 8);</div>
 <div class="line"><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">   35</span>}</div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -192,9 +191,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> getSubmaskForTaxiNode </td>
+          <td class="memname">static uint8_t getSubmaskForTaxiNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>nodeId</em></td><td>)</td>
           <td></td>
         </tr>

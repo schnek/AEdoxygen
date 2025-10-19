@@ -131,17 +131,17 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classGuildMgr.html#afcef98d57d01949cde4cf94f9358355d">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classGuildMgr.html#afcef98d57d01949cde4cf94f9358355d">GuildMgr::update</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <span class="comment">/*diff*/</span>)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classGuildMgr.html#afcef98d57d01949cde4cf94f9358355d">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classGuildMgr.html#afcef98d57d01949cde4cf94f9358355d">GuildMgr::update</a>(uint32_t <span class="comment">/*diff*/</span>)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classGuildMgr.html#a516285821b3142542b809965ca591163">firstSave</a>)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_variable" href="classGuildMgr.html#afac714d6ea7fa31e4f5ce6a315cec9ea">lastSave</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(time(<span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_variable" href="classGuildMgr.html#afac714d6ea7fa31e4f5ce6a315cec9ea">lastSave</a> = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(time(<span class="keyword">nullptr</span>));</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_variable" href="classGuildMgr.html#a516285821b3142542b809965ca591163">firstSave</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span> (time(<span class="keyword">nullptr</span>) &gt;= <a class="code hl_variable" href="classGuildMgr.html#afac714d6ea7fa31e4f5ce6a315cec9ea">lastSave</a>)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="classGuildMgr.html#afac714d6ea7fa31e4f5ce6a315cec9ea">lastSave</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(time(<span class="keyword">nullptr</span>)) + <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.saveInterval;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="classGuildMgr.html#afac714d6ea7fa31e4f5ce6a315cec9ea">lastSave</a> = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(time(<span class="keyword">nullptr</span>)) + <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.saveInterval;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_define" href="GuildMgr_8hpp.html#aef171903a38e30c347ff11360f682f81">sGuildMgr</a>.saveGuilds();</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
@@ -170,14 +170,14 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classGuildMgr.html#ac1e1d61486e5baeea480d7641944c3aa">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classGuildMgr.html#ac1e1d61486e5baeea480d7641944c3aa">GuildMgr::removeGuild</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classGuildMgr.html#ac1e1d61486e5baeea480d7641944c3aa">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classGuildMgr.html#ac1e1d61486e5baeea480d7641944c3aa">GuildMgr::removeGuild</a>(uint32_t guildId)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_variable" href="classGuildMgr.html#a174158d11bf6102462a094ff4a8fa402">GuildStore</a>.erase(guildId);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">   64</a></span><a class="code hl_class" href="classGuild.html">Guild</a>* <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">GuildMgr::getGuildById</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">   64</a></span><a class="code hl_class" href="classGuild.html">Guild</a>* <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">GuildMgr::getGuildById</a>(uint32_t guildId)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    GuildContainer::const_iterator itr = <a class="code hl_variable" href="classGuildMgr.html#a174158d11bf6102462a094ff4a8fa402">GuildStore</a>.find(guildId);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (itr != <a class="code hl_variable" href="classGuildMgr.html#a174158d11bf6102462a094ff4a8fa402">GuildStore</a>.end())</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//\brief used only by LuAEngine!</span></div>
 <div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classGuildMgr.html#a13c1aaf0c6fe1ea88f92f7f3cf880ffd">   74</a></span><a class="code hl_class" href="classGuild.html">Guild</a>* <a class="code hl_function" href="classGuildMgr.html#a13c1aaf0c6fe1ea88f92f7f3cf880ffd">GuildMgr::getGuildByLeader</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classGuildMgr.html#a13c1aaf0c6fe1ea88f92f7f3cf880ffd">   74</a></span><a class="code hl_class" href="classGuild.html">Guild</a>* <a class="code hl_function" href="classGuildMgr.html#a13c1aaf0c6fe1ea88f92f7f3cf880ffd">GuildMgr::getGuildByLeader</a>(uint64_t guid)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">for</span> (GuildContainer::const_iterator itr = <a class="code hl_variable" href="classGuildMgr.html#a174158d11bf6102462a094ff4a8fa402">GuildStore</a>.begin(); itr != <a class="code hl_variable" href="classGuildMgr.html#a174158d11bf6102462a094ff4a8fa402">GuildStore</a>.end(); ++itr)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span> (itr-&gt;second-&gt;getLeaderGUID() == guid)</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            {</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                ++count;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild definitions in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild definitions in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
@@ -278,11 +278,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            {</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                    guild-&gt;loadRankFromDB(fields);</div>
@@ -290,7 +290,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                ++count;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild ranks in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild ranks in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
@@ -310,13 +310,13 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        }</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            {</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <a class="code hl_class" href="classField.html">Field</a>* fields2 = result2-&gt;Fetch();</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                    guild-&gt;loadMemberFromDB(fields, fields2);</div>
@@ -324,7 +324,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                ++count;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow() &amp;&amp; result2-&gt;NextRow());</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild members int {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild members int {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        }</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
@@ -345,11 +345,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        }</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        {</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            {</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                    guild-&gt;loadBankRightFromDB(fields);</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                ++count;</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} bank tab rights in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} bank tab rights in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
@@ -378,11 +378,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            {</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                    guild-&gt;loadEventLogFromDB(fields);</div>
@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                ++count;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild event logs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild event logs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        }</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
@@ -410,11 +410,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        }</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        {</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            {</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    guild-&gt;loadBankEventLogFromDB(fields);</div>
@@ -422,7 +422,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                ++count;</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild bank event logs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild bank event logs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        }</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    }</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
@@ -443,11 +443,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        }</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        {</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            {</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                    guild-&gt;loadGuildNewsLogFromDB(fields);</div>
@@ -455,7 +455,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                ++count;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild new logs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild new logs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        }</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    }</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
@@ -476,11 +476,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        }</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        {</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            {</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                    guild-&gt;loadBankTabFromDB(fields);</div>
@@ -488,7 +488,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                ++count;</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild bank tabs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild bank tabs in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        }</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    }</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
@@ -505,11 +505,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        }</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        {</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>            uint32_t count = 0;</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>            <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            {</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                uint32_t guildId = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                    guild-&gt;loadBankItemFromDB(fields);</div>
@@ -517,7 +517,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                ++count;</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.info(<span class="stringliteral">&quot;Loaded {} guild bank items in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.info(<span class="stringliteral">&quot;Loaded {} guild bank items in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        }</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    }</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
@@ -529,7 +529,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 </div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
 <div class="foldopen" id="foldopen00408" data-start="{" data-end="}">
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="classGuildMgr.html#a4afd89466a5be75e6544eefcafcba165">  408</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classGuildMgr.html#a4afd89466a5be75e6544eefcafcba165">GuildMgr::getNextGuildId</a>()</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="classGuildMgr.html#a4afd89466a5be75e6544eefcafcba165">  408</a></span>uint32_t <a class="code hl_function" href="classGuildMgr.html#a4afd89466a5be75e6544eefcafcba165">GuildMgr::getNextGuildId</a>()</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>{</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="ObjectMgr_8hpp.html#a736e30da2b5261060ac6cdbb5de3b787">sObjectMgr</a>.generateGuildId();</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>}</div>
@@ -538,7 +538,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="comment">// Guild collection</span></div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="foldopen" id="foldopen00415" data-start="{" data-end="}">
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="classGuildMgr.html#a49ceb2c1933163c6b5b2d5261f5a6422">  415</a></span>std::string <a class="code hl_function" href="classGuildMgr.html#a49ceb2c1933163c6b5b2d5261f5a6422">GuildMgr::getGuildNameById</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> guildId)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="classGuildMgr.html#a49ceb2c1933163c6b5b2d5261f5a6422">  415</a></span>std::string <a class="code hl_function" href="classGuildMgr.html#a49ceb2c1933163c6b5b2d5261f5a6422">GuildMgr::getGuildNameById</a>(uint32_t guildId)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_function" href="classGuildMgr.html#aa819632663e563948187d013d3b068f1">getGuildById</a>(guildId))</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">return</span> guild-&gt;getName();</div>
@@ -548,11 +548,11 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 </div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
 <div class="foldopen" id="foldopen00423" data-start="{" data-end="}">
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classGuildMgr.html#aa7002d4c58aebb97c4b8d63368556b93">  423</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classGuildMgr.html#aa7002d4c58aebb97c4b8d63368556b93">GuildMgr::getXPForGuildLevel</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> level)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classGuildMgr.html#aa7002d4c58aebb97c4b8d63368556b93">  423</a></span>uint32_t <a class="code hl_function" href="classGuildMgr.html#aa7002d4c58aebb97c4b8d63368556b93">GuildMgr::getXPForGuildLevel</a>(uint8_t level)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordflow">if</span> (level &lt; <a class="code hl_variable" href="classGuildMgr.html#a436e2b8473f5333a39e34e2907b1ae3b">GuildXPperLevel</a>.size())</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    {</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classGuildMgr.html#a436e2b8473f5333a39e34e2907b1ae3b">GuildXPperLevel</a>[level]);</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classGuildMgr.html#a436e2b8473f5333a39e34e2907b1ae3b">GuildXPperLevel</a>[level]);</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    }</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keywordflow">return</span> 0;</div>
@@ -565,7 +565,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="keyword">auto</span> startTime = <a class="code hl_function" href="namespaceUtil.html#aee85a3996bf0f7eb58f931b3d01d3fe7">Util::TimeNow</a>();</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    <a class="code hl_variable" href="classGuildMgr.html#a436e2b8473f5333a39e34e2907b1ae3b">GuildXPperLevel</a>.resize(<a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxLevel);</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> level = 0; level &lt; <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxLevel; ++level)</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="keywordflow">for</span> (uint8_t level = 0; level &lt; <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxLevel; ++level)</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        <a class="code hl_variable" href="classGuildMgr.html#a436e2b8473f5333a39e34e2907b1ae3b">GuildXPperLevel</a>[level] = 0;</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    <span class="comment">//                                         0         1</span></div>
@@ -576,14 +576,14 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    }</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    uint32_t count = 0;</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span> </div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    {</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> level = fields[0].<a class="code hl_function" href="classField.html#a45ed51f56d34384e8b0222f13d709dcc">asUint8</a>();</div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> requiredXP = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(fields[1].<a class="code hl_function" href="classField.html#a4736676fbc66bcd541a7e27474b0de22">asUint64</a>());</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        uint32_t level = fields[0].<a class="code hl_function" href="classField.html#a45ed51f56d34384e8b0222f13d709dcc">asUint8</a>();</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        uint32_t requiredXP = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(fields[1].<a class="code hl_function" href="classField.html#a4736676fbc66bcd541a7e27474b0de22">asUint64</a>());</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>        <span class="keywordflow">if</span> (level &gt;= <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxLevel)</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>        {</div>
@@ -597,7 +597,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="comment">// fill level gaps</span></div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> level = 1; level &lt; <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxLevel; ++level)</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">for</span> (uint8_t level = 1; level &lt; <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxLevel; ++level)</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    {</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classGuildMgr.html#a436e2b8473f5333a39e34e2907b1ae3b">GuildXPperLevel</a>[level])</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>        {</div>
@@ -606,7 +606,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>        }</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    }</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span> </div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} xp for guild level definitions in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} xp for guild level definitions in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>}</div>
 </div>
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
@@ -623,7 +623,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    }</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count = 0;</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    uint32_t count = 0;</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    {</div>
@@ -643,7 +643,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        <span class="keywordflow">if</span> (reward.<a class="code hl_variable" href="structGuildReward.html#a5455d116733c05927bcbc6dc62f345ff">standing</a> &gt;= 8)</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        {</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;Guild rewards contains wrong reputation standing {}, max is {}&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(reward.<a class="code hl_variable" href="structGuildReward.html#a5455d116733c05927bcbc6dc62f345ff">standing</a>), 8 - 1);</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;Guild rewards contains wrong reputation standing {}, max is {}&quot;</span>, uint32_t(reward.<a class="code hl_variable" href="structGuildReward.html#a5455d116733c05927bcbc6dc62f345ff">standing</a>), 8 - 1);</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>        }</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
@@ -651,7 +651,7 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        ++count;</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    } <span class="keywordflow">while</span> (result-&gt;NextRow());</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild reward definitions in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;Loaded {} guild reward definitions in {} ms&quot;</span>, count, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>}</div>
 </div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
@@ -721,9 +721,6 @@ $(document).ready(function(){initNavTree('GuildMgr_8cpp_source.html',''); initRe
 <div class="ttc" id="astructGuildReward_html_a5455d116733c05927bcbc6dc62f345ff"><div class="ttname"><a href="structGuildReward.html#a5455d116733c05927bcbc6dc62f345ff">GuildReward::standing</a></div><div class="ttdeci">uint8_t standing</div><div class="ttdef"><b>Definition</b> <a href="GuildDefinitions_8hpp_source.html#l00284">GuildDefinitions.hpp:284</a></div></div>
 <div class="ttc" id="astructGuildReward_html_a937f44c303846d1fbcf6781cfd91b87b"><div class="ttname"><a href="structGuildReward.html#a937f44c303846d1fbcf6781cfd91b87b">GuildReward::racemask</a></div><div class="ttdeci">int32_t racemask</div><div class="ttdef"><b>Definition</b> <a href="GuildDefinitions_8hpp_source.html#l00281">GuildDefinitions.hpp:281</a></div></div>
 <div class="ttc" id="astructGuildReward_html_afa639f071f90bda98d2e69dc55b2627a"><div class="ttname"><a href="structGuildReward.html#afa639f071f90bda98d2e69dc55b2627a">GuildReward::achievementId</a></div><div class="ttdeci">uint32_t achievementId</div><div class="ttdef"><b>Definition</b> <a href="GuildDefinitions_8hpp_source.html#l00283">GuildDefinitions.hpp:283</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

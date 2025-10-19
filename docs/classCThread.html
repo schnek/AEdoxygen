@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a251aef6094b8084d4643859b8a5a28f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee51e3f6534ab3dbfc1d75994ca7319" id="r_a1ee51e3f6534ab3dbfc1d75994ca7319"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCThread.html#a1ee51e3f6534ab3dbfc1d75994ca7319">GetStartTime</a> ()</td></tr>
 <tr class="separator:a1ee51e3f6534ab3dbfc1d75994ca7319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b30bf9bbeb18bc370e582d4dd64de7" id="r_af5b30bf9bbeb18bc370e582d4dd64de7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCThread.html#af5b30bf9bbeb18bc370e582d4dd64de7">run</a> ()</td></tr>
+<tr class="memitem:af5b30bf9bbeb18bc370e582d4dd64de7" id="r_af5b30bf9bbeb18bc370e582d4dd64de7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCThread.html#af5b30bf9bbeb18bc370e582d4dd64de7">run</a> ()</td></tr>
 <tr class="separator:af5b30bf9bbeb18bc370e582d4dd64de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae54b945d358cd977725475c8be66b686" id="r_ae54b945d358cd977725475c8be66b686"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCThread.html#ae54b945d358cd977725475c8be66b686">onShutdown</a> ()</td></tr>
 <tr class="separator:ae54b945d358cd977725475c8be66b686"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af66330f2f5605a8f104ec346014da976 inherit pub_methods_classThreadBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dbbd3714a3a446c74258c34bf9f6da0 inherit pub_methods_classThreadBase" id="r_a3dbbd3714a3a446c74258c34bf9f6da0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadBase.html#a3dbbd3714a3a446c74258c34bf9f6da0">~ThreadBase</a> ()</td></tr>
 <tr class="separator:a3dbbd3714a3a446c74258c34bf9f6da0 inherit pub_methods_classThreadBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b38a5b02cf9b8b373bae3d91d40252a inherit pub_methods_classThreadBase" id="r_a9b38a5b02cf9b8b373bae3d91d40252a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadBase.html#a9b38a5b02cf9b8b373bae3d91d40252a">runThread</a> ()=0</td></tr>
+<tr class="memitem:a9b38a5b02cf9b8b373bae3d91d40252a inherit pub_methods_classThreadBase" id="r_a9b38a5b02cf9b8b373bae3d91d40252a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadBase.html#a9b38a5b02cf9b8b373bae3d91d40252a">runThread</a> ()=0</td></tr>
 <tr class="separator:a9b38a5b02cf9b8b373bae3d91d40252a inherit pub_methods_classThreadBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -191,17 +191,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassCThread_html_a80ab1dd54745eb0cd9d58afe320097c6"><div class="ttname"><a href="classCThread.html#a80ab1dd54745eb0cd9d58afe320097c6">CThread::ThreadState</a></div><div class="ttdeci">std::atomic&lt; unsigned long &gt; ThreadState</div><div class="ttdef"><b>Definition</b> <a href="CThreads_8h_source.html#l00074">CThreads.h:74</a></div></div>
 <div class="ttc" id="aclassCThread_html_ab4823e768c926f8dc858e5c9c4433178"><div class="ttname"><a href="classCThread.html#ab4823e768c926f8dc858e5c9c4433178">CThread::ThreadId</a></div><div class="ttdeci">int ThreadId</div><div class="ttdef"><b>Definition</b> <a href="CThreads_8h_source.html#l00076">CThreads.h:76</a></div></div>
 <div class="ttc" id="aclassThreadBase_html_af66330f2f5605a8f104ec346014da976"><div class="ttname"><a href="classThreadBase.html#af66330f2f5605a8f104ec346014da976">ThreadBase::ThreadBase</a></div><div class="ttdeci">ThreadBase()</div><div class="ttdef"><b>Definition</b> <a href="LegacyThreadBase_8h_source.html#l00013">LegacyThreadBase.h:13</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_ad256868eded3b90abee1b5f656bb678e_cgraph.svg" width="150" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_ad256868eded3b90abee1b5f656bb678e_icgraph.svg" width="150" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a85a583b2edf56a6448e71e3a9ad301d2" name="a85a583b2edf56a6448e71e3a9ad301d2"></a>
@@ -223,17 +213,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
 <div class="line"><span class="lineno">   36</span> </div>
 <div class="line"><span class="lineno">   37</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_a85a583b2edf56a6448e71e3a9ad301d2_cgraph.svg" width="160" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_a85a583b2edf56a6448e71e3a9ad301d2_icgraph.svg" width="160" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -359,12 +339,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_ae54b945d358cd977725475c8be66b686_cgraph.svg" width="407" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_ae54b945d358cd977725475c8be66b686_icgraph.svg" width="175" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_ae54b945d358cd977725475c8be66b686_cgraph.svg" width="407" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -413,7 +388,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> CThread::run </td>
+          <td class="memname">bool CThread::run </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -430,17 +405,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_af5b30bf9bbeb18bc370e582d4dd64de7_cgraph.svg" width="116" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_af5b30bf9bbeb18bc370e582d4dd64de7_icgraph.svg" width="116" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a50a243e39a3598bf238882403730a3dc" name="a50a243e39a3598bf238882403730a3dc"></a>
@@ -472,7 +437,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_a50a243e39a3598bf238882403730a3dc_icgraph.svg" width="407" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCThread_a50a243e39a3598bf238882403730a3dc_icgraph.svg" width="407" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

@@ -1,17 +1,8 @@
 var searchData=
 [
-  ['operator_21_3d_0',['operator!=',['../classdetail_1_1uint128__fallback.html#a9df9dab60ef2da5c4176e400f5e168d3',1,'detail::uint128_fallback::operator!='],['../classbasic__string__view.html#aa1c98cde00b9ef678bb175b93cda7c7d',1,'basic_string_view::operator!=']]],
-  ['operator_26_1',['operator&amp;',['../classdetail_1_1uint128__fallback.html#ad1a1ef0f55a7a22d72f7a9437e76f118',1,'detail::uint128_fallback']]],
-  ['operator_2a_2',['operator*',['../classdetail_1_1uint128__fallback.html#a803738b57c496bf592e71c1e9aebadbd',1,'detail::uint128_fallback::operator*'],['../classG3D_1_1Color4.html#aeabf77106e45e950e4a8eaa80779a809',1,'G3D::Color4::operator*'],['../classG3D_1_1Matrix3.html#a116694858d25a656397d96fef259d204',1,'G3D::Matrix3::operator*'],['../classG3D_1_1Matrix3.html#a882e9e4a590c0c5403926175db256b3a',1,'G3D::Matrix3::operator*'],['../classG3D_1_1Matrix3.html#aee94646f237db280d57f3d52a4195f43',1,'G3D::Matrix3::operator*'],['../classG3D_1_1Matrix3.html#ad322a924479ed3200e69041c4816865a',1,'G3D::Matrix3::operator*'],['../classG3D_1_1Quat.html#a4789fdf8c945880b50876a36ce12e54e',1,'G3D::Quat::operator*'],['../classG3D_1_1Vector4.html#abbea42242c23d85deeb9fcdb214ab5e1',1,'G3D::Vector4::operator*'],['../classVec3D.html#ae30695a767fd2a31300bd1b858fda811',1,'Vec3D::operator*'],['../classVec2D.html#a660f31d3628356cb7d2aeb45e90da03b',1,'Vec2D::operator*'],['../classVec3D.html#ae30695a767fd2a31300bd1b858fda811',1,'Vec3D::operator*'],['../classVec2D.html#a660f31d3628356cb7d2aeb45e90da03b',1,'Vec2D::operator*']]],
-  ['operator_2b_3',['operator+',['../classdetail_1_1uint128__fallback.html#abd47b7b257f2a47dba7ebcf32bb666b3',1,'detail::uint128_fallback::operator+'],['../classdetail_1_1counting__iterator.html#ace2655006a76926f947d2114f61a25a0',1,'detail::counting_iterator::operator+']]],
-  ['operator_2d_4',['operator-',['../classdetail_1_1uint128__fallback.html#a4134321b0f4294ae3257cfbe7522fb4f',1,'detail::uint128_fallback']]],
-  ['operator_3c_5',['operator&lt;',['../classbasic__string__view.html#a51adcef1fd00934691bef6390f616033',1,'basic_string_view']]],
-  ['operator_3c_3c_6',['operator&lt;&lt;',['../classVec3D.html#ae0085c2ad66a850cb8270bbdd52d680e',1,'Vec3D::operator&lt;&lt;'],['../classVec3D.html#ae0085c2ad66a850cb8270bbdd52d680e',1,'Vec3D::operator&lt;&lt;']]],
-  ['operator_3c_3d_7',['operator&lt;=',['../classbasic__string__view.html#a87886a2f7dc700e1d33dd409970f96bb',1,'basic_string_view']]],
-  ['operator_3d_3d_8',['operator==',['../classbasic__string__view.html#a416427f19611cc511d141cba0b795622',1,'basic_string_view::operator=='],['../classdetail_1_1uint128__fallback.html#a390e03814fcd56b1c0d817cd1f8ca034',1,'detail::uint128_fallback::operator==']]],
-  ['operator_3e_9',['operator&gt;',['../classbasic__string__view.html#a47eae4dfe3f6619699dfa51c24cef7d8',1,'basic_string_view::operator&gt;'],['../classdetail_1_1uint128__fallback.html#abd97f3686de5b0bded47456e9d107561',1,'detail::uint128_fallback::operator&gt;']]],
-  ['operator_3e_3d_10',['operator&gt;=',['../classbasic__string__view.html#adf0af0ec8d20a1a9278802148ae20be8',1,'basic_string_view']]],
-  ['operator_3e_3e_11',['operator&gt;&gt;',['../classVec3D.html#a9aa8110efc91a62f0719d9476b3cd7cf',1,'Vec3D::operator&gt;&gt;'],['../classVec2D.html#a4c343ad5d1c11513956aba01ba7568c3',1,'Vec2D::operator&gt;&gt;'],['../classVec3D.html#a9aa8110efc91a62f0719d9476b3cd7cf',1,'Vec3D::operator&gt;&gt;'],['../classVec2D.html#a4c343ad5d1c11513956aba01ba7568c3',1,'Vec2D::operator&gt;&gt;']]],
-  ['operator_7c_12',['operator|',['../classtext__style.html#a94de7b960e4533013e6d06ce8a7724c0',1,'text_style::operator|'],['../classdetail_1_1uint128__fallback.html#a6d86597d03fc0077c647668e03a4bb59',1,'detail::uint128_fallback::operator|']]],
-  ['operator_7e_13',['operator~',['../classdetail_1_1uint128__fallback.html#aa3a32d56c2581213dbf60fe9c881a4ce',1,'detail::uint128_fallback']]]
+  ['scriptmgr_0',['ScriptMgr',['../classHookInterface.html#a7a753f61d57353451e90f3f23fec4851',1,'HookInterface']]],
+  ['spellmgr_1',['spellmgr',['../structSpellRankInfo.html#a6777ed104be1415313f7d3cbd395e203',1,'SpellRankInfo::SpellMgr'],['../classSpellInfo.html#a6777ed104be1415313f7d3cbd395e203',1,'SpellInfo::SpellMgr']]],
+  ['spellprocmgr_2',['SpellProcMgr',['../classSpellProc.html#a7880c1814d199a1b9654fedc54c46e55',1,'SpellProc']]],
+  ['sporeai_3',['SporeAI',['../classLoathebAI.html#ab529bcb8ae6d0058e5e826e563081a06',1,'LoathebAI']]],
+  ['subgroup_4',['SubGroup',['../classGroup.html#acfeb0de580990c6f96fa091896da2eda',1,'Group']]]
 ];

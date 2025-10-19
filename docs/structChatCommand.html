@@ -111,16 +111,16 @@ Collaboration diagram for ChatCommand:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af82a2af5ae618f962857a306b5bacb59" id="r_af82a2af5ae618f962857a306b5bacb59"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">HandlerFn</a> = std::function&lt; <a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>(<a class="el" href="classChatCommandHandler.html">ChatCommandHandler</a> *, std::string_view, <a class="el" href="classWorldSession.html">WorldSession</a> *)&gt;</td></tr>
+<tr class="memitem:af82a2af5ae618f962857a306b5bacb59" id="r_af82a2af5ae618f962857a306b5bacb59"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">HandlerFn</a> = std::function&lt; bool(<a class="el" href="classChatCommandHandler.html">ChatCommandHandler</a> *, std::string_view, <a class="el" href="classWorldSession.html">WorldSession</a> *)&gt;</td></tr>
 <tr class="separator:af82a2af5ae618f962857a306b5bacb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1741a240b370fd2ef410bc8a5d9218c6" id="r_a1741a240b370fd2ef410bc8a5d9218c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#a1741a240b370fd2ef410bc8a5d9218c6">ChatCommand</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *cmd, std::string perm, size_t args, <a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">HandlerFn</a> fn, std::string helpText)</td></tr>
+<tr class="memitem:a1741a240b370fd2ef410bc8a5d9218c6" id="r_a1741a240b370fd2ef410bc8a5d9218c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#a1741a240b370fd2ef410bc8a5d9218c6">ChatCommand</a> (const char *cmd, std::string perm, size_t args, <a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">HandlerFn</a> fn, std::string helpText)</td></tr>
 <tr class="separator:a1741a240b370fd2ef410bc8a5d9218c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95656f0d9f785f9496d92499f01e6353" id="r_a95656f0d9f785f9496d92499f01e6353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#a95656f0d9f785f9496d92499f01e6353">ChatCommand</a> (std::string cmd, std::string perm, size_t args, <a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">HandlerFn</a> fn, std::string helpText)</td></tr>
 <tr class="separator:a95656f0d9f785f9496d92499f01e6353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f9c33095d8e33fffe2644f89a5d031" id="r_a29f9c33095d8e33fffe2644f89a5d031"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#a29f9c33095d8e33fffe2644f89a5d031">ChatCommand</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *cmd, std::string perm, size_t args=0)</td></tr>
+<tr class="memitem:a29f9c33095d8e33fffe2644f89a5d031" id="r_a29f9c33095d8e33fffe2644f89a5d031"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#a29f9c33095d8e33fffe2644f89a5d031">ChatCommand</a> (const char *cmd, std::string perm, size_t args=0)</td></tr>
 <tr class="separator:a29f9c33095d8e33fffe2644f89a5d031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c2318acf0329537a98a9b647d6f510" id="r_a91c2318acf0329537a98a9b647d6f510"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChatCommand.html#a91c2318acf0329537a98a9b647d6f510">ChatCommand</a> (std::string cmd, std::string perm, size_t args=0)</td></tr>
 <tr class="separator:a91c2318acf0329537a98a9b647d6f510"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">ChatCommand::HandlerFn</a> =  std::function&lt;<a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>(<a class="el" href="classChatCommandHandler.html">ChatCommandHandler</a>*, std::string_view, <a class="el" href="classWorldSession.html">WorldSession</a>*)&gt;</td>
+          <td class="memname">using <a class="el" href="structChatCommand.html#af82a2af5ae618f962857a306b5bacb59">ChatCommand::HandlerFn</a> =  std::function&lt;bool(<a class="el" href="classChatCommandHandler.html">ChatCommandHandler</a>*, std::string_view, <a class="el" href="classWorldSession.html">WorldSession</a>*)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -171,7 +171,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">ChatCommand::ChatCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
         </tr>
         <tr>
@@ -212,9 +212,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ChatCommand_8hpp_source.html#l00029">29</a> of file <a class="el" href="ChatCommand_8hpp_source.html">ChatCommand.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>        : <a class="code hl_variable" href="structChatCommand.html#a65df965620a0468836afd1fef0264724">command</a>(cmd ? cmd : <span class="stringliteral">&quot;&quot;</span>), <a class="code hl_variable" href="structChatCommand.html#a1a722167daf48ac33b7f4370be66ceef">commandPermission</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(perm)), <a class="code hl_variable" href="structChatCommand.html#a4f3c0aa642f01e375062b5cc20715699">minArgCount</a>(args),</div>
-<div class="line"><span class="lineno">   31</span>          <a class="code hl_variable" href="structChatCommand.html#a66024ff300f2c969ab756ef34829c6ad">handler</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(fn)), <a class="code hl_variable" href="structChatCommand.html#a366feb5a857fca79db49d291cdcdd625">help</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(helpText)) {}</div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="g3dmath_8h_source.html#l00935">g3dmath.h:935</a></div></div>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>        : <a class="code hl_variable" href="structChatCommand.html#a65df965620a0468836afd1fef0264724">command</a>(cmd ? cmd : <span class="stringliteral">&quot;&quot;</span>), <a class="code hl_variable" href="structChatCommand.html#a1a722167daf48ac33b7f4370be66ceef">commandPermission</a>(std::move(perm)), <a class="code hl_variable" href="structChatCommand.html#a4f3c0aa642f01e375062b5cc20715699">minArgCount</a>(args),</div>
+<div class="line"><span class="lineno">   31</span>          <a class="code hl_variable" href="structChatCommand.html#a66024ff300f2c969ab756ef34829c6ad">handler</a>(std::move(fn)), <a class="code hl_variable" href="structChatCommand.html#a366feb5a857fca79db49d291cdcdd625">help</a>(std::move(helpText)) {}</div>
 <div class="ttc" id="astructChatCommand_html_a1a722167daf48ac33b7f4370be66ceef"><div class="ttname"><a href="structChatCommand.html#a1a722167daf48ac33b7f4370be66ceef">ChatCommand::commandPermission</a></div><div class="ttdeci">std::string commandPermission</div><div class="ttdef"><b>Definition</b> <a href="ChatCommand_8hpp_source.html#l00023">ChatCommand.hpp:23</a></div></div>
 <div class="ttc" id="astructChatCommand_html_a366feb5a857fca79db49d291cdcdd625"><div class="ttname"><a href="structChatCommand.html#a366feb5a857fca79db49d291cdcdd625">ChatCommand::help</a></div><div class="ttdeci">std::string help</div><div class="ttdef"><b>Definition</b> <a href="ChatCommand_8hpp_source.html#l00026">ChatCommand.hpp:26</a></div></div>
 <div class="ttc" id="astructChatCommand_html_a4f3c0aa642f01e375062b5cc20715699"><div class="ttname"><a href="structChatCommand.html#a4f3c0aa642f01e375062b5cc20715699">ChatCommand::minArgCount</a></div><div class="ttdeci">size_t minArgCount</div><div class="ttdef"><b>Definition</b> <a href="ChatCommand_8hpp_source.html#l00024">ChatCommand.hpp:24</a></div></div>
@@ -293,7 +292,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">ChatCommand::ChatCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
         </tr>
         <tr>
@@ -322,7 +321,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ChatCommand_8hpp_source.html#l00039">39</a> of file <a class="el" href="ChatCommand_8hpp_source.html">ChatCommand.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>        : <a class="code hl_variable" href="structChatCommand.html#a65df965620a0468836afd1fef0264724">command</a>(cmd ? cmd : <span class="stringliteral">&quot;&quot;</span>), <a class="code hl_variable" href="structChatCommand.html#a1a722167daf48ac33b7f4370be66ceef">commandPermission</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(perm)), <a class="code hl_variable" href="structChatCommand.html#a4f3c0aa642f01e375062b5cc20715699">minArgCount</a>(args),</div>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>        : <a class="code hl_variable" href="structChatCommand.html#a65df965620a0468836afd1fef0264724">command</a>(cmd ? cmd : <span class="stringliteral">&quot;&quot;</span>), <a class="code hl_variable" href="structChatCommand.html#a1a722167daf48ac33b7f4370be66ceef">commandPermission</a>(std::move(perm)), <a class="code hl_variable" href="structChatCommand.html#a4f3c0aa642f01e375062b5cc20715699">minArgCount</a>(args),</div>
 <div class="line"><span class="lineno">   41</span>          <a class="code hl_variable" href="structChatCommand.html#a66024ff300f2c969ab756ef34829c6ad">handler</a>(nullptr), <a class="code hl_variable" href="structChatCommand.html#a366feb5a857fca79db49d291cdcdd625">help</a>() {}</div>
 </div><!-- fragment -->
 </div>

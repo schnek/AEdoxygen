@@ -202,15 +202,14 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>    {</div>
 <div class="line"><span class="lineno">   24</span>        <span class="keyword">const</span> <span class="keyword">auto</span> endTime = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5aea2b2676c28c0db26d39331a336c6b92">start</a> = std::chrono::time_point_cast&lt;std::chrono::microseconds&gt;(<a class="code hl_variable" href="classUtil_1_1BenchmarkTime.html#a832a728b0258e1e7dd788abff9e354a4">m_startTime</a>).time_since_epoch().count();</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keyword">const</span> <span class="keyword">auto</span> start = std::chrono::time_point_cast&lt;std::chrono::microseconds&gt;(<a class="code hl_variable" href="classUtil_1_1BenchmarkTime.html#a832a728b0258e1e7dd788abff9e354a4">m_startTime</a>).time_since_epoch().count();</div>
 <div class="line"><span class="lineno">   27</span>        <span class="keyword">const</span> <span class="keyword">auto</span> end = std::chrono::time_point_cast&lt;std::chrono::microseconds&gt;(endTime).time_since_epoch().count();</div>
 <div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>        <span class="keyword">const</span> <span class="keyword">auto</span> duration = end - <a class="code hl_enumvalue" href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5aea2b2676c28c0db26d39331a336c6b92">start</a>;</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keyword">const</span> <span class="keyword">auto</span> duration = end - start;</div>
 <div class="line"><span class="lineno">   30</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> ms = duration * 0.001;</div>
 <div class="line"><span class="lineno">   31</span> </div>
 <div class="line"><span class="lineno">   32</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;BenchmarkTime:&quot;</span> &lt;&lt; (<a class="code hl_variable" href="classUtil_1_1BenchmarkTime.html#ad53bd01de2d1c2c5a619ee965ef762e8">functionName</a>.empty() ? <span class="stringliteral">&quot;&quot;</span> : <a class="code hl_variable" href="classUtil_1_1BenchmarkTime.html#ad53bd01de2d1c2c5a619ee965ef762e8">functionName</a>) &lt;&lt; duration &lt;&lt; <span class="stringliteral">&quot;: microseconds (&quot;</span> &lt;&lt; ms &lt;&lt; <span class="stringliteral">&quot;ms)\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   33</span>    }</div>
-<div class="ttc" id="anamespacedetail_html_ac742e301ae0a908dc31e49ac3a31fcc5aea2b2676c28c0db26d39331a336c6b92"><div class="ttname"><a href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5aea2b2676c28c0db26d39331a336c6b92">detail::state::start</a></div><div class="ttdeci">@ start</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

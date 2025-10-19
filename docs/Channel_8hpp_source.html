@@ -127,14 +127,14 @@ $(document).ready(function(){initNavTree('Channel_8hpp_source.html',''); initRes
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// Custom channels don&#39;t use channel id</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classChannel.html">Channel</a>(std::string name, <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> team, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> channelId = 0);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classChannel.html">Channel</a>(std::string name, uint8_t team, uint32_t channelId = 0);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="classChannel.html">~Channel</a>();</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::string getChannelName() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    std::string getChannelPassword() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> getChannelId() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> getChannelFlags() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> getChannelTeam() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    uint32_t getChannelId() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    uint8_t getChannelFlags() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    uint8_t getChannelTeam() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> setChannelName(std::string name); <span class="comment">// Used by Lua API</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
@@ -178,12 +178,12 @@ $(document).ready(function(){initNavTree('Channel_8hpp_source.html',''); initRes
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classChannel.html#afb1d3dc595cc10b5c4a8e99cf6afbc37">   74</a></span>    <a class="code hl_typedef" href="Channel_8hpp.html#a36db933d273a28b6aba185309c5bf0fc">MemberMap</a> <a class="code hl_variable" href="classChannel.html#afb1d3dc595cc10b5c4a8e99cf6afbc37">m_members</a>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classChannel.html#aaa66ea637871e5ce638c5303b142ca96">   75</a></span>    std::set&lt;uint32_t&gt; <a class="code hl_variable" href="classChannel.html#aaa66ea637871e5ce638c5303b142ca96">m_bannedMembers</a>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classChannel.html#a49d66c08b9cce442b8d0c08363f564d3">   77</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> m_channelTeam = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classChannel.html#a68579d1a3dc0f99e212ee7f6631119dc">   78</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> m_channelId = 0;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classChannel.html#a383cd0a21ec46c32f2937c0f242434dd">   79</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> m_channelFlags = 0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classChannel.html#a49d66c08b9cce442b8d0c08363f564d3">   77</a></span>    uint8_t m_channelTeam = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classChannel.html#a68579d1a3dc0f99e212ee7f6631119dc">   78</a></span>    uint32_t m_channelId = 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classChannel.html#a383cd0a21ec46c32f2937c0f242434dd">   79</a></span>    uint8_t m_channelFlags = 0;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classChannel.html#a2d4b29d6a2dfb7339b8e317afbff7990">   80</a></span>    <span class="keywordtype">bool</span> m_muted = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classChannel.html#a59c8b0327b39bc72d79cddb583926b40">   81</a></span>    <span class="keywordtype">bool</span> m_announcePlayers = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classChannel.html#af74d44f011c6d7d00d7e2f787d126b67">   82</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> m_minimumLevel = 1;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classChannel.html#af74d44f011c6d7d00d7e2f787d126b67">   82</a></span>    uint8_t m_minimumLevel = 1;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classChannel.html#a4d7561417f8a2a0b40c12dab13d1fe7c">   84</a></span>    <span class="keyword">mutable</span> std::mutex <a class="code hl_variable" href="classChannel.html#a4d7561417f8a2a0b40c12dab13d1fe7c">m_mutexChannel</a>;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
@@ -198,8 +198,6 @@ $(document).ready(function(){initNavTree('Channel_8hpp_source.html',''); initRes
 <div class="ttc" id="aclassChannel_html_afb1d3dc595cc10b5c4a8e99cf6afbc37"><div class="ttname"><a href="classChannel.html#afb1d3dc595cc10b5c4a8e99cf6afbc37">Channel::m_members</a></div><div class="ttdeci">MemberMap m_members</div><div class="ttdef"><b>Definition</b> <a href="Channel_8hpp_source.html#l00074">Channel.hpp:74</a></div></div>
 <div class="ttc" id="aclassPlayer_html"><div class="ttname"><a href="classPlayer.html">Player</a></div><div class="ttdef"><b>Definition</b> <a href="Player_8hpp_source.html#l00101">Player.hpp:102</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

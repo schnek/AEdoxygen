@@ -2,7 +2,7 @@ var searchData=
 [
   ['damageflags_0',['DamageFlags',['../UnitDefines_8hpp.html#a86369668a35dfae7b5040e617dc594d2',1,'UnitDefines.hpp']]],
   ['darkmoonfairecreaturetexts_1',['DarkmoonFaireCreatureTexts',['../Event__Darkmoon__Faire_8h.html#af7bb414076f7a8fa00b974b711b9f845',1,'Event_Darkmoon_Faire.h']]],
-  ['data_2',['data',['../Raid__TrialOfTheCrusader_8hpp.html#af5baa506e65b4caa6be6d1c6661dfe63',1,'Data:&#160;Raid_TrialOfTheCrusader.hpp'],['../Instance__TheVioletHold_8hpp.html#a62a666e0244a05b8c35f4ed9abedf844',1,'Data:&#160;Instance_TheVioletHold.hpp'],['../Instance__OldHillsbradFoothills_8h.html#af5baa506e65b4caa6be6d1c6661dfe63',1,'Data:&#160;Instance_OldHillsbradFoothills.h']]],
+  ['data_2',['data',['../Instance__OldHillsbradFoothills_8h.html#af5baa506e65b4caa6be6d1c6661dfe63',1,'Data:&#160;Instance_OldHillsbradFoothills.h'],['../Raid__TrialOfTheCrusader_8hpp.html#af5baa506e65b4caa6be6d1c6661dfe63',1,'Data:&#160;Raid_TrialOfTheCrusader.hpp'],['../Instance__TheVioletHold_8hpp.html#a62a666e0244a05b8c35f4ed9abedf844',1,'Data:&#160;Instance_TheVioletHold.hpp']]],
   ['dataindex_3',['DataIndex',['../Instance__OldHillsbradFoothills_8h.html#acd63cd93ca0fdfe8177c88f2bb3b5343',1,'Instance_OldHillsbradFoothills.h']]],
   ['datatypes_4',['datatypes',['../Raid__GruulsLair_8hpp.html#afb6eb4f28419b652027fad41104a6d22',1,'DataTypes:&#160;Raid_GruulsLair.hpp'],['../Raid__Magtheridons__Lair_8hpp.html#afb6eb4f28419b652027fad41104a6d22',1,'DataTypes:&#160;Raid_Magtheridons_Lair.hpp']]],
   ['daywatchersettings_5',['DAYWATCHERSETTINGS',['../DayWatcherThread_8h.html#aec119a2dfdc09e8c9a2e077457ea93cb',1,'DayWatcherThread.h']]],
@@ -22,19 +22,9 @@ var searchData=
   ['disabletypes_19',['DisableTypes',['../namespaceVMAP.html#ae6fa86a61cff3bac928739b18ffb8c1b',1,'VMAP']]],
   ['dismountfailure_20',['DismountFailure',['../SpellFailure_8hpp.html#a3057afd6bd5dbbe6c0762f06ad0774ac',1,'SpellFailure.hpp']]],
   ['dispeltype_21',['DispelType',['../DispelType_8hpp.html#a615fdca7a38f5f4fc4106ea6471c71fa',1,'DispelType.hpp']]],
-  ['dragon_22',['dragon',['../namespacedetail.html#a3aece1206795dfb0aecd0df1a2ccf1d5',1,'detail']]],
-  ['druidspells_23',['DruidSpells',['../Druid_8cpp.html#aeec0f89a5dcaf62f9b5fd1225eb6eb1a',1,'Druid.cpp']]],
-  ['dtallochint_24',['dtAllocHint',['../DetourAlloc_8h.html#a318bc084ec7fefd878cd36e0846bd14d',1,'DetourAlloc.h']]],
-  ['dtdetailtriedgeflags_25',['dtDetailTriEdgeFlags',['../DetourNavMesh_8h.html#a42be29b2c7d98704d437ef08e9bc526d',1,'DetourNavMesh.h']]],
-  ['dtfindpathoptions_26',['dtFindPathOptions',['../DetourNavMesh_8h.html#aa783b570776c948098378da1a45e1bac',1,'DetourNavMesh.h']]],
-  ['dtnodeflags_27',['dtNodeFlags',['../DetourNode_8h.html#a2792299fd5fa6e50bb9c5d5b7dd12974',1,'DetourNode.h']]],
-  ['dtpolytypes_28',['dtPolyTypes',['../DetourNavMesh_8h.html#a19937b4ff098f7c52ee08af1b5f39c98',1,'DetourNavMesh.h']]],
-  ['dtraycastoptions_29',['dtRaycastOptions',['../DetourNavMesh_8h.html#a667a15950cb93797b15be3c958e440f0',1,'DetourNavMesh.h']]],
-  ['dtstraightpathflags_30',['dtStraightPathFlags',['../DetourNavMesh_8h.html#ac8cecf1c1e32f8464a1905edfeaebbc7',1,'DetourNavMesh.h']]],
-  ['dtstraightpathoptions_31',['dtStraightPathOptions',['../DetourNavMesh_8h.html#a41a7f5b74dd90b219858a75208bcac4e',1,'DetourNavMesh.h']]],
-  ['dttileflags_32',['dtTileFlags',['../DetourNavMesh_8h.html#ace45ee22124392a9026eb6266000ca1c',1,'DetourNavMesh.h']]],
-  ['duelstate_33',['DuelState',['../PlayerDefines_8hpp.html#a291ff120fe0e5e303522d6d4ded94cb0',1,'PlayerDefines.hpp']]],
-  ['duelstatus_34',['DuelStatus',['../PlayerDefines_8hpp.html#ae41a526599beab289dd5228773f3b99b',1,'PlayerDefines.hpp']]],
-  ['duelwinner_35',['DuelWinner',['../PlayerDefines_8hpp.html#ac4ece15b93c9c12d3ef2958b6a87089a',1,'PlayerDefines.hpp']]],
-  ['dynamicobjecttype_36',['DynamicObjectType',['../DynamicObject_8hpp.html#aee85c2f840289bcf773609333ee91131',1,'DynamicObject.hpp']]]
+  ['druidspells_22',['DruidSpells',['../Druid_8cpp.html#aeec0f89a5dcaf62f9b5fd1225eb6eb1a',1,'Druid.cpp']]],
+  ['duelstate_23',['DuelState',['../PlayerDefines_8hpp.html#a291ff120fe0e5e303522d6d4ded94cb0',1,'PlayerDefines.hpp']]],
+  ['duelstatus_24',['DuelStatus',['../PlayerDefines_8hpp.html#ae41a526599beab289dd5228773f3b99b',1,'PlayerDefines.hpp']]],
+  ['duelwinner_25',['DuelWinner',['../PlayerDefines_8hpp.html#ac4ece15b93c9c12d3ef2958b6a87089a',1,'PlayerDefines.hpp']]],
+  ['dynamicobjecttype_26',['DynamicObjectType',['../DynamicObject_8hpp.html#aee85c2f840289bcf773609333ee91131',1,'DynamicObject.hpp']]]
 ];

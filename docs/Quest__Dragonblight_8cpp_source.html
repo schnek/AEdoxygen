@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('Quest__Dragonblight_8cpp_source.html',
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">if</span> (pCreature == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> chance = <a class="code hl_function" href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a>(1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        uint32_t chance = <a class="code hl_function" href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a>(1);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (chance == 0)</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            pCreature-&gt;<a class="code hl_function" href="classUnit.html#a8f7fc8bb5f537a4a74c2de797cf13e64">setFaction</a>(14);</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('Quest__Dragonblight_8cpp_source.html',
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#if VERSION_STRING &gt; TBC</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// send packet for movie</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <span class="keywordtype">id</span> = 14;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        uint32_t <span class="keywordtype">id</span> = 14;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        mTarget-&gt;<a class="code hl_function" href="classPlayer.html#ab8448b54562afa950b30d045cb28bbf2">sendMovie</a>(<span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
@@ -231,8 +231,7 @@ $(document).ready(function(){initNavTree('Quest__Dragonblight_8cpp_source.html',
 <div class="ttc" id="aclassWoodlandWalker_html_afaf0aad9e886924dd19458f6f14eb7e6"><div class="ttname"><a href="classWoodlandWalker.html#afaf0aad9e886924dd19458f6f14eb7e6">WoodlandWalker::Create</a></div><div class="ttdeci">static CreatureAIScript * Create(Creature *c)</div><div class="ttdef"><b>Definition</b> <a href="Quest__Dragonblight_8cpp_source.html#l00031">Quest_Dragonblight.cpp:31</a></div></div>
 <div class="ttc" id="aclassWrathGateQuestCinema_html"><div class="ttname"><a href="classWrathGateQuestCinema.html">WrathGateQuestCinema</a></div><div class="ttdef"><b>Definition</b> <a href="Quest__Dragonblight_8cpp_source.html#l00061">Quest_Dragonblight.cpp:62</a></div></div>
 <div class="ttc" id="aclassWrathGateQuestCinema_html_a5576edf1336103fe74b1310bbaa1c1ad"><div class="ttname"><a href="classWrathGateQuestCinema.html#a5576edf1336103fe74b1310bbaa1c1ad">WrathGateQuestCinema::OnQuestComplete</a></div><div class="ttdeci">void OnQuestComplete(Player *mTarget, QuestLogEntry *) override</div><div class="ttdef"><b>Definition</b> <a href="Quest__Dragonblight_8cpp_source.html#l00064">Quest_Dragonblight.cpp:64</a></div></div>
-<div class="ttc" id="anamespaceUtil_html_ac09cb1bbc978b41e11720b88fec2800e"><div class="ttname"><a href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a></div><div class="ttdeci">uint32_t getRandomUInt(uint32_t end)</div><div class="ttdef"><b>Definition</b> <a href="src_2shared_2Utilities_2Random_8cpp_source.html#l00032">Random.cpp:32</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
+<div class="ttc" id="anamespaceUtil_html_ac09cb1bbc978b41e11720b88fec2800e"><div class="ttname"><a href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a></div><div class="ttdeci">uint32_t getRandomUInt(uint32_t end)</div><div class="ttdef"><b>Definition</b> <a href="Random_8cpp_source.html#l00032">Random.cpp:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,19 +1,8 @@
 var namespaces_dup =
 [
-    [ "align", "namespacealign.html", [
-      [ "FMT_ENUM_UNDERLYING_TYPE", "namespacealign.html#a9ac3ea6c24029f591f5f3bfd324e8bc3", null ]
-    ] ],
-    [ "anonymous_namespace{DetourNavMesh.cpp}", "namespaceanonymous__namespace_02DetourNavMesh_8cpp_03.html", [
-      [ "closestPointOnDetailEdges", "namespaceanonymous__namespace_02DetourNavMesh_8cpp_03.html#a51162b0eeaadef2c15733a8362f1c4b3", null ]
-    ] ],
     [ "anonymous_namespace{DynamicTree.cpp}", "namespaceanonymous__namespace_02DynamicTree_8cpp_03.html", [
       [ "CHECK_TREE_PERIOD", "namespaceanonymous__namespace_02DynamicTree_8cpp_03.html#a6c8b5b425bcbc0776a4dfa5dae72bf74", null ]
     ] ],
-    [ "anonymous_namespace{Recast.cpp}", "namespaceanonymous__namespace_02Recast_8cpp_03.html", [
-      [ "rcDelete", "namespaceanonymous__namespace_02Recast_8cpp_03.html#a24ca1fa8b73b21eed8c6e0af57224090", null ],
-      [ "rcNew", "namespaceanonymous__namespace_02Recast_8cpp_03.html#a66d9ce1c19a4b31ac653d36e8b70c135", null ]
-    ] ],
-    [ "anonymous_namespace{RecastRegion.cpp}", "namespaceanonymous__namespace_02RecastRegion_8cpp_03.html", "namespaceanonymous__namespace_02RecastRegion_8cpp_03" ],
     [ "anubarak", "namespaceanubarak.html", [
       [ "BossSpells", "namespaceanubarak.html#a604c6ea066c6f5facb3eaa00cabf38fa", [
         [ "SPELL_FREEZE_SLASH", "namespaceanubarak.html#a604c6ea066c6f5facb3eaa00cabf38faac65742429c2fc67741cc038473e9fadc", null ],
@@ -93,8 +82,8 @@ var namespaces_dup =
       [ "SphereSpawn", "namespaceanubarak.html#ad5f79f9743e966a5ea35e9a71f142a6c", null ]
     ] ],
     [ "Arcemu", "namespaceArcemu.html", "namespaceArcemu" ],
-    [ "AscEmu", "namespaceAscEmu.html", "namespaceAscEmu" ],
     [ "Ascemu", "namespaceAscemu.html", "namespaceAscemu" ],
+    [ "AscEmu", "namespaceAscEmu.html", "namespaceAscEmu" ],
     [ "AuraSlots", "namespaceAuraSlots.html", [
       [ "AuraSlotEnum", "namespaceAuraSlots.html#a6574136a3b8739b0414970413dbaae44", [
         [ "PASSIVE_SLOT_START", "namespaceAuraSlots.html#a6574136a3b8739b0414970413dbaae44a433841a9f3b675a7622765f04dda3688", null ],
@@ -433,14 +422,6 @@ var namespaces_dup =
       [ "Doors", "namespaceDeadmines.html#a6ffdeeccc3c73b61dad671e305fbfd4b", null ],
       [ "Guards", "namespaceDeadmines.html#a76cc68e0a29bb5c7caefda6730304b8a", null ]
     ] ],
-    [ "detail", "namespacedetail.html", "namespacedetail" ],
-    [ "detail_exported", "namespacedetail__exported.html", [
-      [ "compile_string_to_view", "namespacedetail__exported.html#a49a9f461220f70b5fdbdf267b5a92638", null ],
-      [ "compile_string_to_view", "namespacedetail__exported.html#a8ce4671a232e1139c6af8c27e6a41354", null ]
-    ] ],
-    [ "enums", "namespaceenums.html", [
-      [ "format_as", "namespaceenums.html#a8edb72b998b5c59c01243d908949ce87", null ]
-    ] ],
     [ "Erekem", "namespaceErekem.html", [
       [ "GuardSpells", "namespaceErekem.html#a2dbc6ac73d44c4a9e8a740b4fdb2af89", [
         [ "SPELL_GUSHING_WOUND", "namespaceErekem.html#a2dbc6ac73d44c4a9e8a740b4fdb2af89a6a90756cefda99192f5a5a8909f85401", null ],
@@ -471,7 +452,7 @@ var namespaces_dup =
     [ "FactorySelector", "namespaceFactorySelector.html", [
       [ "selectMovementGenerator", "namespaceFactorySelector.html#ad1e04aae63a9880b16716773652893f5", null ]
     ] ],
-    [ "G3D", "namespaceG3D.html", "namespaceG3D" ],
+    [ "G3D", "namespaceG3D.html", null ],
     [ "Ichron", "namespaceIchron.html", [
       [ "Actions", "namespaceIchron.html#ab7afb0b4682464fa8b8bba8b71897a04", [
         [ "ACTION_WATER_GLOBULE_HIT", "namespaceIchron.html#ab7afb0b4682464fa8b8bba8b71897a04a76c24e1c561c1073d5d385052bccc51d", null ],
@@ -585,7 +566,6 @@ var namespaces_dup =
         [ "SPELL_LAVA_BURN", "namespaceLavanthor.html#a454821621d6faf0cd59fc2a2ef46c4aea0c13a6ac42ebb8345a4130d571b266f3", null ]
       ] ]
     ] ],
-    [ "literals", "namespaceliterals.html", null ],
     [ "Map", "namespaceMap.html", "namespaceMap" ],
     [ "MapManagement", "namespaceMapManagement.html", "namespaceMapManagement" ],
     [ "MMAP", "namespaceMMAP.html", "namespaceMMAP" ],
@@ -673,11 +653,6 @@ var namespaces_dup =
       [ "GameObjectEntry", "namespaceRagefireChasm.html#af5ad23a002fef3257489e047dbcc0a41", [
         [ "GO_BLOOD_FILLED_ORB", "namespaceRagefireChasm.html#af5ad23a002fef3257489e047dbcc0a41a52282798f2fe05cabaaca117bfa0040a", null ]
       ] ]
-    ] ],
-    [ "safe_duration_cast", "namespacesafe__duration__cast.html", [
-      [ "lossless_integral_conversion", "namespacesafe__duration__cast.html#ad9fbe9a58d2f046c1b477ec0bea62e0c", null ],
-      [ "safe_duration_cast", "namespacesafe__duration__cast.html#a1059bf1770856ae2e6237c57390130c3", null ],
-      [ "safe_float_conversion", "namespacesafe__duration__cast.html#a98daa09969ffc826ab1f539efa4ea826", null ]
     ] ],
     [ "ScarletMonastery", "namespaceScarletMonastery.html", [
       [ "CreatureEntry", "namespaceScarletMonastery.html#a9f55cc8cf08c8f0b09bc291e8f22d21b", [
@@ -794,9 +769,6 @@ var namespaces_dup =
       [ "voidwalkerSpawns", "namespaceShadowfangKeep.html#a54a8bee53f879612094de6ee5613efa5", null ],
       [ "waypoint_script", "namespaceShadowfangKeep.html#a7620acf5564de98955f7e7feec5f83f1", null ]
     ] ],
-    [ "sign", "namespacesign.html", [
-      [ "FMT_ENUM_UNDERLYING_TYPE", "namespacesign.html#ac99478e49f5c4a91ec525f17e8962bad", null ]
-    ] ],
     [ "SocketOps", "namespaceSocketOps.html", [
       [ "Blocking", "namespaceSocketOps.html#ae31fc6884df710bd7db8f78a7bd57168", null ],
       [ "CloseSocket", "namespaceSocketOps.html#adfff312a4c45581aa6313ef5c9a9e796", null ],
@@ -808,9 +780,6 @@ var namespaces_dup =
       [ "SetRecvBufferSize", "namespaceSocketOps.html#acb0bba40e5c70c0533a5e437e81ac92b", null ],
       [ "SetSendBufferSize", "namespaceSocketOps.html#a8e574f1ccc085e68e489f0055753aff3", null ],
       [ "SetTimeout", "namespaceSocketOps.html#ac3c54e6453f499f60fdfcdaaf3b083d0", null ]
-    ] ],
-    [ "std", "namespacestd.html", [
-      [ "pow", "namespacestd.html#ad45390caf51ab055838b2ad1c7d44a66", null ]
     ] ],
     [ "TaxiNodeError", "namespaceTaxiNodeError.html", null ],
     [ "TimeBitmask", "namespaceTimeBitmask.html", null ],
@@ -888,7 +857,6 @@ var namespaces_dup =
         [ "SAY_DEATH", "namespacetwins.html#a8b9d04290abec013d3770ed2c2a973f1ac8acbc7f8f45ad02dcabca3bedb694ba", null ]
       ] ]
     ] ],
-    [ "utf8", "namespaceutf8.html", "namespaceutf8" ],
     [ "Util", "namespaceUtil.html", "namespaceUtil" ],
     [ "VMAP", "namespaceVMAP.html", "namespaceVMAP" ],
     [ "WailingCaverns", "namespaceWailingCaverns.html", [

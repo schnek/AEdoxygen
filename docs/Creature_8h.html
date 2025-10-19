@@ -130,7 +130,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac2902934c6fd83e6c85f73e87e2eff76" id="r_ac2902934c6fd83e6c85f73e87e2eff76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Creature_8h.html#ac2902934c6fd83e6c85f73e87e2eff76">get_byte</a> (<a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a>, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> index)</td></tr>
+<tr class="memitem:ac2902934c6fd83e6c85f73e87e2eff76" id="r_ac2902934c6fd83e6c85f73e87e2eff76"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Creature_8h.html#ac2902934c6fd83e6c85f73e87e2eff76">get_byte</a> (uint32_t buffer, uint32_t index)</td></tr>
 <tr class="separator:ac2902934c6fd83e6c85f73e87e2eff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -141,15 +141,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> get_byte </td>
+          <td class="memname">uint8_t get_byte </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
@@ -162,20 +162,16 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Creature_8cpp_source.html#l01620">1620</a> of file <a class="el" href="Creature_8cpp_source.html">Creature.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1621</span>{</div>
-<div class="line"><span class="lineno"> 1622</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mask = <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(~0ul);</div>
-<div class="line"><span class="lineno"> 1623</span>    <span class="keywordflow">if</span> (index &gt; <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>) - 1)</div>
+<div class="line"><span class="lineno"> 1622</span>    uint32_t mask = uint32_t(~0ul);</div>
+<div class="line"><span class="lineno"> 1623</span>    <span class="keywordflow">if</span> (index &gt; <span class="keyword">sizeof</span>(uint32_t) - 1)</div>
 <div class="line"><span class="lineno"> 1624</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno"> 1625</span> </div>
-<div class="line"><span class="lineno"> 1626</span>    <a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a> = <a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a> &gt;&gt; <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330a6a992d5529f459a44fee58c733255e86">index</a> * 8;</div>
+<div class="line"><span class="lineno"> 1626</span>    buffer = buffer &gt;&gt; index * 8;</div>
 <div class="line"><span class="lineno"> 1627</span>    mask = mask &gt;&gt; 3 * 8;</div>
-<div class="line"><span class="lineno"> 1628</span>    <a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a> = <a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a> &amp; mask;</div>
+<div class="line"><span class="lineno"> 1628</span>    buffer = buffer &amp; mask;</div>
 <div class="line"><span class="lineno"> 1629</span> </div>
-<div class="line"><span class="lineno"> 1630</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)<a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a>;</div>
+<div class="line"><span class="lineno"> 1630</span>    <span class="keywordflow">return</span> (uint8_t)buffer;</div>
 <div class="line"><span class="lineno"> 1631</span>}</div>
-<div class="ttc" id="acrypt__buf__gen_8c_html_a74644aa51cc16278dbd041542e13afd0"><div class="ttname"><a href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a></div><div class="ttdeci">static uint32_t * buffer</div><div class="ttdef"><b>Definition</b> <a href="crypt__buf__gen_8c_source.html#l00031">crypt_buf_gen.c:31</a></div></div>
-<div class="ttc" id="anamespacedetail_html_ac4c79842ec549e8b02145d43a1fbc330a6a992d5529f459a44fee58c733255e86"><div class="ttname"><a href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330a6a992d5529f459a44fee58c733255e86">detail::arg_id_kind::index</a></div><div class="ttdeci">@ index</div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

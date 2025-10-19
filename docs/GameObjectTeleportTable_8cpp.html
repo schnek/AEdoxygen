@@ -129,7 +129,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac9358bc9b1ababf811b6ec73b9ee74e1" id="r_ac9358bc9b1ababf811b6ec73b9ee74e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base64__decode_8c.html#ac81e259cb35585bebc1e57d228d2fe7e">std::map</a>&lt; <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>, <a class="el" href="structGameobjectTeleport.html">GameobjectTeleport</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameObjectTeleportTable_8cpp.html#ac9358bc9b1ababf811b6ec73b9ee74e1">m_teleStorage</a></td></tr>
+<tr class="memitem:ac9358bc9b1ababf811b6ec73b9ee74e1" id="r_ac9358bc9b1ababf811b6ec73b9ee74e1"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint32_t, <a class="el" href="structGameobjectTeleport.html">GameobjectTeleport</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameObjectTeleportTable_8cpp.html#ac9358bc9b1ababf811b6ec73b9ee74e1">m_teleStorage</a></td></tr>
 <tr class="separator:ac9358bc9b1ababf811b6ec73b9ee74e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -164,7 +164,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   96</span>        {</div>
 <div class="line"><span class="lineno">   97</span>            <a class="code hl_struct" href="structGameobjectTeleport.html">GameobjectTeleport</a>* gt = <span class="keyword">new</span> <a class="code hl_struct" href="structGameobjectTeleport.html">GameobjectTeleport</a>;</div>
 <div class="line"><span class="lineno">   98</span>            <a class="code hl_class" href="classField.html">Field</a>* fields = result-&gt;Fetch();</div>
-<div class="line"><span class="lineno">   99</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> entry = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
+<div class="line"><span class="lineno">   99</span>            uint32_t entry = fields[0].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><span class="lineno">  100</span>            gt-&gt;<a class="code hl_variable" href="structGameobjectTeleport.html#abf5d91b93f303361638fadef6ace128a">mapid</a> = fields[1].<a class="code hl_function" href="classField.html#a836008605f9952102e95fa9f2b9bedd6">asUint32</a>();</div>
 <div class="line"><span class="lineno">  101</span>            gt-&gt;<a class="code hl_variable" href="structGameobjectTeleport.html#ae4937e9620a7b9370c7a0c3241db88f3">x</a> = fields[2].<a class="code hl_function" href="classField.html#ad35c786f28e02d6d13e8f63cd6a641d8">asFloat</a>();</div>
 <div class="line"><span class="lineno">  102</span>            gt-&gt;<a class="code hl_variable" href="structGameobjectTeleport.html#ae84d01ab4da4ff54a99e5bf8be9087e4">y</a> = fields[3].<a class="code hl_function" href="classField.html#ad35c786f28e02d6d13e8f63cd6a641d8">asFloat</a>();</div>
@@ -196,7 +196,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructGameobjectTeleport_html_abf5d91b93f303361638fadef6ace128a"><div class="ttname"><a href="structGameobjectTeleport.html#abf5d91b93f303361638fadef6ace128a">GameobjectTeleport::mapid</a></div><div class="ttdeci">uint32_t mapid</div><div class="ttdef"><b>Definition</b> <a href="GameObjectTeleportTable_8cpp_source.html#l00024">GameObjectTeleportTable.cpp:24</a></div></div>
 <div class="ttc" id="astructGameobjectTeleport_html_ae4937e9620a7b9370c7a0c3241db88f3"><div class="ttname"><a href="structGameobjectTeleport.html#ae4937e9620a7b9370c7a0c3241db88f3">GameobjectTeleport::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="GameObjectTeleportTable_8cpp_source.html#l00025">GameObjectTeleportTable.cpp:25</a></div></div>
 <div class="ttc" id="astructGameobjectTeleport_html_ae84d01ab4da4ff54a99e5bf8be9087e4"><div class="ttname"><a href="structGameobjectTeleport.html#ae84d01ab4da4ff54a99e5bf8be9087e4">GameobjectTeleport::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="GameObjectTeleportTable_8cpp_source.html#l00025">GameObjectTeleportTable.cpp:25</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -218,7 +217,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="base64__decode_8c.html#ac81e259cb35585bebc1e57d228d2fe7e">std::map</a>&lt;<a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>, <a class="el" href="structGameobjectTeleport.html">GameobjectTeleport</a>*&gt; m_teleStorage</td>
+          <td class="memname">std::map&lt;uint32_t, <a class="el" href="structGameobjectTeleport.html">GameobjectTeleport</a>*&gt; m_teleStorage</td>
         </tr>
       </table>
 </div><div class="memdoc">

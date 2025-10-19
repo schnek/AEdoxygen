@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('LuaSpell_8hpp.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="SpellInfo_8hpp_source.html">Spell/SpellInfo.hpp</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="lua_8h_source.html">lua/lua.h</a>&gt;</code><br />
+<code>#include &lt;lua/lua.h&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -131,14 +131,14 @@ Macros</h2></td></tr>
 <tr class="separator:af8acd33919881f78403eeb0931dd22a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eeda0a6ab6f82ef2d4f4afcae04a5d3" id="r_a1eeda0a6ab6f82ef2d4f4afcae04a5d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaSpell_8hpp.html#a1eeda0a6ab6f82ef2d4f4afcae04a5d3">GET_SPELLVAR_CHAR</a>(proto,  offset,  subindex)&#160;&#160;&#160;*(char**)((char*)(proto) + (offset) + (subindex))</td></tr>
 <tr class="separator:a1eeda0a6ab6f82ef2d4f4afcae04a5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a0b173516e2e4a4919bfaec5236bec" id="r_a00a0b173516e2e4a4919bfaec5236bec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaSpell_8hpp.html#a00a0b173516e2e4a4919bfaec5236bec">GET_SPELLVAR_BOOL</a>(proto,  offset,  subindex)&#160;&#160;&#160;*(<a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>*)((char*)(proto) + (offset) + (subindex))</td></tr>
+<tr class="memitem:a00a0b173516e2e4a4919bfaec5236bec" id="r_a00a0b173516e2e4a4919bfaec5236bec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaSpell_8hpp.html#a00a0b173516e2e4a4919bfaec5236bec">GET_SPELLVAR_BOOL</a>(proto,  offset,  subindex)&#160;&#160;&#160;*(bool*)((char*)(proto) + (offset) + (subindex))</td></tr>
 <tr class="separator:a00a0b173516e2e4a4919bfaec5236bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35378e7edc657108a78156bc13cfa8d3" id="r_a35378e7edc657108a78156bc13cfa8d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaSpell_8hpp.html#a35378e7edc657108a78156bc13cfa8d3">GET_SPELLVAR_FLOAT</a>(proto,  offset,  subindex)&#160;&#160;&#160;*(float*)((char*)(proto) + (offset) + (subindex))</td></tr>
 <tr class="separator:a35378e7edc657108a78156bc13cfa8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a68e8c553dc22262c6d0a487374df7446" id="r_a68e8c553dc22262c6d0a487374df7446"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLuaSpellEntry.html">LuaSpellEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaSpell_8hpp.html#a68e8c553dc22262c6d0a487374df7446">GetLuaSpellEntryByName</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *name)</td></tr>
+<tr class="memitem:a68e8c553dc22262c6d0a487374df7446" id="r_a68e8c553dc22262c6d0a487374df7446"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLuaSpellEntry.html">LuaSpellEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaSpell_8hpp.html#a68e8c553dc22262c6d0a487374df7446">GetLuaSpellEntryByName</a> (const char *name)</td></tr>
 <tr class="separator:a68e8c553dc22262c6d0a487374df7446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -174,7 +174,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;*(<a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>*)((char*)(proto) + (offset) + (subindex))</td>
+          <td></td><td>&#160;&#160;&#160;*(bool*)((char*)(proto) + (offset) + (subindex))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -304,7 +304,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structLuaSpellEntry.html">LuaSpellEntry</a> GetLuaSpellEntryByName </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -318,7 +318,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LuaSpell_8hpp_source.html#l00150">150</a> of file <a class="el" href="LuaSpell_8hpp_source.html">LuaSpell.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
-<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> itr = 0; <a class="code hl_variable" href="LuaSpell_8hpp.html#aedaffb44e4f1f3cc8b8e87d791bea3cd">luaSpellVars</a>[itr].<a class="code hl_variable" href="structLuaSpellEntry.html#a5f61ff7e84c1b5689607af2b3190f0d3">name</a> != NULL; itr++)</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">for</span> (uint32_t itr = 0; <a class="code hl_variable" href="LuaSpell_8hpp.html#aedaffb44e4f1f3cc8b8e87d791bea3cd">luaSpellVars</a>[itr].<a class="code hl_variable" href="structLuaSpellEntry.html#a5f61ff7e84c1b5689607af2b3190f0d3">name</a> != NULL; itr++)</div>
 <div class="line"><span class="lineno">  153</span>    {</div>
 <div class="line"><span class="lineno">  154</span>        <a class="code hl_struct" href="structLuaSpellEntry.html">LuaSpellEntry</a> l = <a class="code hl_variable" href="LuaSpell_8hpp.html#aedaffb44e4f1f3cc8b8e87d791bea3cd">luaSpellVars</a>[itr];</div>
 <div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (strcmp(l.<a class="code hl_variable" href="structLuaSpellEntry.html#a5f61ff7e84c1b5689607af2b3190f0d3">name</a>, name) == 0)  <span class="comment">//they entered a correct var name</span></div>
@@ -330,7 +330,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="aLuaSpell_8hpp_html_aedaffb44e4f1f3cc8b8e87d791bea3cd"><div class="ttname"><a href="LuaSpell_8hpp.html#aedaffb44e4f1f3cc8b8e87d791bea3cd">luaSpellVars</a></div><div class="ttdeci">LuaSpellEntry luaSpellVars[]</div><div class="ttdef"><b>Definition</b> <a href="LuaSpell_8hpp_source.html#l00030">LuaSpell.hpp:30</a></div></div>
 <div class="ttc" id="astructLuaSpellEntry_html"><div class="ttname"><a href="structLuaSpellEntry.html">LuaSpellEntry</a></div><div class="ttdef"><b>Definition</b> <a href="LuaSpell_8hpp_source.html#l00023">LuaSpell.hpp:24</a></div></div>
 <div class="ttc" id="astructLuaSpellEntry_html_a5f61ff7e84c1b5689607af2b3190f0d3"><div class="ttname"><a href="structLuaSpellEntry.html#a5f61ff7e84c1b5689607af2b3190f0d3">LuaSpellEntry::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> <a href="LuaSpell_8hpp_source.html#l00025">LuaSpell.hpp:25</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

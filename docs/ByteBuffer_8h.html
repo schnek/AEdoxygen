@@ -148,10 +148,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ae50130c4c12aacfead7414860f74a621"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ByteBuffer_8h.html#ae50130c4c12aacfead7414860f74a621">operator&gt;&gt;</a> (<a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;b, std::list&lt; T &gt; &amp;v)</td></tr>
 <tr class="separator:ae50130c4c12aacfead7414860f74a621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8198f81d6bdbff951969cf81a5cf019c" id="r_a8198f81d6bdbff951969cf81a5cf019c"><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
-<tr class="memitem:a8198f81d6bdbff951969cf81a5cf019c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ByteBuffer_8h.html#a8198f81d6bdbff951969cf81a5cf019c">operator&lt;&lt;</a> (<a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;b, <a class="el" href="base64__decode_8c.html#ac81e259cb35585bebc1e57d228d2fe7e">std::map</a>&lt; K, V &gt; &amp;m)</td></tr>
+<tr class="memitem:a8198f81d6bdbff951969cf81a5cf019c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ByteBuffer_8h.html#a8198f81d6bdbff951969cf81a5cf019c">operator&lt;&lt;</a> (<a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;b, std::map&lt; K, V &gt; &amp;m)</td></tr>
 <tr class="separator:a8198f81d6bdbff951969cf81a5cf019c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b7fb8bf8bafb646d7d26461326fea6" id="r_a35b7fb8bf8bafb646d7d26461326fea6"><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
-<tr class="memitem:a35b7fb8bf8bafb646d7d26461326fea6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ByteBuffer_8h.html#a35b7fb8bf8bafb646d7d26461326fea6">operator&gt;&gt;</a> (<a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;b, <a class="el" href="base64__decode_8c.html#ac81e259cb35585bebc1e57d228d2fe7e">std::map</a>&lt; K, V &gt; &amp;m)</td></tr>
+<tr class="memitem:a35b7fb8bf8bafb646d7d26461326fea6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ByteBuffer_8h.html#a35b7fb8bf8bafb646d7d26461326fea6">operator&gt;&gt;</a> (<a class="el" href="classByteBuffer.html">ByteBuffer</a> &amp;b, std::map&lt; K, V &gt; &amp;m)</td></tr>
 <tr class="separator:a35b7fb8bf8bafb646d7d26461326fea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -212,7 +212,7 @@ template&lt;typename K , typename V &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="base64__decode_8c.html#ac81e259cb35585bebc1e57d228d2fe7e">std::map</a>&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; K, V &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
@@ -305,20 +305,18 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ByteBuffer_8h_source.html#l00733">733</a> of file <a class="el" href="ByteBuffer_8h_source.html">ByteBuffer.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  734</span>{</div>
-<div class="line"><span class="lineno">  735</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> vsize;</div>
+<div class="line"><span class="lineno">  735</span>    uint32_t vsize;</div>
 <div class="line"><span class="lineno">  736</span>    b &gt;&gt; vsize;</div>
 <div class="line"><span class="lineno">  737</span>    v.<a class="code hl_function" href="classByteBuffer.html#ab9fbbcf0abe4049e2016c1262795c97e">clear</a>();</div>
 <div class="line"><span class="lineno">  738</span>    <span class="keywordflow">while</span> (vsize--)</div>
 <div class="line"><span class="lineno">  739</span>    {</div>
-<div class="line"><span class="lineno">  740</span>        T <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
-<div class="line"><span class="lineno">  741</span>        b &gt;&gt; <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
-<div class="line"><span class="lineno">  742</span>        v.push_back(<a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>);</div>
+<div class="line"><span class="lineno">  740</span>        T t;</div>
+<div class="line"><span class="lineno">  741</span>        b &gt;&gt; t;</div>
+<div class="line"><span class="lineno">  742</span>        v.push_back(t);</div>
 <div class="line"><span class="lineno">  743</span>    }</div>
 <div class="line"><span class="lineno">  744</span>    <span class="keywordflow">return</span> b;</div>
 <div class="line"><span class="lineno">  745</span>}</div>
-<div class="ttc" id="abn__mp__prime__rabin__miller__trials_8c_html_ac310d9181e916ba43604099aee272c71"><div class="ttname"><a href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a></div><div class="ttdeci">int t</div><div class="ttdef"><b>Definition</b> <a href="bn__mp__prime__rabin__miller__trials_8c_source.html#l00020">bn_mp_prime_rabin_miller_trials.c:20</a></div></div>
 <div class="ttc" id="aclassByteBuffer_html_ab9fbbcf0abe4049e2016c1262795c97e"><div class="ttname"><a href="classByteBuffer.html#ab9fbbcf0abe4049e2016c1262795c97e">ByteBuffer::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> <a href="ByteBuffer_8h_source.html#l00070">ByteBuffer.h:70</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -344,7 +342,7 @@ template&lt;typename K , typename V &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="base64__decode_8c.html#ac81e259cb35585bebc1e57d228d2fe7e">std::map</a>&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; K, V &gt; &amp;&#160;</td>
           <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
@@ -357,19 +355,18 @@ template&lt;typename K , typename V &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ByteBuffer_8h_source.html#l00757">757</a> of file <a class="el" href="ByteBuffer_8h_source.html">ByteBuffer.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  758</span>{</div>
-<div class="line"><span class="lineno">  759</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> msize;</div>
+<div class="line"><span class="lineno">  759</span>    uint32_t msize;</div>
 <div class="line"><span class="lineno">  760</span>    b &gt;&gt; msize;</div>
 <div class="line"><span class="lineno">  761</span>    m.<a class="code hl_function" href="classByteBuffer.html#ab9fbbcf0abe4049e2016c1262795c97e">clear</a>();</div>
 <div class="line"><span class="lineno">  762</span>    <span class="keywordflow">while</span> (msize--)</div>
 <div class="line"><span class="lineno">  763</span>    {</div>
-<div class="line"><span class="lineno">  764</span>        K <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ab66ed8e0098c0a86b458672a55a9cca9">k</a>;</div>
+<div class="line"><span class="lineno">  764</span>        K k;</div>
 <div class="line"><span class="lineno">  765</span>        V v;</div>
-<div class="line"><span class="lineno">  766</span>        b &gt;&gt; <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ab66ed8e0098c0a86b458672a55a9cca9">k</a> &gt;&gt; v;</div>
-<div class="line"><span class="lineno">  767</span>        m.insert(make_pair(<a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ab66ed8e0098c0a86b458672a55a9cca9">k</a>, v));</div>
+<div class="line"><span class="lineno">  766</span>        b &gt;&gt; k &gt;&gt; v;</div>
+<div class="line"><span class="lineno">  767</span>        m.insert(make_pair(k, v));</div>
 <div class="line"><span class="lineno">  768</span>    }</div>
 <div class="line"><span class="lineno">  769</span>    <span class="keywordflow">return</span> b;</div>
 <div class="line"><span class="lineno">  770</span>}</div>
-<div class="ttc" id="abn__mp__prime__rabin__miller__trials_8c_html_ab66ed8e0098c0a86b458672a55a9cca9"><div class="ttname"><a href="bn__mp__prime__rabin__miller__trials_8c.html#ab66ed8e0098c0a86b458672a55a9cca9">k</a></div><div class="ttdeci">int k</div><div class="ttdef"><b>Definition</b> <a href="bn__mp__prime__rabin__miller__trials_8c_source.html#l00020">bn_mp_prime_rabin_miller_trials.c:20</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -408,14 +405,14 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="ByteBuffer_8h_source.html#l00709">709</a> of file <a class="el" href="ByteBuffer_8h_source.html">ByteBuffer.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  710</span>{</div>
-<div class="line"><span class="lineno">  711</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> vsize;</div>
+<div class="line"><span class="lineno">  711</span>    uint32_t vsize;</div>
 <div class="line"><span class="lineno">  712</span>    b &gt;&gt; vsize;</div>
 <div class="line"><span class="lineno">  713</span>    v.<a class="code hl_function" href="classByteBuffer.html#ab9fbbcf0abe4049e2016c1262795c97e">clear</a>();</div>
 <div class="line"><span class="lineno">  714</span>    <span class="keywordflow">while</span> (vsize--)</div>
 <div class="line"><span class="lineno">  715</span>    {</div>
-<div class="line"><span class="lineno">  716</span>        T <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
-<div class="line"><span class="lineno">  717</span>        b &gt;&gt; <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
-<div class="line"><span class="lineno">  718</span>        v.push_back(<a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>);</div>
+<div class="line"><span class="lineno">  716</span>        T t;</div>
+<div class="line"><span class="lineno">  717</span>        b &gt;&gt; t;</div>
+<div class="line"><span class="lineno">  718</span>        v.push_back(t);</div>
 <div class="line"><span class="lineno">  719</span>    }</div>
 <div class="line"><span class="lineno">  720</span>    <span class="keywordflow">return</span> b;</div>
 <div class="line"><span class="lineno">  721</span>}</div>

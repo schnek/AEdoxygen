@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('LootTemplate_8cpp_source.html',''); in
 </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classLootTemplate.html#af574d9322046cc11c8e7a93e7ca2d67f">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLootTemplate.html#af574d9322046cc11c8e7a93e7ca2d67f">LootTemplate::generateLoot</a>(<a class="code hl_struct" href="structLoot.html">Loot</a>&amp; loot, <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> lootDifficulty)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classLootTemplate.html#af574d9322046cc11c8e7a93e7ca2d67f">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLootTemplate.html#af574d9322046cc11c8e7a93e7ca2d67f">LootTemplate::generateLoot</a>(<a class="code hl_struct" href="structLoot.html">Loot</a>&amp; loot, uint8_t lootDifficulty)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// Randomize our Loot</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_typedef" href="LootTemplate_8hpp.html#a7b4f6e7458e1ecebe2b17c945cb4d38b">LootStoreItemList</a> lootEntries = <a class="code hl_variable" href="classLootTemplate.html#aba1fdfb69c34a9d4a09428114d385621">Entries</a>;</div>
@@ -144,8 +144,8 @@ $(document).ready(function(){initNavTree('LootTemplate_8cpp_source.html',''); in
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">if</span> (lootStoreItem.itemproto != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> item_counterEquipable = 0;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> item_counternotEquipable = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            uint8_t item_counterEquipable = 0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            uint8_t item_counternotEquipable = 0;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> _item = loot.<a class="code hl_variable" href="structLoot.html#ab9d61ed7d2aacadda6b4a648ab8c41b3">items</a>.cbegin(); _item != loot.<a class="code hl_variable" href="structLoot.html#ab9d61ed7d2aacadda6b4a648ab8c41b3">items</a>.cend(); ++_item)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="comment">// Non-equippable items are limited to 3 drops</span></div>
@@ -213,7 +213,6 @@ $(document).ready(function(){initNavTree('LootTemplate_8cpp_source.html',''); in
 <div class="ttc" id="astructLoot_html"><div class="ttname"><a href="structLoot.html">Loot</a></div><div class="ttdef"><b>Definition</b> <a href="Loot_8hpp_source.html#l00034">Loot.hpp:35</a></div></div>
 <div class="ttc" id="astructLoot_html_ab9d61ed7d2aacadda6b4a648ab8c41b3"><div class="ttname"><a href="structLoot.html#ab9d61ed7d2aacadda6b4a648ab8c41b3">Loot::items</a></div><div class="ttdeci">std::vector&lt; LootItem &gt; items</div><div class="ttdef"><b>Definition</b> <a href="Loot_8hpp_source.html#l00039">Loot.hpp:39</a></div></div>
 <div class="ttc" id="astructLoot_html_ae07c0538a68756306314a07770ed7911"><div class="ttname"><a href="structLoot.html#ae07c0538a68756306314a07770ed7911">Loot::addLootItem</a></div><div class="ttdeci">void addLootItem(LootStoreItem const &amp;item)</div><div class="ttdef"><b>Definition</b> <a href="Loot_8cpp_source.html#l00107">Loot.cpp:107</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

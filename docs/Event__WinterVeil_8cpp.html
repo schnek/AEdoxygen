@@ -129,7 +129,7 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac734dbd22ad7741731b2f8da1cc786f5" id="r_ac734dbd22ad7741731b2f8da1cc786f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Event__WinterVeil_8cpp.html#ac734dbd22ad7741731b2f8da1cc786f5">WinterReveler</a> (<a class="el" href="classPlayer.html">Player</a> *pPlayer, <a class="el" href="classUnit.html">Unit</a> *pUnit)</td></tr>
 <tr class="separator:ac734dbd22ad7741731b2f8da1cc786f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec20754923f3f51bc6f96937df636a31" id="r_aec20754923f3f51bc6f96937df636a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Event__WinterVeil_8cpp.html#aec20754923f3f51bc6f96937df636a31">WinterVeilEmote</a> (<a class="el" href="classPlayer.html">Player</a> *pPlayer, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="structEmote.html">Emote</a>, <a class="el" href="classUnit.html">Unit</a> *pUnit)</td></tr>
+<tr class="memitem:aec20754923f3f51bc6f96937df636a31" id="r_aec20754923f3f51bc6f96937df636a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Event__WinterVeil_8cpp.html#aec20754923f3f51bc6f96937df636a31">WinterVeilEmote</a> (<a class="el" href="classPlayer.html">Player</a> *pPlayer, uint32_t <a class="el" href="structEmote.html">Emote</a>, <a class="el" href="classUnit.html">Unit</a> *pUnit)</td></tr>
 <tr class="separator:aec20754923f3f51bc6f96937df636a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6eb7fd4c0804ce6d59fb0d2e434449" id="r_aec6eb7fd4c0804ce6d59fb0d2e434449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Event__WinterVeil_8cpp.html#aec6eb7fd4c0804ce6d59fb0d2e434449">SetupWinterVeil</a> (<a class="el" href="classScriptMgr.html">ScriptMgr</a> *mgr)</td></tr>
 <tr class="separator:aec6eb7fd4c0804ce6d59fb0d2e434449"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,10 +209,10 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
 <div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (pUnit-&gt;<a class="code hl_function" href="classObject.html#ad4e6bfe8fd236724215bc3e671eee225">getEntry</a>() == 15760)</div>
 <div class="line"><span class="lineno">   53</span>    {</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> Winteritem = 0;</div>
+<div class="line"><span class="lineno">   54</span>        uint32_t Winteritem = 0;</div>
 <div class="line"><span class="lineno">   55</span>        <a class="code hl_struct" href="structSlotResult.html">SlotResult</a> slotresult;</div>
 <div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> chance = <a class="code hl_function" href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a>(2);</div>
+<div class="line"><span class="lineno">   57</span>        uint32_t chance = <a class="code hl_function" href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a>(2);</div>
 <div class="line"><span class="lineno">   58</span>        <span class="keywordflow">switch</span> (chance)</div>
 <div class="line"><span class="lineno">   59</span>        {</div>
 <div class="line"><span class="lineno">   60</span>            <span class="keywordflow">case</span> 0:</div>
@@ -283,13 +283,12 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassPlayer_html_a0d789feb80d9a2315d2aba24c75a07a8"><div class="ttname"><a href="classPlayer.html#a0d789feb80d9a2315d2aba24c75a07a8">Player::getItemInterface</a></div><div class="ttdeci">ItemInterface * getItemInterface() const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l06934">Player.cpp:6934</a></div></div>
 <div class="ttc" id="aclassPlayer_html_a406231b7f86c1622142ea0ad1dfa773a"><div class="ttname"><a href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">Player::getName</a></div><div class="ttdeci">utf8_string getName() const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l02639">Player.cpp:2639</a></div></div>
 <div class="ttc" id="aclassUnit_html_a0dae38077fd2ab3a5da5ad5433f67e5f"><div class="ttname"><a href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">Unit::castSpell</a></div><div class="ttdeci">SpellCastResult castSpell(uint64_t targetGuid, uint32_t spellId, bool triggered=false)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l03564">Unit.cpp:3564</a></div></div>
-<div class="ttc" id="anamespaceUtil_html_ac09cb1bbc978b41e11720b88fec2800e"><div class="ttname"><a href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a></div><div class="ttdeci">uint32_t getRandomUInt(uint32_t end)</div><div class="ttdef"><b>Definition</b> <a href="src_2shared_2Utilities_2Random_8cpp_source.html#l00032">Random.cpp:32</a></div></div>
+<div class="ttc" id="anamespaceUtil_html_ac09cb1bbc978b41e11720b88fec2800e"><div class="ttname"><a href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a></div><div class="ttdeci">uint32_t getRandomUInt(uint32_t end)</div><div class="ttdef"><b>Definition</b> <a href="Random_8cpp_source.html#l00032">Random.cpp:32</a></div></div>
 <div class="ttc" id="astructItemProperties_html"><div class="ttname"><a href="structItemProperties.html">ItemProperties</a></div><div class="ttdef"><b>Definition</b> <a href="ItemProperties_8hpp_source.html#l00017">ItemProperties.hpp:18</a></div></div>
 <div class="ttc" id="astructSlotResult_html"><div class="ttname"><a href="structSlotResult.html">SlotResult</a></div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00064">ItemInterface.h:65</a></div></div>
 <div class="ttc" id="astructSlotResult_html_a9b3005dbd4054e4209530db4d7a42d12"><div class="ttname"><a href="structSlotResult.html#a9b3005dbd4054e4209530db4d7a42d12">SlotResult::Result</a></div><div class="ttdeci">bool Result</div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00069">ItemInterface.h:69</a></div></div>
 <div class="ttc" id="astructSlotResult_html_a9ec9fc3855624ae291239a0f44ce73bf"><div class="ttname"><a href="structSlotResult.html#a9ec9fc3855624ae291239a0f44ce73bf">SlotResult::Slot</a></div><div class="ttdeci">int8_t Slot</div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00068">ItemInterface.h:68</a></div></div>
 <div class="ttc" id="astructSlotResult_html_adc40cf08316e83abce7432e44c5071e7"><div class="ttname"><a href="structSlotResult.html#adc40cf08316e83abce7432e44c5071e7">SlotResult::ContainerSlot</a></div><div class="ttdeci">int8_t ContainerSlot</div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00067">ItemInterface.h:67</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -318,7 +317,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>Emote</em>, </td>
         </tr>
         <tr>

@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('Objects_2Units_2CombatHandler_8cpp_sou
 </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classCombatHandler.html#af29d5e9e071b22db547fb2bac14e74e7">  107</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#af29d5e9e071b22db547fb2bac14e74e7">CombatHandler::onUnitRemovedFromWorld</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classCombatHandler.html#af29d5e9e071b22db547fb2bac14e74e7">  107</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#af29d5e9e071b22db547fb2bac14e74e7">CombatHandler::onUnitRemovedFromWorld</a>(uint64_t guid)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>{</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    std::lock_guard&lt;std::mutex&gt; guard(<a class="code hl_variable" href="classCombatHandler.html#a69e5447ef0483e40a930fe59c3b0dff2">m_mutexCombat</a>);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('Objects_2Units_2CombatHandler_8cpp_sou
 </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classCombatHandler.html#aa76eaeb4b8673a716c2a72f705b2e11d">  137</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#aa76eaeb4b8673a716c2a72f705b2e11d">CombatHandler::updateCombat</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> msTime)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classCombatHandler.html#aa76eaeb4b8673a716c2a72f705b2e11d">  137</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#aa76eaeb4b8673a716c2a72f705b2e11d">CombatHandler::updateCombat</a>(uint32_t msTime)</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">auto</span> diff = msTime - <a class="code hl_variable" href="classCombatHandler.html#ab5848ec603055d28e7c5ad3256158e8e">m_lastCombatUpdateTime</a>;</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">if</span> (diff &gt;= <a class="code hl_enumvalue" href="UnitDefines_8hpp.html#a5829346ec48ca63043db940260745f1ba3765b9835960968a497306aacacab1be">COMBAT_BATCH_INTERVAL</a>)</div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('Objects_2Units_2CombatHandler_8cpp_sou
 </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="foldopen" id="foldopen00331" data-start="{" data-end="}">
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="classCombatHandler.html#a02051ddb68c7105e39d748c688538caf">  331</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#a02051ddb68c7105e39d748c688538caf">CombatHandler::_combatAction</a>(<a class="code hl_class" href="classUnit.html">Unit</a>* target, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> msTime, <span class="keywordtype">bool</span> friendlyAction, <span class="keywordtype">bool</span> initiatingCombat)</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="classCombatHandler.html#a02051ddb68c7105e39d748c688538caf">  331</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#a02051ddb68c7105e39d748c688538caf">CombatHandler::_combatAction</a>(<a class="code hl_class" href="classUnit.html">Unit</a>* target, uint32_t msTime, <span class="keywordtype">bool</span> friendlyAction, <span class="keywordtype">bool</span> initiatingCombat)</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>{</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <a class="code hl_function" href="classCombatHandler.html#ac60a85ffd0d68cc1193fb814a884b164">_resetPvpCombatTimer</a>(msTime, target);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
@@ -551,7 +551,7 @@ $(document).ready(function(){initNavTree('Objects_2Units_2CombatHandler_8cpp_sou
 </div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
 <div class="foldopen" id="foldopen00412" data-start="{" data-end="}">
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="classCombatHandler.html#a0ae3ba8cef4d72d3da854b17a43e9444">  412</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#a0ae3ba8cef4d72d3da854b17a43e9444">CombatHandler::_updatePvpCombat</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> msTime)</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno"><a class="line" href="classCombatHandler.html#a0ae3ba8cef4d72d3da854b17a43e9444">  412</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#a0ae3ba8cef4d72d3da854b17a43e9444">CombatHandler::_updatePvpCombat</a>(uint32_t msTime)</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>{</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classCombatHandler.html#aa1158c382b0333858277f7a573a45048">isInCombat</a>())</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        <span class="keywordflow">return</span>;</div>
@@ -574,7 +574,7 @@ $(document).ready(function(){initNavTree('Objects_2Units_2CombatHandler_8cpp_sou
 </div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
 <div class="foldopen" id="foldopen00433" data-start="{" data-end="}">
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno"><a class="line" href="classCombatHandler.html#ac60a85ffd0d68cc1193fb814a884b164">  433</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#ac60a85ffd0d68cc1193fb814a884b164">CombatHandler::_resetPvpCombatTimer</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> msTime, <a class="code hl_class" href="classUnit.html">Unit</a>* victim)</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno"><a class="line" href="classCombatHandler.html#ac60a85ffd0d68cc1193fb814a884b164">  433</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCombatHandler.html#ac60a85ffd0d68cc1193fb814a884b164">CombatHandler::_resetPvpCombatTimer</a>(uint32_t msTime, <a class="code hl_class" href="classUnit.html">Unit</a>* victim)</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>{</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="comment">// No need to check if unit is also creature</span></div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordflow">if</span> (victim-&gt;<a class="code hl_function" href="classObject.html#a6920adc38030f87e090b7ea7fe2230bb">getPlayerOwnerOrSelf</a>() == <span class="keyword">nullptr</span>)</div>
@@ -669,8 +669,6 @@ $(document).ready(function(){initNavTree('Objects_2Units_2CombatHandler_8cpp_sou
 <div class="ttc" id="astructCombatHandler_1_1EnterCombatInfo_html_a0db1d4b2c1b526ce7830488f9923493d"><div class="ttname"><a href="structCombatHandler_1_1EnterCombatInfo.html#a0db1d4b2c1b526ce7830488f9923493d">CombatHandler::EnterCombatInfo::enteringCombatWith</a></div><div class="ttdeci">Unit * enteringCombatWith</div><div class="ttdef"><b>Definition</b> <a href="CombatHandler_8hpp_source.html#l00054">CombatHandler.hpp:54</a></div></div>
 <div class="ttc" id="astructCombatHandler_1_1EnterCombatInfo_html_a3d62c179ad527bff49ee051f1611950f"><div class="ttname"><a href="structCombatHandler_1_1EnterCombatInfo.html#a3d62c179ad527bff49ee051f1611950f">CombatHandler::EnterCombatInfo::isFriendly</a></div><div class="ttdeci">bool isFriendly</div><div class="ttdef"><b>Definition</b> <a href="CombatHandler_8hpp_source.html#l00055">CombatHandler.hpp:55</a></div></div>
 <div class="ttc" id="astructCombatHandler_1_1EnterCombatInfo_html_ad88ed26a24b5802f9387b4dc7c5628db"><div class="ttname"><a href="structCombatHandler_1_1EnterCombatInfo.html#ad88ed26a24b5802f9387b4dc7c5628db">CombatHandler::EnterCombatInfo::initiatingCombat</a></div><div class="ttdeci">bool initiatingCombat</div><div class="ttdef"><b>Definition</b> <a href="CombatHandler_8hpp_source.html#l00056">CombatHandler.hpp:56</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 1773;
 var viewHeight = 1189;
-var sectionId = 'dynsection-105';
+var sectionId = 'dynsection-106';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -118,19 +118,19 @@ var sectionId = 'dynsection-105';
 </a>
 </g>
 </g>
-<!-- Node1612 -->
-<g id="Node001612" class="node">
-<title>Node1612</title>
-<g id="a_Node001612"><a xlink:href="classGameObject.html#a6462ff4c3d6b982f8fa85e1ed479d72f" target="_top" xlink:title=" ">
+<!-- Node1640 -->
+<g id="Node001640" class="node">
+<title>Node1640</title>
+<g id="a_Node001640"><a xlink:href="classGameObject.html#a6462ff4c3d6b982f8fa85e1ed479d72f" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="1569,-731.5 1383,-731.5 1383,-712.5 1569,-712.5 1569,-731.5"/>
 <text text-anchor="middle" x="1476" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject::updateModelPosition</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node1612 -->
-<g id="edge50_Node000001_Node001612" class="edge">
-<title>Node1&#45;&gt;Node1612</title>
-<g id="a_edge50_Node000001_Node001612"><a xlink:title=" ">
+<!-- Node1&#45;&gt;Node1640 -->
+<g id="edge50_Node000001_Node001640" class="edge">
+<title>Node1&#45;&gt;Node1640</title>
+<g id="a_edge50_Node000001_Node001640"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1666.16,-967.81C1622.9,-911.59 1513.83,-769.86 1484.41,-731.63"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1663.41,-969.98 1672.28,-975.77 1668.95,-965.71 1663.41,-969.98"/>
 </a>
@@ -344,77 +344,77 @@ var sectionId = 'dynsection-105';
 </a>
 </g>
 </g>
-<!-- Node423 -->
-<g id="Node000423" class="node">
-<title>Node423</title>
-<g id="a_Node000423"><a xlink:href="classArathiBasin.html#a12904b66cb1849c1377238d5aebf1462" target="_top" xlink:title=" ">
+<!-- Node425 -->
+<g id="Node000425" class="node">
+<title>Node425</title>
+<g id="a_Node000425"><a xlink:href="classArathiBasin.html#a12904b66cb1849c1377238d5aebf1462" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="529,-1015 383,-1015 383,-985 529,-985 529,-1015"/>
 <text text-anchor="start" x="391" y="-1003" font-family="Helvetica,sans-Serif" font-size="10.00">ArathiBasin::SpawnControl</text>
 <text text-anchor="middle" x="456" y="-992" font-family="Helvetica,sans-Serif" font-size="10.00">Point</text>
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node423 -->
-<g id="edge48_Node000021_Node000423" class="edge">
-<title>Node21&#45;&gt;Node423</title>
-<g id="a_edge48_Node000021_Node000423"><a xlink:title=" ">
+<!-- Node21&#45;&gt;Node425 -->
+<g id="edge48_Node000021_Node000425" class="edge">
+<title>Node21&#45;&gt;Node425</title>
+<g id="a_edge48_Node000021_Node000425"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1029.81,-971.49C1016.18,-979.12 1000.3,-989.31 988,-1001 967.63,-1020.37 976.08,-1038.49 952,-1053 875.32,-1099.21 841.37,-1071.66 752,-1077 673.03,-1081.72 649.78,-1099.7 574,-1077 533.7,-1064.93 494.44,-1034.01 473.21,-1015.23"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1031.67,-974.46 1038.81,-966.64 1028.35,-968.3 1031.67,-974.46"/>
 </a>
 </g>
 </g>
-<!-- Node425 -->
-<g id="Node000425" class="node">
-<title>Node425</title>
-<g id="a_Node000425"><a xlink:href="classIsleOfConquest.html#a12b9d72673001954160e555ce1d43f3d" target="_top" xlink:title=" ">
+<!-- Node427 -->
+<g id="Node000427" class="node">
+<title>Node427</title>
+<g id="a_Node000427"><a xlink:href="classIsleOfConquest.html#a12b9d72673001954160e555ce1d43f3d" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="538,-872 374,-872 374,-842 538,-842 538,-872"/>
 <text text-anchor="start" x="382" y="-860" font-family="Helvetica,sans-Serif" font-size="10.00">IsleOfConquest::SpawnControl</text>
 <text text-anchor="middle" x="456" y="-849" font-family="Helvetica,sans-Serif" font-size="10.00">Point</text>
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node425 -->
-<g id="edge49_Node000021_Node000425" class="edge">
-<title>Node21&#45;&gt;Node425</title>
-<g id="a_edge49_Node000021_Node000425"><a xlink:title=" ">
+<!-- Node21&#45;&gt;Node427 -->
+<g id="edge49_Node000021_Node000427" class="edge">
+<title>Node21&#45;&gt;Node427</title>
+<g id="a_edge49_Node000021_Node000427"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1007.81,-945.16C990.15,-941.17 970.23,-936.78 952,-933 863.4,-914.65 841.35,-909.23 752,-895 679.97,-883.53 597.62,-873.15 538.26,-866.15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1007.38,-948.65 1017.91,-947.45 1008.93,-941.82 1007.38,-948.65"/>
 </a>
 </g>
 </g>
-<!-- Node1603 -->
-<g id="Node001603" class="node">
-<title>Node1603</title>
-<g id="a_Node001603"><a xlink:href="classGameObject__Destructible.html#aa89a6dbb2d271b24c62ad218c3ee5835" target="_top" xlink:title=" ">
+<!-- Node1631 -->
+<g id="Node001631" class="node">
+<title>Node1631</title>
+<g id="a_Node001631"><a xlink:href="classGameObject__Destructible.html#aa89a6dbb2d271b24c62ad218c3ee5835" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="941,-972 799,-972 799,-942 941,-942 941,-972"/>
 <text text-anchor="start" x="807" y="-960" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject_Destructible</text>
 <text text-anchor="middle" x="870" y="-949" font-family="Helvetica,sans-Serif" font-size="10.00">::Rebuild</text>
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node1603 -->
-<g id="edge42_Node000021_Node001603" class="edge">
-<title>Node21&#45;&gt;Node1603</title>
-<g id="a_edge42_Node000021_Node001603"><a xlink:title=" ">
+<!-- Node21&#45;&gt;Node1631 -->
+<g id="edge42_Node000021_Node001631" class="edge">
+<title>Node21&#45;&gt;Node1631</title>
+<g id="a_edge42_Node000021_Node001631"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M977.79,-957C965.62,-957 953.16,-957 941.24,-957"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="977.93,-960.5 987.93,-957 977.93,-953.5 977.93,-960.5"/>
 </a>
 </g>
 </g>
-<!-- Node1607 -->
-<g id="Node001607" class="node">
-<title>Node1607</title>
-<g id="a_Node001607"><a xlink:href="classGameObject__Destructible.html#aaf9bbee1c750ddac9b0c12ca404478dc" target="_top" xlink:title=" ">
+<!-- Node1635 -->
+<g id="Node001635" class="node">
+<title>Node1635</title>
+<g id="a_Node001635"><a xlink:href="classGameObject__Destructible.html#aaf9bbee1c750ddac9b0c12ca404478dc" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="941,-1044 799,-1044 799,-1014 941,-1014 941,-1044"/>
 <text text-anchor="start" x="807" y="-1032" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject_Destructible</text>
 <text text-anchor="middle" x="870" y="-1021" font-family="Helvetica,sans-Serif" font-size="10.00">::setDestructibleState</text>
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node1607 -->
-<g id="edge46_Node000021_Node001607" class="edge">
-<title>Node21&#45;&gt;Node1607</title>
-<g id="a_edge46_Node000021_Node001607"><a xlink:title=" ">
+<!-- Node21&#45;&gt;Node1635 -->
+<g id="edge46_Node000021_Node001635" class="edge">
+<title>Node21&#45;&gt;Node1635</title>
+<g id="a_edge46_Node000021_Node001635"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1024.58,-970.18C992.37,-982.52 944.27,-1000.94 910.51,-1013.87"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1025.95,-973.41 1034.04,-966.56 1023.44,-966.87 1025.95,-973.41"/>
 </a>
@@ -521,205 +521,205 @@ var sectionId = 'dynsection-105';
 </a>
 </g>
 </g>
-<!-- Node264 -->
-<g id="Node000264" class="node">
-<title>Node264</title>
-<g id="a_Node000264"><a xlink:href="classEyeOfTheStorm.html#ab803c36805205f03d165b29531d46cdf" target="_top" xlink:title=" ">
+<!-- Node265 -->
+<g id="Node000265" class="node">
+<title>Node265</title>
+<g id="a_Node000265"><a xlink:href="classEyeOfTheStorm.html#ab803c36805205f03d165b29531d46cdf" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="735.5,-810.5 590.5,-810.5 590.5,-791.5 735.5,-791.5 735.5,-810.5"/>
 <text text-anchor="middle" x="663" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">EyeOfTheStorm::OnCreate</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node264 -->
-<g id="edge22_Node000025_Node000264" class="edge">
-<title>Node25&#45;&gt;Node264</title>
-<g id="a_edge22_Node000025_Node000264"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node265 -->
+<g id="edge22_Node000025_Node000265" class="edge">
+<title>Node25&#45;&gt;Node265</title>
+<g id="a_edge22_Node000025_Node000265"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M867.28,-510.69C861.55,-563.51 838.29,-709.24 752,-782 747.1,-786.13 741.51,-789.43 735.59,-792.05"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="870.77,-510.93 868.27,-500.63 863.8,-510.24 870.77,-510.93"/>
 </a>
 </g>
 </g>
-<!-- Node269 -->
-<g id="Node000269" class="node">
-<title>Node269</title>
-<g id="a_Node000269"><a xlink:href="classMalganisAI.html#aa7a74492759489c509ed571b3c2f416b" target="_top" xlink:title=" ">
+<!-- Node270 -->
+<g id="Node000270" class="node">
+<title>Node270</title>
+<g id="a_Node000270"><a xlink:href="classMalganisAI.html#aa7a74492759489c509ed571b3c2f416b" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="742.5,-773.5 583.5,-773.5 583.5,-754.5 742.5,-754.5 742.5,-773.5"/>
 <text text-anchor="middle" x="663" y="-761.5" font-family="Helvetica,sans-Serif" font-size="10.00">MalganisAI::OnDamageTaken</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node269 -->
-<g id="edge23_Node000025_Node000269" class="edge">
-<title>Node25&#45;&gt;Node269</title>
-<g id="a_edge23_Node000025_Node000269"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node270 -->
+<g id="edge23_Node000025_Node000270" class="edge">
+<title>Node25&#45;&gt;Node270</title>
+<g id="a_edge23_Node000025_Node000270"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M866,-510.75C857.59,-558.94 829.14,-683.14 752,-745 747.24,-748.81 741.9,-751.91 736.24,-754.41"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="869.49,-511.13 867.65,-500.69 862.58,-509.99 869.49,-511.13"/>
-</a>
-</g>
-</g>
-<!-- Node416 -->
-<g id="Node000416" class="node">
-<title>Node416</title>
-<g id="a_Node000416"><a xlink:href="classGameObject__Meetingstone.html#a0027687f7b88acca11ae24eef8375491" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="737.5,-736 588.5,-736 588.5,-706 737.5,-706 737.5,-736"/>
-<text text-anchor="start" x="596.5" y="-724" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject_Meetingstone</text>
-<text text-anchor="middle" x="663" y="-713" font-family="Helvetica,sans-Serif" font-size="10.00">::onUse</text>
-</a>
-</g>
-</g>
-<!-- Node25&#45;&gt;Node416 -->
-<g id="edge24_Node000025_Node000416" class="edge">
-<title>Node25&#45;&gt;Node416</title>
-<g id="a_edge24_Node000025_Node000416"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M863.58,-510.33C851.09,-551.27 816.28,-647.09 752,-697 747.62,-700.4 742.8,-703.32 737.73,-705.82"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="867,-511.11 866.46,-500.53 860.29,-509.13 867,-511.11"/>
-</a>
-</g>
-</g>
-<!-- Node294 -->
-<g id="Node000294" class="node">
-<title>Node294</title>
-<g id="a_Node000294"><a xlink:href="classLuaGlobalFunctions.html#ad741d003496f00c672f664be9066a947" target="_top" xlink:title=" ">
-<polygon fill="#fff0f0" stroke="red" points="728.5,-688 597.5,-688 597.5,-658 728.5,-658 728.5,-688"/>
-<text text-anchor="start" x="605.5" y="-676" font-family="Helvetica,sans-Serif" font-size="10.00">LuaGlobalFunctions</text>
-<text text-anchor="middle" x="663" y="-665" font-family="Helvetica,sans-Serif" font-size="10.00">::PerformIngameSpawn</text>
-</a>
-</g>
-</g>
-<!-- Node25&#45;&gt;Node294 -->
-<g id="edge25_Node000025_Node000294" class="edge">
-<title>Node25&#45;&gt;Node294</title>
-<g id="a_edge25_Node000025_Node000294"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M860.13,-509.93C843.63,-543.04 805.01,-611.46 752,-648 744.94,-652.87 736.94,-656.79 728.72,-659.96"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="863.31,-511.38 864.53,-500.86 857.02,-508.32 863.31,-511.38"/>
 </a>
 </g>
 </g>
 <!-- Node417 -->
 <g id="Node000417" class="node">
 <title>Node417</title>
-<g id="a_Node000417"><a xlink:href="classEyeOfTheStorm.html#afcf0050fbc8af43c3059c2777a846be7" target="_top" xlink:title=" ">
+<g id="a_Node000417"><a xlink:href="classGameObject__Meetingstone.html#a0027687f7b88acca11ae24eef8375491" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="737.5,-736 588.5,-736 588.5,-706 737.5,-706 737.5,-736"/>
+<text text-anchor="start" x="596.5" y="-724" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject_Meetingstone</text>
+<text text-anchor="middle" x="663" y="-713" font-family="Helvetica,sans-Serif" font-size="10.00">::onUse</text>
+</a>
+</g>
+</g>
+<!-- Node25&#45;&gt;Node417 -->
+<g id="edge24_Node000025_Node000417" class="edge">
+<title>Node25&#45;&gt;Node417</title>
+<g id="a_edge24_Node000025_Node000417"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M863.58,-510.33C851.09,-551.27 816.28,-647.09 752,-697 747.62,-700.4 742.8,-703.32 737.73,-705.82"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="867,-511.11 866.46,-500.53 860.29,-509.13 867,-511.11"/>
+</a>
+</g>
+</g>
+<!-- Node295 -->
+<g id="Node000295" class="node">
+<title>Node295</title>
+<g id="a_Node000295"><a xlink:href="classLuaGlobalFunctions.html#ad741d003496f00c672f664be9066a947" target="_top" xlink:title=" ">
+<polygon fill="#fff0f0" stroke="red" points="728.5,-688 597.5,-688 597.5,-658 728.5,-658 728.5,-688"/>
+<text text-anchor="start" x="605.5" y="-676" font-family="Helvetica,sans-Serif" font-size="10.00">LuaGlobalFunctions</text>
+<text text-anchor="middle" x="663" y="-665" font-family="Helvetica,sans-Serif" font-size="10.00">::PerformIngameSpawn</text>
+</a>
+</g>
+</g>
+<!-- Node25&#45;&gt;Node295 -->
+<g id="edge25_Node000025_Node000295" class="edge">
+<title>Node25&#45;&gt;Node295</title>
+<g id="a_edge25_Node000025_Node000295"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M860.13,-509.93C843.63,-543.04 805.01,-611.46 752,-648 744.94,-652.87 736.94,-656.79 728.72,-659.96"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="863.31,-511.38 864.53,-500.86 857.02,-508.32 863.31,-511.38"/>
+</a>
+</g>
+</g>
+<!-- Node418 -->
+<g id="Node000418" class="node">
+<title>Node418</title>
+<g id="a_Node000418"><a xlink:href="classEyeOfTheStorm.html#afcf0050fbc8af43c3059c2777a846be7" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="751.5,-639.5 574.5,-639.5 574.5,-620.5 751.5,-620.5 751.5,-639.5"/>
 <text text-anchor="middle" x="663" y="-627.5" font-family="Helvetica,sans-Serif" font-size="10.00">EyeOfTheStorm::RespawnCPFlag</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node417 -->
-<g id="edge26_Node000025_Node000417" class="edge">
-<title>Node25&#45;&gt;Node417</title>
-<g id="a_edge26_Node000025_Node000417"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node418 -->
+<g id="edge26_Node000025_Node000418" class="edge">
+<title>Node25&#45;&gt;Node418</title>
+<g id="a_edge26_Node000025_Node000418"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M856.81,-509.04C837.75,-535.75 798.23,-585.42 752,-611 745.03,-614.86 737.34,-617.93 729.5,-620.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="859.83,-510.83 862.68,-500.62 854.09,-506.82 859.83,-510.83"/>
-</a>
-</g>
-</g>
-<!-- Node429 -->
-<g id="Node000429" class="node">
-<title>Node429</title>
-<g id="a_Node000429"><a xlink:href="classQuest__Dispelling__Illusions.html#a16bbe908a518a8503d1ab25aff8a8ddc" target="_top" xlink:title=" ">
-<polygon fill="#fff0f0" stroke="red" points="735.5,-602 590.5,-602 590.5,-572 735.5,-572 735.5,-602"/>
-<text text-anchor="start" x="598.5" y="-590" font-family="Helvetica,sans-Serif" font-size="10.00">Quest_Dispelling_Illusions</text>
-<text text-anchor="middle" x="663" y="-579" font-family="Helvetica,sans-Serif" font-size="10.00">::SpawnCrates</text>
-</a>
-</g>
-</g>
-<!-- Node25&#45;&gt;Node429 -->
-<g id="edge27_Node000025_Node000429" class="edge">
-<title>Node25&#45;&gt;Node429</title>
-<g id="a_edge27_Node000025_Node000429"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M847.78,-506.65C825.09,-522.75 787.55,-547.59 752,-563 744.3,-566.34 736.02,-569.32 727.72,-571.96"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="849.92,-509.42 856,-500.74 845.83,-503.74 849.92,-509.42"/>
 </a>
 </g>
 </g>
 <!-- Node431 -->
 <g id="Node000431" class="node">
 <title>Node431</title>
-<g id="a_Node000431"><a xlink:href="classNovosTheSummonerAI.html#a8a82d7d3b8b574d017d68db1114ac572" target="_top" xlink:title=" ">
+<g id="a_Node000431"><a xlink:href="classQuest__Dispelling__Illusions.html#a16bbe908a518a8503d1ab25aff8a8ddc" target="_top" xlink:title=" ">
+<polygon fill="#fff0f0" stroke="red" points="735.5,-602 590.5,-602 590.5,-572 735.5,-572 735.5,-602"/>
+<text text-anchor="start" x="598.5" y="-590" font-family="Helvetica,sans-Serif" font-size="10.00">Quest_Dispelling_Illusions</text>
+<text text-anchor="middle" x="663" y="-579" font-family="Helvetica,sans-Serif" font-size="10.00">::SpawnCrates</text>
+</a>
+</g>
+</g>
+<!-- Node25&#45;&gt;Node431 -->
+<g id="edge27_Node000025_Node000431" class="edge">
+<title>Node25&#45;&gt;Node431</title>
+<g id="a_edge27_Node000025_Node000431"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M847.78,-506.65C825.09,-522.75 787.55,-547.59 752,-563 744.3,-566.34 736.02,-569.32 727.72,-571.96"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="849.92,-509.42 856,-500.74 845.83,-503.74 849.92,-509.42"/>
+</a>
+</g>
+</g>
+<!-- Node433 -->
+<g id="Node000433" class="node">
+<title>Node433</title>
+<g id="a_Node000433"><a xlink:href="classNovosTheSummonerAI.html#a8a82d7d3b8b574d017d68db1114ac572" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="727,-554 599,-554 599,-524 727,-524 727,-554"/>
 <text text-anchor="start" x="607" y="-542" font-family="Helvetica,sans-Serif" font-size="10.00">NovosTheSummonerAI</text>
 <text text-anchor="middle" x="663" y="-531" font-family="Helvetica,sans-Serif" font-size="10.00">::SpawnCrystal</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node431 -->
-<g id="edge28_Node000025_Node000431" class="edge">
-<title>Node25&#45;&gt;Node431</title>
-<g id="a_edge28_Node000025_Node000431"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node433 -->
+<g id="edge28_Node000025_Node000433" class="edge">
+<title>Node25&#45;&gt;Node433</title>
+<g id="a_edge28_Node000025_Node000433"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M818.19,-502.9C790.65,-509.34 756.37,-517.37 727.13,-524.22"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="819.07,-506.29 828.01,-500.6 817.47,-499.47 819.07,-506.29"/>
 </a>
 </g>
 </g>
-<!-- Node1576 -->
-<g id="Node001576" class="node">
-<title>Node1576</title>
-<g id="a_Node001576"><a xlink:href="classLuaGameObject.html#a5a3376d3a5417b5b60aa272c9021e90d" target="_top" xlink:title=" ">
+<!-- Node1603 -->
+<g id="Node001603" class="node">
+<title>Node1603</title>
+<g id="a_Node001603"><a xlink:href="classLuaGameObject.html#a5a3376d3a5417b5b60aa272c9021e90d" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="744,-506 582,-506 582,-476 744,-476 744,-506"/>
 <text text-anchor="start" x="590" y="-494" font-family="Helvetica,sans-Serif" font-size="10.00">LuaGameObject::SpawnGame</text>
 <text text-anchor="middle" x="663" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00">Object</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node1576 -->
-<g id="edge29_Node000025_Node001576" class="edge">
-<title>Node25&#45;&gt;Node1576</title>
-<g id="a_edge29_Node000025_Node001576"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node1603 -->
+<g id="edge29_Node000025_Node001603" class="edge">
+<title>Node25&#45;&gt;Node1603</title>
+<g id="a_edge29_Node000025_Node001603"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M802.81,-491C784.12,-491 763.57,-491 744.16,-491"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="802.98,-494.5 812.98,-491 802.98,-487.5 802.98,-494.5"/>
 </a>
 </g>
 </g>
-<!-- Node1577 -->
-<g id="Node001577" class="node">
-<title>Node1577</title>
-<g id="a_Node001577"><a xlink:href="classLuaUnit.html#ae9ce636fd016c20da3e702377546c6fa" target="_top" xlink:title=" ">
+<!-- Node1604 -->
+<g id="Node001604" class="node">
+<title>Node1604</title>
+<g id="a_Node001604"><a xlink:href="classLuaUnit.html#ae9ce636fd016c20da3e702377546c6fa" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="739.5,-457.5 586.5,-457.5 586.5,-438.5 739.5,-438.5 739.5,-457.5"/>
 <text text-anchor="middle" x="663" y="-445.5" font-family="Helvetica,sans-Serif" font-size="10.00">LuaUnit::SpawnGameObject</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node1577 -->
-<g id="edge30_Node000025_Node001577" class="edge">
-<title>Node25&#45;&gt;Node1577</title>
-<g id="a_edge30_Node000025_Node001577"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node1604 -->
+<g id="edge30_Node000025_Node001604" class="edge">
+<title>Node25&#45;&gt;Node1604</title>
+<g id="a_edge30_Node000025_Node001604"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M813.65,-479.39C780.97,-472.54 740.13,-463.97 709.37,-457.52"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="813,-482.83 823.5,-481.46 814.44,-475.98 813,-482.83"/>
 </a>
 </g>
 </g>
-<!-- Node1599 -->
-<g id="Node001599" class="node">
-<title>Node1599</title>
-<g id="a_Node001599"><a xlink:href="classBattleground.html#a3ef8b1a5bf9d8b22d59b5c1d1bc43be1" target="_top" xlink:title=" ">
+<!-- Node1627 -->
+<g id="Node001627" class="node">
+<title>Node1627</title>
+<g id="a_Node001627"><a xlink:href="classBattleground.html#a3ef8b1a5bf9d8b22d59b5c1d1bc43be1" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="752,-847.5 574,-847.5 574,-828.5 752,-828.5 752,-847.5"/>
 <text text-anchor="middle" x="663" y="-835.5" font-family="Helvetica,sans-Serif" font-size="10.00">Battleground::spawnGameObject</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node1599 -->
-<g id="edge31_Node000025_Node001599" class="edge">
-<title>Node25&#45;&gt;Node1599</title>
-<g id="a_edge31_Node000025_Node001599"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node1627 -->
+<g id="edge31_Node000025_Node001627" class="edge">
+<title>Node25&#45;&gt;Node1627</title>
+<g id="a_edge31_Node000025_Node001627"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M868.27,-510.83C865.03,-568.14 847.43,-735.23 752,-819 747.65,-822.81 742.73,-825.92 737.47,-828.45"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="871.78,-510.76 868.75,-500.61 864.78,-510.43 871.78,-510.76"/>
 </a>
 </g>
 </g>
-<!-- Node434 -->
-<g id="Node000434" class="node">
-<title>Node434</title>
-<g id="a_Node000434"><a xlink:href="classMapScriptInterface.html#a595768c2aa93798891cbf36b8423707c" target="_top" xlink:title=" ">
+<!-- Node436 -->
+<g id="Node000436" class="node">
+<title>Node436</title>
+<g id="a_Node000436"><a xlink:href="classMapScriptInterface.html#a595768c2aa93798891cbf36b8423707c" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="720.5,-383 605.5,-383 605.5,-353 720.5,-353 720.5,-383"/>
 <text text-anchor="start" x="613.5" y="-371" font-family="Helvetica,sans-Serif" font-size="10.00">MapScriptInterface</text>
 <text text-anchor="middle" x="663" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">::spawnGameObject</text>
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node434 -->
-<g id="edge37_Node000025_Node000434" class="edge">
-<title>Node25&#45;&gt;Node434</title>
-<g id="a_edge37_Node000025_Node000434"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node436 -->
+<g id="edge37_Node000025_Node000436" class="edge">
+<title>Node25&#45;&gt;Node436</title>
+<g id="a_edge37_Node000025_Node000436"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M803.24,-481.27C797.75,-478.81 792.57,-475.77 788,-472 757.91,-447.21 781.64,-417.33 752,-392 743.09,-384.39 731.98,-379.17 720.68,-375.6"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="802.11,-484.59 812.7,-484.89 804.6,-478.05 802.11,-484.59"/>
 </a>
@@ -800,19 +800,19 @@ var sectionId = 'dynsection-105';
 </a>
 </g>
 </g>
-<!-- Node1599&#45;&gt;Node423 -->
-<g id="edge32_Node001599_Node000423" class="edge">
-<title>Node1599&#45;&gt;Node423</title>
-<g id="a_edge32_Node001599_Node000423"><a xlink:title=" ">
+<!-- Node1627&#45;&gt;Node425 -->
+<g id="edge32_Node001627_Node000425" class="edge">
+<title>Node1627&#45;&gt;Node425</title>
+<g id="a_edge32_Node001627_Node000425"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M636.83,-852.85C618.84,-863.81 594.31,-879.46 574,-895 535.42,-924.52 493.92,-963.75 472.22,-984.92"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="638.83,-855.73 645.59,-847.57 635.22,-849.73 638.83,-855.73"/>
 </a>
 </g>
 </g>
-<!-- Node1599&#45;&gt;Node425 -->
-<g id="edge36_Node001599_Node000425" class="edge">
-<title>Node1599&#45;&gt;Node425</title>
-<g id="a_edge36_Node001599_Node000425"><a xlink:title=" ">
+<!-- Node1627&#45;&gt;Node427 -->
+<g id="edge36_Node001627_Node000427" class="edge">
+<title>Node1627&#45;&gt;Node427</title>
+<g id="a_edge36_Node001627_Node000427"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M563.84,-847.1C555.27,-847.89 546.66,-848.69 538.25,-849.47"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="564.24,-850.58 573.87,-846.17 563.59,-843.61 564.24,-850.58"/>
 </a>
@@ -828,113 +828,113 @@ var sectionId = 'dynsection-105';
 </a>
 </g>
 </g>
-<!-- Node423&#45;&gt;Node196 -->
-<g id="edge33_Node000423_Node000196" class="edge">
-<title>Node423&#45;&gt;Node196</title>
-<g id="a_edge33_Node000423_Node000196"><a xlink:title=" ">
+<!-- Node425&#45;&gt;Node196 -->
+<g id="edge33_Node000425_Node000196" class="edge">
+<title>Node425&#45;&gt;Node196</title>
+<g id="a_edge33_Node000425_Node000196"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M372.73,-1001.58C361.07,-1001.76 349.23,-1001.9 338,-1002 270.45,-1002.58 253.55,-1002.92 186,-1002 174.44,-1001.84 162.2,-1001.59 150.25,-1001.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="372.97,-1005.08 382.92,-1001.43 372.86,-998.08 372.97,-1005.08"/>
 </a>
 </g>
 </g>
-<!-- Node424 -->
-<g id="Node000424" class="node">
-<title>Node424</title>
-<g id="a_Node000424"><a xlink:href="classArathiBasin.html#a4f396a77b5b42519aab9d9a9e2947a2e" target="_top" xlink:title=" ">
+<!-- Node426 -->
+<g id="Node000426" class="node">
+<title>Node426</title>
+<g id="a_Node000426"><a xlink:href="classArathiBasin.html#a4f396a77b5b42519aab9d9a9e2947a2e" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="338,-993 186,-993 186,-963 338,-963 338,-993"/>
 <text text-anchor="start" x="194" y="-981" font-family="Helvetica,sans-Serif" font-size="10.00">ArathiBasin::CaptureControl</text>
 <text text-anchor="middle" x="262" y="-970" font-family="Helvetica,sans-Serif" font-size="10.00">Point</text>
 </a>
 </g>
 </g>
-<!-- Node423&#45;&gt;Node424 -->
-<g id="edge34_Node000423_Node000424" class="edge">
-<title>Node423&#45;&gt;Node424</title>
-<g id="a_edge34_Node000423_Node000424"><a xlink:title=" ">
+<!-- Node425&#45;&gt;Node426 -->
+<g id="edge34_Node000425_Node000426" class="edge">
+<title>Node425&#45;&gt;Node426</title>
+<g id="a_edge34_Node000425_Node000426"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M372.87,-990.59C361.3,-989.26 349.44,-987.9 338.01,-986.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="372.63,-994.08 382.96,-991.75 373.42,-987.13 372.63,-994.08"/>
 </a>
 </g>
 </g>
-<!-- Node424&#45;&gt;Node196 -->
-<g id="edge35_Node000424_Node000196" class="edge">
-<title>Node424&#45;&gt;Node196</title>
-<g id="a_edge35_Node000424_Node000196"><a xlink:title=" ">
+<!-- Node426&#45;&gt;Node196 -->
+<g id="edge35_Node000426_Node000196" class="edge">
+<title>Node426&#45;&gt;Node196</title>
+<g id="a_edge35_Node000426_Node000196"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M175.8,-987.67C167.28,-988.64 158.68,-989.62 150.28,-990.57"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="176.21,-991.15 185.75,-986.54 175.42,-984.19 176.21,-991.15"/>
 </a>
 </g>
 </g>
-<!-- Node1604 -->
-<g id="Node001604" class="node">
-<title>Node1604</title>
-<g id="a_Node001604"><a xlink:href="classChatCommandHandler.html#a8be319f0af4e3570072ed219a17b8ef0" target="_top" xlink:title=" ">
+<!-- Node1632 -->
+<g id="Node001632" class="node">
+<title>Node1632</title>
+<g id="a_Node001632"><a xlink:href="classChatCommandHandler.html#a8be319f0af4e3570072ed219a17b8ef0" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="742.5,-1020 583.5,-1020 583.5,-990 742.5,-990 742.5,-1020"/>
 <text text-anchor="start" x="591.5" y="-1008" font-family="Helvetica,sans-Serif" font-size="10.00">ChatCommandHandler</text>
 <text text-anchor="middle" x="663" y="-997" font-family="Helvetica,sans-Serif" font-size="10.00">::HandleGORebuildCommand</text>
 </a>
 </g>
 </g>
-<!-- Node1603&#45;&gt;Node1604 -->
-<g id="edge43_Node001603_Node001604" class="edge">
-<title>Node1603&#45;&gt;Node1604</title>
-<g id="a_edge43_Node001603_Node001604"><a xlink:title=" ">
+<!-- Node1631&#45;&gt;Node1632 -->
+<g id="edge43_Node001631_Node001632" class="edge">
+<title>Node1631&#45;&gt;Node1632</title>
+<g id="a_edge43_Node001631_Node001632"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M794.81,-974.37C772.95,-979.49 749.23,-985.04 728.07,-990"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="795.76,-977.74 804.7,-972.06 794.16,-970.93 795.76,-977.74"/>
 </a>
 </g>
 </g>
-<!-- Node1605 -->
-<g id="Node001605" class="node">
-<title>Node1605</title>
-<g id="a_Node001605"><a xlink:href="classGameObject__Destructible.html#ace42e2dcfb552dd1229f61ed55a587ed" target="_top" xlink:title=" ">
+<!-- Node1633 -->
+<g id="Node001633" class="node">
+<title>Node1633</title>
+<g id="a_Node001633"><a xlink:href="classGameObject__Destructible.html#ace42e2dcfb552dd1229f61ed55a587ed" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="734,-972 592,-972 592,-942 734,-942 734,-972"/>
 <text text-anchor="start" x="600" y="-960" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject_Destructible</text>
 <text text-anchor="middle" x="663" y="-949" font-family="Helvetica,sans-Serif" font-size="10.00">::InitAI</text>
 </a>
 </g>
 </g>
-<!-- Node1603&#45;&gt;Node1605 -->
-<g id="edge44_Node001603_Node001605" class="edge">
-<title>Node1603&#45;&gt;Node1605</title>
-<g id="a_edge44_Node001603_Node001605"><a xlink:title=" ">
+<!-- Node1631&#45;&gt;Node1633 -->
+<g id="edge44_Node001631_Node001633" class="edge">
+<title>Node1631&#45;&gt;Node1633</title>
+<g id="a_edge44_Node001631_Node001633"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M788.58,-957C770.61,-957 751.69,-957 734.17,-957"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="788.74,-960.5 798.74,-957 788.74,-953.5 788.74,-960.5"/>
 </a>
 </g>
 </g>
-<!-- Node1606 -->
-<g id="Node001606" class="node">
-<title>Node1606</title>
-<g id="a_Node001606"><a xlink:href="classLuaGameObject.html#a35150d660193f7a3af6fbc0129376539" target="_top" xlink:title=" ">
+<!-- Node1634 -->
+<g id="Node001634" class="node">
+<title>Node1634</title>
+<g id="a_Node001634"><a xlink:href="classLuaGameObject.html#a35150d660193f7a3af6fbc0129376539" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="731.5,-923.5 594.5,-923.5 594.5,-904.5 731.5,-904.5 731.5,-923.5"/>
 <text text-anchor="middle" x="663" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00">LuaGameObject::Rebuild</text>
 </a>
 </g>
 </g>
-<!-- Node1603&#45;&gt;Node1606 -->
-<g id="edge45_Node001603_Node001606" class="edge">
-<title>Node1603&#45;&gt;Node1606</title>
-<g id="a_edge45_Node001603_Node001606"><a xlink:title=" ">
+<!-- Node1631&#45;&gt;Node1634 -->
+<g id="edge45_Node001631_Node001634" class="edge">
+<title>Node1631&#45;&gt;Node1634</title>
+<g id="a_edge45_Node001631_Node001634"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M788.91,-940.2C761.93,-934.54 732.78,-928.43 709.42,-923.53"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="788.23,-943.63 798.74,-942.26 789.67,-936.78 788.23,-943.63"/>
 </a>
 </g>
 </g>
-<!-- Node1608 -->
-<g id="Node001608" class="node">
-<title>Node1608</title>
-<g id="a_Node001608"><a xlink:href="classGameObject__Destructible.html#a3db32b662b8500e80742c8962cb6a560" target="_top" xlink:title=" ">
+<!-- Node1636 -->
+<g id="Node001636" class="node">
+<title>Node1636</title>
+<g id="a_Node001636"><a xlink:href="classGameObject__Destructible.html#a3db32b662b8500e80742c8962cb6a560" target="_top" xlink:title=" ">
 <polygon fill="#fff0f0" stroke="red" points="734,-1068 592,-1068 592,-1038 734,-1038 734,-1068"/>
 <text text-anchor="start" x="600" y="-1056" font-family="Helvetica,sans-Serif" font-size="10.00">GameObject_Destructible</text>
 <text text-anchor="middle" x="663" y="-1045" font-family="Helvetica,sans-Serif" font-size="10.00">::Damage</text>
 </a>
 </g>
 </g>
-<!-- Node1607&#45;&gt;Node1608 -->
-<g id="edge47_Node001607_Node001608" class="edge">
-<title>Node1607&#45;&gt;Node1608</title>
-<g id="a_edge47_Node001607_Node001608"><a xlink:title=" ">
+<!-- Node1635&#45;&gt;Node1636 -->
+<g id="edge47_Node001635_Node001636" class="edge">
+<title>Node1635&#45;&gt;Node1636</title>
+<g id="a_edge47_Node001635_Node001636"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M788.58,-1038.42C770.61,-1040.52 751.69,-1042.73 734.17,-1044.78"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="789.21,-1041.86 798.74,-1037.23 788.4,-1034.91 789.21,-1041.86"/>
 </a>
@@ -949,10 +949,10 @@ var sectionId = 'dynsection-105';
 </a>
 </g>
 </g>
-<!-- Node1612&#45;&gt;Node143 -->
-<g id="edge51_Node001612_Node000143" class="edge">
-<title>Node1612&#45;&gt;Node143</title>
-<g id="a_edge51_Node001612_Node000143"><a xlink:title=" ">
+<!-- Node1640&#45;&gt;Node143 -->
+<g id="edge51_Node001640_Node000143" class="edge">
+<title>Node1640&#45;&gt;Node143</title>
+<g id="a_edge51_Node001640_Node000143"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1459.74,-704.52C1417.41,-656.03 1299.5,-520.96 1266.93,-483.65"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1457.3,-707.05 1466.51,-712.28 1462.57,-702.44 1457.3,-707.05"/>
 </a>

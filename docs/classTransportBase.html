@@ -256,17 +256,14 @@ Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (o)</div>
 <div class="line"><span class="lineno">   36</span>        *o = <a class="code hl_function" href="TransportBase_8cpp.html#a074a1d9847e4b6731f4610610943c078">normalizeOrientationTB</a>(*o - transO);</div>
 <div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_variable" href="namespaceG3D.html#a05e047033db3919db794d0f77e38797f">z</a> -= transZ;</div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a> -= transY;</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a> -= transX;</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">float</span> inx = <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a>, iny = <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a>;</div>
-<div class="line"><span class="lineno">   42</span>    <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a> = (iny - inx * std::tan(transO)) / (std::cos(transO) + std::sin(transO) * std::tan(transO));</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a> = (inx + iny * std::tan(transO)) / (std::cos(transO) + std::sin(transO) * std::tan(transO));</div>
+<div class="line"><span class="lineno">   38</span>    z -= transZ;</div>
+<div class="line"><span class="lineno">   39</span>    y -= transY;</div>
+<div class="line"><span class="lineno">   40</span>    x -= transX;</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">float</span> inx = x, iny = y;</div>
+<div class="line"><span class="lineno">   42</span>    y = (iny - inx * std::tan(transO)) / (std::cos(transO) + std::sin(transO) * std::tan(transO));</div>
+<div class="line"><span class="lineno">   43</span>    x = (inx + iny * std::tan(transO)) / (std::cos(transO) + std::sin(transO) * std::tan(transO));</div>
 <div class="line"><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aTransportBase_8cpp_html_a074a1d9847e4b6731f4610610943c078"><div class="ttname"><a href="TransportBase_8cpp.html#a074a1d9847e4b6731f4610610943c078">normalizeOrientationTB</a></div><div class="ttdeci">float normalizeOrientationTB(float o)</div><div class="ttdef"><b>Definition</b> <a href="TransportBase_8cpp_source.html#l00010">TransportBase.cpp:10</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a05e047033db3919db794d0f77e38797f"><div class="ttname"><a href="namespaceG3D.html#a05e047033db3919db794d0f77e38797f">G3D::z</a></div><div class="ttdeci">G3D::int16 z</div><div class="ttdef"><b>Definition</b> <a href="Vector3int16_8h_source.html#l00046">Vector3int16.h:46</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a55ae91213b07da3a9e14fcd5068d497f"><div class="ttname"><a href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">G3D::x</a></div><div class="ttdeci">G3D::int16 x</div><div class="ttdef"><b>Definition</b> <a href="Vector2int16_8h_source.html#l00037">Vector2int16.h:37</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a8942ba929b21cfdf30bd22fe36baaefa"><div class="ttname"><a href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">G3D::y</a></div><div class="ttdeci">G3D::int16 y</div><div class="ttdef"><b>Definition</b> <a href="Vector2int16_8h_source.html#l00038">Vector2int16.h:38</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -402,13 +399,13 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="TransportBase_8cpp_source.html#l00022">22</a> of file <a class="el" href="TransportBase_8cpp_source.html">TransportBase.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">float</span> inx = <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a>, iny = <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a>, inz = <a class="code hl_variable" href="namespaceG3D.html#a05e047033db3919db794d0f77e38797f">z</a>;</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">float</span> inx = x, iny = y, inz = z;</div>
 <div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (o)</div>
 <div class="line"><span class="lineno">   26</span>        *o = <a class="code hl_function" href="TransportBase_8cpp.html#a074a1d9847e4b6731f4610610943c078">normalizeOrientationTB</a>(transO + *o);</div>
 <div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a> = transX + inx * std::cos(transO) - iny * std::sin(transO);</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a> = transY + iny * std::cos(transO) + inx * std::sin(transO);</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="namespaceG3D.html#a05e047033db3919db794d0f77e38797f">z</a> = transZ + inz;</div>
+<div class="line"><span class="lineno">   28</span>    x = transX + inx * std::cos(transO) - iny * std::sin(transO);</div>
+<div class="line"><span class="lineno">   29</span>    y = transY + iny * std::cos(transO) + inx * std::sin(transO);</div>
+<div class="line"><span class="lineno">   30</span>    z = transZ + inz;</div>
 <div class="line"><span class="lineno">   31</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

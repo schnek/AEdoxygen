@@ -119,16 +119,16 @@ $(document).ready(function(){initNavTree('SmsgPhaseShiftChange_8h_source.html','
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#if VERSION_STRING &gt; TBC</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> phaseId;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        uint32_t phaseId;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_class" href="classWoWGuid.html">WoWGuid</a> guid;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> phaseFlags;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mapId;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        uint32_t phaseFlags;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        uint32_t mapId;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgPhaseShiftChange.html">SmsgPhaseShiftChange</a>() : <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgPhaseShiftChange.html">SmsgPhaseShiftChange</a>(0, <a class="code hl_class" href="classWoWGuid.html">WoWGuid</a>())</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgPhaseShiftChange.html">SmsgPhaseShiftChange</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> phaseId, <a class="code hl_class" href="classWoWGuid.html">WoWGuid</a> guid, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> phaseFlags = 0, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mapId = 0) :</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgPhaseShiftChange.html">SmsgPhaseShiftChange</a>(uint32_t phaseId, <a class="code hl_class" href="classWoWGuid.html">WoWGuid</a> guid, uint32_t phaseFlags = 0, uint32_t mapId = 0) :</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_class" href="classAscEmu_1_1Packets_1_1ManagedPacket.html">ManagedPacket</a>(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca7da68bbc8cebf5b562904c90988a8d00">SMSG_PHASE_SHIFT_CHANGE</a>, 4),</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            phaseId(phaseId),</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            guid(guid),</div>
@@ -158,25 +158,25 @@ $(document).ready(function(){initNavTree('SmsgPhaseShiftChange_8h_source.html','
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[7]);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[4]);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(0);              <span class="comment">// size AreaId swaps</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            packet &lt;&lt; uint32_t(0);              <span class="comment">// size AreaId swaps</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[1]);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(phaseFlags);     <span class="comment">// flags</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            packet &lt;&lt; uint32_t(phaseFlags);     <span class="comment">// flags</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[2]);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[6]);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(0);              <span class="comment">// unknown</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            packet &lt;&lt; uint32_t(0);              <span class="comment">// unknown</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(1 * 2);          <span class="comment">// size phaseIds</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>(phaseId);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            packet &lt;&lt; uint32_t(1 * 2);          <span class="comment">// size phaseIds</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            packet &lt;&lt; uint16_t(phaseId);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[3]);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[0]);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(1);              <span class="comment">// size visible mapIds</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>(mapId);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            packet &lt;&lt; uint32_t(1);              <span class="comment">// size visible mapIds</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            packet &lt;&lt; uint16_t(mapId);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[5]);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
@@ -194,25 +194,25 @@ $(document).ready(function(){initNavTree('SmsgPhaseShiftChange_8h_source.html','
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[3]);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[2]);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(1);                <span class="comment">// size phaseIds</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>(phaseId);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            packet &lt;&lt; uint32_t(1);                <span class="comment">// size phaseIds</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            packet &lt;&lt; uint16_t(phaseId);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[0]);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[6]);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(0);                <span class="comment">// unknown</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            packet &lt;&lt; uint32_t(0);                <span class="comment">// unknown</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[1]);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[7]);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(1);              <span class="comment">// size visible mapIds</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>(mapId);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            packet &lt;&lt; uint32_t(1);              <span class="comment">// size visible mapIds</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            packet &lt;&lt; uint16_t(mapId);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(0);              <span class="comment">// size AreaId swaps</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            packet &lt;&lt; uint32_t(0);              <span class="comment">// size AreaId swaps</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            packet.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(guid[5]);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(phaseFlags);     <span class="comment">// flags</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            packet &lt;&lt; uint32_t(phaseFlags);     <span class="comment">// flags</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -236,8 +236,6 @@ $(document).ready(function(){initNavTree('SmsgPhaseShiftChange_8h_source.html','
 <div class="ttc" id="aclassWoWGuid_html"><div class="ttname"><a href="classWoWGuid.html">WoWGuid</a></div><div class="ttdef"><b>Definition</b> <a href="WoWGuid_8h_source.html#l00132">WoWGuid.h:133</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Packets_html"><div class="ttname"><a href="namespaceAscEmu_1_1Packets.html">AscEmu::Packets</a></div><div class="ttdef"><b>Definition</b> <a href="AuctionHouse_8h_source.html#l00017">AuctionHouse.h:18</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00079">winvs_stdint.h:79</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

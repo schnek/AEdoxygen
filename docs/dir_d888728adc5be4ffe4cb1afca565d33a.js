@@ -13,7 +13,7 @@ var dir_d888728adc5be4ffe4cb1afca565d33a =
     [ "LockedQueue.h", "LockedQueue_8h.html", "LockedQueue_8h" ],
     [ "Mutex.cpp", "Mutex_8cpp.html", null ],
     [ "Mutex.hpp", "Mutex_8hpp.html", "Mutex_8hpp" ],
-    [ "Queue.h", "src_2shared_2Threading_2Queue_8h.html", "src_2shared_2Threading_2Queue_8h" ],
+    [ "Queue.h", "Queue_8h.html", "Queue_8h" ],
     [ "ThreadSafeQueue.hpp", "ThreadSafeQueue_8hpp.html", "ThreadSafeQueue_8hpp" ],
     [ "ThreadState.h", "ThreadState_8h.html", "ThreadState_8h" ]
 ];

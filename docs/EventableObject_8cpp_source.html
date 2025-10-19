@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classEventableObject.html#ae9a764039762bd886c23b3eb869aa1cf">   50</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#ae9a764039762bd886c23b3eb869aa1cf">EventableObject::event_AddEvent</a>(std::shared_ptr&lt;TimedEvent&gt; <a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classEventableObject.html#ae9a764039762bd886c23b3eb869aa1cf">   50</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#ae9a764039762bd886c23b3eb869aa1cf">EventableObject::event_AddEvent</a>(std::shared_ptr&lt;TimedEvent&gt; ptr)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>.lock();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -182,18 +182,18 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// If we are flagged not to run in WorldRunnable then we won&#39;t!</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// This is much better than adding us to the eventholder and removing on an update</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classEventableObject.html#a13b0586e4fe28e153532a3fc9bdfa960">m_event_Instanceid</a> == <a class="code hl_define" href="EventableObject_8h.html#a526e11f4d0f653b3648099aeea1719bd">WORLD_INSTANCE</a> &amp;&amp; (<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>-&gt;eventFlag &amp; <a class="code hl_enumvalue" href="EventMgr_8h.html#ac96c0f9459845babc7ebeb25c805c65da4e69753b804f44520e0b50e5d0a0643b">EVENT_FLAG_DO_NOT_EXECUTE_IN_WORLD_CONTEXT</a>))</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classEventableObject.html#a13b0586e4fe28e153532a3fc9bdfa960">m_event_Instanceid</a> == <a class="code hl_define" href="EventableObject_8h.html#a526e11f4d0f653b3648099aeea1719bd">WORLD_INSTANCE</a> &amp;&amp; (ptr-&gt;eventFlag &amp; <a class="code hl_enumvalue" href="EventMgr_8h.html#ac96c0f9459845babc7ebeb25c805c65da4e69753b804f44520e0b50e5d0a0643b">EVENT_FLAG_DO_NOT_EXECUTE_IN_WORLD_CONTEXT</a>))</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>.unlock();</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>-&gt;instanceId = <a class="code hl_variable" href="classEventableObject.html#a13b0586e4fe28e153532a3fc9bdfa960">m_event_Instanceid</a>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_variable" href="classEventableObject.html#a43a2947aca07aa555c9b3ef840249294">m_events</a>.emplace(<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>-&gt;eventType, <a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    ptr-&gt;instanceId = <a class="code hl_variable" href="classEventableObject.html#a13b0586e4fe28e153532a3fc9bdfa960">m_event_Instanceid</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_variable" href="classEventableObject.html#a43a2947aca07aa555c9b3ef840249294">m_events</a>.emplace(ptr-&gt;eventType, ptr);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>.unlock();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">/* Add to event manager */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="classEventableObject.html#ac4dd90e72f00901478fac8169a8eff40">m_holder</a>-&gt;<a class="code hl_function" href="classEventableObjectHolder.html#acb3037d4a1881882b1d67bda557ed2f7">AddEvent</a>(std::move(<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>));</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="classEventableObject.html#ac4dd90e72f00901478fac8169a8eff40">m_holder</a>-&gt;<a class="code hl_function" href="classEventableObjectHolder.html#acb3037d4a1881882b1d67bda557ed2f7">AddEvent</a>(std::move(ptr));</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classEventableObject.html#a7b363b3685edd0773f6fdf6a8f2d963d">  115</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#a1d7b67afddc6e535527442de16cdb49e">EventableObject::event_RemoveEvents</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classEventableObject.html#a7b363b3685edd0773f6fdf6a8f2d963d">  115</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#a1d7b67afddc6e535527442de16cdb49e">EventableObject::event_RemoveEvents</a>(uint32_t EventType)</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>{</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    std::lock_guard lock(<a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="foldopen" id="foldopen00155" data-start="{" data-end="}">
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classEventableObject.html#af4d90fe4555f2981646d3e8216cca4db">  155</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#af4d90fe4555f2981646d3e8216cca4db">EventableObject::event_ModifyTimeLeft</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType, time_t TimeLeft, <span class="keywordtype">bool</span> unconditioned)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classEventableObject.html#af4d90fe4555f2981646d3e8216cca4db">  155</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#af4d90fe4555f2981646d3e8216cca4db">EventableObject::event_ModifyTimeLeft</a>(uint32_t EventType, time_t TimeLeft, <span class="keywordtype">bool</span> unconditioned)</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>{</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    std::lock_guard lock(<a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classEventableObject.html#a1680382256b80a7898125deeb9fe229b">  176</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classEventableObject.html#a1680382256b80a7898125deeb9fe229b">EventableObject::event_GetTimeLeft</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType, time_t* Time)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classEventableObject.html#a1680382256b80a7898125deeb9fe229b">  176</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classEventableObject.html#a1680382256b80a7898125deeb9fe229b">EventableObject::event_GetTimeLeft</a>(uint32_t EventType, time_t* Time)</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>{</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    std::lock_guard lock(<a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            *Time = (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)itr-&gt;second-&gt;currTime;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            *Time = (uint32_t)itr-&gt;second-&gt;currTime;</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
 <div class="foldopen" id="foldopen00204" data-start="{" data-end="}">
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classEventableObject.html#a4491b85210281f6f093e8701d2813d45">  204</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#a4491b85210281f6f093e8701d2813d45">EventableObject::event_ModifyTime</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType, time_t Time)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classEventableObject.html#a4491b85210281f6f093e8701d2813d45">  204</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#a4491b85210281f6f093e8701d2813d45">EventableObject::event_ModifyTime</a>(uint32_t EventType, time_t Time)</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>{</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    std::lock_guard lock(<a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
@@ -342,7 +342,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
 <div class="foldopen" id="foldopen00223" data-start="{" data-end="}">
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classEventableObject.html#a6a923c2003850e3ae715cba9b5d518c6">  223</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#a6a923c2003850e3ae715cba9b5d518c6">EventableObject::event_ModifyTimeAndTimeLeft</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType, time_t Time)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classEventableObject.html#a6a923c2003850e3ae715cba9b5d518c6">  223</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEventableObject.html#a6a923c2003850e3ae715cba9b5d518c6">EventableObject::event_ModifyTimeAndTimeLeft</a>(uint32_t EventType, time_t Time)</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    std::lock_guard lock(<a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>);</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
 <div class="foldopen" id="foldopen00242" data-start="{" data-end="}">
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classEventableObject.html#a29b1aa8658566e26427cd9af5967df59">  242</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classEventableObject.html#a29b1aa8658566e26427cd9af5967df59">EventableObject::event_HasEvent</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classEventableObject.html#a29b1aa8658566e26427cd9af5967df59">  242</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classEventableObject.html#a29b1aa8658566e26427cd9af5967df59">EventableObject::event_HasEvent</a>(uint32_t EventType)</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>{</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">bool</span> ret = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
@@ -393,7 +393,7 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
 <div class="foldopen" id="foldopen00270" data-start="{" data-end="}">
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="classEventableObjectHolder.html#a253a1fc78715d2f0a4093e744bdb3514">  270</a></span><a class="code hl_function" href="classEventableObjectHolder.html#a253a1fc78715d2f0a4093e744bdb3514">EventableObjectHolder::EventableObjectHolder</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> instance_id) : mInstanceId(instance_id)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="classEventableObjectHolder.html#a253a1fc78715d2f0a4093e744bdb3514">  270</a></span><a class="code hl_function" href="classEventableObjectHolder.html#a253a1fc78715d2f0a4093e744bdb3514">EventableObjectHolder::EventableObjectHolder</a>(int32_t instance_id) : mInstanceId(instance_id)</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>{</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <a class="code hl_variable" href="classEventableObjectHolder.html#ac8d3dfd6470ac1c6a563d18c3b2ae1b7">m_insertPool</a>.clear();</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <a class="code hl_define" href="EventMgr_8h.html#ae362df0de54c0ef52ebdbbe6a722c4bc">sEventMgr</a>.AddEventHolder(<span class="keyword">this</span>, instance_id);</div>
@@ -537,14 +537,14 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 </div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
 <div class="foldopen" id="foldopen00406" data-start="{" data-end="}">
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="classEventableObject.html#a2b8eb81df9fcf3996b210dd3e7afcca7">  406</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classEventableObject.html#a2b8eb81df9fcf3996b210dd3e7afcca7">EventableObject::event_GetEventPeriod</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> EventType)</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="classEventableObject.html#a2b8eb81df9fcf3996b210dd3e7afcca7">  406</a></span>uint32_t <a class="code hl_function" href="classEventableObject.html#a2b8eb81df9fcf3996b210dd3e7afcca7">EventableObject::event_GetEventPeriod</a>(uint32_t EventType)</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>{</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ret = 0;</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    uint32_t ret = 0;</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    std::lock_guard lock(<a class="code hl_variable" href="classEventableObject.html#a4ca5e2a87b9361ba9d4172799fbdfc85">m_lock</a>);</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    EventMap::iterator itr = <a class="code hl_variable" href="classEventableObject.html#a43a2947aca07aa555c9b3ef840249294">m_events</a>.find(EventType);</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <span class="keywordflow">if</span> (itr != <a class="code hl_variable" href="classEventableObject.html#a43a2947aca07aa555c9b3ef840249294">m_events</a>.end())</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        ret = (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)itr-&gt;second-&gt;msTime;</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        ret = (uint32_t)itr-&gt;second-&gt;msTime;</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>}</div>
@@ -652,7 +652,6 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 <div class="ttc" id="aclassEventableObject_html_aef06cfbd79ae638cb33923825a596efb"><div class="ttname"><a href="classEventableObject.html#aef06cfbd79ae638cb33923825a596efb">EventableObject::event_Relocate</a></div><div class="ttdeci">void event_Relocate()</div><div class="ttdef"><b>Definition</b> <a href="EventableObject_8cpp_source.html#l00374">EventableObject.cpp:374</a></div></div>
 <div class="ttc" id="aclassEventableObject_html_af4d90fe4555f2981646d3e8216cca4db"><div class="ttname"><a href="classEventableObject.html#af4d90fe4555f2981646d3e8216cca4db">EventableObject::event_ModifyTimeLeft</a></div><div class="ttdeci">void event_ModifyTimeLeft(uint32_t EventType, time_t TimeLeft, bool unconditioned=false)</div><div class="ttdef"><b>Definition</b> <a href="EventableObject_8cpp_source.html#l00155">EventableObject.cpp:155</a></div></div>
 <div class="ttc" id="aclassEventableObject_html_af52316f6df7fb3ed2c53829b533334d6"><div class="ttname"><a href="classEventableObject.html#af52316f6df7fb3ed2c53829b533334d6">EventableObject::event_GetInstanceID</a></div><div class="ttdeci">virtual int32_t event_GetInstanceID()</div><div class="ttdoc">this func needs to be implemented by all eventable classes. use it to retrieve the instance id that i...</div><div class="ttdef"><b>Definition</b> <a href="EventableObject_8h_source.html#l00072">EventableObject.h:72</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2format_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdef"><b>Definition</b> <a href="fmt_2include_2fmt_2format_8h_source.html#l04067">format.h:4067</a></div></div>
 <div class="ttc" id="astructTimedEvent_html"><div class="ttname"><a href="structTimedEvent.html">TimedEvent</a></div><div class="ttdef"><b>Definition</b> <a href="EventMgr_8h_source.html#l00113">EventMgr.h:114</a></div></div>
 <div class="ttc" id="astructTimedEvent_html_a3526726e783d5c64a5545b62204fd904"><div class="ttname"><a href="structTimedEvent.html#a3526726e783d5c64a5545b62204fd904">TimedEvent::repeats</a></div><div class="ttdeci">uint16_t repeats</div><div class="ttdef"><b>Definition</b> <a href="EventMgr_8h_source.html#l00124">EventMgr.h:124</a></div></div>
 <div class="ttc" id="astructTimedEvent_html_a36c315411d086e09071213e7ab80c340"><div class="ttname"><a href="structTimedEvent.html#a36c315411d086e09071213e7ab80c340">TimedEvent::cb</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackBase &gt; cb</div><div class="ttdef"><b>Definition</b> <a href="EventMgr_8h_source.html#l00119">EventMgr.h:119</a></div></div>
@@ -661,8 +660,6 @@ $(document).ready(function(){initNavTree('EventableObject_8cpp_source.html','');
 <div class="ttc" id="astructTimedEvent_html_ac71720d511d1c862e306d71eb990d361"><div class="ttname"><a href="structTimedEvent.html#ac71720d511d1c862e306d71eb990d361">TimedEvent::msTime</a></div><div class="ttdeci">time_t msTime</div><div class="ttdef"><b>Definition</b> <a href="EventMgr_8h_source.html#l00122">EventMgr.h:122</a></div></div>
 <div class="ttc" id="astructTimedEvent_html_adaecc45a27523c26c6e7ef57d60c78d4"><div class="ttname"><a href="structTimedEvent.html#adaecc45a27523c26c6e7ef57d60c78d4">TimedEvent::eventFlag</a></div><div class="ttdeci">uint16_t eventFlag</div><div class="ttdef"><b>Definition</b> <a href="EventMgr_8h_source.html#l00121">EventMgr.h:121</a></div></div>
 <div class="ttc" id="astructTimedEvent_html_aef0962e907ba504acd0d480c5f0ab46d"><div class="ttname"><a href="structTimedEvent.html#aef0962e907ba504acd0d480c5f0ab46d">TimedEvent::currTime</a></div><div class="ttdeci">time_t currTime</div><div class="ttdef"><b>Definition</b> <a href="EventMgr_8h_source.html#l00123">EventMgr.h:123</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_ab1967d8591af1a4e48c37fd2b0f184d0"><div class="ttname"><a href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a></div><div class="ttdeci">signed int int32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00077">winvs_stdint.h:77</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

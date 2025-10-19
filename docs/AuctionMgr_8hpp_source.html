@@ -135,9 +135,9 @@ $(document).ready(function(){initNavTree('AuctionMgr_8hpp_source.html',''); init
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAuctionMgr.html#aae952304c0e086a5d3775398565b0253">loadAuctionHouses</a>();</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAuctionMgr.html#a309b311b142ffb02046dc08b28c51aa2">update</a>();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classAuctionHouse.html">AuctionHouse</a>* <a class="code hl_function" href="classAuctionMgr.html#a027428226ae644d1e80ae30411e38760">getAuctionHouse</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> _entry);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classAuctionHouse.html">AuctionHouse</a>* <a class="code hl_function" href="classAuctionMgr.html#a027428226ae644d1e80ae30411e38760">getAuctionHouse</a>(uint32_t _entry);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classAuctionMgr.html#a410ed504700d9907afec2d4067a35608">generateAuctionId</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    uint32_t <a class="code hl_function" href="classAuctionMgr.html#a410ed504700d9907afec2d4067a35608">generateAuctionId</a>();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classAuctionMgr.html#abef8d1e353d664c80369e1927867e9db">   39</a></span>    std::unordered_map&lt;uint32_t, AuctionHouse*&gt; <a class="code hl_variable" href="classAuctionMgr.html#abef8d1e353d664c80369e1927867e9db">m_auctionHouseEntryMap</a>;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('AuctionMgr_8hpp_source.html',''); init
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classAuctionMgr.html#aadf002d39c9924606d429078ea5e9f15">   42</a></span>    std::atomic&lt;unsigned long&gt; <a class="code hl_variable" href="classAuctionMgr.html#aadf002d39c9924606d429078ea5e9f15">m_maxId</a> = 1;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classAuctionMgr.html#a999bd1f5e2ea6fa3f0613e1cb28ca94f">   44</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_variable" href="classAuctionMgr.html#a999bd1f5e2ea6fa3f0613e1cb28ca94f">m_loopcount</a> = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classAuctionMgr.html#a999bd1f5e2ea6fa3f0613e1cb28ca94f">   44</a></span>    uint32_t <a class="code hl_variable" href="classAuctionMgr.html#a999bd1f5e2ea6fa3f0613e1cb28ca94f">m_loopcount</a> = 0;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -169,7 +169,6 @@ $(document).ready(function(){initNavTree('AuctionMgr_8hpp_source.html',''); init
 <div class="ttc" id="aclassAuctionMgr_html_ab83047909c796b63122d51a6296d73e4"><div class="ttname"><a href="classAuctionMgr.html#ab83047909c796b63122d51a6296d73e4">AuctionMgr::operator=</a></div><div class="ttdeci">AuctionMgr &amp; operator=(AuctionMgr const &amp;)=delete</div></div>
 <div class="ttc" id="aclassAuctionMgr_html_abd20c8c3a4b662013c90d4217f8fadfc"><div class="ttname"><a href="classAuctionMgr.html#abd20c8c3a4b662013c90d4217f8fadfc">AuctionMgr::~AuctionMgr</a></div><div class="ttdeci">~AuctionMgr()=default</div></div>
 <div class="ttc" id="aclassAuctionMgr_html_abef8d1e353d664c80369e1927867e9db"><div class="ttname"><a href="classAuctionMgr.html#abef8d1e353d664c80369e1927867e9db">AuctionMgr::m_auctionHouseEntryMap</a></div><div class="ttdeci">std::unordered_map&lt; uint32_t, AuctionHouse * &gt; m_auctionHouseEntryMap</div><div class="ttdef"><b>Definition</b> <a href="AuctionMgr_8hpp_source.html#l00039">AuctionMgr.hpp:39</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

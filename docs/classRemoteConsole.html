@@ -117,7 +117,7 @@ Collaboration diagram for RemoteConsole:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42bb2a54efddcb0ce26967ea4880ee09" id="r_a42bb2a54efddcb0ce26967ea4880ee09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRemoteConsole.html#a42bb2a54efddcb0ce26967ea4880ee09">RemoteConsole</a> (<a class="el" href="classConsoleSocket.html">ConsoleSocket</a> *pSocket)</td></tr>
 <tr class="separator:a42bb2a54efddcb0ce26967ea4880ee09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad2822fe75dab110517e4609ffab7ccc" id="r_aad2822fe75dab110517e4609ffab7ccc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRemoteConsole.html#aad2822fe75dab110517e4609ffab7ccc">Write</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *Format,...)</td></tr>
+<tr class="memitem:aad2822fe75dab110517e4609ffab7ccc" id="r_aad2822fe75dab110517e4609ffab7ccc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRemoteConsole.html#aad2822fe75dab110517e4609ffab7ccc">Write</a> (const char *Format,...)</td></tr>
 <tr class="separator:aad2822fe75dab110517e4609ffab7ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBaseConsole"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBaseConsole')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBaseConsole.html">BaseConsole</a></td></tr>
 <tr class="memitem:a9a159adc51c0eda75a569c5722233973 inherit pub_methods_classBaseConsole" id="r_a9a159adc51c0eda75a569c5722233973"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseConsole.html#a9a159adc51c0eda75a569c5722233973">~BaseConsole</a> ()</td></tr>
@@ -169,7 +169,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void RemoteConsole::Write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>Format</em>, </td>
         </tr>
         <tr>
@@ -205,11 +205,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (*obuf == <span class="charliteral">&#39;\0&#39;</span>)</div>
 <div class="line"><span class="lineno">  109</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_variable" href="classRemoteConsole.html#a29f340ab71e35caf206c50d4030a2f71">m_pSocket</a>-&gt;<a class="code hl_function" href="classSocket.html#a0fdcef6a085ede52834f75e9e80bdd62">Send</a>((<span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)obuf, (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)strlen(obuf));</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_variable" href="classRemoteConsole.html#a29f340ab71e35caf206c50d4030a2f71">m_pSocket</a>-&gt;<a class="code hl_function" href="classSocket.html#a0fdcef6a085ede52834f75e9e80bdd62">Send</a>((<span class="keyword">const</span> uint8_t*)obuf, (uint32_t)strlen(obuf));</div>
 <div class="line"><span class="lineno">  112</span>}</div>
 <div class="ttc" id="aclassSocket_html_a0fdcef6a085ede52834f75e9e80bdd62"><div class="ttname"><a href="classSocket.html#a0fdcef6a085ede52834f75e9e80bdd62">Socket::Send</a></div><div class="ttdeci">bool Send(const uint8_t *Bytes, uint32_t Size)</div><div class="ttdef"><b>Definition</b> <a href="Socket_8cpp_source.html#l00088">Socket.cpp:88</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -114,7 +114,7 @@ Collaboration diagram for InnkeeperGossip:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a95132242d4409a9add3bd59a5e343bc6" id="r_a95132242d4409a9add3bd59a5e343bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnkeeperGossip.html#a95132242d4409a9add3bd59a5e343bc6">onHello</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *Plr) override</td></tr>
 <tr class="separator:a95132242d4409a9add3bd59a5e343bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e4dfe2d053a1cfc7a7e284bb3b8343" id="r_ad6e4dfe2d053a1cfc7a7e284bb3b8343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnkeeperGossip.html#ad6e4dfe2d053a1cfc7a7e284bb3b8343">onSelectOption</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *Plr, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> Id, <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="StormLib_2src_2zlib_2deflate_8h.html#a068e76e6034d06450385bc98b69ea53e">Code</a>, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> gossipId) override</td></tr>
+<tr class="memitem:ad6e4dfe2d053a1cfc7a7e284bb3b8343" id="r_ad6e4dfe2d053a1cfc7a7e284bb3b8343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnkeeperGossip.html#ad6e4dfe2d053a1cfc7a7e284bb3b8343">onSelectOption</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *Plr, uint32_t Id, const char *Code, uint32_t gossipId) override</td></tr>
 <tr class="separator:ad6e4dfe2d053a1cfc7a7e284bb3b8343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80ea8d241070a78dde53f54e3730ec5" id="r_af80ea8d241070a78dde53f54e3730ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnkeeperGossip.html#af80ea8d241070a78dde53f54e3730ec5">destroy</a> () override</td></tr>
 <tr class="separator:af80ea8d241070a78dde53f54e3730ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,8 +214,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   37</span>    }</div>
 <div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> TextID = 820;</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> Text = <a class="code hl_define" href="MySQLDataStore_8hpp.html#aedb3d22a48e63a7b1f52e72938608028">sMySQLStore</a>.getGossipTextIdForNpc(pCreature-&gt;<a class="code hl_function" href="classObject.html#ad4e6bfe8fd236724215bc3e671eee225">getEntry</a>());</div>
+<div class="line"><span class="lineno">   39</span>    uint32_t TextID = 820;</div>
+<div class="line"><span class="lineno">   40</span>    uint32_t Text = <a class="code hl_define" href="MySQLDataStore_8hpp.html#aedb3d22a48e63a7b1f52e72938608028">sMySQLStore</a>.getGossipTextIdForNpc(pCreature-&gt;<a class="code hl_function" href="classObject.html#ad4e6bfe8fd236724215bc3e671eee225">getEntry</a>());</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (Text != 0)</div>
 <div class="line"><span class="lineno">   42</span>    {</div>
 <div class="line"><span class="lineno">   43</span>        <a class="code hl_struct" href="structMySQLStructure_1_1NpcGossipText.html">MySQLStructure::NpcGossipText</a> <span class="keyword">const</span>* text = <a class="code hl_define" href="MySQLDataStore_8hpp.html#aedb3d22a48e63a7b1f52e72938608028">sMySQLStore</a>.getNpcGossipText(Text);</div>
@@ -232,7 +232,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   54</span>    tm * ct = std::localtime(&amp;_time_now);</div>
 <div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (ct-&gt;tm_mon == 9 &amp;&amp; (ct-&gt;tm_mday &gt; 17 &amp;&amp; ct-&gt;tm_mday &lt;= 31))</div>
 <div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (!Plr-&gt;<a class="code hl_function" href="classUnit.html#a064f2f965d8ae66a4b264bb866790e8f">hasAurasWithId</a>(<a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#abe974f22edeef8189603ba75fd90ff3ca9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a>))</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (!Plr-&gt;<a class="code hl_function" href="classUnit.html#a064f2f965d8ae66a4b264bb866790e8f">hasAurasWithId</a>(<a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#ab04a0655cd1e3bcac5e8f48c18df1a57a9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a>))</div>
 <div class="line"><span class="lineno">   58</span>        {</div>
 <div class="line"><span class="lineno">   59</span>            menu.addItem(<a class="code hl_enumvalue" href="GossipDefines_8hpp.html#a3770455dce49810658d31ed0f3a663bea1a460e97e269ca0a62d06279484d4428">GOSSIP_ICON_CHAT</a>, <a class="code hl_enumvalue" href="GossipDefines_8hpp.html#acc8fb7d3eabe35988af64ab70d07d001a9efe23d03642972d5ef859ac1e0302b4">GI_TRICK_TREAT</a>, 4);</div>
 <div class="line"><span class="lineno">   60</span>        }</div>
@@ -254,7 +254,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aGossipDefines_8hpp_html_acc8fb7d3eabe35988af64ab70d07d001a9efe23d03642972d5ef859ac1e0302b4"><div class="ttname"><a href="GossipDefines_8hpp.html#acc8fb7d3eabe35988af64ab70d07d001a9efe23d03642972d5ef859ac1e0302b4">GI_TRICK_TREAT</a></div><div class="ttdeci">@ GI_TRICK_TREAT</div><div class="ttdef"><b>Definition</b> <a href="GossipDefines_8hpp_source.html#l00251">GossipDefines.hpp:251</a></div></div>
 <div class="ttc" id="aGossipDefines_8hpp_html_acc8fb7d3eabe35988af64ab70d07d001aab0738b61443a296b1193f31b8cfd15c"><div class="ttname"><a href="GossipDefines_8hpp.html#acc8fb7d3eabe35988af64ab70d07d001aab0738b61443a296b1193f31b8cfd15c">INNKEEPER</a></div><div class="ttdeci">@ INNKEEPER</div><div class="ttdef"><b>Definition</b> <a href="GossipDefines_8hpp_source.html#l00096">GossipDefines.hpp:96</a></div></div>
 <div class="ttc" id="aGossipDefines_8hpp_html_acc8fb7d3eabe35988af64ab70d07d001ac22101845a9611f29459c43e87690c80"><div class="ttname"><a href="GossipDefines_8hpp.html#acc8fb7d3eabe35988af64ab70d07d001ac22101845a9611f29459c43e87690c80">INNKEEPERASK</a></div><div class="ttdeci">@ INNKEEPERASK</div><div class="ttdef"><b>Definition</b> <a href="GossipDefines_8hpp_source.html#l00108">GossipDefines.hpp:108</a></div></div>
-<div class="ttc" id="aGossip__Innkeepers_8cpp_html_abe974f22edeef8189603ba75fd90ff3ca9b4e5735ff89cdc466fc4d08c22ed75c"><div class="ttname"><a href="Gossip__Innkeepers_8cpp.html#abe974f22edeef8189603ba75fd90ff3ca9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a></div><div class="ttdeci">@ SPELL_TRICK_OR_TREATED</div><div class="ttdef"><b>Definition</b> <a href="Gossip__Innkeepers_8cpp_source.html#l00019">Gossip_Innkeepers.cpp:19</a></div></div>
+<div class="ttc" id="aGossip__Innkeepers_8cpp_html_ab04a0655cd1e3bcac5e8f48c18df1a57a9b4e5735ff89cdc466fc4d08c22ed75c"><div class="ttname"><a href="Gossip__Innkeepers_8cpp.html#ab04a0655cd1e3bcac5e8f48c18df1a57a9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a></div><div class="ttdeci">@ SPELL_TRICK_OR_TREATED</div><div class="ttdef"><b>Definition</b> <a href="Gossip__Innkeepers_8cpp_source.html#l00019">Gossip_Innkeepers.cpp:19</a></div></div>
 <div class="ttc" id="aMySQLDataStore_8hpp_html_aedb3d22a48e63a7b1f52e72938608028"><div class="ttname"><a href="MySQLDataStore_8hpp.html#aedb3d22a48e63a7b1f52e72938608028">sMySQLStore</a></div><div class="ttdeci">#define sMySQLStore</div><div class="ttdef"><b>Definition</b> <a href="MySQLDataStore_8hpp_source.html#l00493">MySQLDataStore.hpp:493</a></div></div>
 <div class="ttc" id="aQuestMgr_8h_html_aa52b2c809238ba5cbc42e20e46f4e048"><div class="ttname"><a href="QuestMgr_8h.html#aa52b2c809238ba5cbc42e20e46f4e048">sQuestMgr</a></div><div class="ttdeci">#define sQuestMgr</div><div class="ttdef"><b>Definition</b> <a href="QuestMgr_8h_source.html#l00252">QuestMgr.h:252</a></div></div>
 <div class="ttc" id="aclassCreature_html"><div class="ttname"><a href="classCreature.html">Creature</a></div><div class="ttdef"><b>Definition</b> <a href="Creature_8h_source.html#l00039">Creature.h:40</a></div></div>
@@ -265,7 +265,6 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassObject_html_ad867b68be484ae121ca3b1cb4e947244"><div class="ttname"><a href="classObject.html#ad867b68be484ae121ca3b1cb4e947244">Object::isCreature</a></div><div class="ttdeci">bool isCreature() const</div><div class="ttdef"><b>Definition</b> <a href="Object_8cpp_source.html#l00570">Object.cpp:570</a></div></div>
 <div class="ttc" id="aclassUnit_html_a064f2f965d8ae66a4b264bb866790e8f"><div class="ttname"><a href="classUnit.html#a064f2f965d8ae66a4b264bb866790e8f">Unit::hasAurasWithId</a></div><div class="ttdeci">bool hasAurasWithId(uint32_t auraId) const</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l05004">Unit.cpp:5004</a></div></div>
 <div class="ttc" id="astructMySQLStructure_1_1NpcGossipText_html"><div class="ttname"><a href="structMySQLStructure_1_1NpcGossipText.html">MySQLStructure::NpcGossipText</a></div><div class="ttdef"><b>Definition</b> <a href="MySQLStructures_8h_source.html#l00478">MySQLStructures.h:479</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -298,19 +297,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>Id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>Code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>gossipId</em>&#160;</td>
         </tr>
         <tr>
@@ -352,18 +351,18 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   95</span>        } <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">   96</span>        <span class="keywordflow">case</span> 4: <span class="comment">// Event of halloween</span></div>
 <div class="line"><span class="lineno">   97</span>        {</div>
-<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (!Plr-&gt;<a class="code hl_function" href="classUnit.html#a064f2f965d8ae66a4b264bb866790e8f">hasAurasWithId</a>(<a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#abe974f22edeef8189603ba75fd90ff3ca9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a>))</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (!Plr-&gt;<a class="code hl_function" href="classUnit.html#a064f2f965d8ae66a4b264bb866790e8f">hasAurasWithId</a>(<a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#ab04a0655cd1e3bcac5e8f48c18df1a57a9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a>))</div>
 <div class="line"><span class="lineno">   99</span>            {</div>
-<div class="line"><span class="lineno">  100</span>                pCreature-&gt;<a class="code hl_function" href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">castSpell</a>(Plr, <a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#abe974f22edeef8189603ba75fd90ff3ca9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  100</span>                pCreature-&gt;<a class="code hl_function" href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">castSpell</a>(Plr, <a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#ab04a0655cd1e3bcac5e8f48c18df1a57a9b4e5735ff89cdc466fc4d08c22ed75c">SPELL_TRICK_OR_TREATED</a>, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>                <span class="comment">// either trick or treat, 50% chance</span></div>
 <div class="line"><span class="lineno">  103</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a>(1))</div>
 <div class="line"><span class="lineno">  104</span>                {</div>
-<div class="line"><span class="lineno">  105</span>                    Plr-&gt;<a class="code hl_function" href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">castSpell</a>(Plr, <a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#abe974f22edeef8189603ba75fd90ff3ca94b726ef8f4b1805b0863737bc181dfc">SPELL_TREAT</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  105</span>                    Plr-&gt;<a class="code hl_function" href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">castSpell</a>(Plr, <a class="code hl_enumvalue" href="Gossip__Innkeepers_8cpp.html#ab04a0655cd1e3bcac5e8f48c18df1a57a94b726ef8f4b1805b0863737bc181dfc">SPELL_TREAT</a>, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  106</span>                }</div>
 <div class="line"><span class="lineno">  107</span>                <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  108</span>                {</div>
-<div class="line"><span class="lineno">  109</span>                    <a class="code hl_typedef" href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> trickspell = 0;</div>
+<div class="line"><span class="lineno">  109</span>                    int32_t trickspell = 0;</div>
 <div class="line"><span class="lineno">  110</span>                    <span class="keywordflow">switch</span> (<a class="code hl_function" href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a>(5))</div>
 <div class="line"><span class="lineno">  111</span>                    {</div>
 <div class="line"><span class="lineno">  112</span>                        <span class="keywordflow">case</span> 0:</div>
@@ -423,7 +422,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  166</span>        } <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  167</span>    }</div>
 <div class="line"><span class="lineno">  168</span>}</div>
-<div class="ttc" id="aGossip__Innkeepers_8cpp_html_abe974f22edeef8189603ba75fd90ff3ca94b726ef8f4b1805b0863737bc181dfc"><div class="ttname"><a href="Gossip__Innkeepers_8cpp.html#abe974f22edeef8189603ba75fd90ff3ca94b726ef8f4b1805b0863737bc181dfc">SPELL_TREAT</a></div><div class="ttdeci">@ SPELL_TREAT</div><div class="ttdef"><b>Definition</b> <a href="Gossip__Innkeepers_8cpp_source.html#l00020">Gossip_Innkeepers.cpp:20</a></div></div>
+<div class="ttc" id="aGossip__Innkeepers_8cpp_html_ab04a0655cd1e3bcac5e8f48c18df1a57a94b726ef8f4b1805b0863737bc181dfc"><div class="ttname"><a href="Gossip__Innkeepers_8cpp.html#ab04a0655cd1e3bcac5e8f48c18df1a57a94b726ef8f4b1805b0863737bc181dfc">SPELL_TREAT</a></div><div class="ttdeci">@ SPELL_TREAT</div><div class="ttdef"><b>Definition</b> <a href="Gossip__Innkeepers_8cpp_source.html#l00020">Gossip_Innkeepers.cpp:20</a></div></div>
 <div class="ttc" id="aclassGossipMenu_html_aeb114b0dabe2a6f56c6e2f9232736838"><div class="ttname"><a href="classGossipMenu.html#aeb114b0dabe2a6f56c6e2f9232736838">GossipMenu::senGossipComplete</a></div><div class="ttdeci">static void senGossipComplete(Player *player)</div><div class="ttdef"><b>Definition</b> <a href="GossipMenu_8cpp_source.html#l00066">GossipMenu.cpp:66</a></div></div>
 <div class="ttc" id="aclassGossipMenu_html_afb77b6cc0b1ce831fa51294321c94723"><div class="ttname"><a href="classGossipMenu.html#afb77b6cc0b1ce831fa51294321c94723">GossipMenu::sendQuickMenu</a></div><div class="ttdeci">static void sendQuickMenu(uint64_t guid, uint32_t textId, Player *player, uint32_t itemId, uint8_t itemIcon, std::string itemText, uint32_t requiredMoney=0, std::string moneyText=&quot;&quot;, bool extra=false)</div><div class="ttdef"><b>Definition</b> <a href="GossipMenu_8cpp_source.html#l00057">GossipMenu.cpp:57</a></div></div>
 <div class="ttc" id="aclassPlayer_html_aee195158e07a0138b257f8d1ede0cc6b"><div class="ttname"><a href="classPlayer.html#aee195158e07a0138b257f8d1ede0cc6b">Player::getSession</a></div><div class="ttdeci">WorldSession * getSession() const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l03131">Player.cpp:3131</a></div></div>
@@ -432,8 +431,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassWorldSession_html_a00185a92af61f7f64b0b65c8afb8d0a4"><div class="ttname"><a href="classWorldSession.html#a00185a92af61f7f64b0b65c8afb8d0a4">WorldSession::LocalizedGossipOption</a></div><div class="ttdeci">const char * LocalizedGossipOption(uint32_t id)</div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8cpp_source.html#l00584">WorldSession.cpp:584</a></div></div>
 <div class="ttc" id="aclassWorldSession_html_a206b30e9103c16e43da3f343d1790239"><div class="ttname"><a href="classWorldSession.html#a206b30e9103c16e43da3f343d1790239">WorldSession::sendInnkeeperBind</a></div><div class="ttdeci">void sendInnkeeperBind(Creature *creature)</div><div class="ttdef"><b>Definition</b> <a href="NPCHandler_8cpp_source.html#l00322">NPCHandler.cpp:322</a></div></div>
 <div class="ttc" id="aclassWorldSession_html_aad4eb75cf6d07e0bc066cdc63ffa9ee6"><div class="ttname"><a href="classWorldSession.html#aad4eb75cf6d07e0bc066cdc63ffa9ee6">WorldSession::sendInventoryList</a></div><div class="ttdeci">void sendInventoryList(Creature *pCreature)</div><div class="ttdef"><b>Definition</b> <a href="ItemHandler_8cpp_source.html#l02314">ItemHandler.cpp:2314</a></div></div>
-<div class="ttc" id="anamespaceUtil_html_ac09cb1bbc978b41e11720b88fec2800e"><div class="ttname"><a href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a></div><div class="ttdeci">uint32_t getRandomUInt(uint32_t end)</div><div class="ttdef"><b>Definition</b> <a href="src_2shared_2Utilities_2Random_8cpp_source.html#l00032">Random.cpp:32</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_ab1967d8591af1a4e48c37fd2b0f184d0"><div class="ttname"><a href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a></div><div class="ttdeci">signed int int32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00077">winvs_stdint.h:77</a></div></div>
+<div class="ttc" id="anamespaceUtil_html_ac09cb1bbc978b41e11720b88fec2800e"><div class="ttname"><a href="namespaceUtil.html#ac09cb1bbc978b41e11720b88fec2800e">Util::getRandomUInt</a></div><div class="ttdeci">uint32_t getRandomUInt(uint32_t end)</div><div class="ttdef"><b>Definition</b> <a href="Random_8cpp_source.html#l00032">Random.cpp:32</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -120,15 +120,15 @@ $(document).ready(function(){initNavTree('MsgSetRaidDifficulty_8h_source.html','
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#if VERSION_STRING &gt; TBC</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> difficulty;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> unknown;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        uint32_t difficulty;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        uint32_t unknown;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">bool</span> isInGroup;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1MsgSetRaidDifficulty.html">MsgSetRaidDifficulty</a>() : <a class="code hl_class" href="classAscEmu_1_1Packets_1_1MsgSetRaidDifficulty.html">MsgSetRaidDifficulty</a>(0, 0, <span class="keyword">false</span>)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1MsgSetRaidDifficulty.html">MsgSetRaidDifficulty</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> difficulty, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> unknown, <span class="keywordtype">bool</span> isInGroup) :</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1MsgSetRaidDifficulty.html">MsgSetRaidDifficulty</a>(uint8_t difficulty, uint32_t unknown, <span class="keywordtype">bool</span> isInGroup) :</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_class" href="classAscEmu_1_1Packets_1_1ManagedPacket.html">ManagedPacket</a>(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca6034e8b5d782cc67a2e271a60e758684">MSG_SET_RAID_DIFFICULTY</a>, 4),</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            difficulty(difficulty),</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            unknown(unknown),</div>
@@ -146,9 +146,9 @@ $(document).ready(function(){initNavTree('MsgSetRaidDifficulty_8h_source.html','
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classAscEmu_1_1Packets_1_1ManagedPacket.html#a7e9f713ca1b9664f9ffccf5653432549">internalSerialise</a>(<a class="code hl_class" href="classWorldPacket.html">WorldPacket</a>&amp; packet)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if VERSION_STRING == Mop</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(difficulty);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            packet &lt;&lt; uint32_t(difficulty);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(difficulty) &lt;&lt; unknown &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(isInGroup);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            packet &lt;&lt; uint32_t(difficulty) &lt;&lt; unknown &lt;&lt; uint32_t(isInGroup);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
@@ -171,8 +171,6 @@ $(document).ready(function(){initNavTree('MsgSetRaidDifficulty_8h_source.html','
 <div class="ttc" id="aclassAscEmu_1_1Packets_1_1MsgSetRaidDifficulty_html"><div class="ttname"><a href="classAscEmu_1_1Packets_1_1MsgSetRaidDifficulty.html">AscEmu::Packets::MsgSetRaidDifficulty</a></div><div class="ttdef"><b>Definition</b> <a href="MsgSetRaidDifficulty_8h_source.html#l00015">MsgSetRaidDifficulty.h:16</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Packets_html"><div class="ttname"><a href="namespaceAscEmu_1_1Packets.html">AscEmu::Packets</a></div><div class="ttdef"><b>Definition</b> <a href="AuctionHouse_8h_source.html#l00017">AuctionHouse.h:18</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

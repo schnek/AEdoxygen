@@ -123,9 +123,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a82f0ead498ba11f35ba058a739f3569c" id="r_a82f0ead498ba11f35ba058a739f3569c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CrashHandler_8h.html#a82f0ead498ba11f35ba058a739f3569c">HookCrashReporter</a> (<a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> logon)</td></tr>
+<tr class="memitem:a82f0ead498ba11f35ba058a739f3569c" id="r_a82f0ead498ba11f35ba058a739f3569c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CrashHandler_8h.html#a82f0ead498ba11f35ba058a739f3569c">HookCrashReporter</a> (bool logon)</td></tr>
 <tr class="separator:a82f0ead498ba11f35ba058a739f3569c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874ddcdcdb8b77fcfc8f5ebb86e55d0f" id="r_a874ddcdcdb8b77fcfc8f5ebb86e55d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CrashHandler_8h.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">OutputCrashLogLine</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>,...)</td></tr>
+<tr class="memitem:a874ddcdcdb8b77fcfc8f5ebb86e55d0f" id="r_a874ddcdcdb8b77fcfc8f5ebb86e55d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CrashHandler_8h.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">OutputCrashLogLine</a> (const char *format,...)</td></tr>
 <tr class="separator:a874ddcdcdb8b77fcfc8f5ebb86e55d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -169,9 +169,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> HookCrashReporter </td>
+          <td class="memname">bool HookCrashReporter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>logon</em></td><td>)</td>
           <td></td>
         </tr>
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void OutputCrashLogLine </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
@@ -213,20 +213,17 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span>(!m_file) <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   35</span> </div>
 <div class="line"><span class="lineno">   36</span>    va_list ap;</div>
-<div class="line"><span class="lineno">   37</span>    va_start(ap, <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>);</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="printf_8h.html#aa80a935767017049bd5427afbe5b5912">vfprintf</a>(m_file, <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>, ap);</div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_function" href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a>(m_file, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   37</span>    va_start(ap, format);</div>
+<div class="line"><span class="lineno">   38</span>    vfprintf(m_file, format, ap);</div>
+<div class="line"><span class="lineno">   39</span>    fprintf(m_file, <span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><span class="lineno">   40</span>    fclose(m_file);</div>
 <div class="line"><span class="lineno">   41</span>    va_end(ap);</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="acolor_8h_html_af4a3b7f252e457605de5440249a15699"><div class="ttname"><a href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a></div><div class="ttdeci">auto format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args) -&gt; std::basic_string&lt; Char &gt;</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00543">color.h:543</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Logging_html_aee471bb56ae81bfebd18cc3a43f498a6"><div class="ttname"><a href="namespaceAscEmu_1_1Logging.html#aee471bb56ae81bfebd18cc3a43f498a6">AscEmu::Logging::getFormattedFileName</a></div><div class="ttdeci">std::string getFormattedFileName(const std::string &amp;path_prefix, const std::string &amp;file_prefix, bool use_date_time)</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00212">Logger.cpp:212</a></div></div>
-<div class="ttc" id="aprintf_8h_html_a9f315126362cae9675de1642105e631e"><div class="ttname"><a href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a></div><div class="ttdeci">auto fprintf(std::FILE *f, const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00640">printf.h:640</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aa80a935767017049bd5427afbe5b5912"><div class="ttname"><a href="printf_8h.html#aa80a935767017049bd5427afbe5b5912">vfprintf</a></div><div class="ttdeci">auto vfprintf(std::FILE *f, basic_string_view&lt; Char &gt; fmt, basic_format_args&lt; basic_printf_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00618">printf.h:618</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CrashHandler_8h_a874ddcdcdb8b77fcfc8f5ebb86e55d0f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CrashHandler_8h_a874ddcdcdb8b77fcfc8f5ebb86e55d0f_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

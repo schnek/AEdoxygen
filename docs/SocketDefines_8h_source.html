@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('SocketDefines_8h_source.html',''); ini
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        {</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordtype">long</span> val = InterlockedCompareExchange(&amp;m_inUse, 1, 0);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span>(val != 0)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;!!!! Network: Detected double use of read/write event! Previous event was %u.&quot;</span>, m_event);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                printf(<span class="stringliteral">&quot;!!!! Network: Detected double use of read/write event! Previous event was %u.&quot;</span>, m_event);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">void</span> Unmark()</div>
@@ -203,7 +203,6 @@ $(document).ready(function(){initNavTree('SocketDefines_8h_source.html',''); ini
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif  </span><span class="comment">//SOCKET_DEFINES_H</span></div>
 <div class="ttc" id="aConditionVariable_8h_html"><div class="ttname"><a href="ConditionVariable_8h.html">ConditionVariable.h</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aee3ed3a831f25f07e7be3919fff2203a"><div class="ttname"><a href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a></div><div class="ttdeci">auto printf(string_view fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00663">printf.h:663</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -154,9 +154,9 @@ $(document).ready(function(){initNavTree('World_8cpp.html',''); initResizable();
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5a80774080fc05f90c7d92213fda6788" id="r_a5a80774080fc05f90c7d92213fda6788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="World_8cpp.html#a5a80774080fc05f90c7d92213fda6788">LoadGameObjectModelList</a> (std::string <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;dataPath)</td></tr>
+<tr class="memitem:a5a80774080fc05f90c7d92213fda6788" id="r_a5a80774080fc05f90c7d92213fda6788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="World_8cpp.html#a5a80774080fc05f90c7d92213fda6788">LoadGameObjectModelList</a> (std::string const &amp;dataPath)</td></tr>
 <tr class="separator:a5a80774080fc05f90c7d92213fda6788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13d85f98246b761b0a1e5f794aba5eb5" id="r_a13d85f98246b761b0a1e5f794aba5eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="World_8cpp.html#a13d85f98246b761b0a1e5f794aba5eb5">runParallel</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; std::function&lt; void()&gt; &gt; &amp;tasks)</td></tr>
+<tr class="memitem:a13d85f98246b761b0a1e5f794aba5eb5" id="r_a13d85f98246b761b0a1e5f794aba5eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="World_8cpp.html#a13d85f98246b761b0a1e5f794aba5eb5">runParallel</a> (const std::vector&lt; std::function&lt; void()&gt; &gt; &amp;tasks)</td></tr>
 <tr class="separator:a13d85f98246b761b0a1e5f794aba5eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -179,7 +179,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void LoadGameObjectModelList </td>
           <td>(</td>
-          <td class="paramtype">std::string <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>dataPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -204,58 +204,52 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   57</span>    }</div>
 <div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> name_length, displayId;</div>
-<div class="line"><span class="lineno">   60</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> isWmo;</div>
+<div class="line"><span class="lineno">   59</span>    uint32_t name_length, displayId;</div>
+<div class="line"><span class="lineno">   60</span>    uint8_t isWmo;</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordtype">char</span> buff[500];</div>
 <div class="line"><span class="lineno">   62</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
 <div class="line"><span class="lineno">   63</span>    {</div>
-<div class="line"><span class="lineno">   64</span>        <a class="code hl_class" href="classG3D_1_1Vector3.html">Vector3</a> v1, v2;</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (fread(&amp;displayId, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>), 1, model_list_file) != 1)</div>
+<div class="line"><span class="lineno">   64</span>        Vector3 v1, v2;</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (fread(&amp;displayId, <span class="keyword">sizeof</span>(uint32_t), 1, model_list_file) != 1)</div>
 <div class="line"><span class="lineno">   66</span>            <span class="keywordflow">if</span> (feof(model_list_file))  <span class="comment">// EOF flag is only set after failed reading attempt</span></div>
 <div class="line"><span class="lineno">   67</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (fread(&amp;isWmo, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>), 1, model_list_file) != 1</div>
-<div class="line"><span class="lineno">   70</span>            || fread(&amp;name_length, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>), 1, model_list_file) != 1</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (fread(&amp;isWmo, <span class="keyword">sizeof</span>(uint8_t), 1, model_list_file) != 1</div>
+<div class="line"><span class="lineno">   70</span>            || fread(&amp;name_length, <span class="keyword">sizeof</span>(uint32_t), 1, model_list_file) != 1</div>
 <div class="line"><span class="lineno">   71</span>            || name_length &gt;= <span class="keyword">sizeof</span>(buff)</div>
 <div class="line"><span class="lineno">   72</span>            || fread(&amp;buff, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>), name_length, model_list_file) != name_length</div>
-<div class="line"><span class="lineno">   73</span>            || fread(&amp;v1, <span class="keyword">sizeof</span>(<a class="code hl_class" href="classG3D_1_1Vector3.html">Vector3</a>), 1, model_list_file) != 1</div>
-<div class="line"><span class="lineno">   74</span>            || fread(&amp;v2, <span class="keyword">sizeof</span>(<a class="code hl_class" href="classG3D_1_1Vector3.html">Vector3</a>), 1, model_list_file) != 1)</div>
+<div class="line"><span class="lineno">   73</span>            || fread(&amp;v1, <span class="keyword">sizeof</span>(Vector3), 1, model_list_file) != 1</div>
+<div class="line"><span class="lineno">   74</span>            || fread(&amp;v2, <span class="keyword">sizeof</span>(Vector3), 1, model_list_file) != 1)</div>
 <div class="line"><span class="lineno">   75</span>        {</div>
 <div class="line"><span class="lineno">   76</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;File &#39;{}&#39; seems to be corrupted!&quot;</span>, <a class="code hl_variable" href="namespaceVMAP.html#ada4191301386f881525b3f0b0760cb60">VMAP::GAMEOBJECT_MODELS</a>);</div>
 <div class="line"><span class="lineno">   77</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">   78</span>        }</div>
 <div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">if</span> (v1.<a class="code hl_function" href="classG3D_1_1Vector3.html#afe175f2e7644536cfd02bebb5b5c0dda">isNaN</a>() || v2.<a class="code hl_function" href="classG3D_1_1Vector3.html#afe175f2e7644536cfd02bebb5b5c0dda">isNaN</a>())</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">if</span> (v1.isNaN() || v2.isNaN())</div>
 <div class="line"><span class="lineno">   81</span>        {</div>
-<div class="line"><span class="lineno">   82</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;File &#39;{}&#39; Model &#39;{}&#39; has invalid v1{} v2{} values!&quot;</span>, <a class="code hl_variable" href="namespaceVMAP.html#ada4191301386f881525b3f0b0760cb60">VMAP::GAMEOBJECT_MODELS</a>, std::string(buff, name_length), v1.<a class="code hl_function" href="classG3D_1_1Vector3.html#aa29fccfd7aedeb3bb5feb268237d866e">toString</a>(), v2.<a class="code hl_function" href="classG3D_1_1Vector3.html#aa29fccfd7aedeb3bb5feb268237d866e">toString</a>());</div>
+<div class="line"><span class="lineno">   82</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;File &#39;{}&#39; Model &#39;{}&#39; has invalid v1{} v2{} values!&quot;</span>, <a class="code hl_variable" href="namespaceVMAP.html#ada4191301386f881525b3f0b0760cb60">VMAP::GAMEOBJECT_MODELS</a>, std::string(buff, name_length), v1.toString(), v2.toString());</div>
 <div class="line"><span class="lineno">   83</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">   84</span>        }</div>
 <div class="line"><span class="lineno">   85</span> </div>
 <div class="line"><span class="lineno">   86</span>        <a class="code hl_variable" href="GameObjectModel_8cpp.html#aa0a0fd13eaa3eba090a3085d41303f12">model_list</a>.insert</div>
 <div class="line"><span class="lineno">   87</span>        (</div>
-<div class="line"><span class="lineno">   88</span>            ModelList::value_type(displayId, <a class="code hl_struct" href="structGameobjectModelData.html">GameobjectModelData</a>(std::string(buff, name_length), <a class="code hl_class" href="classG3D_1_1AABox.html">AABox</a>(v1, v2), isWmo != 0))</div>
+<div class="line"><span class="lineno">   88</span>            ModelList::value_type(displayId, <a class="code hl_struct" href="structGameobjectModelData.html">GameobjectModelData</a>(std::string(buff, name_length), AABox(v1, v2), isWmo != 0))</div>
 <div class="line"><span class="lineno">   89</span>        );</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span>    fclose(model_list_file);</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.info(<span class="stringliteral">&quot;LoadGameObjectModelList : Loaded {} GameObject models in {} ms&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(<a class="code hl_variable" href="GameObjectModel_8cpp.html#aa0a0fd13eaa3eba090a3085d41303f12">model_list</a>.size()), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.info(<span class="stringliteral">&quot;LoadGameObjectModelList : Loaded {} GameObject models in {} ms&quot;</span>, uint32_t(<a class="code hl_variable" href="GameObjectModel_8cpp.html#aa0a0fd13eaa3eba090a3085d41303f12">model_list</a>.size()), <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a>(startTime)));</div>
 <div class="line"><span class="lineno">   94</span>}</div>
 <div class="ttc" id="aGameObjectModel_8cpp_html_aa0a0fd13eaa3eba090a3085d41303f12"><div class="ttname"><a href="GameObjectModel_8cpp.html#aa0a0fd13eaa3eba090a3085d41303f12">model_list</a></div><div class="ttdeci">ModelList model_list</div><div class="ttdef"><b>Definition</b> <a href="GameObjectModel_8cpp_source.html#l00044">GameObjectModel.cpp:44</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_a50320f857c38e7c413b48a556ad30e83"><div class="ttname"><a href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a></div><div class="ttdeci">#define sLogger</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00136">Logger.hpp:136</a></div></div>
-<div class="ttc" id="aclassG3D_1_1AABox_html"><div class="ttname"><a href="classG3D_1_1AABox.html">G3D::AABox</a></div><div class="ttdef"><b>Definition</b> <a href="AABox_8h_source.html#l00032">AABox.h:32</a></div></div>
-<div class="ttc" id="aclassG3D_1_1Vector3_html"><div class="ttname"><a href="classG3D_1_1Vector3.html">G3D::Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="Vector3_8h_source.html#l00058">Vector3.h:58</a></div></div>
-<div class="ttc" id="aclassG3D_1_1Vector3_html_aa29fccfd7aedeb3bb5feb268237d866e"><div class="ttname"><a href="classG3D_1_1Vector3.html#aa29fccfd7aedeb3bb5feb268237d866e">G3D::Vector3::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdef"><b>Definition</b> <a href="Vector3_8cpp_source.html#l00386">Vector3.cpp:386</a></div></div>
-<div class="ttc" id="aclassG3D_1_1Vector3_html_afe175f2e7644536cfd02bebb5b5c0dda"><div class="ttname"><a href="classG3D_1_1Vector3.html#afe175f2e7644536cfd02bebb5b5c0dda">G3D::Vector3::isNaN</a></div><div class="ttdeci">bool isNaN() const</div><div class="ttdef"><b>Definition</b> <a href="Vector3_8cpp_source.html#l00083">Vector3.cpp:83</a></div></div>
 <div class="ttc" id="anamespaceUtil_html_a9a604a54078fde28181624aa02db063d"><div class="ttname"><a href="namespaceUtil.html#a9a604a54078fde28181624aa02db063d">Util::GetTimeDifferenceToNow</a></div><div class="ttdeci">long long GetTimeDifferenceToNow(const std::chrono::high_resolution_clock::time_point &amp;start_time)</div><div class="ttdoc">Returns the difference between start_time and now in milliseconds.</div><div class="ttdef"><b>Definition</b> <a href="Util_8cpp_source.html#l00150">Util.cpp:150</a></div></div>
 <div class="ttc" id="anamespaceUtil_html_aee85a3996bf0f7eb58f931b3d01d3fe7"><div class="ttname"><a href="namespaceUtil.html#aee85a3996bf0f7eb58f931b3d01d3fe7">Util::TimeNow</a></div><div class="ttdeci">std::chrono::high_resolution_clock::time_point TimeNow()</div><div class="ttdoc">Returns the current point in time.</div><div class="ttdef"><b>Definition</b> <a href="Util_8cpp_source.html#l00130">Util.cpp:130</a></div></div>
 <div class="ttc" id="anamespaceVMAP_html_ada4191301386f881525b3f0b0760cb60"><div class="ttname"><a href="namespaceVMAP.html#ada4191301386f881525b3f0b0760cb60">VMAP::GAMEOBJECT_MODELS</a></div><div class="ttdeci">const char GAMEOBJECT_MODELS[]</div><div class="ttdef"><b>Definition</b> <a href="VMapDefinitions_8h_source.html#l00031">VMapDefinitions.h:31</a></div></div>
 <div class="ttc" id="astructGameobjectModelData_html"><div class="ttname"><a href="structGameobjectModelData.html">GameobjectModelData</a></div><div class="ttdef"><b>Definition</b> <a href="GameObjectModel_8cpp_source.html#l00033">GameObjectModel.cpp:34</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="World_8cpp_a5a80774080fc05f90c7d92213fda6788_cgraph.svg" width="100%" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="World_8cpp_a5a80774080fc05f90c7d92213fda6788_cgraph.svg" width="638" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -277,7 +271,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void runParallel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::vector&lt; std::function&lt; void()&gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; std::function&lt; void()&gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>tasks</em></td><td>)</td>
           <td></td>
         </tr>
@@ -313,14 +307,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  852</span>            }</div>
 <div class="line"><span class="lineno">  853</span>        });</div>
 <div class="line"><span class="lineno">  854</span>    }</div>
-<div class="line"><span class="lineno">  855</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a> : threads)</div>
-<div class="line"><span class="lineno">  856</span>        <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>.<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#a3a5321fbc6cbf18a53d0bbf5a849dd94">join</a>();</div>
+<div class="line"><span class="lineno">  855</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;t : threads)</div>
+<div class="line"><span class="lineno">  856</span>        t.join();</div>
 <div class="line"><span class="lineno">  857</span> </div>
 <div class="line"><span class="lineno">  858</span>    <span class="keywordflow">if</span> (had_error &amp;&amp; first_exc)</div>
 <div class="line"><span class="lineno">  859</span>        std::rethrow_exception(first_exc);</div>
 <div class="line"><span class="lineno">  860</span>}</div>
-<div class="ttc" id="abn__mp__prime__rabin__miller__trials_8c_html_ac310d9181e916ba43604099aee272c71"><div class="ttname"><a href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a></div><div class="ttdeci">int t</div><div class="ttdef"><b>Definition</b> <a href="bn__mp__prime__rabin__miller__trials_8c_source.html#l00020">bn_mp_prime_rabin_miller_trials.c:20</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2format_8h_html_a3a5321fbc6cbf18a53d0bbf5a849dd94"><div class="ttname"><a href="fmt_2include_2fmt_2format_8h.html#a3a5321fbc6cbf18a53d0bbf5a849dd94">join</a></div><div class="ttdeci">auto join(It begin, Sentinel end, string_view sep) -&gt; join_view&lt; It, Sentinel &gt;</div><div class="ttdef"><b>Definition</b> <a href="fmt_2include_2fmt_2format_8h_source.html#l04280">format.h:4280</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

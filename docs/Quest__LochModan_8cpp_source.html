@@ -181,13 +181,13 @@ $(document).ready(function(){initNavTree('Quest__LochModan_8cpp_source.html','')
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_variable" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">WPCount</a> = 7;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt;= <a class="code hl_variable" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">WPCount</a>; ++i)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">for</span> (uint8_t i = 0; i &lt;= <a class="code hl_variable" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">WPCount</a>; ++i)</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_function" href="classCreatureAIScript.html#a3d1e52ca0f646863b06e2dbeb183c1cc">addWaypoint</a>(1, <a class="code hl_function" href="classCreatureAIScript.html#afa30c1bcdfff3aeea383f648214403ab">createWaypoint</a>(i, 0, <a class="code hl_enumvalue" href="WaypointDefines_8h.html#ac26115060a1cd0169937b206edddd863a1a68f8f06e0a7c3d6f9b007c79630f55">WAYPOINT_MOVE_TYPE_RUN</a>, <a class="code hl_variable" href="Quest__LochModan_8cpp.html#a27a768e3f5b03290ea18011ae6f03eda">WaypointsMiran</a>[i]));</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
 </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classMiran.html#adb3a128d66db49e30e2dc7efea71f65a">   77</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMiran.html#adb3a128d66db49e30e2dc7efea71f65a">OnReachWP</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> type, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> iWaypointId)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classMiran.html#adb3a128d66db49e30e2dc7efea71f65a">   77</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMiran.html#adb3a128d66db49e30e2dc7efea71f65a">OnReachWP</a>(uint32_t type, uint32_t iWaypointId)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> (type != <a class="code hl_enumvalue" href="MovementDefines_8h.html#a0e63bdab04b188c67c826928ff2a7cb8a6158029efb794f0a586a62f35cef5ae9">WAYPOINT_MOTION_TYPE</a>)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span>;</div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('Quest__LochModan_8cpp_source.html','')
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">   99</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_variable" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">WPCount</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">   99</a></span>    uint8_t <a class="code hl_variable" href="classMiran.html#af5eb27a4c675830fdb6c25f790b92fd0">WPCount</a>;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
 </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
@@ -271,8 +271,6 @@ $(document).ready(function(){initNavTree('Quest__LochModan_8cpp_source.html','')
 <div class="ttc" id="aclassUnit_html_ad42361aa38d4d5a606053b112a5e7346"><div class="ttname"><a href="classUnit.html#ad42361aa38d4d5a606053b112a5e7346">Unit::pauseMovement</a></div><div class="ttdeci">void pauseMovement(uint32_t timer=0, uint8_t slot=0, bool forced=true)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l03013">Unit.cpp:3013</a></div></div>
 <div class="ttc" id="aclassUnit_html_af30acad94319d7d319cf7851f939a15e"><div class="ttname"><a href="classUnit.html#af30acad94319d7d319cf7851f939a15e">Unit::getMovementManager</a></div><div class="ttdeci">MovementManager * getMovementManager()</div><div class="ttdef"><b>Definition</b> <a href="Unit_8hpp_source.html#l00655">Unit.hpp:655</a></div></div>
 <div class="ttc" id="aclassWorldMap_html_a40584ff6455da37438a0ee2a2dff79bb"><div class="ttname"><a href="classWorldMap.html#a40584ff6455da37438a0ee2a2dff79bb">WorldMap::getInterface</a></div><div class="ttdeci">MapScriptInterface * getInterface()</div><div class="ttdef"><b>Definition</b> <a href="WorldMap_8cpp_source.html#l02452">WorldMap.cpp:2452</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

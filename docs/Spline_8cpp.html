@@ -95,18 +95,17 @@ $(document).ready(function(){initNavTree('Spline_8cpp.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Spline.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;sstream&gt;</code><br />
-<code>#include &quot;<a class="el" href="src_2world_2Movement_2Spline_2Spline_8h_source.html">Spline.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="Matrix4_8h_source.html">G3D/Matrix4.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="Spline_8h_source.html">Spline.h</a>&quot;</code><br />
+<code>#include &lt;G3D/Matrix4.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Spline.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Spline_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Spline_8cpp__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="Spline_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -118,17 +117,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a915b06400c8dfd83ac6476e67ff06916" id="r_a915b06400c8dfd83ac6476e67ff06916"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classG3D_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a915b06400c8dfd83ac6476e67ff06916">MovementMgr::s_Bezier3Coeffs</a> (-1.f, 3.f, -3.f, 1.f, 3.f, -6.f, 3.f, 0.f, -3.f, 3.f, 0.f, 0.f, 1.f, 0.f, 0.f, 0.f)</td></tr>
+<tr class="memitem:a70597b43359ebd1e4296b5b6993115e7" id="r_a70597b43359ebd1e4296b5b6993115e7"><td class="memItemLeft" align="right" valign="top">static const Matrix4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a70597b43359ebd1e4296b5b6993115e7">MovementMgr::s_catmullRomCoeffs</a> (-0.5f, 1.5f, -1.5f, 0.5f, 1.f, -2.5f, 2.f, -0.5f, -0.5f, 0.f, 0.5f, 0.f, 0.f, 1.f, 0.f, 0.f)</td></tr>
+<tr class="separator:a70597b43359ebd1e4296b5b6993115e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915b06400c8dfd83ac6476e67ff06916" id="r_a915b06400c8dfd83ac6476e67ff06916"><td class="memItemLeft" align="right" valign="top">static const Matrix4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a915b06400c8dfd83ac6476e67ff06916">MovementMgr::s_Bezier3Coeffs</a> (-1.f, 3.f, -3.f, 1.f, 3.f, -6.f, 3.f, 0.f, -3.f, 3.f, 0.f, 0.f, 1.f, 0.f, 0.f, 0.f)</td></tr>
 <tr class="separator:a915b06400c8dfd83ac6476e67ff06916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427c3a63a6e94ca1c81283ca63adeea0" id="r_a427c3a63a6e94ca1c81283ca63adeea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a427c3a63a6e94ca1c81283ca63adeea0">MovementMgr::C_Evaluate</a> (<a class="el" href="classG3D_1_1Vector3.html">Vector3</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *vertice, float <a class="el" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>, <a class="el" href="classG3D_1_1Matrix4.html">Matrix4</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;matr, <a class="el" href="classG3D_1_1Vector3.html">Vector3</a> &amp;result)</td></tr>
+<tr class="memitem:a427c3a63a6e94ca1c81283ca63adeea0" id="r_a427c3a63a6e94ca1c81283ca63adeea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a427c3a63a6e94ca1c81283ca63adeea0">MovementMgr::C_Evaluate</a> (Vector3 const *vertice, float t, Matrix4 const &amp;matr, Vector3 &amp;result)</td></tr>
 <tr class="separator:a427c3a63a6e94ca1c81283ca63adeea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0415db194e8da7fb72a0954feb035279" id="r_a0415db194e8da7fb72a0954feb035279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a0415db194e8da7fb72a0954feb035279">MovementMgr::C_Evaluate_Derivative</a> (<a class="el" href="classG3D_1_1Vector3.html">Vector3</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *vertice, float <a class="el" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>, <a class="el" href="classG3D_1_1Matrix4.html">Matrix4</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;matr, <a class="el" href="classG3D_1_1Vector3.html">Vector3</a> &amp;result)</td></tr>
+<tr class="memitem:a0415db194e8da7fb72a0954feb035279" id="r_a0415db194e8da7fb72a0954feb035279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a0415db194e8da7fb72a0954feb035279">MovementMgr::C_Evaluate_Derivative</a> (Vector3 const *vertice, float t, Matrix4 const &amp;matr, Vector3 &amp;result)</td></tr>
 <tr class="separator:a0415db194e8da7fb72a0954feb035279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a0d1b81bb84a42a7830d7ba9a194e35eb" id="r_a0d1b81bb84a42a7830d7ba9a194e35eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classG3D_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMovementMgr.html#a0d1b81bb84a42a7830d7ba9a194e35eb">MovementMgr::s_catmullRomCoeffs</a> (-0.5f, 1.5f, -1.5f, 0.5f, 1.f, -2.5f, 2.f, -0.5f, -0.5f, 0.f, 0.5f, 0.f, 0.f, 1.f, 0.f, 0.f)</td></tr>
-<tr class="separator:a0d1b81bb84a42a7830d7ba9a194e35eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

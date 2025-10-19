@@ -113,7 +113,7 @@ Include dependency graph for adtfile.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a939d4568b4058bf826a517f55cb963af" id="r_a939d4568b4058bf826a517f55cb963af"><td class="memItemLeft" align="right" valign="top">char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a939d4568b4058bf826a517f55cb963af">GetPlainName</a> (char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *FileName)</td></tr>
+<tr class="memitem:a939d4568b4058bf826a517f55cb963af" id="r_a939d4568b4058bf826a517f55cb963af"><td class="memItemLeft" align="right" valign="top">char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a939d4568b4058bf826a517f55cb963af">GetPlainName</a> (char const *FileName)</td></tr>
 <tr class="separator:a939d4568b4058bf826a517f55cb963af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e577b4c8e75312883ba4e8c571908ca" id="r_a5e577b4c8e75312883ba4e8c571908ca"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a5e577b4c8e75312883ba4e8c571908ca">GetPlainName</a> (char *FileName)</td></tr>
 <tr class="separator:a5e577b4c8e75312883ba4e8c571908ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,7 +126,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a49378b6585d0f0c4321e559eeee7b6fe" id="r_a49378b6585d0f0c4321e559eeee7b6fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormPort_8h.html#aa8c0374618b33785ccb02f74bcfebc46">HANDLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a49378b6585d0f0c4321e559eeee7b6fe">WorldMpq</a></td></tr>
+<tr class="memitem:a49378b6585d0f0c4321e559eeee7b6fe" id="r_a49378b6585d0f0c4321e559eeee7b6fe"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a49378b6585d0f0c4321e559eeee7b6fe">WorldMpq</a></td></tr>
 <tr class="separator:a49378b6585d0f0c4321e559eeee7b6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -158,28 +158,21 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp_source.html#l00048">48</a> of file <a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp_source.html">adtfile.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">char</span>* <a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> = <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">name</a> + len - 1;</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">char</span>* ptr = name + len - 1;</div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span>    <span class="comment">//extension in lowercase</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (; *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> != <span class="charliteral">&#39;.&#39;</span>; --<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>)</div>
-<div class="line"><span class="lineno">   54</span>        *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> |= 0x20;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (; *ptr != <span class="charliteral">&#39;.&#39;</span>; --ptr)</div>
+<div class="line"><span class="lineno">   54</span>        *ptr |= 0x20;</div>
 <div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">for</span> (; <a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &gt;= <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">name</a>; --<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>)</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">for</span> (; ptr &gt;= name; --ptr)</div>
 <div class="line"><span class="lineno">   57</span>    {</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &gt; name &amp;&amp; *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &lt;= <span class="charliteral">&#39;Z&#39;</span> &amp;&amp; isalpha(*(<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> - 1)))</div>
-<div class="line"><span class="lineno">   59</span>            *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> |= 0x20;</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> == name || !isalpha(*(<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> - 1))) &amp;&amp; *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &lt;= <span class="charliteral">&#39;z&#39;</span>)</div>
-<div class="line"><span class="lineno">   61</span>            *<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> &amp;= ~0x20;</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (ptr &gt; name &amp;&amp; *ptr &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; *ptr &lt;= <span class="charliteral">&#39;Z&#39;</span> &amp;&amp; isalpha(*(ptr - 1)))</div>
+<div class="line"><span class="lineno">   59</span>            *ptr |= 0x20;</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((ptr == name || !isalpha(*(ptr - 1))) &amp;&amp; *ptr &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; *ptr &lt;= <span class="charliteral">&#39;z&#39;</span>)</div>
+<div class="line"><span class="lineno">   61</span>            *ptr &amp;= ~0x20;</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
 <div class="line"><span class="lineno">   63</span>}</div>
-<div class="ttc" id="afmt_2include_2fmt_2format_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdef"><b>Definition</b> <a href="fmt_2include_2fmt_2format_8h_source.html#l04067">format.h:4067</a></div></div>
-<div class="ttc" id="anamespacedetail_html_ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297"><div class="ttname"><a href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">detail::arg_id_kind::name</a></div><div class="ttdeci">@ name</div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp_aa43ee663d71d4900d4f77cd493588dee_cgraph.svg" width="211" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8cpp_aa43ee663d71d4900d4f77cd493588dee_icgraph.svg" width="664" height="239"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -218,7 +211,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   67</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i&lt;len - 3; i++)</div>
 <div class="line"><span class="lineno">   68</span>    {</div>
 <div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (name[i] == <span class="charliteral">&#39; &#39;</span>)</div>
-<div class="line"><span class="lineno">   70</span>            <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">name</a>[i] = <span class="charliteral">&#39;_&#39;</span>;</div>
+<div class="line"><span class="lineno">   70</span>            name[i] = <span class="charliteral">&#39;_&#39;</span>;</div>
 <div class="line"><span class="lineno">   71</span>    }</div>
 <div class="line"><span class="lineno">   72</span>}</div>
 </div><!-- fragment --><div class="dynheader">
@@ -293,9 +286,9 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>  * GetPlainName </td>
+          <td class="memname">char const  * GetPlainName </td>
           <td>(</td>
-          <td class="paramtype">char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>FileName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -329,7 +322,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#aa8c0374618b33785ccb02f74bcfebc46">HANDLE</a> WorldMpq</td>
+          <td class="memname">HANDLE WorldMpq</td>
         </tr>
       </table>
   </td>
@@ -339,7 +332,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="src_2tools_2ToolsCataMop_2map__extractor_2System_8cpp_source.html#l00068">68</a> of file <a class="el" href="src_2tools_2ToolsCataMop_2map__extractor_2System_8cpp_source.html">System.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ToolsCataMop_2map__extractor_2System_8cpp_source.html#l00068">68</a> of file <a class="el" href="ToolsCataMop_2map__extractor_2System_8cpp_source.html">System.cpp</a>.</p>
 
 </div>
 </div>

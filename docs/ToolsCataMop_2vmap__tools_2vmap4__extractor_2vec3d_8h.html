@@ -181,12 +181,10 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2vec3d_8h_source.html#l00242">242</a> of file <a class="el" href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2vec3d_8h_source.html">vec3d.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
-<div class="line"><span class="lineno">  244</span>    <span class="keywordtype">float</span> xa = *<a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a> - x0, ya = *<a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a> - y0;</div>
-<div class="line"><span class="lineno">  245</span>    *<a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a> = xa*cosf(angle) - ya*sinf(angle) + x0;</div>
-<div class="line"><span class="lineno">  246</span>    *<a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a> = xa*sinf(angle) + ya*cosf(angle) + y0;</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordtype">float</span> xa = *x - x0, ya = *y - y0;</div>
+<div class="line"><span class="lineno">  245</span>    *x = xa*cosf(angle) - ya*sinf(angle) + x0;</div>
+<div class="line"><span class="lineno">  246</span>    *y = xa*sinf(angle) + ya*cosf(angle) + y0;</div>
 <div class="line"><span class="lineno">  247</span>}</div>
-<div class="ttc" id="anamespaceG3D_html_a55ae91213b07da3a9e14fcd5068d497f"><div class="ttname"><a href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">G3D::x</a></div><div class="ttdeci">G3D::int16 x</div><div class="ttdef"><b>Definition</b> <a href="Vector2int16_8h_source.html#l00037">Vector2int16.h:37</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a8942ba929b21cfdf30bd22fe36baaefa"><div class="ttname"><a href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">G3D::y</a></div><div class="ttdeci">G3D::int16 y</div><div class="ttdef"><b>Definition</b> <a href="Vector2int16_8h_source.html#l00038">Vector2int16.h:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

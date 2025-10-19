@@ -12,8 +12,8 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="138,-267.5 0,-267.5 0,-248.5 138,-248.5 138,-267.5"/>
-<text text-anchor="middle" x="69" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">LuaUnit::SetGroupLeader</text>
+<polygon fill="#999999" stroke="#666666" points="138,-254.5 0,-254.5 0,-235.5 138,-235.5 138,-254.5"/>
+<text text-anchor="middle" x="69" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">LuaUnit::SetGroupLeader</text>
 </a>
 </g>
 </g>
@@ -21,8 +21,8 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classPlayer.html#a5895a59587da18a4655b8174805b7de0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="273.5,-304.5 175.5,-304.5 175.5,-285.5 273.5,-285.5 273.5,-304.5"/>
-<text text-anchor="middle" x="224.5" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::getGroup</text>
+<polygon fill="white" stroke="#666666" points="273.5,-310.5 175.5,-310.5 175.5,-291.5 273.5,-291.5 273.5,-310.5"/>
+<text text-anchor="middle" x="224.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::getGroup</text>
 </a>
 </g>
 </g>
@@ -30,17 +30,17 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M109.53,-267.53C129.15,-272.26 153.05,-278.02 173.89,-283.04"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="173.3,-286.5 183.84,-285.44 174.94,-279.69 173.3,-286.5"/>
+<path fill="none" stroke="#63b8ff" d="M96.39,-254.63C121.69,-263.86 160.07,-277.86 188.04,-288.06"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="186.86,-291.36 197.46,-291.5 189.26,-284.78 186.86,-291.36"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="239.5,-267.5 209.5,-267.5 209.5,-248.5 239.5,-248.5 239.5,-267.5"/>
-<text text-anchor="middle" x="224.5" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">ptr</text>
+<g id="a_Node000003"><a xlink:href="classObject.html#a3aeab7def818ba6c50249f197ad2f9ca" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="274,-273.5 175,-273.5 175,-254.5 274,-254.5 274,-273.5"/>
+<text text-anchor="middle" x="224.5" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::IsInWorld</text>
 </a>
 </g>
 </g>
@@ -48,17 +48,17 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M138.22,-258C159.95,-258 182.6,-258 199.1,-258"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="199.44,-261.5 209.44,-258 199.44,-254.5 199.44,-261.5"/>
+<path fill="none" stroke="#63b8ff" d="M138.22,-253.44C147.08,-254.54 156.1,-255.66 164.79,-256.73"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="164.46,-260.22 174.81,-257.97 165.32,-253.27 164.46,-260.22"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classGroup.html#a6c5094e6602e5f83c2d4a899ab92a3e1" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="275,-230.5 174,-230.5 174,-211.5 275,-211.5 275,-230.5"/>
-<text text-anchor="middle" x="224.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::SetLeader</text>
+<g id="a_Node000004"><a xlink:href="classObject.html#ab65745f76d63eda49657413dccf0057d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="271,-236.5 178,-236.5 178,-217.5 271,-217.5 271,-236.5"/>
+<text text-anchor="middle" x="224.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::isPlayer</text>
 </a>
 </g>
 </g>
@@ -66,17 +66,35 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M109.53,-248.47C129.15,-243.74 153.05,-237.98 173.89,-232.96"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="174.94,-236.31 183.84,-230.56 173.3,-229.5 174.94,-236.31"/>
+<path fill="none" stroke="#63b8ff" d="M138.22,-237C148.1,-235.84 158.17,-234.66 167.76,-233.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="168.43,-236.98 177.96,-232.34 167.62,-230.03 168.43,-236.98"/>
+</a>
+</g>
+</g>
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="classGroup.html#a6c5094e6602e5f83c2d4a899ab92a3e1" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="275,-171.5 174,-171.5 174,-152.5 275,-152.5 275,-171.5"/>
+<text text-anchor="middle" x="224.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::SetLeader</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge5_Node000001_Node000006" class="edge">
+<title>Node1&#45;&gt;Node6</title>
+<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M87.61,-235.48C114.3,-221.05 165.2,-193.52 196.57,-176.56"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="198.49,-179.5 205.62,-171.67 195.16,-173.34 198.49,-179.5"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="619.5,-337.5 521.5,-337.5 521.5,-318.5 619.5,-318.5 619.5,-337.5"/>
-<text text-anchor="middle" x="570.5" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::getName</text>
+<g id="a_Node000005"><a xlink:href="classObject.html#aaee2ed63355af5e632aba82f859822b4" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="452,-264.5 319,-264.5 319,-245.5 452,-245.5 452,-264.5"/>
+<text text-anchor="middle" x="385.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::getObjectTypeId</text>
 </a>
 </g>
 </g>
@@ -84,236 +102,164 @@
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M254.69,-230.56C261.53,-233.25 268.67,-236.43 275,-240 292.65,-249.96 292.7,-259.28 311,-268 375.67,-298.81 457.14,-314.32 511.14,-321.76"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="510.86,-325.25 521.23,-323.1 511.78,-318.31 510.86,-325.25"/>
-</a>
-</g>
-</g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classPlayer.html#a005d782e6fe2fb8b41a5eec859ab9686" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="630,-300.5 511,-300.5 511,-281.5 630,-281.5 630,-300.5"/>
-<text text-anchor="middle" x="570.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::getPlayerInfo</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node6 -->
-<g id="edge5_Node000004_Node000006" class="edge">
-<title>Node4&#45;&gt;Node6</title>
-<g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M267.64,-230.57C281.44,-233.65 296.86,-237.03 311,-240 378.78,-254.22 456.81,-269.46 509.25,-279.54"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="508.91,-283.03 519.39,-281.48 510.23,-276.16 508.91,-283.03"/>
+<path fill="none" stroke="#63b8ff" d="M271.06,-235.02C286.41,-237.73 303.84,-240.8 320.35,-243.7"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="320.03,-247.2 330.49,-245.49 321.25,-240.31 320.03,-247.2"/>
 </a>
 </g>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classGroup.html#a393ac97e73e4fdb2e0e2825012bfc6e0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="451,-193.5 320,-193.5 320,-174.5 451,-174.5 451,-193.5"/>
-<text text-anchor="middle" x="385.5" y="-181.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::SendPacketToAll</text>
+<g id="a_Node000007"><a xlink:href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="619.5,-152.5 521.5,-152.5 521.5,-133.5 619.5,-133.5 619.5,-152.5"/>
+<text text-anchor="middle" x="570.5" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::getName</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node7 -->
-<g id="edge6_Node000004_Node000007" class="edge">
-<title>Node4&#45;&gt;Node7</title>
-<g id="a_edge6_Node000004_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M266.45,-211.47C286.86,-206.72 311.75,-200.93 333.4,-195.89"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="334.47,-199.24 343.42,-193.56 332.88,-192.42 334.47,-199.24"/>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge6_Node000006_Node000007" class="edge">
+<title>Node6&#45;&gt;Node7</title>
+<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M275.15,-159.26C337.59,-155.81 444.61,-149.9 510.96,-146.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="511.46,-149.71 521.25,-145.66 511.07,-142.72 511.46,-149.71"/>
 </a>
 </g>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classAscEmu_1_1Packets_1_1ManagedPacket.html#a935075449bc460e05a6d322f6b074909" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="460,-78 311,-78 311,-48 460,-48 460,-78"/>
-<text text-anchor="start" x="319" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Packets::Managed</text>
-<text text-anchor="middle" x="385.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">Packet::serialise</text>
+<g id="a_Node000008"><a xlink:href="classPlayer.html#a005d782e6fe2fb8b41a5eec859ab9686" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="630,-115.5 511,-115.5 511,-96.5 630,-96.5 630,-115.5"/>
+<text text-anchor="middle" x="570.5" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::getPlayerInfo</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node8 -->
-<g id="edge7_Node000004_Node000008" class="edge">
-<title>Node4&#45;&gt;Node8</title>
-<g id="a_edge7_Node000004_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M235.45,-211.12C260.48,-186.24 326.58,-120.56 361.74,-85.61"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="364.53,-87.78 369.16,-78.24 359.6,-82.81 364.53,-87.78"/>
-</a>
-</g>
-</g>
-<!-- Node11 -->
-<g id="Node000011" class="node">
-<title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classGroup.html#abbd97b8caec613c993962c86fbea6b9a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="429,-230.5 342,-230.5 342,-211.5 429,-211.5 429,-230.5"/>
-<text text-anchor="middle" x="385.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::Update</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node11 -->
-<g id="edge10_Node000004_Node000011" class="edge">
-<title>Node4&#45;&gt;Node11</title>
-<g id="a_edge10_Node000004_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M275.37,-221C293.27,-221 313.51,-221 331.65,-221"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="331.77,-224.5 341.77,-221 331.77,-217.5 331.77,-224.5"/>
+<!-- Node6&#45;&gt;Node8 -->
+<g id="edge7_Node000006_Node000008" class="edge">
+<title>Node6&#45;&gt;Node8</title>
+<g id="a_edge7_Node000006_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M275.18,-152.43C286.92,-150.24 299.39,-147.98 311,-146 375.21,-135.03 448.62,-123.79 500.76,-116.04"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="501.52,-119.46 510.9,-114.53 500.49,-112.54 501.52,-119.46"/>
 </a>
 </g>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classAscEmu_1_1Packets_1_1ManagedPacket.html#aac8bf10cbe130cf27b0452f0cd5eedb0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="645,-30 496,-30 496,0 645,0 645,-30"/>
-<text text-anchor="start" x="504" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Packets::Managed</text>
-<text text-anchor="middle" x="570.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Packet::expectedSize</text>
+<g id="a_Node000009"><a xlink:href="classGroup.html#a393ac97e73e4fdb2e0e2825012bfc6e0" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="451,-190.5 320,-190.5 320,-171.5 451,-171.5 451,-190.5"/>
+<text text-anchor="middle" x="385.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::SendPacketToAll</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge8_Node000008_Node000009" class="edge">
-<title>Node8&#45;&gt;Node9</title>
-<g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M443.9,-47.94C462.47,-43.07 483.22,-37.63 502.42,-32.59"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="503.52,-35.93 512.3,-30 501.74,-29.15 503.52,-35.93"/>
+<!-- Node6&#45;&gt;Node9 -->
+<g id="edge8_Node000006_Node000009" class="edge">
+<title>Node6&#45;&gt;Node9</title>
+<g id="a_edge8_Node000006_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M275.37,-167.96C286.29,-169.26 298.08,-170.67 309.73,-172.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="309.57,-175.57 319.91,-173.28 310.4,-168.62 309.57,-175.57"/>
 </a>
 </g>
 </g>
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classAscEmu_1_1Packets_1_1ManagedPacket.html#a7e9f713ca1b9664f9ffccf5653432549" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="645,-78 496,-78 496,-48 645,-48 645,-78"/>
-<text text-anchor="start" x="504" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Packets::Managed</text>
-<text text-anchor="middle" x="570.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">Packet::internalSerialise</text>
+<g id="a_Node000010"><a xlink:href="classAscEmu_1_1Packets_1_1ManagedPacket.html#a935075449bc460e05a6d322f6b074909" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="460,-77 311,-77 311,-47 460,-47 460,-77"/>
+<text text-anchor="start" x="319" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Packets::Managed</text>
+<text text-anchor="middle" x="385.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">Packet::serialise</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node10 -->
-<g id="edge9_Node000008_Node000010" class="edge">
-<title>Node8&#45;&gt;Node10</title>
-<g id="a_edge9_Node000008_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M460.14,-63C468.47,-63 477.01,-63 485.46,-63"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="485.71,-66.5 495.71,-63 485.71,-59.5 485.71,-66.5"/>
-</a>
-</g>
-</g>
-<!-- Node11&#45;&gt;Node5 -->
-<g id="edge15_Node000011_Node000005" class="edge">
-<title>Node11&#45;&gt;Node5</title>
-<g id="a_edge15_Node000011_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M395.44,-230.69C412.92,-249.06 453.66,-288.95 496,-310 500.93,-312.45 506.21,-314.58 511.6,-316.43"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="510.77,-319.83 521.36,-319.46 512.85,-313.15 510.77,-319.83"/>
-</a>
-</g>
-</g>
-<!-- Node11&#45;&gt;Node6 -->
-<g id="edge16_Node000011_Node000006" class="edge">
-<title>Node11&#45;&gt;Node6</title>
-<g id="a_edge16_Node000011_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M403.86,-230.6C425.07,-242.01 462.29,-261.01 496,-273 501.93,-275.11 508.21,-277.06 514.51,-278.84"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="513.81,-282.27 524.37,-281.48 515.62,-275.51 513.81,-282.27"/>
-</a>
-</g>
-</g>
-<!-- Node12 -->
-<g id="Node000012" class="node">
-<title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classGroup.html#afa85348b68d6132a8a44b86776cfd54b" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="632.5,-189.5 508.5,-189.5 508.5,-170.5 632.5,-170.5 632.5,-189.5"/>
-<text text-anchor="middle" x="570.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::FindFirstPlayer</text>
-</a>
-</g>
-</g>
-<!-- Node11&#45;&gt;Node12 -->
-<g id="edge11_Node000011_Node000012" class="edge">
-<title>Node11&#45;&gt;Node12</title>
-<g id="a_edge11_Node000011_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M428.94,-211.49C455.18,-205.61 489.06,-198.02 516.98,-191.77"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="517.98,-195.13 526.97,-189.53 516.45,-188.3 517.98,-195.13"/>
+<!-- Node6&#45;&gt;Node10 -->
+<g id="edge9_Node000006_Node000010" class="edge">
+<title>Node6&#45;&gt;Node10</title>
+<g id="a_edge9_Node000006_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M234.98,-152.36C249.98,-137.54 280.61,-108.98 311,-91 316.95,-87.48 323.4,-84.22 329.93,-81.26"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="331.71,-84.3 339.51,-77.13 328.94,-77.88 331.71,-84.3"/>
 </a>
 </g>
 </g>
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="classObject.html#a0f6639fef4e90bc57ee1b34a81d6d489" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="616.5,-152.5 524.5,-152.5 524.5,-133.5 616.5,-133.5 616.5,-152.5"/>
-<text text-anchor="middle" x="570.5" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::getGuid</text>
+<g id="a_Node000013"><a xlink:href="classGroup.html#abbd97b8caec613c993962c86fbea6b9a" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="429,-227.5 342,-227.5 342,-208.5 429,-208.5 429,-227.5"/>
+<text text-anchor="middle" x="385.5" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::Update</text>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node13 -->
-<g id="edge12_Node000011_Node000013" class="edge">
-<title>Node11&#45;&gt;Node13</title>
-<g id="a_edge12_Node000011_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M429.1,-215.27C439.72,-212.61 450.71,-208.71 460,-203 480.94,-190.12 475.06,-173.88 496,-161 501.71,-157.49 508.07,-154.66 514.59,-152.38"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="515.67,-155.71 524.2,-149.43 513.62,-149.02 515.67,-155.71"/>
+<!-- Node6&#45;&gt;Node13 -->
+<g id="edge12_Node000006_Node000013" class="edge">
+<title>Node6&#45;&gt;Node13</title>
+<g id="a_edge12_Node000006_Node000013"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M245.19,-171.57C262.3,-179.62 287.9,-191.07 311,-199 318.11,-201.44 325.69,-203.74 333.2,-205.83"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="332.39,-209.24 342.96,-208.46 334.22,-202.48 332.39,-209.24"/>
 </a>
 </g>
 </g>
-<!-- Node15 -->
-<g id="Node000015" class="node">
-<title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classGroup.html#a686a3a85c39d54d5b7c327c505138d75" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="610.5,-115.5 530.5,-115.5 530.5,-96.5 610.5,-96.5 610.5,-115.5"/>
-<text text-anchor="middle" x="570.5" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::GetID</text>
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:href="classAscEmu_1_1Packets_1_1ManagedPacket.html#aac8bf10cbe130cf27b0452f0cd5eedb0" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="645,-78 496,-78 496,-48 645,-48 645,-78"/>
+<text text-anchor="start" x="504" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Packets::Managed</text>
+<text text-anchor="middle" x="570.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">Packet::expectedSize</text>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node15 -->
-<g id="edge14_Node000011_Node000015" class="edge">
-<title>Node11&#45;&gt;Node15</title>
-<g id="a_edge14_Node000011_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M429.18,-217.26C440.15,-214.6 451.3,-210.21 460,-203 489.72,-178.39 466.28,-148.61 496,-124 502.98,-118.22 511.54,-114.24 520.32,-111.52"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="521.45,-114.85 530.26,-108.96 519.7,-108.07 521.45,-114.85"/>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge10_Node000010_Node000011" class="edge">
+<title>Node10&#45;&gt;Node11</title>
+<g id="a_edge10_Node000010_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M460.14,-62.4C468.47,-62.45 477.01,-62.49 485.46,-62.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="485.69,-66.04 495.71,-62.6 485.73,-59.04 485.69,-66.04"/>
 </a>
 </g>
 </g>
-<!-- Node16 -->
-<g id="Node000016" class="node">
-<title>Node16</title>
-<g id="a_Node000016"><a xlink:href="classPlayer.html#a30d957a19b3ecb69412e9ae2449ae18b" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="617.5,-263.5 523.5,-263.5 523.5,-244.5 617.5,-244.5 617.5,-263.5"/>
-<text text-anchor="middle" x="570.5" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::retRoles</text>
+<!-- Node12 -->
+<g id="Node000012" class="node">
+<title>Node12</title>
+<g id="a_Node000012"><a xlink:href="classAscEmu_1_1Packets_1_1ManagedPacket.html#a7e9f713ca1b9664f9ffccf5653432549" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="645,-30 496,-30 496,0 645,0 645,-30"/>
+<text text-anchor="start" x="504" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Packets::Managed</text>
+<text text-anchor="middle" x="570.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Packet::internalSerialise</text>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node16 -->
-<g id="edge17_Node000011_Node000016" class="edge">
-<title>Node11&#45;&gt;Node16</title>
-<g id="a_edge17_Node000011_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M429.41,-228.74C454.42,-233.25 486.25,-238.99 513.25,-243.86"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="512.88,-247.35 523.34,-245.68 514.12,-240.46 512.88,-247.35"/>
+<!-- Node10&#45;&gt;Node12 -->
+<g id="edge11_Node000010_Node000012" class="edge">
+<title>Node10&#45;&gt;Node12</title>
+<g id="a_edge11_Node000010_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M444.91,-47C462.82,-42.4 482.68,-37.3 501.19,-32.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="502.21,-35.9 511.02,-30.02 500.47,-29.12 502.21,-35.9"/>
 </a>
 </g>
 </g>
-<!-- Node17 -->
-<g id="Node000017" class="node">
-<title>Node17</title>
-<g id="a_Node000017"><a xlink:href="classGroup.html#a245e34a065ca1762e1c60ccf90fb7510" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="621,-226.5 520,-226.5 520,-207.5 621,-207.5 621,-226.5"/>
-<text text-anchor="middle" x="570.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::SaveToDB</text>
+<!-- Node13&#45;&gt;Node7 -->
+<g id="edge17_Node000013_Node000007" class="edge">
+<title>Node13&#45;&gt;Node7</title>
+<g id="a_edge17_Node000013_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.3,-211.21C439.8,-208.41 450.69,-204.49 460,-199 480.04,-187.19 475.88,-172.69 496,-161 500.83,-158.2 506.08,-155.83 511.48,-153.82"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="512.89,-157.05 521.3,-150.6 510.71,-150.39 512.89,-157.05"/>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node17 -->
-<g id="edge18_Node000011_Node000017" class="edge">
-<title>Node11&#45;&gt;Node17</title>
-<g id="a_edge18_Node000011_Node000017"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M429.41,-220.06C453.28,-219.54 483.37,-218.88 509.55,-218.31"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="509.82,-221.81 519.74,-218.09 509.66,-214.81 509.82,-221.81"/>
+<!-- Node13&#45;&gt;Node8 -->
+<g id="edge18_Node000013_Node000008" class="edge">
+<title>Node13&#45;&gt;Node8</title>
+<g id="a_edge18_Node000013_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.11,-213.52C440.08,-210.7 451.24,-206.2 460,-199 488.56,-175.52 467.29,-147.3 496,-124 497.78,-122.55 499.66,-121.22 501.62,-119.99"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="503.41,-123.01 510.63,-115.25 500.15,-116.81 503.41,-123.01"/>
 </a>
 </g>
 </g>
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classObject.html#ae9814731421ab3e919a2e5c3b86e0eeb" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="788,-152.5 681,-152.5 681,-133.5 788,-133.5 788,-152.5"/>
-<text text-anchor="middle" x="734.5" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::objectData</text>
+<g id="a_Node000014"><a xlink:href="classGroup.html#afa85348b68d6132a8a44b86776cfd54b" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="632.5,-337.5 508.5,-337.5 508.5,-318.5 632.5,-318.5 632.5,-337.5"/>
+<text text-anchor="middle" x="570.5" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::FindFirstPlayer</text>
 </a>
 </g>
 </g>
@@ -321,8 +267,98 @@
 <g id="edge13_Node000013_Node000014" class="edge">
 <title>Node13&#45;&gt;Node14</title>
 <g id="a_edge13_Node000013_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M616.63,-143C633.37,-143 652.69,-143 670.73,-143"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="670.88,-146.5 680.88,-143 670.88,-139.5 670.88,-146.5"/>
+<path fill="none" stroke="#63b8ff" d="M429.06,-221.88C440.03,-224.54 451.21,-228.9 460,-236 488.46,-258.97 467.54,-287.03 496,-310 497.57,-311.27 499.22,-312.45 500.93,-313.55"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="499.46,-316.73 509.92,-318.4 502.78,-310.57 499.46,-316.73"/>
+</a>
+</g>
+</g>
+<!-- Node15 -->
+<g id="Node000015" class="node">
+<title>Node15</title>
+<g id="a_Node000015"><a xlink:href="classObject.html#a0f6639fef4e90bc57ee1b34a81d6d489" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="616.5,-300.5 524.5,-300.5 524.5,-281.5 616.5,-281.5 616.5,-300.5"/>
+<text text-anchor="middle" x="570.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::getGuid</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node15 -->
+<g id="edge14_Node000013_Node000015" class="edge">
+<title>Node13&#45;&gt;Node15</title>
+<g id="a_edge14_Node000013_Node000015"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.2,-224.32C439.7,-226.97 450.61,-230.71 460,-236 479.72,-247.1 476.35,-260.77 496,-272 501.84,-275.34 508.28,-278.1 514.84,-280.39"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="513.9,-283.76 524.49,-283.4 515.99,-277.08 513.9,-283.76"/>
+</a>
+</g>
+</g>
+<!-- Node17 -->
+<g id="Node000017" class="node">
+<title>Node17</title>
+<g id="a_Node000017"><a xlink:href="classGroup.html#a686a3a85c39d54d5b7c327c505138d75" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="610.5,-263.5 530.5,-263.5 530.5,-244.5 610.5,-244.5 610.5,-263.5"/>
+<text text-anchor="middle" x="570.5" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::GetID</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node17 -->
+<g id="edge16_Node000013_Node000017" class="edge">
+<title>Node13&#45;&gt;Node17</title>
+<g id="a_edge16_Node000013_Node000017"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.41,-226.44C456.6,-231.79 491.85,-238.73 520.2,-244.3"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="519.81,-247.79 530.3,-246.29 521.16,-240.92 519.81,-247.79"/>
+</a>
+</g>
+</g>
+<!-- Node18 -->
+<g id="Node000018" class="node">
+<title>Node18</title>
+<g id="a_Node000018"><a xlink:href="classPlayer.html#a30d957a19b3ecb69412e9ae2449ae18b" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="617.5,-226.5 523.5,-226.5 523.5,-207.5 617.5,-207.5 617.5,-226.5"/>
+<text text-anchor="middle" x="570.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::retRoles</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node18 -->
+<g id="edge19_Node000013_Node000018" class="edge">
+<title>Node13&#45;&gt;Node18</title>
+<g id="a_edge19_Node000013_Node000018"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.41,-217.77C454.42,-217.63 486.25,-217.45 513.25,-217.31"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="513.36,-220.81 523.34,-217.25 513.32,-213.81 513.36,-220.81"/>
+</a>
+</g>
+</g>
+<!-- Node19 -->
+<g id="Node000019" class="node">
+<title>Node19</title>
+<g id="a_Node000019"><a xlink:href="classGroup.html#a245e34a065ca1762e1c60ccf90fb7510" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="621,-189.5 520,-189.5 520,-170.5 621,-170.5 621,-189.5"/>
+<text text-anchor="middle" x="570.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">Group::SaveToDB</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node19 -->
+<g id="edge20_Node000013_Node000019" class="edge">
+<title>Node13&#45;&gt;Node19</title>
+<g id="a_edge20_Node000013_Node000019"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M429.41,-209.09C454.51,-203.88 486.49,-197.24 513.56,-191.62"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="514.58,-194.98 523.66,-189.52 513.16,-188.12 514.58,-194.98"/>
+</a>
+</g>
+</g>
+<!-- Node16 -->
+<g id="Node000016" class="node">
+<title>Node16</title>
+<g id="a_Node000016"><a xlink:href="classObject.html#ae9814731421ab3e919a2e5c3b86e0eeb" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="788,-300.5 681,-300.5 681,-281.5 788,-281.5 788,-300.5"/>
+<text text-anchor="middle" x="734.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">Object::objectData</text>
+</a>
+</g>
+</g>
+<!-- Node15&#45;&gt;Node16 -->
+<g id="edge15_Node000015_Node000016" class="edge">
+<title>Node15&#45;&gt;Node16</title>
+<g id="a_edge15_Node000015_Node000016"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M616.63,-291C633.37,-291 652.69,-291 670.73,-291"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="670.88,-294.5 680.88,-291 670.88,-287.5 670.88,-294.5"/>
 </a>
 </g>
 </g>

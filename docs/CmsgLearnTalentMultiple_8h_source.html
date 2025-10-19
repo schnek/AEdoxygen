@@ -116,8 +116,8 @@ $(document).ready(function(){initNavTree('CmsgLearnTalentMultiple_8h_source.html
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structMultipleTalents.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMultipleTalents.html">MultipleTalents</a></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structMultipleTalents.html#abfeee9f6a36c51fa431d75b501a6bdab">   15</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_variable" href="structMultipleTalents.html#abfeee9f6a36c51fa431d75b501a6bdab">talentId</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structMultipleTalents.html#a85be242622ae1a8e4b92ef4ec5d3aa60">   16</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_variable" href="structMultipleTalents.html#a85be242622ae1a8e4b92ef4ec5d3aa60">talentRank</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structMultipleTalents.html#abfeee9f6a36c51fa431d75b501a6bdab">   15</a></span>    uint32_t <a class="code hl_variable" href="structMultipleTalents.html#abfeee9f6a36c51fa431d75b501a6bdab">talentId</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structMultipleTalents.html#a85be242622ae1a8e4b92ef4ec5d3aa60">   16</a></span>    uint32_t <a class="code hl_variable" href="structMultipleTalents.html#a85be242622ae1a8e4b92ef4ec5d3aa60">talentRank</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -128,14 +128,14 @@ $(document).ready(function(){initNavTree('CmsgLearnTalentMultiple_8h_source.html
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#if VERSION_STRING &gt; TBC</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> talentCount;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        uint32_t talentCount;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        std::vector&lt;MultipleTalents&gt; multipleTalents;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1CmsgLearnTalentMultiple.html">CmsgLearnTalentMultiple</a>() : <a class="code hl_class" href="classAscEmu_1_1Packets_1_1CmsgLearnTalentMultiple.html">CmsgLearnTalentMultiple</a>(0, {})</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1CmsgLearnTalentMultiple.html">CmsgLearnTalentMultiple</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> talentCount, std::vector&lt;MultipleTalents&gt; multipleTalents) :</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1CmsgLearnTalentMultiple.html">CmsgLearnTalentMultiple</a>(uint32_t talentCount, std::vector&lt;MultipleTalents&gt; multipleTalents) :</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_class" href="classAscEmu_1_1Packets_1_1ManagedPacket.html">ManagedPacket</a>(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002cacadcb846ba7d9c9cd5b7140e76a39023df">CMSG_LEARN_TALENTS_MULTIPLE</a>, 4),</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            talentCount(talentCount),</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            multipleTalents(multipleTalents)</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('CmsgLearnTalentMultiple_8h_source.html
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_struct" href="structMultipleTalents.html">MultipleTalents</a> multiTalent{};</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; talentCount; ++i)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; talentCount; ++i)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                packet &gt;&gt; multiTalent.talentId &gt;&gt; multiTalent.talentRank;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
@@ -178,7 +178,6 @@ $(document).ready(function(){initNavTree('CmsgLearnTalentMultiple_8h_source.html
 <div class="ttc" id="astructMultipleTalents_html"><div class="ttname"><a href="structMultipleTalents.html">MultipleTalents</a></div><div class="ttdef"><b>Definition</b> <a href="CmsgLearnTalentMultiple_8h_source.html#l00013">CmsgLearnTalentMultiple.h:14</a></div></div>
 <div class="ttc" id="astructMultipleTalents_html_a85be242622ae1a8e4b92ef4ec5d3aa60"><div class="ttname"><a href="structMultipleTalents.html#a85be242622ae1a8e4b92ef4ec5d3aa60">MultipleTalents::talentRank</a></div><div class="ttdeci">uint32_t talentRank</div><div class="ttdef"><b>Definition</b> <a href="CmsgLearnTalentMultiple_8h_source.html#l00016">CmsgLearnTalentMultiple.h:16</a></div></div>
 <div class="ttc" id="astructMultipleTalents_html_abfeee9f6a36c51fa431d75b501a6bdab"><div class="ttname"><a href="structMultipleTalents.html#abfeee9f6a36c51fa431d75b501a6bdab">MultipleTalents::talentId</a></div><div class="ttdeci">uint32_t talentId</div><div class="ttdef"><b>Definition</b> <a href="CmsgLearnTalentMultiple_8h_source.html#l00015">CmsgLearnTalentMultiple.h:15</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

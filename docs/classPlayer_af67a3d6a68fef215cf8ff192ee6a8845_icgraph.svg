@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 644;
+var viewWidth = 690;
 var viewHeight = 76;
 var sectionId = 'dynsection-983';
 </script>
@@ -58,8 +58,8 @@ var sectionId = 'dynsection-983';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="636,-45.5 498,-45.5 498,-26.5 636,-26.5 636,-45.5"/>
-<text text-anchor="middle" x="567" y="-33.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::setFacialFeatures</text>
+<polygon fill="#999999" stroke="#666666" points="682,-45.5 544,-45.5 544,-26.5 682,-26.5 682,-45.5"/>
+<text text-anchor="middle" x="613" y="-33.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::setFacialFeatures</text>
 </a>
 </g>
 </g>
@@ -67,8 +67,8 @@ var sectionId = 'dynsection-983';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classPlayer.html#afb243b1e0f94daf5cf185ceec12063b5" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="427.5,-67.5 343.5,-67.5 343.5,-48.5 427.5,-48.5 427.5,-67.5"/>
-<text text-anchor="middle" x="385.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::create</text>
+<polygon fill="white" stroke="#666666" points="473.5,-67.5 389.5,-67.5 389.5,-48.5 473.5,-48.5 473.5,-67.5"/>
+<text text-anchor="middle" x="431.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::create</text>
 </a>
 </g>
 </g>
@@ -76,37 +76,54 @@ var sectionId = 'dynsection-983';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M487.78,-45.59C467.01,-48.13 445.41,-50.78 427.51,-52.97"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="488.38,-49.04 497.88,-44.35 487.53,-42.09 488.38,-49.04"/>
+<path fill="none" stroke="#63b8ff" d="M533.78,-45.59C513.01,-48.13 491.41,-50.78 473.51,-52.97"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="534.38,-49.04 543.88,-44.35 533.53,-42.09 534.38,-49.04"/>
+</a>
+</g>
+</g>
+<!-- Node5 -->
+<g id="Node000005" class="node">
+<title>Node5</title>
+<g id="a_Node000005"><a xlink:href="classWorldSession.html#a5ae58f497358f65f2988e98010f79ef9" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="508,-30 355,-30 355,0 508,0 508,-30"/>
+<text text-anchor="start" x="363" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">WorldSession::handleBarber</text>
+<text text-anchor="middle" x="431.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ShopResult</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4_Node000001_Node000005" class="edge">
+<title>Node1&#45;&gt;Node5</title>
+<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M533.9,-26.86C525.33,-25.86 516.61,-24.84 508.07,-23.84"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="533.54,-30.35 543.88,-28.03 534.36,-23.39 533.54,-30.35"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classWorldSession.html#a5ae58f497358f65f2988e98010f79ef9" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="462,-30 309,-30 309,0 462,0 462,-30"/>
-<text text-anchor="start" x="317" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">WorldSession::handleBarber</text>
-<text text-anchor="middle" x="385.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ShopResult</text>
+<g id="a_Node000003"><a xlink:href="classPlayer.html#a1ac59a5554903c244ae0384254c4ae83" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="294.5,-67.5 181.5,-67.5 181.5,-48.5 294.5,-48.5 294.5,-67.5"/>
+<text text-anchor="middle" x="238" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player::requestDuel</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
-<title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M487.9,-26.86C479.33,-25.86 470.61,-24.84 462.07,-23.84"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="487.54,-30.35 497.88,-28.03 488.36,-23.39 487.54,-30.35"/>
+<!-- Node2&#45;&gt;Node3 -->
+<g id="edge2_Node000002_Node000003" class="edge">
+<title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M379.33,-58C353.17,-58 321.3,-58 294.55,-58"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="379.42,-61.5 389.42,-58 379.42,-54.5 379.42,-61.5"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classWorldSession.html#a213cc2e7e497e0cddfde0a1460e4acd0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="273,-30 111,-30 111,0 273,0 273,-30"/>
-<text text-anchor="start" x="119" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">WorldSession::registerOpcode</text>
-<text text-anchor="middle" x="192" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Handler</text>
+<g id="a_Node000004"><a xlink:href="classSpell.html#a6592c7795f0dc0d7429003b56abe7e50" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="121,-67.5 0,-67.5 0,-48.5 121,-48.5 121,-67.5"/>
+<text text-anchor="middle" x="60.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">Spell::SpellEffectDuel</text>
 </a>
 </g>
 </g>
@@ -114,26 +131,45 @@ var sectionId = 'dynsection-983';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M298.57,-15C290.12,-15 281.56,-15 273.17,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="298.81,-18.5 308.81,-15 298.81,-11.5 298.81,-18.5"/>
+<path fill="none" stroke="#63b8ff" d="M171.39,-58C154.94,-58 137.37,-58 121.22,-58"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="171.47,-61.5 181.47,-58 171.47,-54.5 171.47,-61.5"/>
 </a>
 </g>
 </g>
-<!-- Node5 -->
-<g id="Node000005" class="node">
-<title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classMaster.html#a12dde72f3398edffca613e77185fd6f3" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="75,-24.5 0,-24.5 0,-5.5 75,-5.5 75,-24.5"/>
-<text text-anchor="middle" x="37.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Master::Run</text>
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="classWorldSession.html#a213cc2e7e497e0cddfde0a1460e4acd0" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="319,-30 157,-30 157,0 319,0 319,-30"/>
+<text text-anchor="start" x="165" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">WorldSession::registerOpcode</text>
+<text text-anchor="middle" x="238" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Handler</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge4_Node000004_Node000005" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M100.55,-15C91.61,-15 82.94,-15 75.05,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="100.73,-18.5 110.73,-15 100.73,-11.5 100.73,-18.5"/>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge5_Node000005_Node000006" class="edge">
+<title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M344.57,-15C336.12,-15 327.56,-15 319.17,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="344.81,-18.5 354.81,-15 344.81,-11.5 344.81,-18.5"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="classMaster.html#a12dde72f3398edffca613e77185fd6f3" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="98,-24.5 23,-24.5 23,-5.5 98,-5.5 98,-24.5"/>
+<text text-anchor="middle" x="60.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Master::Run</text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge6_Node000006_Node000007" class="edge">
+<title>Node6&#45;&gt;Node7</title>
+<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M146.78,-15C129.5,-15 112.34,-15 98,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="146.95,-18.5 156.95,-15 146.95,-11.5 146.95,-18.5"/>
 </a>
 </g>
 </g>

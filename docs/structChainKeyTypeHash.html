@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('structChainKeyTypeHash.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad95fdd81c3c8c0016b19d1d4e70ae924" id="r_ad95fdd81c3c8c0016b19d1d4e70ae924"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChainKeyTypeHash.html#ad95fdd81c3c8c0016b19d1d4e70ae924">operator()</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="MySQLDataStore_8hpp.html#a1b31f2bb7a117526126883e2cd6eb091">ChainKeyType</a> &amp;key) <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:ad95fdd81c3c8c0016b19d1d4e70ae924" id="r_ad95fdd81c3c8c0016b19d1d4e70ae924"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structChainKeyTypeHash.html#ad95fdd81c3c8c0016b19d1d4e70ae924">operator()</a> (const <a class="el" href="MySQLDataStore_8hpp.html#a1b31f2bb7a117526126883e2cd6eb091">ChainKeyType</a> &amp;key) const</td></tr>
 <tr class="separator:ad95fdd81c3c8c0016b19d1d4e70ae924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::size_t ChainKeyTypeHash::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="MySQLDataStore_8hpp.html#a1b31f2bb7a117526126883e2cd6eb091">ChainKeyType</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="MySQLDataStore_8hpp.html#a1b31f2bb7a117526126883e2cd6eb091">ChainKeyType</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -137,11 +137,10 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MySQLDataStore_8hpp_source.html#l00028">28</a> of file <a class="el" href="MySQLDataStore_8hpp_source.html">MySQLDataStore.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>    {</div>
-<div class="line"><span class="lineno">   30</span>        std::size_t <a class="code hl_enumvalue" href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5a0800fc577294c34e0b28ad2839435945">hash</a> = std::hash&lt;uint32_t&gt;{}(key.first);</div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5a0800fc577294c34e0b28ad2839435945">hash</a> ^= std::hash&lt;uint16_t&gt;{}(key.second) + 0x9e3779b9 + (hash &lt;&lt; 6) + (<a class="code hl_enumvalue" href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5a0800fc577294c34e0b28ad2839435945">hash</a> &gt;&gt; 2);</div>
-<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5a0800fc577294c34e0b28ad2839435945">hash</a>;</div>
+<div class="line"><span class="lineno">   30</span>        std::size_t hash = std::hash&lt;uint32_t&gt;{}(key.first);</div>
+<div class="line"><span class="lineno">   31</span>        hash ^= std::hash&lt;uint16_t&gt;{}(key.second) + 0x9e3779b9 + (hash &lt;&lt; 6) + (hash &gt;&gt; 2);</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> hash;</div>
 <div class="line"><span class="lineno">   33</span>    }</div>
-<div class="ttc" id="anamespacedetail_html_ac742e301ae0a908dc31e49ac3a31fcc5a0800fc577294c34e0b28ad2839435945"><div class="ttname"><a href="namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5a0800fc577294c34e0b28ad2839435945">detail::state::hash</a></div><div class="ttdeci">@ hash</div></div>
 </div><!-- fragment -->
 </div>
 </div>

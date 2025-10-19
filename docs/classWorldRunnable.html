@@ -124,9 +124,9 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad949fbc23d5b80bf3083ba1ba238dc23" id="r_ad949fbc23d5b80bf3083ba1ba238dc23"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classAscEmu_1_1Threading_1_1AEThread.html">AscEmu::Threading::AEThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorldRunnable.html#ad949fbc23d5b80bf3083ba1ba238dc23">m_thread</a></td></tr>
 <tr class="separator:ad949fbc23d5b80bf3083ba1ba238dc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f176917366652da7e4cfe5fa64ffed" id="r_a69f176917366652da7e4cfe5fa64ffed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorldRunnable.html#a69f176917366652da7e4cfe5fa64ffed">m_lastWorldUpdate</a> = 0</td></tr>
+<tr class="memitem:a69f176917366652da7e4cfe5fa64ffed" id="r_a69f176917366652da7e4cfe5fa64ffed"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorldRunnable.html#a69f176917366652da7e4cfe5fa64ffed">m_lastWorldUpdate</a> = 0</td></tr>
 <tr class="separator:a69f176917366652da7e4cfe5fa64ffed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a785fc126cc8e1964657b3915e6071" id="r_ae8a785fc126cc8e1964657b3915e6071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorldRunnable.html#ae8a785fc126cc8e1964657b3915e6071">m_lastSessionsUpdate</a> = 0</td></tr>
+<tr class="memitem:ae8a785fc126cc8e1964657b3915e6071" id="r_ae8a785fc126cc8e1964657b3915e6071"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWorldRunnable.html#ae8a785fc126cc8e1964657b3915e6071">m_lastSessionsUpdate</a> = 0</td></tr>
 <tr class="separator:ae8a785fc126cc8e1964657b3915e6071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -150,14 +150,13 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="WorldRunnable_8cpp_source.html#l00016">16</a> of file <a class="el" href="WorldRunnable_8cpp_source.html">WorldRunnable.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   17</span>{</div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="classWorldRunnable.html#ad949fbc23d5b80bf3083ba1ba238dc23">m_thread</a> = make_unique&lt;AEThread&gt;(<span class="stringliteral">&quot;WorldRunnable&quot;</span>, [<span class="keyword">this</span>](<a class="code hl_class" href="classAscEmu_1_1Threading_1_1AEThread.html">AEThread</a>&amp; thread) { this-&gt;<a class="code hl_function" href="classWorldRunnable.html#a5065726d758af720008e7ebb7b9b456c">threadRunner</a>(thread); }, <a class="code hl_function" href="namespaceG3D_1_1units.html#a62809472cbe048b910e6f53a0f51f0c5">milliseconds</a>(50), <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="classWorldRunnable.html#ad949fbc23d5b80bf3083ba1ba238dc23">m_thread</a> = make_unique&lt;AEThread&gt;(<span class="stringliteral">&quot;WorldRunnable&quot;</span>, [<span class="keyword">this</span>](<a class="code hl_class" href="classAscEmu_1_1Threading_1_1AEThread.html">AEThread</a>&amp; thread) { this-&gt;<a class="code hl_function" href="classWorldRunnable.html#a5065726d758af720008e7ebb7b9b456c">threadRunner</a>(thread); }, milliseconds(50), <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   19</span>    this-&gt;<a class="code hl_function" href="classWorldRunnable.html#ab5264feb903daa77f71be9aaa9d6d535">threadInit</a>();</div>
 <div class="line"><span class="lineno">   20</span>}</div>
 <div class="ttc" id="aclassAscEmu_1_1Threading_1_1AEThread_html"><div class="ttname"><a href="classAscEmu_1_1Threading_1_1AEThread.html">AscEmu::Threading::AEThread</a></div><div class="ttdef"><b>Definition</b> <a href="AEThread_8h_source.html#l00016">AEThread.h:17</a></div></div>
 <div class="ttc" id="aclassWorldRunnable_html_a5065726d758af720008e7ebb7b9b456c"><div class="ttname"><a href="classWorldRunnable.html#a5065726d758af720008e7ebb7b9b456c">WorldRunnable::threadRunner</a></div><div class="ttdeci">void threadRunner(AscEmu::Threading::AEThread &amp;thread)</div><div class="ttdef"><b>Definition</b> <a href="WorldRunnable_8cpp_source.html#l00027">WorldRunnable.cpp:27</a></div></div>
 <div class="ttc" id="aclassWorldRunnable_html_ab5264feb903daa77f71be9aaa9d6d535"><div class="ttname"><a href="classWorldRunnable.html#ab5264feb903daa77f71be9aaa9d6d535">WorldRunnable::threadInit</a></div><div class="ttdeci">void threadInit()</div><div class="ttdef"><b>Definition</b> <a href="WorldRunnable_8cpp_source.html#l00051">WorldRunnable.cpp:51</a></div></div>
 <div class="ttc" id="aclassWorldRunnable_html_ad949fbc23d5b80bf3083ba1ba238dc23"><div class="ttname"><a href="classWorldRunnable.html#ad949fbc23d5b80bf3083ba1ba238dc23">WorldRunnable::m_thread</a></div><div class="ttdeci">std::unique_ptr&lt; AscEmu::Threading::AEThread &gt; m_thread</div><div class="ttdef"><b>Definition</b> <a href="WorldRunnable_8h_source.html#l00012">WorldRunnable.h:12</a></div></div>
-<div class="ttc" id="anamespaceG3D_1_1units_html_a62809472cbe048b910e6f53a0f51f0c5"><div class="ttname"><a href="namespaceG3D_1_1units.html#a62809472cbe048b910e6f53a0f51f0c5">G3D::units::milliseconds</a></div><div class="ttdeci">float milliseconds()</div><div class="ttdef"><b>Definition</b> <a href="units_8h_source.html#l00092">units.h:92</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -254,7 +253,7 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="WorldRunnable_8cpp_source.html#l00027">27</a> of file <a class="el" href="WorldRunnable_8cpp_source.html">WorldRunnable.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
 <div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="classServerState.html#adfa7ef19a4e2fee75a5f4b98277ed151">ServerState::instance</a>()-&gt;<a class="code hl_function" href="classServerState.html#a02148ef63a43c86d53ca3f9e6d4320b7">update</a>();</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> diff;</div>
+<div class="line"><span class="lineno">   30</span>    uint32_t diff;</div>
 <div class="line"><span class="lineno">   31</span> </div>
 <div class="line"><span class="lineno">   32</span>    <span class="keyword">auto</span> now = <a class="code hl_function" href="namespaceUtil.html#a15e1eefda0759ccb5e7f818f9574272b">Util::getMSTime</a>();</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (now &lt; <a class="code hl_variable" href="classWorldRunnable.html#a69f176917366652da7e4cfe5fa64ffed">m_lastWorldUpdate</a>)</div>
@@ -280,7 +279,6 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassWorldRunnable_html_a69f176917366652da7e4cfe5fa64ffed"><div class="ttname"><a href="classWorldRunnable.html#a69f176917366652da7e4cfe5fa64ffed">WorldRunnable::m_lastWorldUpdate</a></div><div class="ttdeci">uint32_t m_lastWorldUpdate</div><div class="ttdef"><b>Definition</b> <a href="WorldRunnable_8h_source.html#l00023">WorldRunnable.h:23</a></div></div>
 <div class="ttc" id="aclassWorldRunnable_html_ae8a785fc126cc8e1964657b3915e6071"><div class="ttname"><a href="classWorldRunnable.html#ae8a785fc126cc8e1964657b3915e6071">WorldRunnable::m_lastSessionsUpdate</a></div><div class="ttdeci">uint32_t m_lastSessionsUpdate</div><div class="ttdef"><b>Definition</b> <a href="WorldRunnable_8h_source.html#l00024">WorldRunnable.h:24</a></div></div>
 <div class="ttc" id="anamespaceUtil_html_a15e1eefda0759ccb5e7f818f9574272b"><div class="ttname"><a href="namespaceUtil.html#a15e1eefda0759ccb5e7f818f9574272b">Util::getMSTime</a></div><div class="ttdeci">uint32_t getMSTime()</div><div class="ttdef"><b>Definition</b> <a href="Util_8cpp_source.html#l00143">Util.cpp:143</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -327,7 +325,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> WorldRunnable::m_lastSessionsUpdate = 0</td>
+          <td class="memname">uint32_t WorldRunnable::m_lastSessionsUpdate = 0</td>
         </tr>
       </table>
   </td>
@@ -351,7 +349,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> WorldRunnable::m_lastWorldUpdate = 0</td>
+          <td class="memname">uint32_t WorldRunnable::m_lastWorldUpdate = 0</td>
         </tr>
       </table>
   </td>

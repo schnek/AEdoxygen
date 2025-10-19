@@ -6,8 +6,7 @@ var searchData=
   ['jainaproudmooregs_3',['JainaProudmooreGS',['../classJainaProudmooreGS.html',1,'']]],
   ['jaraxxusai_4',['JaraxxusAI',['../classJaraxxusAI.html',1,'']]],
   ['jeanpierrepoulain_5',['JeanPierrePoulain',['../classJeanPierrePoulain.html',1,'']]],
-  ['join_5fview_6',['join_view',['../structjoin__view.html',1,'']]],
-  ['juggernautspellproc_7',['JuggernautSpellProc',['../classJuggernautSpellProc.html',1,'']]],
-  ['julianneai_8',['JulianneAI',['../classJulianneAI.html',1,'']]],
-  ['jumpinfo_9',['JumpInfo',['../structMovementInfo_1_1JumpInfo.html',1,'MovementInfo']]]
+  ['juggernautspellproc_6',['JuggernautSpellProc',['../classJuggernautSpellProc.html',1,'']]],
+  ['julianneai_7',['JulianneAI',['../classJulianneAI.html',1,'']]],
+  ['jumpinfo_8',['JumpInfo',['../structMovementInfo_1_1JumpInfo.html',1,'MovementInfo']]]
 ];

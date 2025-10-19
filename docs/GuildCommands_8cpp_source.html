@@ -135,11 +135,11 @@ $(document).ready(function(){initNavTree('GuildCommands_8cpp_source.html',''); i
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (strlen(args) &gt; 75)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402">systemMessage</a>(m_session, <span class="stringliteral">&quot;The name was too long by {}&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(strlen(args) - 75));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402">systemMessage</a>(m_session, <span class="stringliteral">&quot;The name was too long by {}&quot;</span>, uint32_t(strlen(args) - 75));</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; strlen(args); i++)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; strlen(args); i++)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">if</span> (!isalpha(args[i]) &amp;&amp; args[i] != <span class="charliteral">&#39; &#39;</span>)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('GuildCommands_8cpp_source.html',''); i
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_class" href="classGuild.html">Guild</a>* guild = <a class="code hl_define" href="GuildMgr_8hpp.html#aef171903a38e30c347ff11360f682f81">sGuildMgr</a>.getGuildByName(std::string(args));</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">if</span> (guild != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> memberCount = guild-&gt;<a class="code hl_function" href="classGuild.html#ada40ff616600b75a2142490703edafea">getMembersCount</a>();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        uint32_t memberCount = guild-&gt;<a class="code hl_function" href="classGuild.html#ada40ff616600b75a2142490703edafea">getMembersCount</a>();</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">if</span> (<a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxMembers &gt; 0 &amp;&amp; memberCount &gt;= <a class="code hl_define" href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a>.guild.maxMembers)</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
@@ -375,7 +375,6 @@ $(document).ready(function(){initNavTree('GuildCommands_8cpp_source.html',''); i
 <div class="ttc" id="aclassWorldSession_html"><div class="ttname"><a href="classWorldSession.html">WorldSession</a></div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8h_source.html#l00092">WorldSession.h:93</a></div></div>
 <div class="ttc" id="aclassWorldSession_html_a014d7fdeb157410b75dfd4bd0fe0efc2"><div class="ttname"><a href="classWorldSession.html#a014d7fdeb157410b75dfd4bd0fe0efc2">WorldSession::GetPlayer</a></div><div class="ttdeci">Player * GetPlayer()</div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8h_source.html#l00113">WorldSession.h:113</a></div></div>
 <div class="ttc" id="aclassWorldSession_html_a6bf4aca497e81318cc8f4b47f23d8c1f"><div class="ttname"><a href="classWorldSession.html#a6bf4aca497e81318cc8f4b47f23d8c1f">WorldSession::SystemMessage</a></div><div class="ttdeci">void SystemMessage(const char *format,...)</div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8cpp_source.html#l00542">WorldSession.cpp:542</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('Warrior_8cpp_source.html',''); initRes
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            spellProc-&gt;<a class="code hl_function" href="classSpellProc.html#a8afe42cf6c583898f743e3e8acd4c540">skipOnNextHandleProc</a>(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSpellScript.html#af0648da3308fe3d53cf7368dfd9a4820">onAuraRefreshOrGainNewStack</a>(<a class="code hl_class" href="classAura.html">Aura</a>* <span class="comment">/*aur*/</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <span class="comment">/*newStacks*/</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <span class="comment">/*oldStacks*/</span>)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSpellScript.html#af0648da3308fe3d53cf7368dfd9a4820">onAuraRefreshOrGainNewStack</a>(<a class="code hl_class" href="classAura.html">Aura</a>* <span class="comment">/*aur*/</span>, uint32_t <span class="comment">/*newStacks*/</span>, uint32_t <span class="comment">/*oldStacks*/</span>)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="comment">// If this proc is not skipped in next ::handleProc event,</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="comment">// the same attack, that created this aura, will consume one proc charge</span></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('Warrior_8cpp_source.html',''); initRes
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> motherAuraId = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    uint32_t motherAuraId = 0;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="classSpellProc.html">SpellProc</a>* spellProc = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
@@ -221,7 +221,6 @@ $(document).ready(function(){initNavTree('Warrior_8cpp_source.html',''); initRes
 <div class="ttc" id="aclassUnit_html"><div class="ttname"><a href="classUnit.html">Unit</a></div><div class="ttdef"><b>Definition</b> <a href="Unit_8hpp_source.html#l00146">Unit.hpp:147</a></div></div>
 <div class="ttc" id="aclassUnit_html_a1dc4bfc9cf0800a043783a3d3b456d4c"><div class="ttname"><a href="classUnit.html#a1dc4bfc9cf0800a043783a3d3b456d4c">Unit::removeProcTriggerSpell</a></div><div class="ttdeci">void removeProcTriggerSpell(uint32_t spellId, uint64_t casterGuid=0, uint64_t misc=0)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l03773">Unit.cpp:3773</a></div></div>
 <div class="ttc" id="aclassUnit_html_a60ea5728152f3215d2fb0aef30c0f609"><div class="ttname"><a href="classUnit.html#a60ea5728152f3215d2fb0aef30c0f609">Unit::addProcTriggerSpell</a></div><div class="ttdeci">SpellProc * addProcTriggerSpell(uint32_t spellId, uint32_t originalSpellId, uint64_t casterGuid, uint32_t procChance, SpellProcFlags procFlags, SpellExtraProcFlags exProcFlags, uint32_t const *spellFamilyMask, uint32_t const *procClassMask=nullptr, Aura *createdByAura=nullptr, Object *obj=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l03713">Unit.cpp:3713</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

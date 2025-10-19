@@ -134,7 +134,7 @@ Include dependency graph for Guild.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a50877983f5d3c2d53ba6c23392903beb" id="r_a50877983f5d3c2d53ba6c23392903beb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Guild_8cpp.html#a50877983f5d3c2d53ba6c23392903beb">GetGuildBankTabPrice</a> (<a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> tabId)</td></tr>
+<tr class="memitem:a50877983f5d3c2d53ba6c23392903beb" id="r_a50877983f5d3c2d53ba6c23392903beb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Guild_8cpp.html#a50877983f5d3c2d53ba6c23392903beb">GetGuildBankTabPrice</a> (uint8_t tabId)</td></tr>
 <tr class="separator:a50877983f5d3c2d53ba6c23392903beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -148,9 +148,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> GetGuildBankTabPrice </td>
+          <td class="memname">uint32_t GetGuildBankTabPrice </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>tabId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -165,14 +165,13 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Guild_8cpp_source.html#l00050">50</a> of file <a class="el" href="Guild_8cpp_source.html">Guild.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
 <div class="line"><span class="lineno">   52</span>    <span class="comment">// these prices are in gold units, not copper</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <span class="keyword">const</span> tabPrices[<a class="code hl_define" href="GuildMacros_8hpp.html#a1c2a1e7e5617b07b696f55d6d5d2f89c">MAX_GUILD_BANK_TABS</a>] = { 100, 250, 500, 1000, 2500, 5000 };</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">static</span> uint32_t <span class="keyword">const</span> tabPrices[<a class="code hl_define" href="GuildMacros_8hpp.html#a1c2a1e7e5617b07b696f55d6d5d2f89c">MAX_GUILD_BANK_TABS</a>] = { 100, 250, 500, 1000, 2500, 5000 };</div>
 <div class="line"><span class="lineno">   54</span>    <a class="code hl_define" href="Errors_8h.html#af343b20373ba49a92fce523e948f2ab3">ASSERT</a>(tabId &lt; <a class="code hl_define" href="GuildMacros_8hpp.html#a1c2a1e7e5617b07b696f55d6d5d2f89c">MAX_GUILD_BANK_TABS</a>);</div>
 <div class="line"><span class="lineno">   55</span> </div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> tabPrices[tabId];</div>
 <div class="line"><span class="lineno">   57</span>}</div>
 <div class="ttc" id="aErrors_8h_html_af343b20373ba49a92fce523e948f2ab3"><div class="ttname"><a href="Errors_8h.html#af343b20373ba49a92fce523e948f2ab3">ASSERT</a></div><div class="ttdeci">#define ASSERT</div><div class="ttdef"><b>Definition</b> <a href="Errors_8h_source.html#l00045">Errors.h:45</a></div></div>
 <div class="ttc" id="aGuildMacros_8hpp_html_a1c2a1e7e5617b07b696f55d6d5d2f89c"><div class="ttname"><a href="GuildMacros_8hpp.html#a1c2a1e7e5617b07b696f55d6d5d2f89c">MAX_GUILD_BANK_TABS</a></div><div class="ttdeci">#define MAX_GUILD_BANK_TABS</div><div class="ttdef"><b>Definition</b> <a href="GuildMacros_8hpp_source.html#l00016">GuildMacros.hpp:16</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -108,13 +108,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a942bc2d2a1d66be2c683118cf95256ab" id="r_a942bc2d2a1d66be2c683118cf95256ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a942bc2d2a1d66be2c683118cf95256ab">RET_BOOL</a>(exp)&#160;&#160;&#160;{ (exp) ? <a class="el" href="lapi_8c.html#a56bbb7479265e38da2e2596e6ec25faa">lua_pushboolean</a>(L,1) : <a class="el" href="lapi_8c.html#a56bbb7479265e38da2e2596e6ec25faa">lua_pushboolean</a>(L,0); return 1; }</td></tr>
+<tr class="memitem:a942bc2d2a1d66be2c683118cf95256ab" id="r_a942bc2d2a1d66be2c683118cf95256ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a942bc2d2a1d66be2c683118cf95256ab">RET_BOOL</a>(exp)&#160;&#160;&#160;{ (exp) ? lua_pushboolean(L,1) : lua_pushboolean(L,0); return 1; }</td></tr>
 <tr class="separator:a942bc2d2a1d66be2c683118cf95256ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7f8c7d146792c9aea71d4203bbe48f1" id="r_ab7f8c7d146792c9aea71d4203bbe48f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#ab7f8c7d146792c9aea71d4203bbe48f1">RET_STRING</a>(str)&#160;&#160;&#160;{ <a class="el" href="lapi_8c.html#a6dd1a745d08c2dd96916ff0f2f1ca9ad">lua_pushstring</a>(L,(str)); return 1; }</td></tr>
+<tr class="memitem:ab7f8c7d146792c9aea71d4203bbe48f1" id="r_ab7f8c7d146792c9aea71d4203bbe48f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#ab7f8c7d146792c9aea71d4203bbe48f1">RET_STRING</a>(str)&#160;&#160;&#160;{ lua_pushstring(L,(str)); return 1; }</td></tr>
 <tr class="separator:ab7f8c7d146792c9aea71d4203bbe48f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a011660c9e4330e8b3b2bb24191a38" id="r_a66a011660c9e4330e8b3b2bb24191a38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a66a011660c9e4330e8b3b2bb24191a38">RET_NUMBER</a>(number)&#160;&#160;&#160;{ <a class="el" href="lapi_8c.html#a328625a03fbb5548f27b1af10f109f6a">lua_pushnumber</a>(L,(number)); return 1; }</td></tr>
+<tr class="memitem:a66a011660c9e4330e8b3b2bb24191a38" id="r_a66a011660c9e4330e8b3b2bb24191a38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a66a011660c9e4330e8b3b2bb24191a38">RET_NUMBER</a>(number)&#160;&#160;&#160;{ lua_pushnumber(L,(number)); return 1; }</td></tr>
 <tr class="separator:a66a011660c9e4330e8b3b2bb24191a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85acb30e3f8f2452eedd654f96605732" id="r_a85acb30e3f8f2452eedd654f96605732"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a85acb30e3f8f2452eedd654f96605732">RET_INT</a>(integer)&#160;&#160;&#160;{ <a class="el" href="lapi_8c.html#adcec46ff05dfee9a3c4c05828b40c213">lua_pushinteger</a>(L,(integer)); return 1; }</td></tr>
+<tr class="memitem:a85acb30e3f8f2452eedd654f96605732" id="r_a85acb30e3f8f2452eedd654f96605732"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a85acb30e3f8f2452eedd654f96605732">RET_INT</a>(integer)&#160;&#160;&#160;{ lua_pushinteger(L,(integer)); return 1; }</td></tr>
 <tr class="separator:a85acb30e3f8f2452eedd654f96605732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f5f42d1e157d8dafc5b86b13409d4f" id="r_aa8f5f42d1e157d8dafc5b86b13409d4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#aa8f5f42d1e157d8dafc5b86b13409d4f">CHECK_UNIT</a>(L,  narg)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;CheckUnit(L,narg)</td></tr>
 <tr class="separator:aa8f5f42d1e157d8dafc5b86b13409d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,15 +136,15 @@ Macros</h2></td></tr>
 <tr class="separator:a7857800101fc700d07689272c7ad16f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0121e160d8c16f3bad4b9c1ce517b99" id="r_af0121e160d8c16f3bad4b9c1ce517b99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#af0121e160d8c16f3bad4b9c1ce517b99">CHECK_AURA</a>(L,  narg)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;CheckAura(L,narg)</td></tr>
 <tr class="separator:af0121e160d8c16f3bad4b9c1ce517b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba883d1619718e46d96d1857f8737ab" id="r_a7ba883d1619718e46d96d1857f8737ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a7ba883d1619718e46d96d1857f8737ab">CHECK_FLOAT</a>(L,  narg)&#160;&#160;&#160;(<a class="el" href="lua_8h.html#af51702bb75a31bb4a279953ee386d533">lua_isnoneornil</a>(L,(narg)) ) ? 0.00f : (float)<a class="el" href="lauxlib_8c.html#a9f2c941bb5eb7d3a7746f35c4fe3cced">luaL_checknumber</a>(L,(narg));</td></tr>
+<tr class="memitem:a7ba883d1619718e46d96d1857f8737ab" id="r_a7ba883d1619718e46d96d1857f8737ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a7ba883d1619718e46d96d1857f8737ab">CHECK_FLOAT</a>(L,  narg)&#160;&#160;&#160;(lua_isnoneornil(L,(narg)) ) ? 0.00f : (float)luaL_checknumber(L,(narg));</td></tr>
 <tr class="separator:a7ba883d1619718e46d96d1857f8737ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a249913b0f1175c8536210c2cb40ab831" id="r_a249913b0f1175c8536210c2cb40ab831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a249913b0f1175c8536210c2cb40ab831">CHECK_ULONG</a>(L,  narg)&#160;&#160;&#160;(<a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)<a class="el" href="lauxlib_8c.html#a9f2c941bb5eb7d3a7746f35c4fe3cced">luaL_checknumber</a>((L),(narg))</td></tr>
+<tr class="memitem:a249913b0f1175c8536210c2cb40ab831" id="r_a249913b0f1175c8536210c2cb40ab831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a249913b0f1175c8536210c2cb40ab831">CHECK_ULONG</a>(L,  narg)&#160;&#160;&#160;(uint32_t)luaL_checknumber((L),(narg))</td></tr>
 <tr class="separator:a249913b0f1175c8536210c2cb40ab831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac11bd9545e1cce099a5b89b20fa3cb42" id="r_ac11bd9545e1cce099a5b89b20fa3cb42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#ac11bd9545e1cce099a5b89b20fa3cb42">CHECK_USHORT</a>(L,  narg)&#160;&#160;&#160;(<a class="el" href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)<a class="el" href="lauxlib_8c.html#aa15bea412c49bfdee1f3dbff096ce7d2">luaL_checkinteger</a>((L),(narg))</td></tr>
+<tr class="memitem:ac11bd9545e1cce099a5b89b20fa3cb42" id="r_ac11bd9545e1cce099a5b89b20fa3cb42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#ac11bd9545e1cce099a5b89b20fa3cb42">CHECK_USHORT</a>(L,  narg)&#160;&#160;&#160;(uint16_t)luaL_checkinteger((L),(narg))</td></tr>
 <tr class="separator:ac11bd9545e1cce099a5b89b20fa3cb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a4b81ae45432fc8a280fcf5f9c0b39" id="r_ac0a4b81ae45432fc8a280fcf5f9c0b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#ac0a4b81ae45432fc8a280fcf5f9c0b39">CHECK_BOOL</a>(L,  narg)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;CheckBool(L,narg)</td></tr>
 <tr class="separator:ac0a4b81ae45432fc8a280fcf5f9c0b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69569e8b4a0b8fae0e1bade15231ff9f" id="r_a69569e8b4a0b8fae0e1bade15231ff9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a69569e8b4a0b8fae0e1bade15231ff9f">CHECK_UINT8</a>(L,  narg)&#160;&#160;&#160;static_cast&lt; <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> &gt;( <a class="el" href="lauxlib_8c.html#aa15bea412c49bfdee1f3dbff096ce7d2">luaL_checkinteger</a>( ( L ), ( narg ) ) )</td></tr>
+<tr class="memitem:a69569e8b4a0b8fae0e1bade15231ff9f" id="r_a69569e8b4a0b8fae0e1bade15231ff9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a69569e8b4a0b8fae0e1bade15231ff9f">CHECK_UINT8</a>(L,  narg)&#160;&#160;&#160;static_cast&lt; uint8_t &gt;( luaL_checkinteger( ( L ), ( narg ) ) )</td></tr>
 <tr class="separator:a69569e8b4a0b8fae0e1bade15231ff9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5512d5c8f4385a24a61e8a58e19856f" id="r_aa5512d5c8f4385a24a61e8a58e19856f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#aa5512d5c8f4385a24a61e8a58e19856f">PUSH_UNIT</a>(L,  unit)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushUnit(static_cast&lt;<a class="el" href="classUnit.html">Unit</a>*&gt;(unit),L)</td></tr>
 <tr class="separator:aa5512d5c8f4385a24a61e8a58e19856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ Macros</h2></td></tr>
 <tr class="separator:aef6ac54d1dfbd88d0c84946c8e24b8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8193bc5eab866fba2e33e2da482b0aa" id="r_ab8193bc5eab866fba2e33e2da482b0aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#ab8193bc5eab866fba2e33e2da482b0aa">PUSH_SPELL</a>(L,  sp)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushSpell(sp,L)</td></tr>
 <tr class="separator:ab8193bc5eab866fba2e33e2da482b0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4401be7f199daf6eabea7656f9ce00d5" id="r_a4401be7f199daf6eabea7656f9ce00d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a4401be7f199daf6eabea7656f9ce00d5">PUSH_SQLFIELD</a>(L,  <a class="el" href="lparser_8c.html#a3a1a4b5a661e480a87ce14027a01f177">field</a>)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushSqlField(<a class="el" href="lparser_8c.html#a3a1a4b5a661e480a87ce14027a01f177">field</a>,L)</td></tr>
+<tr class="memitem:a4401be7f199daf6eabea7656f9ce00d5" id="r_a4401be7f199daf6eabea7656f9ce00d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a4401be7f199daf6eabea7656f9ce00d5">PUSH_SQLFIELD</a>(L,  field)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushSqlField(field,L)</td></tr>
 <tr class="separator:a4401be7f199daf6eabea7656f9ce00d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a983ee5864d4407af57fd937551223816" id="r_a983ee5864d4407af57fd937551223816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LuaMacros_8h.html#a983ee5864d4407af57fd937551223816">PUSH_SQLRESULT</a>(L,  res)&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushSqlResult(res,L)</td></tr>
 <tr class="separator:a983ee5864d4407af57fd937551223816"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,7 +293,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="lua_8h.html#af51702bb75a31bb4a279953ee386d533">lua_isnoneornil</a>(L,(narg)) ) ? 0.00f : (float)<a class="el" href="lauxlib_8c.html#a9f2c941bb5eb7d3a7746f35c4fe3cced">luaL_checknumber</a>(L,(narg));</td>
+          <td></td><td>&#160;&#160;&#160;(lua_isnoneornil(L,(narg)) ) ? 0.00f : (float)luaL_checknumber(L,(narg));</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -563,7 +563,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;static_cast&lt; <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> &gt;( <a class="el" href="lauxlib_8c.html#aa15bea412c49bfdee1f3dbff096ce7d2">luaL_checkinteger</a>( ( L ), ( narg ) ) )</td>
+          <td></td><td>&#160;&#160;&#160;static_cast&lt; uint8_t &gt;( luaL_checkinteger( ( L ), ( narg ) ) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -593,7 +593,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)<a class="el" href="lauxlib_8c.html#a9f2c941bb5eb7d3a7746f35c4fe3cced">luaL_checknumber</a>((L),(narg))</td>
+          <td></td><td>&#160;&#160;&#160;(uint32_t)luaL_checknumber((L),(narg))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -653,7 +653,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="winvs__stdint_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)<a class="el" href="lauxlib_8c.html#aa15bea412c49bfdee1f3dbff096ce7d2">luaL_checkinteger</a>((L),(narg))</td>
+          <td></td><td>&#160;&#160;&#160;(uint16_t)luaL_checkinteger((L),(narg))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -874,12 +874,12 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="lparser_8c.html#a3a1a4b5a661e480a87ce14027a01f177">field</a>&#160;</td>
+          <td class="paramname">field&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushSqlField(<a class="el" href="lparser_8c.html#a3a1a4b5a661e480a87ce14027a01f177">field</a>,L)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="classLuaGlobal.html#aa9500a990e1c19309724ec6d885545f9">LuaGlobal::instance</a>()-&gt;luaEngine()-&gt;PushSqlField(field,L)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1181,7 +1181,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">exp</td><td>)</td>
-          <td>&#160;&#160;&#160;{ (exp) ? <a class="el" href="lapi_8c.html#a56bbb7479265e38da2e2596e6ec25faa">lua_pushboolean</a>(L,1) : <a class="el" href="lapi_8c.html#a56bbb7479265e38da2e2596e6ec25faa">lua_pushboolean</a>(L,0); return 1; }</td>
+          <td>&#160;&#160;&#160;{ (exp) ? lua_pushboolean(L,1) : lua_pushboolean(L,0); return 1; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1201,7 +1201,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">integer</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="lapi_8c.html#adcec46ff05dfee9a3c4c05828b40c213">lua_pushinteger</a>(L,(integer)); return 1; }</td>
+          <td>&#160;&#160;&#160;{ lua_pushinteger(L,(integer)); return 1; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1221,7 +1221,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">number</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="lapi_8c.html#a328625a03fbb5548f27b1af10f109f6a">lua_pushnumber</a>(L,(number)); return 1; }</td>
+          <td>&#160;&#160;&#160;{ lua_pushnumber(L,(number)); return 1; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1241,7 +1241,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">str</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="lapi_8c.html#a6dd1a745d08c2dd96916ff0f2f1ca9ad">lua_pushstring</a>(L,(str)); return 1; }</td>
+          <td>&#160;&#160;&#160;{ lua_pushstring(L,(str)); return 1; }</td>
         </tr>
       </table>
 </div><div class="memdoc">

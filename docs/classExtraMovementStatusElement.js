@@ -7,7 +7,7 @@ var classExtraMovementStatusElement =
     [ "_elements", "classExtraMovementStatusElement.html#a22989726f102c3b5d7911884197b838a", null ],
     [ "_index", "classExtraMovementStatusElement.html#a02fb1facc860b503d3ee0c6b327ec9fc", null ],
     [ "byteData", "classExtraMovementStatusElement.html#aa8a4632635601f2d58ce97137f499644", null ],
-    [ "Data", "classExtraMovementStatusElement.html#a07c1844381ef97ded6f9c7cad8a49789", null ],
+    [ "Data", "classExtraMovementStatusElement.html#a878f2ea5dbaba4953726d7a5c1751b5a", null ],
     [ "floatData", "classExtraMovementStatusElement.html#a769602f4320a17ee364f0d8b287b8888", null ],
     [ "guid", "classExtraMovementStatusElement.html#a43279f91890a7d0739f59d4fdac31b38", null ]
 ];

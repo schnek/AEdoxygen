@@ -343,7 +343,7 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        pt = pPlayer;</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> money = loot-&gt;gold;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">const</span> uint32_t money = loot-&gt;gold;</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="comment">// Notify Looters</span></div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    loot-&gt;moneyRemoved();</div>
@@ -383,7 +383,7 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            groupMembers.reserve(group-&gt;MemberCount());</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            group-&gt;getLock().lock();</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; group-&gt;GetSubGroupCount(); i++)</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; group-&gt;GetSubGroupCount(); i++)</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            {</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                <span class="keyword">auto</span> subGroup = group-&gt;GetSubGroup(i);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span> groupMemberPlayerInfo : subGroup-&gt;getGroupMembers())</div>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="keywordflow">if</span> (groupMembers.empty())</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> sharedMoney = money / <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(groupMembers.size());</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="keyword">const</span> uint32_t sharedMoney = money / uint32_t(groupMembers.size());</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="comment">// TODO: money is given to group members even if they are not near the looter</span></div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; player : groupMembers)</div>
@@ -449,7 +449,7 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            <span class="keywordflow">if</span> (group-&gt;GetMethod() == <a class="code hl_enumvalue" href="LootDefines_8hpp.html#ae31afbe42227f49cc92474925a692994a3ba1f7a11e0131f8f8e34ef5da02124a">PARTY_LOOT_MASTER_LOOTER</a>)</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            {</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                group-&gt;Lock();</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; group-&gt;GetSubGroupCount(); ++i)</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; group-&gt;GetSubGroupCount(); ++i)</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> subGroup = group-&gt;GetSubGroup(i))</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    {</div>
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">if</span> (!srlPacket.<a class="code hl_function" href="classAscEmu_1_1Packets_1_1ManagedPacket.html#a22aad69ee4b8ada36d6718436097f52c">deserialise</a>(recvPacket))</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> lguid = <a class="code hl_function" href="classWorldSession.html#a014d7fdeb157410b75dfd4bd0fe0efc2">GetPlayer</a>()-&gt;getLootGuid())</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keywordflow">if</span> (uint64_t lguid = <a class="code hl_function" href="classWorldSession.html#a014d7fdeb157410b75dfd4bd0fe0efc2">GetPlayer</a>()-&gt;getLootGuid())</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">if</span> (lguid == srlPacket.<a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgLootRelease.html#a9d2992d1b2f288f2f83e9beb3f6f1a53">guid</a>.<a class="code hl_function" href="classWoWGuid.html#ae2ebb34eec8642eff1eb0ea3970acd5c">getRawGuid</a>())</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            <a class="code hl_function" href="classWorldSession.html#a4637c716f6ca53c55ac904db7737a4af">doLootRelease</a>(srlPacket.<a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgLootRelease.html#a9d2992d1b2f288f2f83e9beb3f6f1a53">guid</a>);</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>}</div>
@@ -685,7 +685,7 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="keywordflow">if</span> (loot &amp;&amp; srlPacket.<a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgLootMasterGive.html#afdbdbff7fa962e91d92734a82ddfe268">slot</a> &gt;= loot-&gt;<a class="code hl_variable" href="structLoot.html#ab9d61ed7d2aacadda6b4a648ab8c41b3">items</a>.size())</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    {</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;AutoLootItem: Player {} might be using a hack! (slot {}, size {})&quot;</span>, <a class="code hl_variable" href="classWorldSession.html#aaaa2363b99d5a167cc35d223a01a2781">_player</a>-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), srlPacket.<a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgLootMasterGive.html#afdbdbff7fa962e91d92734a82ddfe268">slot</a>, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(loot-&gt;<a class="code hl_variable" href="structLoot.html#ab9d61ed7d2aacadda6b4a648ab8c41b3">items</a>.size()));</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;AutoLootItem: Player {} might be using a hack! (slot {}, size {})&quot;</span>, <a class="code hl_variable" href="classWorldSession.html#aaaa2363b99d5a167cc35d223a01a2781">_player</a>-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), srlPacket.<a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgLootMasterGive.html#afdbdbff7fa962e91d92734a82ddfe268">slot</a>, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(loot-&gt;<a class="code hl_variable" href="structLoot.html#ab9d61ed7d2aacadda6b4a648ab8c41b3">items</a>.size()));</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    }</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
@@ -884,8 +884,6 @@ $(document).ready(function(){initNavTree('LootHandler_8cpp_source.html',''); ini
 <div class="ttc" id="astructLoot_html_afa9a10adf695d6591d45a3afd74e0825"><div class="ttname"><a href="structLoot.html#afa9a10adf695d6591d45a3afd74e0825">Loot::quest_items</a></div><div class="ttdeci">std::vector&lt; LootItem &gt; quest_items</div><div class="ttdef"><b>Definition</b> <a href="Loot_8hpp_source.html#l00040">Loot.hpp:40</a></div></div>
 <div class="ttc" id="astructWoWObject_html"><div class="ttname"><a href="structWoWObject.html">WoWObject</a></div><div class="ttdef"><b>Definition</b> <a href="WoWObject_8hpp_source.html#l00043">WoWObject.hpp:44</a></div></div>
 <div class="ttc" id="astructWoWUnit_html"><div class="ttname"><a href="structWoWUnit.html">WoWUnit</a></div><div class="ttdef"><b>Definition</b> <a href="WoWUnit_8hpp_source.html#l00082">WoWUnit.hpp:83</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

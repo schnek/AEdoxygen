@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_5ffile_0',['get_file',['../classdetail_1_1file__access.html#af51f63dee287e36393a2af522d0f2f67',1,'detail::file_access']]],
-  ['grandwidowfaerlinaai_1',['grandwidowfaerlinaai',['../classNaxxramasWorshipperAI.html#af8fc1dec031e959b5be764a2949bc971',1,'NaxxramasWorshipperAI::GrandWidowFaerlinaAI'],['../classNaxxramasFollowerAI.html#af8fc1dec031e959b5be764a2949bc971',1,'NaxxramasFollowerAI::GrandWidowFaerlinaAI']]],
-  ['group_2',['Group',['../classSubGroup.html#a2697825715974a353728f0d4d5658112',1,'SubGroup']]]
+  ['instancemgr_0',['InstanceMgr',['../classInstanceSaved.html#a9355d13c8c26513016037ee6635955dc',1,'InstanceSaved']]],
+  ['instancesaved_1',['InstanceSaved',['../classInstanceMgr.html#ab4709669325e2f07e4cbe3aff602e415',1,'InstanceMgr']]],
+  ['itemiterator_2',['ItemIterator',['../classItemInterface.html#a32606143b9dd3fe0db01264200e27783',1,'ItemInterface']]]
 ];

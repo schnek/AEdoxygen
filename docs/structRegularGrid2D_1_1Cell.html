@@ -106,9 +106,9 @@ $(document).ready(function(){initNavTree('structRegularGrid2D_1_1Cell.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13e8b2fcda561f185777e4d8b48da3f5" id="r_a13e8b2fcda561f185777e4d8b48da3f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRegularGrid2D_1_1Cell.html#a13e8b2fcda561f185777e4d8b48da3f5">operator==</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structRegularGrid2D_1_1Cell.html">Cell</a> &amp;c2) <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a13e8b2fcda561f185777e4d8b48da3f5" id="r_a13e8b2fcda561f185777e4d8b48da3f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRegularGrid2D_1_1Cell.html#a13e8b2fcda561f185777e4d8b48da3f5">operator==</a> (const <a class="el" href="structRegularGrid2D_1_1Cell.html">Cell</a> &amp;c2) const</td></tr>
 <tr class="separator:a13e8b2fcda561f185777e4d8b48da3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe64d87e738675f1c8cb0fa6d440029c" id="r_afe64d87e738675f1c8cb0fa6d440029c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRegularGrid2D_1_1Cell.html#afe64d87e738675f1c8cb0fa6d440029c">isValid</a> () <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:afe64d87e738675f1c8cb0fa6d440029c" id="r_afe64d87e738675f1c8cb0fa6d440029c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRegularGrid2D_1_1Cell.html#afe64d87e738675f1c8cb0fa6d440029c">isValid</a> () const</td></tr>
 <tr class="separator:afe64d87e738675f1c8cb0fa6d440029c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -124,7 +124,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af3d5ae020727d58286ef7725958063a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class T, class <a class="el" href="unionNode.html">Node</a>, class NodeCreatorFunc = NodeCreator&lt;Node&gt;, class PositionFunc = PositionTrait&lt;T&gt;&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T, class Node, class NodeCreatorFunc = NodeCreator&lt;Node&gt;, class PositionFunc = PositionTrait&lt;T&gt;&gt;<br />
 struct RegularGrid2D&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell</div>
 <p class="definition">Definition at line <a class="el" href="RegularGrid_8h_source.html#l00089">89</a> of file <a class="el" href="RegularGrid_8h_source.html">RegularGrid.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -134,13 +134,13 @@ struct RegularGrid2D&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell</div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
+template&lt;class T , class Node , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="structRegularGrid2D_1_1Cell.html">Cell</a> <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, <a class="el" href="unionNode.html">Node</a>, NodeCreatorFunc, PositionFunc &gt;::Cell::ComputeCell </td>
+          <td class="memname">static <a class="el" href="structRegularGrid2D_1_1Cell.html">Cell</a> <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell::ComputeCell </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>fx</em>, </td>
@@ -166,13 +166,18 @@ template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class
 
 <p class="definition">Definition at line <a class="el" href="RegularGrid_8h_source.html#l00094">94</a> of file <a class="el" href="RegularGrid_8h_source.html">RegularGrid.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>        {</div>
-<div class="line"><span class="lineno">   96</span>            <a class="code hl_struct" href="structCell.html">Cell</a> c = { int(fx * (1.f/<a class="code hl_define" href="RegularGrid_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>) + (<a class="code hl_enumvalue" href="classRegularGrid2D.html#a397fe193bc1c443c88a251c6dba99f62ac99125975cf608fa0b0ec9671758bb60">CELL_NUMBER</a>/2)), int(fy * (1.f/<a class="code hl_define" href="RegularGrid_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>) + (<a class="code hl_enumvalue" href="classRegularGrid2D.html#a397fe193bc1c443c88a251c6dba99f62ac99125975cf608fa0b0ec9671758bb60">CELL_NUMBER</a>/2)) };</div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_struct" href="structCell.html">Cell</a> c = { int(fx * (1.f/<a class="code hl_define" href="RegularGrid_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>) + (<a class="code hl_enumvalue" href="classRegularGrid2D.html#a81322b12079e0e46cd2d62a402d1feb2ac99125975cf608fa0b0ec9671758bb60">CELL_NUMBER</a>/2)), int(fy * (1.f/<a class="code hl_define" href="RegularGrid_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>) + (<a class="code hl_enumvalue" href="classRegularGrid2D.html#a81322b12079e0e46cd2d62a402d1feb2ac99125975cf608fa0b0ec9671758bb60">CELL_NUMBER</a>/2)) };</div>
 <div class="line"><span class="lineno">   97</span>            <span class="keywordflow">return</span> c;</div>
 <div class="line"><span class="lineno">   98</span>        }</div>
 <div class="ttc" id="aRegularGrid_8h_html_a7a4127f14f16563da90eb3c836bc404f"><div class="ttname"><a href="RegularGrid_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a></div><div class="ttdeci">#define CELL_SIZE</div><div class="ttdef"><b>Definition</b> <a href="RegularGrid_8h_source.html#l00051">RegularGrid.h:51</a></div></div>
-<div class="ttc" id="aclassRegularGrid2D_html_a397fe193bc1c443c88a251c6dba99f62ac99125975cf608fa0b0ec9671758bb60"><div class="ttname"><a href="classRegularGrid2D.html#a397fe193bc1c443c88a251c6dba99f62ac99125975cf608fa0b0ec9671758bb60">RegularGrid2D::CELL_NUMBER</a></div><div class="ttdeci">@ CELL_NUMBER</div><div class="ttdef"><b>Definition</b> <a href="RegularGrid_8h_source.html#l00047">RegularGrid.h:47</a></div></div>
+<div class="ttc" id="aclassRegularGrid2D_html_a81322b12079e0e46cd2d62a402d1feb2ac99125975cf608fa0b0ec9671758bb60"><div class="ttname"><a href="classRegularGrid2D.html#a81322b12079e0e46cd2d62a402d1feb2ac99125975cf608fa0b0ec9671758bb60">RegularGrid2D::CELL_NUMBER</a></div><div class="ttdeci">@ CELL_NUMBER</div><div class="ttdef"><b>Definition</b> <a href="RegularGrid_8h_source.html#l00047">RegularGrid.h:47</a></div></div>
 <div class="ttc" id="astructCell_html"><div class="ttname"><a href="structCell.html">Cell</a></div><div class="ttdef"><b>Definition</b> <a href="ToolsCataMop_2vmap__tools_2vmap4__extractor_2adtfile_8h_source.html#l00052">adtfile.h:53</a></div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structRegularGrid2D_1_1Cell_a32a8b5ab15a28fb06672fcf62ac63d1e_icgraph.svg" width="100%" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
 </div>
 </div>
 <a id="afe64d87e738675f1c8cb0fa6d440029c" name="afe64d87e738675f1c8cb0fa6d440029c"></a>
@@ -181,13 +186,13 @@ template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
+template&lt;class T , class Node , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, <a class="el" href="unionNode.html">Node</a>, NodeCreatorFunc, PositionFunc &gt;::Cell::isValid </td>
+          <td class="memname">bool <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell::isValid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -201,7 +206,7 @@ template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="RegularGrid_8h_source.html#l00100">100</a> of file <a class="el" href="RegularGrid_8h_source.html">RegularGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="structRegularGrid2D_1_1Cell.html#a8435f7d7b8f529dfe397ada59e3405a1">x</a> &gt;= 0 &amp;&amp; x &lt; CELL_NUMBER &amp;&amp; y &gt;= 0 &amp;&amp; <a class="code hl_variable" href="structRegularGrid2D_1_1Cell.html#af3d5ae020727d58286ef7725958063a9">y</a> &lt; <a class="code hl_enumvalue" href="classRegularGrid2D.html#a397fe193bc1c443c88a251c6dba99f62ac99125975cf608fa0b0ec9671758bb60">CELL_NUMBER</a>;}</div>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="structRegularGrid2D_1_1Cell.html#a8435f7d7b8f529dfe397ada59e3405a1">x</a> &gt;= 0 &amp;&amp; x &lt; CELL_NUMBER &amp;&amp; y &gt;= 0 &amp;&amp; <a class="code hl_variable" href="structRegularGrid2D_1_1Cell.html#af3d5ae020727d58286ef7725958063a9">y</a> &lt; <a class="code hl_enumvalue" href="classRegularGrid2D.html#a81322b12079e0e46cd2d62a402d1feb2ac99125975cf608fa0b0ec9671758bb60">CELL_NUMBER</a>;}</div>
 <div class="ttc" id="astructRegularGrid2D_1_1Cell_html_a8435f7d7b8f529dfe397ada59e3405a1"><div class="ttname"><a href="structRegularGrid2D_1_1Cell.html#a8435f7d7b8f529dfe397ada59e3405a1">RegularGrid2D::Cell::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition</b> <a href="RegularGrid_8h_source.html#l00091">RegularGrid.h:91</a></div></div>
 <div class="ttc" id="astructRegularGrid2D_1_1Cell_html_af3d5ae020727d58286ef7725958063a9"><div class="ttname"><a href="structRegularGrid2D_1_1Cell.html#af3d5ae020727d58286ef7725958063a9">RegularGrid2D::Cell::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition</b> <a href="RegularGrid_8h_source.html#l00091">RegularGrid.h:91</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -218,15 +223,15 @@ Here is the caller graph for this function:</div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
+template&lt;class T , class Node , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, <a class="el" href="unionNode.html">Node</a>, NodeCreatorFunc, PositionFunc &gt;::Cell::operator== </td>
+          <td class="memname">bool <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell::operator== </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structRegularGrid2D_1_1Cell.html">Cell</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structRegularGrid2D_1_1Cell.html">Cell</a> &amp;&#160;</td>
           <td class="paramname"><em>c2</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -250,10 +255,10 @@ template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
+template&lt;class T , class Node , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, <a class="el" href="unionNode.html">Node</a>, NodeCreatorFunc, PositionFunc &gt;::Cell::x</td>
+          <td class="memname">int <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell::x</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -268,10 +273,10 @@ template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class <a class="el" href="unionNode.html">Node</a> , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
+template&lt;class T , class Node , class NodeCreatorFunc  = NodeCreator&lt;Node&gt;, class PositionFunc  = PositionTrait&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, <a class="el" href="unionNode.html">Node</a>, NodeCreatorFunc, PositionFunc &gt;::Cell::y</td>
+          <td class="memname">int <a class="el" href="classRegularGrid2D.html">RegularGrid2D</a>&lt; T, Node, NodeCreatorFunc, PositionFunc &gt;::Cell::y</td>
         </tr>
       </table>
 </div><div class="memdoc">

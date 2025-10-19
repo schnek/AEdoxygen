@@ -184,17 +184,17 @@ $(document).ready(function(){initNavTree('LogonConsole_8cpp_source.html',''); in
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_variable" href="classLogonConsole.html#a5c3d57d430b973aa9ce99f9df4ee115d">_thread</a>-&gt;<a class="code hl_variable" href="classLogonConsoleThread.html#a3811111c13a3d03a80e50f4856a3da95">kill</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#ifdef WIN32</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">/* write the return keydown/keyup event */</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> dwTmp;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    DWORD dwTmp;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    INPUT_RECORD ir[2];</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    ir[0].EventType = KEY_EVENT;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    ir[0].Event.KeyEvent.bKeyDown = <a class="code hl_define" href="mpq-internal_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    ir[0].Event.KeyEvent.bKeyDown = TRUE;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    ir[0].Event.KeyEvent.dwControlKeyState = 288;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    ir[0].Event.KeyEvent.uChar.AsciiChar = 13;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    ir[0].Event.KeyEvent.wRepeatCount = 1;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    ir[0].Event.KeyEvent.wVirtualKeyCode = 13;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    ir[0].Event.KeyEvent.wVirtualScanCode = 28;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    ir[1].EventType = KEY_EVENT;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    ir[1].Event.KeyEvent.bKeyDown = <a class="code hl_define" href="mpq-internal_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    ir[1].Event.KeyEvent.bKeyDown = FALSE;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    ir[1].Event.KeyEvent.dwControlKeyState = 288;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    ir[1].Event.KeyEvent.uChar.AsciiChar = 13;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    ir[1].Event.KeyEvent.wRepeatCount = 1;</div>
@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('LogonConsole_8cpp_source.html',''); in
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">if</span> (strncmp(cmd, <span class="stringliteral">&quot;c&quot;</span>, 1) == 0)</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;Console: Unknown console command (use \&quot;help\&quot; for help).\n&quot;</span>);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        printf(<span class="stringliteral">&quot;Console: Unknown console command (use \&quot;help\&quot; for help).\n&quot;</span>);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
 </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
@@ -554,7 +554,7 @@ $(document).ready(function(){initNavTree('LogonConsole_8cpp_source.html',''); in
 </div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
 <div class="foldopen" id="foldopen00417" data-start="{" data-end="}">
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="classLogonConsole.html#a716ee60d7ca52ba25cc8173b7c7bde9a">  417</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLogonConsole.html#a716ee60d7ca52ba25cc8173b7c7bde9a">LogonConsole::checkAccountName</a>(std::string name, <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> type)</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="classLogonConsole.html#a716ee60d7ca52ba25cc8173b7c7bde9a">  417</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLogonConsole.html#a716ee60d7ca52ba25cc8173b7c7bde9a">LogonConsole::checkAccountName</a>(std::string name, uint8_t type)</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>{</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    std::string aname(name);</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
@@ -613,7 +613,6 @@ $(document).ready(function(){initNavTree('LogonConsole_8cpp_source.html',''); in
 <div class="ttc" id="aMaster_8hpp_html_a1a0829c70e720a2ab5283986bb7ba562"><div class="ttname"><a href="Master_8hpp.html#a1a0829c70e720a2ab5283986bb7ba562">mrunning</a></div><div class="ttdeci">std::atomic&lt; bool &gt; mrunning</div></div>
 <div class="ttc" id="aMaster_8hpp_html_a3195dca197b410f331dbcd8bf76ecb81"><div class="ttname"><a href="Master_8hpp.html#a3195dca197b410f331dbcd8bf76ecb81">sMasterLogon</a></div><div class="ttdeci">#define sMasterLogon</div><div class="ttdef"><b>Definition</b> <a href="Master_8hpp_source.html#l00065">Master.hpp:65</a></div></div>
 <div class="ttc" id="aNetwork_8h_html"><div class="ttname"><a href="Network_8h.html">Network.h</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_a798af1e30bc65f319c1a246cecf59e39"><div class="ttname"><a href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></div><div class="ttdeci">unsigned int DWORD</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00336">StormPort.h:336</a></div></div>
 <div class="ttc" id="aStrings_8hpp_html"><div class="ttname"><a href="Strings_8hpp.html">Strings.hpp</a></div></div>
 <div class="ttc" id="aclassAscEmu_1_1Threading_1_1AEThread_html"><div class="ttname"><a href="classAscEmu_1_1Threading_1_1AEThread.html">AscEmu::Threading::AEThread</a></div><div class="ttdef"><b>Definition</b> <a href="AEThread_8h_source.html#l00016">AEThread.h:17</a></div></div>
 <div class="ttc" id="aclassLogonConsoleThread_html_a3811111c13a3d03a80e50f4856a3da95"><div class="ttname"><a href="classLogonConsoleThread.html#a3811111c13a3d03a80e50f4856a3da95">LogonConsoleThread::kill</a></div><div class="ttdeci">std::atomic&lt; bool &gt; kill</div><div class="ttdef"><b>Definition</b> <a href="LogonConsole_8h_source.html#l00036">LogonConsole.h:36</a></div></div>
@@ -643,12 +642,8 @@ $(document).ready(function(){initNavTree('LogonConsole_8cpp_source.html',''); in
 <div class="ttc" id="aclassLogonConsole_html_afc8f8efacdd99f712ea5f6fb8caa8220"><div class="ttname"><a href="classLogonConsole.html#afc8f8efacdd99f712ea5f6fb8caa8220">LogonConsole::AccountDelete</a></div><div class="ttdeci">void AccountDelete(char *str)</div><div class="ttdef"><b>Definition</b> <a href="LogonConsole_8cpp_source.html#l00295">LogonConsole.cpp:295</a></div></div>
 <div class="ttc" id="aclassLogonConsole_html_afd2c5bebc3b1ea67a5f89f585a130171"><div class="ttname"><a href="classLogonConsole.html#afd2c5bebc3b1ea67a5f89f585a130171">LogonConsole::ProcessQuit</a></div><div class="ttdeci">void ProcessQuit(int delay)</div><div class="ttdef"><b>Definition</b> <a href="LogonConsole_8cpp_source.html#l00220">LogonConsole.cpp:220</a></div></div>
 <div class="ttc" id="alogonserver_2Server_2Master_8cpp_html_a9be5d1fffea5691166dafa7bf6e9bd83"><div class="ttname"><a href="logonserver_2Server_2Master_8cpp.html#a9be5d1fffea5691166dafa7bf6e9bd83">sLogonSQL</a></div><div class="ttdeci">std::unique_ptr&lt; Database &gt; sLogonSQL</div><div class="ttdef"><b>Definition</b> <a href="logonserver_2Server_2Master_8cpp_source.html#l00033">Master.cpp:33</a></div></div>
-<div class="ttc" id="ampq-internal_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="mpq-internal_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="mpq-internal_8h_source.html#l00062">mpq-internal.h:62</a></div></div>
-<div class="ttc" id="ampq-internal_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="mpq-internal_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="mpq-internal_8h_source.html#l00059">mpq-internal.h:59</a></div></div>
 <div class="ttc" id="anamespaceArcemu_html_ac21bec87566497038d444daa9dd84b74"><div class="ttname"><a href="namespaceArcemu.html#ac21bec87566497038d444daa9dd84b74">Arcemu::Sleep</a></div><div class="ttdeci">void Sleep(unsigned long timems)</div><div class="ttdef"><b>Definition</b> <a href="LegacyThreadPool_8cpp_source.html#l00411">LegacyThreadPool.cpp:411</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Util_1_1Strings_html_a712a85e2a9305864d3897d34109284d4"><div class="ttname"><a href="namespaceAscEmu_1_1Util_1_1Strings.html#a712a85e2a9305864d3897d34109284d4">AscEmu::Util::Strings::toUpperCase</a></div><div class="ttdeci">void toUpperCase(std::string &amp;source)</div><div class="ttdoc">Manipulates the string to uppercase.</div><div class="ttdef"><b>Definition</b> <a href="Strings_8cpp_source.html#l00020">Strings.cpp:20</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aee3ed3a831f25f07e7be3919fff2203a"><div class="ttname"><a href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a></div><div class="ttdeci">auto printf(string_view fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00663">printf.h:663</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

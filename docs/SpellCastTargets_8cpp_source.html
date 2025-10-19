@@ -129,14 +129,14 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#abc07057309aec7e0f2084fb247731f18">   26</a></span><a class="code hl_function" href="classSpellCastTargets.html#a0a6dddcdfc5fac4f3c1856d302487343">SpellCastTargets::SpellCastTargets</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> unitTarget) : m_targetMask(<a class="code hl_enumvalue" href="SpellCastTargetFlags_8hpp.html#a3c11f0d0cd9689554b34ccbc325da54fa9bdbe71c2e8d869741084e7d1b9c0e7e">TARGET_FLAG_UNIT</a>),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#abc07057309aec7e0f2084fb247731f18">   26</a></span><a class="code hl_function" href="classSpellCastTargets.html#a0a6dddcdfc5fac4f3c1856d302487343">SpellCastTargets::SpellCastTargets</a>(uint64_t unitTarget) : m_targetMask(<a class="code hl_enumvalue" href="SpellCastTargetFlags_8hpp.html#a3c11f0d0cd9689554b34ccbc325da54fa9bdbe71c2e8d869741084e7d1b9c0e7e">TARGET_FLAG_UNIT</a>),</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>m_unitTargetGuid(unitTarget)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a51b9c4db4b6c9927c3f86209b93df1a0">   31</a></span><a class="code hl_function" href="classSpellCastTargets.html#a0a6dddcdfc5fac4f3c1856d302487343">SpellCastTargets::SpellCastTargets</a>(<a class="code hl_class" href="classWorldPacket.html">WorldPacket</a>&amp; data, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> caster)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a51b9c4db4b6c9927c3f86209b93df1a0">   31</a></span><a class="code hl_function" href="classSpellCastTargets.html#a0a6dddcdfc5fac4f3c1856d302487343">SpellCastTargets::SpellCastTargets</a>(<a class="code hl_class" href="classWorldPacket.html">WorldPacket</a>&amp; data, uint64_t caster)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="classSpellCastTargets.html#a8e98c1b9e4f7109ca06d50a8fc7dcf72">read</a>(data, caster);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a8e98c1b9e4f7109ca06d50a8fc7dcf72">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a8e98c1b9e4f7109ca06d50a8fc7dcf72">SpellCastTargets::read</a>(<a class="code hl_class" href="classWorldPacket.html">WorldPacket</a>&amp; data, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> caster)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a8e98c1b9e4f7109ca06d50a8fc7dcf72">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a8e98c1b9e4f7109ca06d50a8fc7dcf72">SpellCastTargets::read</a>(<a class="code hl_class" href="classWorldPacket.html">WorldPacket</a>&amp; data, uint64_t caster)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="classSpellCastTargets.html#a42ba6792dd439e08dffdbd3535fed38b">reset</a>();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
@@ -307,42 +307,42 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 </div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
 <div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#af29ba7f8180d7dad07136a46c81d446a">  186</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classSpellCastTargets.html#af29ba7f8180d7dad07136a46c81d446a">SpellCastTargets::getTargetMask</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#af29ba7f8180d7dad07136a46c81d446a">  186</a></span>uint32_t <a class="code hl_function" href="classSpellCastTargets.html#af29ba7f8180d7dad07136a46c81d446a">SpellCastTargets::getTargetMask</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classSpellCastTargets.html#a3988be74495b99beaaafbaf8d1ae0560">m_targetMask</a>;</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
 </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
 <div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#ab4a95e1a2cac2ba9f1cbbdd89feed7f6">  191</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#ab4a95e1a2cac2ba9f1cbbdd89feed7f6">SpellCastTargets::setTargetMask</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mask)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#ab4a95e1a2cac2ba9f1cbbdd89feed7f6">  191</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#ab4a95e1a2cac2ba9f1cbbdd89feed7f6">SpellCastTargets::setTargetMask</a>(uint32_t mask)</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_variable" href="classSpellCastTargets.html#a3988be74495b99beaaafbaf8d1ae0560">m_targetMask</a> = mask;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
 </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">  196</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">SpellCastTargets::addTargetMask</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mask)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">  196</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">SpellCastTargets::addTargetMask</a>(uint32_t mask)</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>{</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_function" href="classSpellCastTargets.html#ab4a95e1a2cac2ba9f1cbbdd89feed7f6">setTargetMask</a>(<a class="code hl_function" href="classSpellCastTargets.html#af29ba7f8180d7dad07136a46c81d446a">getTargetMask</a>() | mask);</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
 </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="foldopen" id="foldopen00201" data-start="{" data-end="}">
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#ae9ce31c348092f5b219ccb4887a16d2d">  201</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code hl_function" href="classSpellCastTargets.html#ae9ce31c348092f5b219ccb4887a16d2d">SpellCastTargets::getGameObjectTargetGuid</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#ae9ce31c348092f5b219ccb4887a16d2d">  201</a></span>uint64_t <a class="code hl_function" href="classSpellCastTargets.html#ae9ce31c348092f5b219ccb4887a16d2d">SpellCastTargets::getGameObjectTargetGuid</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classSpellCastTargets.html#aa15bc4d0c7191a83eb4d104c493d3c6c">m_gameObjectTargetGuid</a>;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
 </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a47e30b91921e7e9ae2007de904a91c85">  206</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code hl_function" href="classSpellCastTargets.html#a47e30b91921e7e9ae2007de904a91c85">SpellCastTargets::getUnitTargetGuid</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a47e30b91921e7e9ae2007de904a91c85">  206</a></span>uint64_t <a class="code hl_function" href="classSpellCastTargets.html#a47e30b91921e7e9ae2007de904a91c85">SpellCastTargets::getUnitTargetGuid</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classSpellCastTargets.html#a6743c2eb66ec28835e55290575046982">m_unitTargetGuid</a>;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
 </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a0c569b4b466f9b890e52c4395cb8b35f">  211</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code hl_function" href="classSpellCastTargets.html#a0c569b4b466f9b890e52c4395cb8b35f">SpellCastTargets::getItemTargetGuid</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a0c569b4b466f9b890e52c4395cb8b35f">  211</a></span>uint64_t <a class="code hl_function" href="classSpellCastTargets.html#a0c569b4b466f9b890e52c4395cb8b35f">SpellCastTargets::getItemTargetGuid</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classSpellCastTargets.html#a430b75af007f297a0870977577cd778f">m_itemTargetGuid</a>;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 </div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#aff9a64021c2f5135b6f40fec5f0bf8ce">  226</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#aff9a64021c2f5135b6f40fec5f0bf8ce">SpellCastTargets::setGameObjectTarget</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid)</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#aff9a64021c2f5135b6f40fec5f0bf8ce">  226</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#aff9a64021c2f5135b6f40fec5f0bf8ce">SpellCastTargets::setGameObjectTarget</a>(uint64_t guid)</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>{</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <a class="code hl_variable" href="classSpellCastTargets.html#aa15bc4d0c7191a83eb4d104c493d3c6c">m_gameObjectTargetGuid</a> = guid;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <a class="code hl_function" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">addTargetMask</a>(<a class="code hl_enumvalue" href="SpellCastTargetFlags_8hpp.html#a3c11f0d0cd9689554b34ccbc325da54fae89a6bec789f7a30229ad400520c325a">TARGET_FLAG_OBJECT</a>);</div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 </div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="foldopen" id="foldopen00232" data-start="{" data-end="}">
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a9a2c0386aeef8fea6524392e514dc6ab">  232</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a9a2c0386aeef8fea6524392e514dc6ab">SpellCastTargets::setUnitTarget</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a9a2c0386aeef8fea6524392e514dc6ab">  232</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a9a2c0386aeef8fea6524392e514dc6ab">SpellCastTargets::setUnitTarget</a>(uint64_t guid)</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <a class="code hl_variable" href="classSpellCastTargets.html#a6743c2eb66ec28835e55290575046982">m_unitTargetGuid</a> = guid;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <a class="code hl_function" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">addTargetMask</a>(<a class="code hl_enumvalue" href="SpellCastTargetFlags_8hpp.html#a3c11f0d0cd9689554b34ccbc325da54fa9bdbe71c2e8d869741084e7d1b9c0e7e">TARGET_FLAG_UNIT</a>);</div>
@@ -379,7 +379,7 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 </div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
 <div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a12771ee6b357206b314896605f96738c">  238</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a12771ee6b357206b314896605f96738c">SpellCastTargets::setItemTarget</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classSpellCastTargets.html#a12771ee6b357206b314896605f96738c">  238</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellCastTargets.html#a12771ee6b357206b314896605f96738c">SpellCastTargets::setItemTarget</a>(uint64_t guid)</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>{</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <a class="code hl_variable" href="classSpellCastTargets.html#a430b75af007f297a0870977577cd778f">m_itemTargetGuid</a> = guid;</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <a class="code hl_function" href="classSpellCastTargets.html#a1b018df13fbac9d3e8454740a7d3e513">addTargetMask</a>(<a class="code hl_enumvalue" href="SpellCastTargetFlags_8hpp.html#a3c11f0d0cd9689554b34ccbc325da54fa39c1b2ff3bdce8072d074f15c6c2af49">TARGET_FLAG_ITEM</a>);</div>
@@ -461,8 +461,6 @@ $(document).ready(function(){initNavTree('SpellCastTargets_8cpp_source.html','')
 <div class="ttc" id="aclassWoWGuid_html_ace5ff0d369d8072eeb9cbdcdd60596bd"><div class="ttname"><a href="classWoWGuid.html#ace5ff0d369d8072eeb9cbdcdd60596bd">WoWGuid::getGuidLow</a></div><div class="ttdeci">uint32_t getGuidLow() const</div><div class="ttdef"><b>Definition</b> <a href="WoWGuid_8h_source.html#l00221">WoWGuid.h:221</a></div></div>
 <div class="ttc" id="aclassWoWGuid_html_ae2ebb34eec8642eff1eb0ea3970acd5c"><div class="ttname"><a href="classWoWGuid.html#ae2ebb34eec8642eff1eb0ea3970acd5c">WoWGuid::getRawGuid</a></div><div class="ttdeci">uint64_t getRawGuid() const</div><div class="ttdef"><b>Definition</b> <a href="WoWGuid_8h_source.html#l00261">WoWGuid.h:261</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

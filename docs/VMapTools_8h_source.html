@@ -123,8 +123,8 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifndef _VMAPTOOLS_H</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define _VMAPTOOLS_H</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="CollisionDetection_8h.html">G3D/CollisionDetection.h</a>&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="AABox_8h.html">G3D/AABox.h</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;G3D/CollisionDetection.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;G3D/AABox.h&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"></span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">The Class is mainly taken from G3D/AABSPTree.h but modified to be able to use our internal data structure.</span></div>
@@ -138,12 +138,12 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html">   35</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classVMAP_1_1IntersectionCallBack.html">IntersectionCallBack</a> {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#ab377424b7edd0274f61967619700f841">   37</a></span>        <a class="code hl_struct" href="structTValue.html">TValue</a>*      <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#ab377424b7edd0274f61967619700f841">closestEntity</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#a00e778dd78dca96391d200e18dfc2c9d">   38</a></span>        <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a> <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#a57f40f48c26829f7da9e48efd839d773">   39</a></span>        <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a> <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#ab377424b7edd0274f61967619700f841">   37</a></span>        TValue*      <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#ab377424b7edd0274f61967619700f841">closestEntity</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#a00e778dd78dca96391d200e18dfc2c9d">   38</a></span>        G3D::Vector3 <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#a57f40f48c26829f7da9e48efd839d773">   39</a></span>        G3D::Vector3 <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#a01df596c57d527cd46486f22788eaf97">   41</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classVMAP_1_1IntersectionCallBack.html#a01df596c57d527cd46486f22788eaf97">operator()</a>(<span class="keyword">const</span> <a class="code hl_class" href="classG3D_1_1Ray.html">G3D::Ray</a>&amp; ray, <span class="keyword">const</span> <a class="code hl_struct" href="structTValue.html">TValue</a>* entity, <span class="keywordtype">bool</span> pStopAtFirstHit, <span class="keywordtype">float</span>&amp; distance) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classVMAP_1_1IntersectionCallBack.html#a01df596c57d527cd46486f22788eaf97">   41</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classVMAP_1_1IntersectionCallBack.html#a01df596c57d527cd46486f22788eaf97">operator()</a>(<span class="keyword">const</span> G3D::Ray&amp; ray, <span class="keyword">const</span> TValue* entity, <span class="keywordtype">bool</span> pStopAtFirstHit, <span class="keywordtype">float</span>&amp; distance) {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            entity-&gt;intersect(ray, distance, pStopAtFirstHit, <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a>, <a class="code hl_variable" href="classVMAP_1_1IntersectionCallBack.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a>);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
 </div>
@@ -162,10 +162,10 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classVMAP_1_1MyCollisionDetection.html#afe38618ab1de028db0657601f1e51d21">   55</a></span>        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classVMAP_1_1MyCollisionDetection.html#afe38618ab1de028db0657601f1e51d21">collisionLocationForMovingPointFixedAABox</a>(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">const</span> <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a>&amp;     origin,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">const</span> <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a>&amp;     dir,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> <a class="code hl_class" href="classG3D_1_1AABox.html">G3D::AABox</a>&amp;       box,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a>&amp;           location,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">const</span> G3D::Vector3&amp;     origin,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keyword">const</span> G3D::Vector3&amp;     dir,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> G3D::AABox&amp;       box,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            G3D::Vector3&amp;           location,</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordtype">bool</span>&amp;                   Inside)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
@@ -173,9 +173,9 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#define IR(x)   (reinterpret_cast&lt;G3D::uint32_t const&amp;&gt;(x))</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Inside = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">const</span> <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a>&amp; MinB = box.<a class="code hl_function" href="classG3D_1_1AABox.html#a1a0983251d35ade3c07b80a480c3436e">low</a>();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keyword">const</span> <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a>&amp; MaxB = box.<a class="code hl_function" href="classG3D_1_1AABox.html#a0140544889385cdc342659e97ee70809">high</a>();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_class" href="classG3D_1_1Vector3.html">G3D::Vector3</a> MaxT(-1.0f, -1.0f, -1.0f);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">const</span> G3D::Vector3&amp; MinB = box.low();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keyword">const</span> G3D::Vector3&amp; MaxB = box.high();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            G3D::Vector3 MaxT(-1.0f, -1.0f, -1.0f);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="comment">// Find candidate planes.</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i)</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    Inside      = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="comment">// Calculate T distances to candidate planes</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">if</span> (<a class="code hl_define" href="CollisionDetection_8cpp.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>(dir[i]))</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordflow">if</span> (<a class="code hl_define" href="VMapTools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>(dir[i]))</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    {</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        MaxT[i] = (MinB[i] - origin[i]) / dir[i];</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    }</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    Inside      = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <span class="comment">// Calculate T distances to candidate planes</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    <span class="keywordflow">if</span> (<a class="code hl_define" href="CollisionDetection_8cpp.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>(dir[i]))</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    <span class="keywordflow">if</span> (<a class="code hl_define" href="VMapTools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>(dir[i]))</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        MaxT[i] = (MaxB[i] - origin[i]) / dir[i];</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    }</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            }</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="comment">// Check final candidate actually inside box</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span> (<a class="code hl_define" href="CollisionDetection_8cpp.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>(MaxT[WhichPlane]) &amp; 0x80000000)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span> (<a class="code hl_define" href="VMapTools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>(MaxT[WhichPlane]) &amp; 0x80000000)</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            {</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="comment">// Miss the box</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -258,14 +258,7 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aAABox_8h_html"><div class="ttname"><a href="AABox_8h.html">AABox.h</a></div></div>
-<div class="ttc" id="aCollisionDetection_8cpp_html_aa54c7fcd0c551f1db5fc34a2f6b11e74"><div class="ttname"><a href="CollisionDetection_8cpp.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a></div><div class="ttdeci">#define IR(x)</div></div>
-<div class="ttc" id="aCollisionDetection_8h_html"><div class="ttname"><a href="CollisionDetection_8h.html">CollisionDetection.h</a></div></div>
-<div class="ttc" id="aclassG3D_1_1AABox_html"><div class="ttname"><a href="classG3D_1_1AABox.html">G3D::AABox</a></div><div class="ttdef"><b>Definition</b> <a href="AABox_8h_source.html#l00032">AABox.h:32</a></div></div>
-<div class="ttc" id="aclassG3D_1_1AABox_html_a0140544889385cdc342659e97ee70809"><div class="ttname"><a href="classG3D_1_1AABox.html#a0140544889385cdc342659e97ee70809">G3D::AABox::high</a></div><div class="ttdeci">const Point3 &amp; high() const</div><div class="ttdef"><b>Definition</b> <a href="AABox_8h_source.html#l00141">AABox.h:141</a></div></div>
-<div class="ttc" id="aclassG3D_1_1AABox_html_a1a0983251d35ade3c07b80a480c3436e"><div class="ttname"><a href="classG3D_1_1AABox.html#a1a0983251d35ade3c07b80a480c3436e">G3D::AABox::low</a></div><div class="ttdeci">const Point3 &amp; low() const</div><div class="ttdef"><b>Definition</b> <a href="AABox_8h_source.html#l00136">AABox.h:136</a></div></div>
-<div class="ttc" id="aclassG3D_1_1Ray_html"><div class="ttname"><a href="classG3D_1_1Ray.html">G3D::Ray</a></div><div class="ttdef"><b>Definition</b> <a href="Ray_8h_source.html#l00024">Ray.h:24</a></div></div>
-<div class="ttc" id="aclassG3D_1_1Vector3_html"><div class="ttname"><a href="classG3D_1_1Vector3.html">G3D::Vector3</a></div><div class="ttdef"><b>Definition</b> <a href="Vector3_8h_source.html#l00058">Vector3.h:58</a></div></div>
+<div class="ttc" id="aVMapTools_8h_html_aa54c7fcd0c551f1db5fc34a2f6b11e74"><div class="ttname"><a href="VMapTools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a></div><div class="ttdeci">#define IR(x)</div></div>
 <div class="ttc" id="aclassVMAP_1_1IntersectionCallBack_html"><div class="ttname"><a href="classVMAP_1_1IntersectionCallBack.html">VMAP::IntersectionCallBack</a></div><div class="ttdef"><b>Definition</b> <a href="VMapTools_8h_source.html#l00035">VMapTools.h:35</a></div></div>
 <div class="ttc" id="aclassVMAP_1_1IntersectionCallBack_html_a00e778dd78dca96391d200e18dfc2c9d"><div class="ttname"><a href="classVMAP_1_1IntersectionCallBack.html#a00e778dd78dca96391d200e18dfc2c9d">VMAP::IntersectionCallBack::hitLocation</a></div><div class="ttdeci">G3D::Vector3 hitLocation</div><div class="ttdef"><b>Definition</b> <a href="VMapTools_8h_source.html#l00038">VMapTools.h:38</a></div></div>
 <div class="ttc" id="aclassVMAP_1_1IntersectionCallBack_html_a01df596c57d527cd46486f22788eaf97"><div class="ttname"><a href="classVMAP_1_1IntersectionCallBack.html#a01df596c57d527cd46486f22788eaf97">VMAP::IntersectionCallBack::operator()</a></div><div class="ttdeci">void operator()(const G3D::Ray &amp;ray, const TValue *entity, bool pStopAtFirstHit, float &amp;distance)</div><div class="ttdef"><b>Definition</b> <a href="VMapTools_8h_source.html#l00041">VMapTools.h:41</a></div></div>
@@ -274,7 +267,6 @@ $(document).ready(function(){initNavTree('VMapTools_8h_source.html',''); initRes
 <div class="ttc" id="aclassVMAP_1_1MyCollisionDetection_html"><div class="ttname"><a href="classVMAP_1_1MyCollisionDetection.html">VMAP::MyCollisionDetection</a></div><div class="ttdef"><b>Definition</b> <a href="VMapTools_8h_source.html#l00050">VMapTools.h:51</a></div></div>
 <div class="ttc" id="aclassVMAP_1_1MyCollisionDetection_html_afe38618ab1de028db0657601f1e51d21"><div class="ttname"><a href="classVMAP_1_1MyCollisionDetection.html#afe38618ab1de028db0657601f1e51d21">VMAP::MyCollisionDetection::collisionLocationForMovingPointFixedAABox</a></div><div class="ttdeci">static bool collisionLocationForMovingPointFixedAABox(const G3D::Vector3 &amp;origin, const G3D::Vector3 &amp;dir, const G3D::AABox &amp;box, G3D::Vector3 &amp;location, bool &amp;Inside)</div><div class="ttdef"><b>Definition</b> <a href="VMapTools_8h_source.html#l00055">VMapTools.h:55</a></div></div>
 <div class="ttc" id="anamespaceVMAP_html"><div class="ttname"><a href="namespaceVMAP.html">VMAP</a></div><div class="ttdef"><b>Definition</b> <a href="DynamicTree_8h_source.html#l00035">DynamicTree.h:36</a></div></div>
-<div class="ttc" id="astructTValue_html"><div class="ttname"><a href="structTValue.html">TValue</a></div><div class="ttdef"><b>Definition</b> <a href="lobject_8h_source.html#l00065">lobject.h:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

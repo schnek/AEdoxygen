@@ -56,9 +56,9 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="lapi_8c.html#a56bbb7479265e38da2e2596e6ec25faa" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classObject.html#a3aeab7def818ba6c50249f197ad2f9ca" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="321.5,-56 222.5,-56 222.5,-37 321.5,-37 321.5,-56"/>
-<text text-anchor="middle" x="272" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">lua_pushboolean</text>
+<text text-anchor="middle" x="272" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">Object::IsInWorld</text>
 </a>
 </g>
 </g>
@@ -74,9 +74,9 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="287,-19 257,-19 257,0 287,0 287,-19"/>
-<text text-anchor="middle" x="272" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ptr</text>
+<g id="a_Node000007"><a xlink:href="classObject.html#ab65745f76d63eda49657413dccf0057d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="318.5,-19 225.5,-19 225.5,0 318.5,0 318.5,-19"/>
+<text text-anchor="middle" x="272" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Object::isPlayer</text>
 </a>
 </g>
 </g>
@@ -84,8 +84,8 @@
 <g id="edge6_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
 <g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M101.2,-55C123.13,-47.24 155.36,-36.33 184,-28.5 204.99,-22.76 229.21,-17.58 246.75,-14.09"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="247.58,-17.5 256.72,-12.14 246.24,-10.63 247.58,-17.5"/>
+<path fill="none" stroke="#63b8ff" d="M100.27,-54.93C122.19,-46.87 154.88,-35.42 184,-27.5 194.04,-24.77 204.83,-22.23 215.27,-19.97"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="216.08,-23.37 225.14,-17.89 214.64,-16.52 216.08,-23.37"/>
 </a>
 </g>
 </g>
@@ -122,6 +122,24 @@
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M570.19,-120.5C578.64,-120.5 587.23,-120.5 595.71,-120.5"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="595.98,-124 605.98,-120.5 595.98,-117 595.98,-124"/>
+</a>
+</g>
+</g>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="classObject.html#aaee2ed63355af5e632aba82f859822b4" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="549.5,-19 416.5,-19 416.5,0 549.5,0 549.5,-19"/>
+<text text-anchor="middle" x="483" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Object::getObjectTypeId</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge7_Node000007_Node000008" class="edge">
+<title>Node7&#45;&gt;Node8</title>
+<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M318.61,-9.5C344.18,-9.5 376.74,-9.5 406.05,-9.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="406.26,-13 416.26,-9.5 406.26,-6 406.26,-13"/>
 </a>
 </g>
 </g>

@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('CreatureAIFunction_8hpp_source.html','
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> reset();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// Flow</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">bool</span> <a class="code hl_enumvalue" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e">set</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">bool</span> set);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> isEnabled();</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// Combat</span></div>
@@ -146,8 +146,8 @@ $(document).ready(function(){initNavTree('CreatureAIFunction_8hpp_source.html','
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_typedef" href="AIUtils_8hpp.html#a97e964e8eec5ef3902ff1168c66be9fe">Milliseconds</a> getCastTimer();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// Usages</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> setCount(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> count);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> getCount();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> setCount(uint32_t count);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> uint32_t getCount();</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> increaseCount();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> usesLeft();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
@@ -158,10 +158,10 @@ $(document).ready(function(){initNavTree('CreatureAIFunction_8hpp_source.html','
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> isChanceMeet(<span class="keywordtype">float</span> rolled);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Phases</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> isAvailableForScriptPhase(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> scriptPhase);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> isAvailableForScriptPhase(uint32_t scriptPhase);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// Messages</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> getRandomMessage();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    uint32_t getRandomMessage();</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Main Execution</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_typedef" href="AIUtils_8hpp.html#af6bd03c3725be3f65b4a9e267fc6cb31">Function</a> getFunction() <span class="keyword">const</span>;</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('CreatureAIFunction_8hpp_source.html','
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classCreatureAIFunction.html#ab59fbdd3bb4f7495c9438c85fcd24e39">   74</a></span>    <a class="code hl_typedef" href="AIUtils_8hpp.html#af6bd03c3725be3f65b4a9e267fc6cb31">Function</a>        mFunction           = <span class="keyword">nullptr</span>;          <span class="comment">// Function to be executed</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classCreatureAIFunction.html#a0e0a1c78d16c068ae1afb73f85e8c610">   75</a></span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a>         mCount              = 0;                <span class="comment">// Usages Tracker</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classCreatureAIFunction.html#a0e0a1c78d16c068ae1afb73f85e8c610">   75</a></span>    int32_t         mCount              = 0;                <span class="comment">// Usages Tracker</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classCreatureAIFunction.html#abc0b7fc71271f68b05e880cce3ce5c95">   76</a></span>    <a class="code hl_typedef" href="AIUtils_8hpp.html#a97e964e8eec5ef3902ff1168c66be9fe">Milliseconds</a>    mCooldownTimer      = <a class="code hl_typedef" href="AIUtils_8hpp.html#a97e964e8eec5ef3902ff1168c66be9fe">Milliseconds</a>();   <span class="comment">// Function cooldown Timer</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// Arguments for Scheduer</span></div>
@@ -199,11 +199,8 @@ $(document).ready(function(){initNavTree('CreatureAIFunction_8hpp_source.html','
 <div class="ttc" id="aclassCreatureAIFunction_html_aa9a983e545244aac79dc77be3a571e0e"><div class="ttname"><a href="classCreatureAIFunction.html#aa9a983e545244aac79dc77be3a571e0e">CreatureAIFunction::functionArgs</a></div><div class="ttdeci">FunctionArgs functionArgs</div><div class="ttdef"><b>Definition</b> <a href="CreatureAIFunction_8hpp_source.html#l00082">CreatureAIFunction.hpp:82</a></div></div>
 <div class="ttc" id="aclassCreatureAIFunction_html_ac05b09215932b2cc85128f9b4cf88ee4"><div class="ttname"><a href="classCreatureAIFunction.html#ac05b09215932b2cc85128f9b4cf88ee4">CreatureAIFunction::~CreatureAIFunction</a></div><div class="ttdeci">~CreatureAIFunction()=default</div></div>
 <div class="ttc" id="aclassCreatureAIScript_html"><div class="ttname"><a href="classCreatureAIScript.html">CreatureAIScript</a></div><div class="ttdef"><b>Definition</b> <a href="CreatureAIScript_8hpp_source.html#l00028">CreatureAIScript.hpp:29</a></div></div>
-<div class="ttc" id="aranges_8h_html_a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e"><div class="ttname"><a href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e">range_format::set</a></div><div class="ttdeci">@ set</div></div>
 <div class="ttc" id="astructFunctionArgs_html"><div class="ttname"><a href="structFunctionArgs.html">FunctionArgs</a></div><div class="ttdef"><b>Definition</b> <a href="AIUtils_8hpp_source.html#l00161">AIUtils.hpp:162</a></div></div>
 <div class="ttc" id="astructSchedulerArgs_html"><div class="ttname"><a href="structSchedulerArgs.html">SchedulerArgs</a></div><div class="ttdef"><b>Definition</b> <a href="AIUtils_8hpp_source.html#l00084">AIUtils.hpp:85</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_ab1967d8591af1a4e48c37fd2b0f184d0"><div class="ttname"><a href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a></div><div class="ttdeci">signed int int32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00077">winvs_stdint.h:77</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -682,7 +682,7 @@ var classUnit =
     [ "m_silenced", "classUnit.html#a67093494ce2f2c7379eedb9984a01a93", null ],
     [ "m_singleTargetAura", "classUnit.html#ad4bdb56e5c9eab6e6300c4a4543096fb", null ],
     [ "m_slowdown", "classUnit.html#ac3528d3d803ca333f7b6395d91182eeb", null ],
-    [ "m_soulSiphon", "classUnit.html#a64e281d4a1c78adff1c802e1d37f66ec", null ],
+    [ "m_soulSiphon", "classUnit.html#ae286ee29f0d538cecd09959e594c4412", null ],
     [ "m_speedModifier", "classUnit.html#a9e1637d4695d5c5e95800b086497165c", null ],
     [ "m_spellCritChanceSchool", "classUnit.html#abc435fa2646e7178258e23d6c3d0a9d8", null ],
     [ "m_spellCritPercentage", "classUnit.html#a9af67fadc7efb6e2a2c482e5c71372d0", null ],

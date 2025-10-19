@@ -131,9 +131,9 @@ Include dependency graph for LfgHandler.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af37180c9d2424937c3b2656acf9232f9" id="r_af37180c9d2424937c3b2656acf9232f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LfgHandler_8cpp.html#af37180c9d2424937c3b2656acf9232f9">BuildPlayerLockDungeonBlock</a> (<a class="el" href="classWorldPacket.html">WorldPacket</a> &amp;data, <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="LFG_8hpp.html#a32e1ed8a71764e7d59bf770e43933d2e">LfgLockMap</a> &amp;lockMap)</td></tr>
+<tr class="memitem:af37180c9d2424937c3b2656acf9232f9" id="r_af37180c9d2424937c3b2656acf9232f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LfgHandler_8cpp.html#af37180c9d2424937c3b2656acf9232f9">BuildPlayerLockDungeonBlock</a> (<a class="el" href="classWorldPacket.html">WorldPacket</a> &amp;data, const <a class="el" href="LFG_8hpp.html#a32e1ed8a71764e7d59bf770e43933d2e">LfgLockMap</a> &amp;lockMap)</td></tr>
 <tr class="separator:af37180c9d2424937c3b2656acf9232f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756503536d5ab157b583bf79a43ada34" id="r_a756503536d5ab157b583bf79a43ada34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LfgHandler_8cpp.html#a756503536d5ab157b583bf79a43ada34">BuildPartyLockDungeonBlock</a> (<a class="el" href="classWorldPacket.html">WorldPacket</a> &amp;data, <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="LFG_8hpp.html#acee73df3a467cf232260fdf7be4620ce">LfgLockPartyMap</a> &amp;lockMap)</td></tr>
+<tr class="memitem:a756503536d5ab157b583bf79a43ada34" id="r_a756503536d5ab157b583bf79a43ada34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LfgHandler_8cpp.html#a756503536d5ab157b583bf79a43ada34">BuildPartyLockDungeonBlock</a> (<a class="el" href="classWorldPacket.html">WorldPacket</a> &amp;data, const <a class="el" href="LFG_8hpp.html#acee73df3a467cf232260fdf7be4620ce">LfgLockPartyMap</a> &amp;lockMap)</td></tr>
 <tr class="separator:a756503536d5ab157b583bf79a43ada34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="LFG_8hpp.html#acee73df3a467cf232260fdf7be4620ce">LfgLockPartyMap</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="LFG_8hpp.html#acee73df3a467cf232260fdf7be4620ce">LfgLockPartyMap</a> &amp;&#160;</td>
           <td class="paramname"><em>lockMap</em>&#160;</td>
         </tr>
         <tr>
@@ -167,17 +167,15 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
 <div class="line"><span class="lineno">   46</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;BUILD PARTY LOCK DUNGEON BLOCK&quot;</span>);</div>
 <div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>    data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>(lockMap.size());</div>
+<div class="line"><span class="lineno">   48</span>    data &lt;&lt; uint8_t(lockMap.size());</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp;  lock : lockMap)</div>
 <div class="line"><span class="lineno">   50</span>    {</div>
-<div class="line"><span class="lineno">   51</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(lock.first);</div>
+<div class="line"><span class="lineno">   51</span>        data &lt;&lt; uint64_t(lock.first);</div>
 <div class="line"><span class="lineno">   52</span>        <a class="code hl_function" href="LfgHandler_8cpp.html#af37180c9d2424937c3b2656acf9232f9">BuildPlayerLockDungeonBlock</a>(data, lock.second);</div>
 <div class="line"><span class="lineno">   53</span>    }</div>
 <div class="line"><span class="lineno">   54</span>}</div>
 <div class="ttc" id="aLfgHandler_8cpp_html_af37180c9d2424937c3b2656acf9232f9"><div class="ttname"><a href="LfgHandler_8cpp.html#af37180c9d2424937c3b2656acf9232f9">BuildPlayerLockDungeonBlock</a></div><div class="ttdeci">void BuildPlayerLockDungeonBlock(WorldPacket &amp;data, const LfgLockMap &amp;lockMap)</div><div class="ttdef"><b>Definition</b> <a href="LfgHandler_8cpp_source.html#l00032">LfgHandler.cpp:32</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_a50320f857c38e7c413b48a556ad30e83"><div class="ttname"><a href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a></div><div class="ttdeci">#define sLogger</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00136">Logger.hpp:136</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -206,7 +204,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="LFG_8hpp.html#a32e1ed8a71764e7d59bf770e43933d2e">LfgLockMap</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="LFG_8hpp.html#a32e1ed8a71764e7d59bf770e43933d2e">LfgLockMap</a> &amp;&#160;</td>
           <td class="paramname"><em>lockMap</em>&#160;</td>
         </tr>
         <tr>
@@ -221,14 +219,13 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
 <div class="line"><span class="lineno">   34</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;BUILD PLAYER LOCK DUNGEON BLOCK&quot;</span>);</div>
 <div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(lockMap.size());</div>
+<div class="line"><span class="lineno">   36</span>    data &lt;&lt; uint32_t(lockMap.size());</div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; lock : lockMap)</div>
 <div class="line"><span class="lineno">   38</span>    {</div>
-<div class="line"><span class="lineno">   39</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(lock.first);</div>
-<div class="line"><span class="lineno">   40</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(lock.second);</div>
+<div class="line"><span class="lineno">   39</span>        data &lt;&lt; uint32_t(lock.first);</div>
+<div class="line"><span class="lineno">   40</span>        data &lt;&lt; uint32_t(lock.second);</div>
 <div class="line"><span class="lineno">   41</span>    }</div>
 <div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -109,9 +109,9 @@ $(document).ready(function(){initNavTree('LUAEngine_8hpp.html',''); initResizabl
 <code>#include &quot;<a class="el" href="ScriptMgr_8hpp_source.html">Server/Script/ScriptMgr.hpp</a>&quot;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;<a class="el" href="lua_8h_source.html">lua/lua.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lauxlib_8h_source.html">lua/lauxlib.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lualib_8h_source.html">lua/lualib.h</a>&gt;</code><br />
+<code>#include &lt;lua/lua.h&gt;</code><br />
+<code>#include &lt;lua/lauxlib.h&gt;</code><br />
+<code>#include &lt;lua/lualib.h&gt;</code><br />
 <code>#include &lt;sys/stat.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -274,31 +274,31 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3b62367bc9db812e92cda97a250cd855" id="r_a3b62367bc9db812e92cda97a250cd855"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a3b62367bc9db812e92cda97a250cd855">RegisterServerHook</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:a3b62367bc9db812e92cda97a250cd855" id="r_a3b62367bc9db812e92cda97a250cd855"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a3b62367bc9db812e92cda97a250cd855">RegisterServerHook</a> (lua_State *L)</td></tr>
 <tr class="separator:a3b62367bc9db812e92cda97a250cd855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0256a14171567b440d883526f9425cb" id="r_ad0256a14171567b440d883526f9425cb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#ad0256a14171567b440d883526f9425cb">RegisterUnitEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:ad0256a14171567b440d883526f9425cb" id="r_ad0256a14171567b440d883526f9425cb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#ad0256a14171567b440d883526f9425cb">RegisterUnitEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:ad0256a14171567b440d883526f9425cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9021d4085dfb9893ee5e1c8af8911e84" id="r_a9021d4085dfb9893ee5e1c8af8911e84"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a9021d4085dfb9893ee5e1c8af8911e84">RegisterQuestEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:a9021d4085dfb9893ee5e1c8af8911e84" id="r_a9021d4085dfb9893ee5e1c8af8911e84"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a9021d4085dfb9893ee5e1c8af8911e84">RegisterQuestEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:a9021d4085dfb9893ee5e1c8af8911e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3319ea54fa7597219228552bf3f30bbb" id="r_a3319ea54fa7597219228552bf3f30bbb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a3319ea54fa7597219228552bf3f30bbb">RegisterGameObjectEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:a3319ea54fa7597219228552bf3f30bbb" id="r_a3319ea54fa7597219228552bf3f30bbb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a3319ea54fa7597219228552bf3f30bbb">RegisterGameObjectEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:a3319ea54fa7597219228552bf3f30bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52743417c674ff16e3f59f50e03d4a9" id="r_af52743417c674ff16e3f59f50e03d4a9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#af52743417c674ff16e3f59f50e03d4a9">RegisterUnitGossipEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:af52743417c674ff16e3f59f50e03d4a9" id="r_af52743417c674ff16e3f59f50e03d4a9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#af52743417c674ff16e3f59f50e03d4a9">RegisterUnitGossipEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:af52743417c674ff16e3f59f50e03d4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a659bc8a2413eb39e76717b56804b2f" id="r_a7a659bc8a2413eb39e76717b56804b2f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a7a659bc8a2413eb39e76717b56804b2f">RegisterItemGossipEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:a7a659bc8a2413eb39e76717b56804b2f" id="r_a7a659bc8a2413eb39e76717b56804b2f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a7a659bc8a2413eb39e76717b56804b2f">RegisterItemGossipEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:a7a659bc8a2413eb39e76717b56804b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed1b67054ec89122975664c13a6988f9" id="r_aed1b67054ec89122975664c13a6988f9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#aed1b67054ec89122975664c13a6988f9">RegisterGOGossipEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:aed1b67054ec89122975664c13a6988f9" id="r_aed1b67054ec89122975664c13a6988f9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#aed1b67054ec89122975664c13a6988f9">RegisterGOGossipEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:aed1b67054ec89122975664c13a6988f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3fa71c81a739d39aafb1c9d16eb4562" id="r_af3fa71c81a739d39aafb1c9d16eb4562"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#af3fa71c81a739d39aafb1c9d16eb4562">SuspendLuaThread</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:af3fa71c81a739d39aafb1c9d16eb4562" id="r_af3fa71c81a739d39aafb1c9d16eb4562"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#af3fa71c81a739d39aafb1c9d16eb4562">SuspendLuaThread</a> (lua_State *L)</td></tr>
 <tr class="separator:af3fa71c81a739d39aafb1c9d16eb4562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa815a53044286007683fd08fe76319d4" id="r_aa815a53044286007683fd08fe76319d4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#aa815a53044286007683fd08fe76319d4">RegisterTimedEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:aa815a53044286007683fd08fe76319d4" id="r_aa815a53044286007683fd08fe76319d4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#aa815a53044286007683fd08fe76319d4">RegisterTimedEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:aa815a53044286007683fd08fe76319d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b464bdb388870b754d6a47f7f62273" id="r_a36b464bdb388870b754d6a47f7f62273"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a36b464bdb388870b754d6a47f7f62273">RemoveTimedEvents</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:a36b464bdb388870b754d6a47f7f62273" id="r_a36b464bdb388870b754d6a47f7f62273"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a36b464bdb388870b754d6a47f7f62273">RemoveTimedEvents</a> (lua_State *L)</td></tr>
 <tr class="separator:a36b464bdb388870b754d6a47f7f62273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafee69102f2d86e0e8125cb9c6fa0a63" id="r_aafee69102f2d86e0e8125cb9c6fa0a63"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#aafee69102f2d86e0e8125cb9c6fa0a63">RegisterDummySpell</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:aafee69102f2d86e0e8125cb9c6fa0a63" id="r_aafee69102f2d86e0e8125cb9c6fa0a63"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#aafee69102f2d86e0e8125cb9c6fa0a63">RegisterDummySpell</a> (lua_State *L)</td></tr>
 <tr class="separator:aafee69102f2d86e0e8125cb9c6fa0a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e1f35585fed3764eddee77692d8a9ed" id="r_a7e1f35585fed3764eddee77692d8a9ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a7e1f35585fed3764eddee77692d8a9ed">RegisterInstanceEvent</a> (<a class="el" href="structlua__State.html">lua_State</a> *L)</td></tr>
+<tr class="memitem:a7e1f35585fed3764eddee77692d8a9ed" id="r_a7e1f35585fed3764eddee77692d8a9ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a7e1f35585fed3764eddee77692d8a9ed">RegisterInstanceEvent</a> (lua_State *L)</td></tr>
 <tr class="separator:a7e1f35585fed3764eddee77692d8a9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c08420aa62bd5eba214d8ce4f44259" id="r_a00c08420aa62bd5eba214d8ce4f44259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a00c08420aa62bd5eba214d8ce4f44259">RegisterGlobalFunctions</a> (<a class="el" href="structlua__State.html">lua_State</a> *)</td></tr>
+<tr class="memitem:a00c08420aa62bd5eba214d8ce4f44259" id="r_a00c08420aa62bd5eba214d8ce4f44259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LUAEngine_8hpp.html#a00c08420aa62bd5eba214d8ce4f44259">RegisterGlobalFunctions</a> (lua_State *)</td></tr>
 <tr class="separator:a00c08420aa62bd5eba214d8ce4f44259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -748,7 +748,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int RegisterDummySpell </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -779,7 +779,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterGameObjectEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -807,7 +807,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void RegisterGlobalFunctions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -816,53 +816,53 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="LuaGlobalFunctions_8hpp_source.html#l00069">69</a> of file <a class="el" href="LuaGlobalFunctions_8hpp_source.html">LuaGlobalFunctions.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;PerformIngameSpawn&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ad741d003496f00c672f664be9066a947">LuaGlobalFunctions::PerformIngameSpawn</a>);</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetPlayer&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aeebd932208d68f918ee4c598ea4932b7">LuaGlobalFunctions::GetPlayer</a>);</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetLUAEngine&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aeae649553f07ae0f168fc6e74d2f90aa">LuaGlobalFunctions::GetLUAEngine</a>);</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetLuaEngine&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aeae649553f07ae0f168fc6e74d2f90aa">LuaGlobalFunctions::GetLUAEngine</a>);</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetClientVersion&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a7c6a7be305d8cc48da62d9e1082efa2f">LuaGlobalFunctions::GetClientVersion</a>);</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetGameTime&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a495a95e469304f4b20c0bd483afd7ef9">LuaGlobalFunctions::GetGameTime</a>);</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;WorldDBQuery&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#acad6f6de65d21852503e37e7e40f03bd">LuaGlobalFunctions::WorldDBQuery</a>);</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;CharDBQuery&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aa24f6614efe527259be482a02d2f08c9">LuaGlobalFunctions::CharDBQuery</a>);</div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;WorldDBQueryTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aa4d9466b8eab15deeab0272ca0667446">LuaGlobalFunctions::WorldDBQueryTable</a>);</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;CharDBQueryTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a48b980f29d3e2e3071564d9cec6762f0">LuaGlobalFunctions::CharDBQueryTable</a>);</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SendWorldMessage&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ac985b674be25caed9335eba33e946621">LuaGlobalFunctions::SendWorldMessage</a>);</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;ReloadTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a989c0c0119a9b35b8711c87255a530ec">LuaGlobalFunctions::ReloadTable</a>);</div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;ReloadLuaEngine&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ad4c98f06a27edf175e6591fb10444b26">LuaGlobalFunctions::ReloadLuaEngine</a>);</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;Rehash&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a38b1b18a7bf1fbc8e9132c389e077ff9">LuaGlobalFunctions::Rehash</a>);</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;logcol&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a8a3c3c8ace8f7971fb3a72616ce293d9">LuaGlobalFunctions::logcol</a>);</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetPlayersInWorld&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ab455e22817fdd01e2aff8ce4cf63e62a">LuaGlobalFunctions::GetPlayersInWorld</a>);</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetAERevision&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a1feee56c5fb70c6752f527a77a5a77c4">LuaGlobalFunctions::GetAERevision</a>);</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetPlayersInMap&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a8c225932f06c77c9b99b19c9f81e2868">LuaGlobalFunctions::GetPlayersInMap</a>);</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetPlayersInZone&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a99e83f0aa1859b88495806bc9a82f485">LuaGlobalFunctions::GetPlayersInZone</a>);</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SendMail&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a5112fe6eba9ef0d18d8541be14fcc439">LuaGlobalFunctions::SendMail</a>);</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SetDBCSpellVar&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#af03c141debd790db1a77f37d0cadabb9">LuaGlobalFunctions::SetDBCSpellVar</a>);</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetDBCSpellVar&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ade53f97a762ca992da3ce5983fa4e92a">LuaGlobalFunctions::GetDBCSpellVar</a>);</div>
+<div class="line"><span class="lineno">   71</span>    lua_register(L, <span class="stringliteral">&quot;PerformIngameSpawn&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ad741d003496f00c672f664be9066a947">LuaGlobalFunctions::PerformIngameSpawn</a>);</div>
+<div class="line"><span class="lineno">   72</span>    lua_register(L, <span class="stringliteral">&quot;GetPlayer&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aeebd932208d68f918ee4c598ea4932b7">LuaGlobalFunctions::GetPlayer</a>);</div>
+<div class="line"><span class="lineno">   73</span>    lua_register(L, <span class="stringliteral">&quot;GetLUAEngine&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aeae649553f07ae0f168fc6e74d2f90aa">LuaGlobalFunctions::GetLUAEngine</a>);</div>
+<div class="line"><span class="lineno">   74</span>    lua_register(L, <span class="stringliteral">&quot;GetLuaEngine&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aeae649553f07ae0f168fc6e74d2f90aa">LuaGlobalFunctions::GetLUAEngine</a>);</div>
+<div class="line"><span class="lineno">   75</span>    lua_register(L, <span class="stringliteral">&quot;GetClientVersion&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a7c6a7be305d8cc48da62d9e1082efa2f">LuaGlobalFunctions::GetClientVersion</a>);</div>
+<div class="line"><span class="lineno">   76</span>    lua_register(L, <span class="stringliteral">&quot;GetGameTime&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a495a95e469304f4b20c0bd483afd7ef9">LuaGlobalFunctions::GetGameTime</a>);</div>
+<div class="line"><span class="lineno">   77</span>    lua_register(L, <span class="stringliteral">&quot;WorldDBQuery&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#acad6f6de65d21852503e37e7e40f03bd">LuaGlobalFunctions::WorldDBQuery</a>);</div>
+<div class="line"><span class="lineno">   78</span>    lua_register(L, <span class="stringliteral">&quot;CharDBQuery&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aa24f6614efe527259be482a02d2f08c9">LuaGlobalFunctions::CharDBQuery</a>);</div>
+<div class="line"><span class="lineno">   79</span>    lua_register(L, <span class="stringliteral">&quot;WorldDBQueryTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aa4d9466b8eab15deeab0272ca0667446">LuaGlobalFunctions::WorldDBQueryTable</a>);</div>
+<div class="line"><span class="lineno">   80</span>    lua_register(L, <span class="stringliteral">&quot;CharDBQueryTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a48b980f29d3e2e3071564d9cec6762f0">LuaGlobalFunctions::CharDBQueryTable</a>);</div>
+<div class="line"><span class="lineno">   81</span>    lua_register(L, <span class="stringliteral">&quot;SendWorldMessage&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ac985b674be25caed9335eba33e946621">LuaGlobalFunctions::SendWorldMessage</a>);</div>
+<div class="line"><span class="lineno">   82</span>    lua_register(L, <span class="stringliteral">&quot;ReloadTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a989c0c0119a9b35b8711c87255a530ec">LuaGlobalFunctions::ReloadTable</a>);</div>
+<div class="line"><span class="lineno">   83</span>    lua_register(L, <span class="stringliteral">&quot;ReloadLuaEngine&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ad4c98f06a27edf175e6591fb10444b26">LuaGlobalFunctions::ReloadLuaEngine</a>);</div>
+<div class="line"><span class="lineno">   84</span>    lua_register(L, <span class="stringliteral">&quot;Rehash&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a38b1b18a7bf1fbc8e9132c389e077ff9">LuaGlobalFunctions::Rehash</a>);</div>
+<div class="line"><span class="lineno">   85</span>    lua_register(L, <span class="stringliteral">&quot;logcol&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a8a3c3c8ace8f7971fb3a72616ce293d9">LuaGlobalFunctions::logcol</a>);</div>
+<div class="line"><span class="lineno">   86</span>    lua_register(L, <span class="stringliteral">&quot;GetPlayersInWorld&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ab455e22817fdd01e2aff8ce4cf63e62a">LuaGlobalFunctions::GetPlayersInWorld</a>);</div>
+<div class="line"><span class="lineno">   87</span>    lua_register(L, <span class="stringliteral">&quot;GetAERevision&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a1feee56c5fb70c6752f527a77a5a77c4">LuaGlobalFunctions::GetAERevision</a>);</div>
+<div class="line"><span class="lineno">   88</span>    lua_register(L, <span class="stringliteral">&quot;GetPlayersInMap&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a8c225932f06c77c9b99b19c9f81e2868">LuaGlobalFunctions::GetPlayersInMap</a>);</div>
+<div class="line"><span class="lineno">   89</span>    lua_register(L, <span class="stringliteral">&quot;GetPlayersInZone&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a99e83f0aa1859b88495806bc9a82f485">LuaGlobalFunctions::GetPlayersInZone</a>);</div>
+<div class="line"><span class="lineno">   90</span>    lua_register(L, <span class="stringliteral">&quot;SendMail&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a5112fe6eba9ef0d18d8541be14fcc439">LuaGlobalFunctions::SendMail</a>);</div>
+<div class="line"><span class="lineno">   91</span>    lua_register(L, <span class="stringliteral">&quot;SetDBCSpellVar&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#af03c141debd790db1a77f37d0cadabb9">LuaGlobalFunctions::SetDBCSpellVar</a>);</div>
+<div class="line"><span class="lineno">   92</span>    lua_register(L, <span class="stringliteral">&quot;GetDBCSpellVar&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ade53f97a762ca992da3ce5983fa4e92a">LuaGlobalFunctions::GetDBCSpellVar</a>);</div>
 <div class="line"><span class="lineno">   93</span>    <span class="comment">//Lua&#39;s bit instructions</span></div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;bit_and&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#af53eb4ee2cfc3a1d3e411cb359ce4740">LuaGlobalFunctions::bit_and</a>);</div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;bit_or&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a1193138668c2716c8d8ab4998f30992b">LuaGlobalFunctions::bit_or</a>);</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;bit_xor&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ac3d3b6c6c8471c5ec543921efb4a21df">LuaGlobalFunctions::bit_xor</a>);</div>
+<div class="line"><span class="lineno">   94</span>    lua_register(L, <span class="stringliteral">&quot;bit_and&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#af53eb4ee2cfc3a1d3e411cb359ce4740">LuaGlobalFunctions::bit_and</a>);</div>
+<div class="line"><span class="lineno">   95</span>    lua_register(L, <span class="stringliteral">&quot;bit_or&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a1193138668c2716c8d8ab4998f30992b">LuaGlobalFunctions::bit_or</a>);</div>
+<div class="line"><span class="lineno">   96</span>    lua_register(L, <span class="stringliteral">&quot;bit_xor&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ac3d3b6c6c8471c5ec543921efb4a21df">LuaGlobalFunctions::bit_xor</a>);</div>
 <div class="line"><span class="lineno">   97</span>    <span class="comment">//lua_register(L, &quot;bit_not&quot;, &amp;LuaGlobalFunctions::bit_not);</span></div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;bit_shiftleft&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a873c326f955d0b8dc4cb484ec4e5ce8e">LuaGlobalFunctions::bit_shiftleft</a>);</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;bit_shiftright&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#abaac776363290d0fca0c7e4cb40c579b">LuaGlobalFunctions::bit_shiftright</a>);</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;RemoveTimedEventsInTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a5cf1ee54c6f5f7b0a8be0f162674a8e2">LuaGlobalFunctions::RemoveTimedEventsInTable</a>);</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;RemoveTimedEventsWithName&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a74af6b162501f13793fe608603733b22">LuaGlobalFunctions::RemoveTimedEventsWithName</a>);</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;RemoveTimedEvent&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ab32f5616c2eaa62e4a5595ce6b17ce44">LuaGlobalFunctions::RemoveTimedEvent</a>);</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;HasTimedEvents&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aefc0261d5144cda03a3cea721e4a46c9">LuaGlobalFunctions::HasTimedEvents</a>);</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;HasTimedEventInTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ac3b772180449b02e3c1998593411fb60">LuaGlobalFunctions::HasTimedEventInTable</a>);</div>
-<div class="line"><span class="lineno">  105</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;HasTimedEventWithName&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a00d04910bf7cf488cc451c437b47420d">LuaGlobalFunctions::HasTimedEventWithName</a>);</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;HasTimedEvent&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a071c6af3b5cfbee0eeffc2fb98cf1fb1">LuaGlobalFunctions::HasTimedEvent</a>);</div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetPlatform&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a2eb9c1a85be5691fca86445282c80664">LuaGlobalFunctions::GetPlatform</a>);</div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;NumberToGUID&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aac4528d8f02846caaddd9c4a2ae677a2">LuaGlobalFunctions::NumberToGUID</a>);</div>
-<div class="line"><span class="lineno">  109</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SendPacketToWorld&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a55a692ee53f707be259ed7b1ee789275">LuaGlobalFunctions::SendPacketToWorld</a>);</div>
-<div class="line"><span class="lineno">  110</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SendPacketToInstance&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ad9cfcb55971dcdc41ba1cb105df7d320">LuaGlobalFunctions::SendPacketToInstance</a>);</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SendPacketToZone&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a9327ef05867c9bac2b2a2f48f306e3f2">LuaGlobalFunctions::SendPacketToZone</a>);</div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;SendPacketToChannel&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a0daa707d2021feb6fdc6b61f65d682d5">LuaGlobalFunctions::SendPacketToChannel</a>);</div>
-<div class="line"><span class="lineno">  113</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetInstanceCreature&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#acab2282389230da17cfc45f41780ca28">LuaGlobalFunctions::GetInstanceCreature</a>);</div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetInstancePlayerCount&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aac172b5ad66031bebf0efc3068870f92">LuaGlobalFunctions::GetInstancePlayerCount</a>);</div>
-<div class="line"><span class="lineno">  115</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetPlayersInInstance&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aa565a05ff663ba959bfde0101e625702">LuaGlobalFunctions::GetPlayersInInstance</a>);</div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetGuildByName&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a41fd9ec8bdd497e63cab6a41574ee72e">LuaGlobalFunctions::GetGuildByName</a>);</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_define" href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a>(L, <span class="stringliteral">&quot;GetGuildByLeaderGuid&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a6a88e4da7824686612fb471c3a418a36">LuaGlobalFunctions::GetGuildByLeaderGuid</a>);</div>
+<div class="line"><span class="lineno">   98</span>    lua_register(L, <span class="stringliteral">&quot;bit_shiftleft&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a873c326f955d0b8dc4cb484ec4e5ce8e">LuaGlobalFunctions::bit_shiftleft</a>);</div>
+<div class="line"><span class="lineno">   99</span>    lua_register(L, <span class="stringliteral">&quot;bit_shiftright&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#abaac776363290d0fca0c7e4cb40c579b">LuaGlobalFunctions::bit_shiftright</a>);</div>
+<div class="line"><span class="lineno">  100</span>    lua_register(L, <span class="stringliteral">&quot;RemoveTimedEventsInTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a5cf1ee54c6f5f7b0a8be0f162674a8e2">LuaGlobalFunctions::RemoveTimedEventsInTable</a>);</div>
+<div class="line"><span class="lineno">  101</span>    lua_register(L, <span class="stringliteral">&quot;RemoveTimedEventsWithName&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a74af6b162501f13793fe608603733b22">LuaGlobalFunctions::RemoveTimedEventsWithName</a>);</div>
+<div class="line"><span class="lineno">  102</span>    lua_register(L, <span class="stringliteral">&quot;RemoveTimedEvent&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ab32f5616c2eaa62e4a5595ce6b17ce44">LuaGlobalFunctions::RemoveTimedEvent</a>);</div>
+<div class="line"><span class="lineno">  103</span>    lua_register(L, <span class="stringliteral">&quot;HasTimedEvents&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aefc0261d5144cda03a3cea721e4a46c9">LuaGlobalFunctions::HasTimedEvents</a>);</div>
+<div class="line"><span class="lineno">  104</span>    lua_register(L, <span class="stringliteral">&quot;HasTimedEventInTable&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ac3b772180449b02e3c1998593411fb60">LuaGlobalFunctions::HasTimedEventInTable</a>);</div>
+<div class="line"><span class="lineno">  105</span>    lua_register(L, <span class="stringliteral">&quot;HasTimedEventWithName&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a00d04910bf7cf488cc451c437b47420d">LuaGlobalFunctions::HasTimedEventWithName</a>);</div>
+<div class="line"><span class="lineno">  106</span>    lua_register(L, <span class="stringliteral">&quot;HasTimedEvent&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a071c6af3b5cfbee0eeffc2fb98cf1fb1">LuaGlobalFunctions::HasTimedEvent</a>);</div>
+<div class="line"><span class="lineno">  107</span>    lua_register(L, <span class="stringliteral">&quot;GetPlatform&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a2eb9c1a85be5691fca86445282c80664">LuaGlobalFunctions::GetPlatform</a>);</div>
+<div class="line"><span class="lineno">  108</span>    lua_register(L, <span class="stringliteral">&quot;NumberToGUID&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aac4528d8f02846caaddd9c4a2ae677a2">LuaGlobalFunctions::NumberToGUID</a>);</div>
+<div class="line"><span class="lineno">  109</span>    lua_register(L, <span class="stringliteral">&quot;SendPacketToWorld&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a55a692ee53f707be259ed7b1ee789275">LuaGlobalFunctions::SendPacketToWorld</a>);</div>
+<div class="line"><span class="lineno">  110</span>    lua_register(L, <span class="stringliteral">&quot;SendPacketToInstance&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#ad9cfcb55971dcdc41ba1cb105df7d320">LuaGlobalFunctions::SendPacketToInstance</a>);</div>
+<div class="line"><span class="lineno">  111</span>    lua_register(L, <span class="stringliteral">&quot;SendPacketToZone&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a9327ef05867c9bac2b2a2f48f306e3f2">LuaGlobalFunctions::SendPacketToZone</a>);</div>
+<div class="line"><span class="lineno">  112</span>    lua_register(L, <span class="stringliteral">&quot;SendPacketToChannel&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a0daa707d2021feb6fdc6b61f65d682d5">LuaGlobalFunctions::SendPacketToChannel</a>);</div>
+<div class="line"><span class="lineno">  113</span>    lua_register(L, <span class="stringliteral">&quot;GetInstanceCreature&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#acab2282389230da17cfc45f41780ca28">LuaGlobalFunctions::GetInstanceCreature</a>);</div>
+<div class="line"><span class="lineno">  114</span>    lua_register(L, <span class="stringliteral">&quot;GetInstancePlayerCount&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aac172b5ad66031bebf0efc3068870f92">LuaGlobalFunctions::GetInstancePlayerCount</a>);</div>
+<div class="line"><span class="lineno">  115</span>    lua_register(L, <span class="stringliteral">&quot;GetPlayersInInstance&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#aa565a05ff663ba959bfde0101e625702">LuaGlobalFunctions::GetPlayersInInstance</a>);</div>
+<div class="line"><span class="lineno">  116</span>    lua_register(L, <span class="stringliteral">&quot;GetGuildByName&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a41fd9ec8bdd497e63cab6a41574ee72e">LuaGlobalFunctions::GetGuildByName</a>);</div>
+<div class="line"><span class="lineno">  117</span>    lua_register(L, <span class="stringliteral">&quot;GetGuildByLeaderGuid&quot;</span>, &amp;<a class="code hl_function" href="classLuaGlobalFunctions.html#a6a88e4da7824686612fb471c3a418a36">LuaGlobalFunctions::GetGuildByLeaderGuid</a>);</div>
 <div class="line"><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aclassLuaGlobalFunctions_html_a00d04910bf7cf488cc451c437b47420d"><div class="ttname"><a href="classLuaGlobalFunctions.html#a00d04910bf7cf488cc451c437b47420d">LuaGlobalFunctions::HasTimedEventWithName</a></div><div class="ttdeci">static int HasTimedEventWithName(lua_State *L)</div><div class="ttdef"><b>Definition</b> <a href="LuaGlobalFunctions_8cpp_source.html#l00560">LuaGlobalFunctions.cpp:560</a></div></div>
 <div class="ttc" id="aclassLuaGlobalFunctions_html_a071c6af3b5cfbee0eeffc2fb98cf1fb1"><div class="ttname"><a href="classLuaGlobalFunctions.html#a071c6af3b5cfbee0eeffc2fb98cf1fb1">LuaGlobalFunctions::HasTimedEvent</a></div><div class="ttdeci">static int HasTimedEvent(lua_State *L)</div><div class="ttdef"><b>Definition</b> <a href="LuaGlobalFunctions_8cpp_source.html#l00554">LuaGlobalFunctions.cpp:554</a></div></div>
@@ -908,7 +908,6 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassLuaGlobalFunctions_html_aefc0261d5144cda03a3cea721e4a46c9"><div class="ttname"><a href="classLuaGlobalFunctions.html#aefc0261d5144cda03a3cea721e4a46c9">LuaGlobalFunctions::HasTimedEvents</a></div><div class="ttdeci">static int HasTimedEvents(lua_State *L)</div><div class="ttdef"><b>Definition</b> <a href="LuaGlobalFunctions_8cpp_source.html#l00549">LuaGlobalFunctions.cpp:549</a></div></div>
 <div class="ttc" id="aclassLuaGlobalFunctions_html_af03c141debd790db1a77f37d0cadabb9"><div class="ttname"><a href="classLuaGlobalFunctions.html#af03c141debd790db1a77f37d0cadabb9">LuaGlobalFunctions::SetDBCSpellVar</a></div><div class="ttdeci">static int SetDBCSpellVar(lua_State *L)</div><div class="ttdef"><b>Definition</b> <a href="LuaGlobalFunctions_8cpp_source.html#l00387">LuaGlobalFunctions.cpp:387</a></div></div>
 <div class="ttc" id="aclassLuaGlobalFunctions_html_af53eb4ee2cfc3a1d3e411cb359ce4740"><div class="ttname"><a href="classLuaGlobalFunctions.html#af53eb4ee2cfc3a1d3e411cb359ce4740">LuaGlobalFunctions::bit_and</a></div><div class="ttdeci">static int bit_and(lua_State *L)</div><div class="ttdef"><b>Definition</b> <a href="LuaGlobalFunctions_8cpp_source.html#l00467">LuaGlobalFunctions.cpp:467</a></div></div>
-<div class="ttc" id="alua_8h_html_ae1162e4a80396145544aa03312c60d8c"><div class="ttname"><a href="lua_8h.html#ae1162e4a80396145544aa03312c60d8c">lua_register</a></div><div class="ttdeci">#define lua_register(L, n, f)</div><div class="ttdef"><b>Definition</b> <a href="lua_8h_source.html#l00369">lua.h:369</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -934,7 +933,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterGOGossipEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -965,7 +964,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterInstanceEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -996,7 +995,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterItemGossipEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1027,7 +1026,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterQuestEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1058,7 +1057,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterServerHook </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1089,7 +1088,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterTimedEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1120,7 +1119,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterUnitEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1151,7 +1150,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RegisterUnitGossipEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1182,7 +1181,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int RemoveTimedEvents </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1213,7 +1212,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int SuspendLuaThread </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structlua__State.html">lua_State</a> *&#160;</td>
+          <td class="paramtype">lua_State *&#160;</td>
           <td class="paramname"><em>L</em></td><td>)</td>
           <td></td>
         </tr>

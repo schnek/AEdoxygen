@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">using </span><a class="code hl_function" href="namespaceAscEmu_1_1World_1_1Spell_1_1Helpers.html#a68df82f052508f24a80c8111eb9bd463">AscEmu::World::Spell::Helpers::decimalToMask</a>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classSpellMgr.html#a853a269e3f0cd2c6761ca428d303ba37">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellMgr.html#a853a269e3f0cd2c6761ca428d303ba37">SpellMgr::createDummySpell</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classSpellMgr.html#a853a269e3f0cd2c6761ca428d303ba37">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classSpellMgr.html#a853a269e3f0cd2c6761ca428d303ba37">SpellMgr::createDummySpell</a>(uint32_t <span class="keywordtype">id</span>)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">auto</span> sp = std::make_unique&lt;SpellInfo&gt;();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    sp-&gt;setId(<span class="keywordtype">id</span>);</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">//stupid spell ranking problem</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span> (sp-&gt;<a class="code hl_function" href="classSpellInfo.html#a3702a39f71109f8d84632d631aacad8f">getSpellLevel</a>() == 0)</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> new_level = 0;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        uint32_t new_level = 0;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">// 16/03/08 Zyres: just replaced name assignes with spell ids. \todo remove not teachable spells.</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">switch</span> (sp-&gt;<a class="code hl_function" href="classSpellInfo.html#a896830ef027cc8a1c24c3bf0e60ae82e">getId</a>())</div>
@@ -528,7 +528,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        <span class="keywordflow">if</span> (new_level != 0)</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        {</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>            <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> teachspell = 0;</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>            uint32_t teachspell = 0;</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>            <span class="keywordflow">if</span> (sp-&gt;<a class="code hl_function" href="classSpellInfo.html#ad17110cdb48d93fcd08303092ab41d7a">getEffect</a>(0) == <a class="code hl_enumvalue" href="SpellEffects_8hpp.html#a3e3cbb35a2e1b370bccbecb544d7525cacef490c9f3480852d33dbbec7727fa7f">SPELL_EFFECT_LEARN_SPELL</a>)</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>                teachspell = sp-&gt;<a class="code hl_function" href="classSpellInfo.html#aa27877cbf91c034646426af2677c90bc">getEffectTriggerSpell</a>(0);</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sp-&gt;<a class="code hl_function" href="classSpellInfo.html#ad17110cdb48d93fcd08303092ab41d7a">getEffect</a>(1) == <a class="code hl_enumvalue" href="SpellEffects_8hpp.html#a3e3cbb35a2e1b370bccbecb544d7525cacef490c9f3480852d33dbbec7727fa7f">SPELL_EFFECT_LEARN_SPELL</a>)</div>
@@ -562,7 +562,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="comment">// HACK FIX: Break roots/fear on damage.. this needs to be fixed properly!</span></div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <span class="keywordflow">if</span> (!(sp-&gt;<a class="code hl_function" href="classSpellInfo.html#a56dc51654e91f08214c88a3af80d93fc">getAuraInterruptFlags</a>() &amp; <a class="code hl_enumvalue" href="AuraInterruptFlags_8hpp.html#a0f241ece3c80ab82b5fbb794144dbc07a57b0c43f76e4f14f452d6a9841ce44c7">AURA_INTERRUPT_ON_ANY_DAMAGE_TAKEN</a>))</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    {</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> z = 0; z &lt; 3; ++z)</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        <span class="keywordflow">for</span> (uint8_t z = 0; z &lt; 3; ++z)</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        {</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>            <span class="keywordflow">if</span> (sp-&gt;<a class="code hl_function" href="classSpellInfo.html#a49b6215879f3fbdb341b38f016afaba3">getEffectApplyAuraName</a>(z) == <a class="code hl_enumvalue" href="AuraEffects_8hpp.html#ab9713db9f42ccbc3b5bde9168d97e106a44cf043145f5a78c5a4e36ecff8a034d">SPELL_AURA_MOD_FEAR</a> || sp-&gt;<a class="code hl_function" href="classSpellInfo.html#a49b6215879f3fbdb341b38f016afaba3">getEffectApplyAuraName</a>(z) == <a class="code hl_enumvalue" href="AuraEffects_8hpp.html#ab9713db9f42ccbc3b5bde9168d97e106a833a8773139c4fdffb24499f28e98c63">SPELL_AURA_MOD_ROOT</a>)</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>            {</div>
@@ -756,7 +756,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>{</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="comment">//Updating spell.dbc</span></div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.info(<span class="stringliteral">&quot;World : Processing {} spells...&quot;</span>, <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(<a class="code hl_define" href="SpellMgr_8hpp.html#aa21e14d8e1145507b746a69b5487109d">sSpellMgr</a>.getSpellInfoMap()-&gt;size()));</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.info(<span class="stringliteral">&quot;World : Processing {} spells...&quot;</span>, <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_define" href="SpellMgr_8hpp.html#aa21e14d8e1145507b746a69b5487109d">sSpellMgr</a>.getSpellInfoMap()-&gt;size()));</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [_, sp] : <a class="code hl_variable" href="classSpellMgr.html#ae7229be1859619dc0cbd1929a95afed8">mSpellInfoMapStore</a>)</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    {</div>
@@ -785,7 +785,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>            <span class="keywordflow">case</span> 62317:     <span class="comment">// Devastate</span></div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>            <span class="keywordflow">case</span> 69902:     <span class="comment">// Devastate</span></div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>            {</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> temp;</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                uint32_t temp;</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                <span class="keywordtype">float</span> ftemp;</div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>                temp = sp-&gt;getEffect(1);</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                sp-&gt;setEffect(sp-&gt;getEffect(2), 1);</div>
@@ -851,7 +851,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>        }</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b = 0; b &lt; 3; ++b)</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        <span class="keywordflow">for</span> (uint8_t b = 0; b &lt; 3; ++b)</div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        {</div>
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>            <span class="keywordflow">if</span> (sp-&gt;getEffectTriggerSpell(b) != 0 &amp;&amp; <a class="code hl_define" href="SpellMgr_8hpp.html#aa21e14d8e1145507b746a69b5487109d">sSpellMgr</a>.getSpellInfo(sp-&gt;getEffectTriggerSpell(b)) == NULL)</div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>            {</div>
@@ -1696,7 +1696,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span> </div>
 <div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>            <span class="keywordflow">case</span> 20608:   <span class="comment">//Reincarnation</span></div>
 <div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>            {</div>
-<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>                <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; 8; ++i)</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>                <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 8; ++i)</div>
 <div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>                {</div>
 <div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>                    <span class="keywordflow">if</span> (sp-&gt;getReagent(i))</div>
 <div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span>                    {</div>
@@ -2092,7 +2092,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>            <span class="keywordflow">case</span> 16974:</div>
 <div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>            <span class="keywordflow">case</span> 16975:</div>
 <div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>            {</div>
-<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> mm = decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88daff14e446078e4fbc3d35a9826ae59a75">FORM_BEAR</a>) | decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88da104eb15c414a7006998ae56cf4b64f4c">FORM_DIREBEAR</a>) | decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88da956565a0800ab3f327d90d6a413f4482">FORM_MOONKIN</a>) | decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88daa28b6421a1efdc3a6377c480e1f80809">FORM_CAT</a>);</div>
+<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>                uint32_t mm = decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88daff14e446078e4fbc3d35a9826ae59a75">FORM_BEAR</a>) | decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88da104eb15c414a7006998ae56cf4b64f4c">FORM_DIREBEAR</a>) | decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88da956565a0800ab3f327d90d6a413f4482">FORM_MOONKIN</a>) | decimalToMask(<a class="code hl_enumvalue" href="UnitDefines_8hpp.html#af5526637ea9fb14db212b6f95401e88daa28b6421a1efdc3a6377c480e1f80809">FORM_CAT</a>);</div>
 <div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>                sp-&gt;setRequiredShapeShift(mm);</div>
 <div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>            } <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span><span class="comment"></span> </div>
@@ -2456,7 +2456,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l02342" name="l02342"></a><span class="lineno"> 2342</span>            <span class="comment">// Major Domo - Damage Shield</span></div>
 <div class="line"><a id="l02343" name="l02343"></a><span class="lineno"> 2343</span>            <span class="keywordflow">case</span> 21075:</div>
 <div class="line"><a id="l02344" name="l02344"></a><span class="lineno"> 2344</span>            {</div>
-<div class="line"><a id="l02345" name="l02345"></a><span class="lineno"> 2345</span>                <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; 3; ++i)</div>
+<div class="line"><a id="l02345" name="l02345"></a><span class="lineno"> 2345</span>                <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 3; ++i)</div>
 <div class="line"><a id="l02346" name="l02346"></a><span class="lineno"> 2346</span>                {</div>
 <div class="line"><a id="l02347" name="l02347"></a><span class="lineno"> 2347</span>                    <span class="keywordflow">if</span> (sp-&gt;getEffectImplicitTargetA(i) &gt; 0)</div>
 <div class="line"><a id="l02348" name="l02348"></a><span class="lineno"> 2348</span>                        sp-&gt;setEffectImplicitTargetA(<a class="code hl_enumvalue" href="SpellEffectTarget_8hpp.html#a38deb5775a3b021afd0e851f9e469437a3e93c5575e26fbab8d316269878c0d48">EFF_TARGET_ALL_FRIENDLY_IN_AREA</a>, i);</div>
@@ -2592,7 +2592,7 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>            <span class="comment">// to the one taught by Warlock trainers.</span></div>
 <div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>            <span class="keywordflow">case</span> 7720:</div>
 <div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span>            {</div>
-<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>                <span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ritOfSummId = 62330;</div>
+<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>                <span class="keyword">const</span> uint32_t ritOfSummId = 62330;</div>
 <div class="line"><a id="l02482" name="l02482"></a><span class="lineno"> 2482</span>                <a class="code hl_class" href="classSpellInfo.html">SpellInfo</a>* ritOfSumm = <a class="code hl_function" href="classSpellMgr.html#ae4390eaa48c44a5b47beefc006ef990e">getMutableSpellInfo</a>(ritOfSummId);</div>
 <div class="line"><a id="l02483" name="l02483"></a><span class="lineno"> 2483</span>                <span class="keywordflow">if</span> (ritOfSumm != NULL)</div>
 <div class="line"><a id="l02484" name="l02484"></a><span class="lineno"> 2484</span>                {</div>
@@ -2760,8 +2760,6 @@ $(document).ready(function(){initNavTree('HackFixes_8cpp_source.html',''); initR
 <div class="ttc" id="aclassSpellMgr_html_ae4390eaa48c44a5b47beefc006ef990e"><div class="ttname"><a href="classSpellMgr.html#ae4390eaa48c44a5b47beefc006ef990e">SpellMgr::getMutableSpellInfo</a></div><div class="ttdeci">SpellInfo * getMutableSpellInfo(const uint32_t spellId) const</div><div class="ttdef"><b>Definition</b> <a href="SpellMgr_8cpp_source.html#l02347">SpellMgr.cpp:2347</a></div></div>
 <div class="ttc" id="aclassSpellMgr_html_ae7229be1859619dc0cbd1929a95afed8"><div class="ttname"><a href="classSpellMgr.html#ae7229be1859619dc0cbd1929a95afed8">SpellMgr::mSpellInfoMapStore</a></div><div class="ttdeci">SpellInfoMap mSpellInfoMapStore</div><div class="ttdef"><b>Definition</b> <a href="SpellMgr_8hpp_source.html#l00186">SpellMgr.hpp:186</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1World_1_1Spell_1_1Helpers_html_a68df82f052508f24a80c8111eb9bd463"><div class="ttname"><a href="namespaceAscEmu_1_1World_1_1Spell_1_1Helpers.html#a68df82f052508f24a80c8111eb9bd463">AscEmu::World::Spell::Helpers::decimalToMask</a></div><div class="ttdeci">uint32_t decimalToMask(uint32_t dec)</div><div class="ttdef"><b>Definition</b> <a href="SpellHelpers_8h_source.html#l00012">SpellHelpers.h:12</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

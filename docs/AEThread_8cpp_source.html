@@ -163,9 +163,9 @@ $(document).ready(function(){initNavTree('AEThread_8cpp_source.html',''); initRe
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        m_id(s_thread_id_counter++),</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        m_func(func),</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        m_interval(interval),</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        m_killed(<a class="code hl_define" href="StormPort_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>),</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        m_done(<a class="code hl_define" href="StormPort_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>),</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        m_longSleep(<a class="code hl_define" href="StormPort_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        m_killed(false),</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        m_done(true),</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        m_longSleep(false)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_variable" href="classAscEmu_1_1Threading_1_1AEThread.html#ad1afe21b0631c354e8169bf8a9d50f64">m_id</a> = <a class="code hl_variable" href="classAscEmu_1_1Threading_1_1AEThread.html#a5dc279aae9c22ce79acf037c79de9aa1">s_thread_id_counter</a>++;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_variable" href="classAscEmu_1_1Threading_1_1AEThread.html#a2450d4c6ade986af9701421700040dc0">m_name</a> = name;</div>
@@ -259,8 +259,6 @@ $(document).ready(function(){initNavTree('AEThread_8cpp_source.html',''); initRe
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
 </div>
 <div class="ttc" id="aAEThread_8h_html"><div class="ttname"><a href="AEThread_8h.html">AEThread.h</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_a41f9c5fb8b08eb5dc3edce4dcb37fee7"><div class="ttname"><a href="StormPort_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></div><div class="ttdeci">#define true</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00032">StormPort.h:32</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_a65e9886d74aaee76545e83dd09011727"><div class="ttname"><a href="StormPort_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></div><div class="ttdeci">#define false</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00033">StormPort.h:33</a></div></div>
 <div class="ttc" id="aclassAscEmu_1_1Threading_1_1AEThread_html_a1e0842be6fa34daccbc02ab16b977fb3"><div class="ttname"><a href="classAscEmu_1_1Threading_1_1AEThread.html#a1e0842be6fa34daccbc02ab16b977fb3">AscEmu::Threading::AEThread::ThreadFunc</a></div><div class="ttdeci">std::function&lt; void(AEThread &amp;)&gt; ThreadFunc</div><div class="ttdef"><b>Definition</b> <a href="AEThread_8h_source.html#l00018">AEThread.h:18</a></div></div>
 <div class="ttc" id="aclassAscEmu_1_1Threading_1_1AEThread_html_a2450d4c6ade986af9701421700040dc0"><div class="ttname"><a href="classAscEmu_1_1Threading_1_1AEThread.html#a2450d4c6ade986af9701421700040dc0">AscEmu::Threading::AEThread::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition</b> <a href="AEThread_8h_source.html#l00024">AEThread.h:24</a></div></div>
 <div class="ttc" id="aclassAscEmu_1_1Threading_1_1AEThread_html_a267c4b6ee0b001e03f19665b2824e33e"><div class="ttname"><a href="classAscEmu_1_1Threading_1_1AEThread.html#a267c4b6ee0b001e03f19665b2824e33e">AscEmu::Threading::AEThread::threadRunner</a></div><div class="ttdeci">void threadRunner()</div><div class="ttdef"><b>Definition</b> <a href="AEThread_8cpp_source.html#l00023">AEThread.cpp:23</a></div></div>

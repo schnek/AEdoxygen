@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 675;
 var viewHeight = 76;
-var sectionId = 'dynsection-609';
+var sectionId = 'dynsection-607';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -82,50 +82,50 @@ var sectionId = 'dynsection-609';
 </a>
 </g>
 </g>
-<!-- Node4 -->
-<g id="Node000004" class="node">
-<title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classChatCommandHandler.html#adde0f624ec28fe10846d2aa948ea14f8" target="_top" xlink:title=" ">
+<!-- Node3 -->
+<g id="Node000003" class="node">
+<title>Node3</title>
+<g id="a_Node000003"><a xlink:href="classChatCommandHandler.html#adde0f624ec28fe10846d2aa948ea14f8" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="342,-30 209,-30 209,0 342,0 342,-30"/>
 <text text-anchor="start" x="217" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">ChatCommandHandler</text>
 <text text-anchor="middle" x="275.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::SendMultilineMessage</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
-<title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge2_Node000001_Node000003" class="edge">
+<title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M173.06,-26.39C181.61,-25.43 190.25,-24.46 198.68,-23.51"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="199.31,-26.97 208.85,-22.37 198.53,-20.01 199.31,-26.97"/>
 </a>
 </g>
 </g>
-<!-- Node3 -->
-<g id="Node000003" class="node">
-<title>Node3</title>
-<g id="a_Node000003"><a xlink:href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="457,-67.5 427,-67.5 427,-48.5 457,-48.5 457,-67.5"/>
-<text text-anchor="middle" x="442" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">ptr</text>
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="506,-30 378,-30 378,0 506,0 506,-30"/>
+<text text-anchor="start" x="386" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">ChatCommandHandler</text>
+<text text-anchor="middle" x="442" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::systemMessage</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
-<title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M334.96,-58C363.11,-58 395.33,-58 416.8,-58"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="416.96,-61.5 426.96,-58 416.96,-54.5 416.96,-61.5"/>
+<!-- Node3&#45;&gt;Node4 -->
+<g id="edge3_Node000003_Node000004" class="edge">
+<title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M342.46,-15C350.79,-15 359.34,-15 367.77,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="367.96,-18.5 377.96,-15 367.96,-11.5 367.96,-18.5"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classChatCommandHandler.html#aabb272c702b97a0325b0b2cfff4a2402" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="506,-30 378,-30 378,0 506,0 506,-30"/>
-<text text-anchor="start" x="386" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">ChatCommandHandler</text>
-<text text-anchor="middle" x="442" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::systemMessage</text>
+<g id="a_Node000005"><a xlink:href="namespaceAscEmu.html#af79227cb68117f159a0cf3232904123a" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="667,-24.5 542,-24.5 542,-5.5 667,-5.5 667,-24.5"/>
+<text text-anchor="middle" x="604.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::StringFormat</text>
 </a>
 </g>
 </g>
@@ -133,24 +133,6 @@ var sectionId = 'dynsection-609';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M342.46,-15C350.79,-15 359.34,-15 367.77,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="367.96,-18.5 377.96,-15 367.96,-11.5 367.96,-18.5"/>
-</a>
-</g>
-</g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="namespaceAscEmu.html#af79227cb68117f159a0cf3232904123a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="667,-24.5 542,-24.5 542,-5.5 667,-5.5 667,-24.5"/>
-<text text-anchor="middle" x="604.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::StringFormat</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node6 -->
-<g id="edge5_Node000005_Node000006" class="edge">
-<title>Node5&#45;&gt;Node6</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M506.43,-15C514.72,-15 523.25,-15 531.67,-15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="531.84,-18.5 541.84,-15 531.84,-11.5 531.84,-18.5"/>
 </a>

@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('CmsgGuildAddRank_8h_source.html',''); 
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#if VERSION_STRING &lt; Cata</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            packet &gt;&gt; <a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgGuildAddRank.html#a04cb11301aaebeda58547a26857ea870">name</a>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> length = packet.<a class="code hl_function" href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">readBits</a>(7);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">const</span> uint32_t length = packet.<a class="code hl_function" href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">readBits</a>(7);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_variable" href="classAscEmu_1_1Packets_1_1CmsgGuildAddRank.html#a04cb11301aaebeda58547a26857ea870">name</a> = packet.<a class="code hl_function" href="classByteBuffer.html#a42372ab1e72e16113b1b387f3a86e4f1">ReadString</a>(length);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -170,7 +170,6 @@ $(document).ready(function(){initNavTree('CmsgGuildAddRank_8h_source.html',''); 
 <div class="ttc" id="aclassByteBuffer_html_a887ee4c93dc24e3b0364e5a7afda5b45"><div class="ttname"><a href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">ByteBuffer::readBits</a></div><div class="ttdeci">uint32_t readBits(int32_t bits)</div><div class="ttdef"><b>Definition</b> <a href="ByteBuffer_8h_source.html#l00188">ByteBuffer.h:188</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Packets_html"><div class="ttname"><a href="namespaceAscEmu_1_1Packets.html">AscEmu::Packets</a></div><div class="ttdef"><b>Definition</b> <a href="AuctionHouse_8h_source.html#l00017">AuctionHouse.h:18</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

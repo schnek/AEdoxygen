@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('SmsgCancelCombat_8h_source.html',''); 
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classAscEmu_1_1Packets_1_1SmsgCancelCombat.html#a59fcee3f795518c2e1dcbe548aaf96a5">   24</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classAscEmu_1_1Packets_1_1SmsgCancelCombat.html#a59fcee3f795518c2e1dcbe548aaf96a5">internalSerialise</a>([[maybe_unused]]<a class="code hl_class" href="classWorldPacket.html">WorldPacket</a>&amp; packet)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#if VERSION_STRING == Mop</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            packet &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(0);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            packet &lt;&lt; uint64_t(0);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
@@ -152,7 +152,6 @@ $(document).ready(function(){initNavTree('SmsgCancelCombat_8h_source.html',''); 
 <div class="ttc" id="aclassAscEmu_1_1Packets_1_1SmsgCancelCombat_html_a8420a2819e869c049cdacf3ab01c37e5"><div class="ttname"><a href="classAscEmu_1_1Packets_1_1SmsgCancelCombat.html#a8420a2819e869c049cdacf3ab01c37e5">AscEmu::Packets::SmsgCancelCombat::SmsgCancelCombat</a></div><div class="ttdeci">SmsgCancelCombat()</div><div class="ttdef"><b>Definition</b> <a href="SmsgCancelCombat_8h_source.html#l00016">SmsgCancelCombat.h:16</a></div></div>
 <div class="ttc" id="aclassWorldPacket_html"><div class="ttname"><a href="classWorldPacket.html">WorldPacket</a></div><div class="ttdef"><b>Definition</b> <a href="WorldPacket_8h_source.html#l00011">WorldPacket.h:12</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Packets_html"><div class="ttname"><a href="namespaceAscEmu_1_1Packets.html">AscEmu::Packets</a></div><div class="ttdef"><b>Definition</b> <a href="AuctionHouse_8h_source.html#l00017">AuctionHouse.h:18</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

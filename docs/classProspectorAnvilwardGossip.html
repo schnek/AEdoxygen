@@ -114,7 +114,7 @@ Collaboration diagram for ProspectorAnvilwardGossip:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1a05ed98cccc6ccbb613becd20abc07" id="r_ae1a05ed98cccc6ccbb613becd20abc07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProspectorAnvilwardGossip.html#ae1a05ed98cccc6ccbb613becd20abc07">onHello</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *Plr) override</td></tr>
 <tr class="separator:ae1a05ed98cccc6ccbb613becd20abc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab759ce1e355ea2bc5e77ee21eae4f0ea" id="r_ab759ce1e355ea2bc5e77ee21eae4f0ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProspectorAnvilwardGossip.html#ab759ce1e355ea2bc5e77ee21eae4f0ea">onSelectOption</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *Plr, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> Id, <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *EnteredCode, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> gossipId) override</td></tr>
+<tr class="memitem:ab759ce1e355ea2bc5e77ee21eae4f0ea" id="r_ab759ce1e355ea2bc5e77ee21eae4f0ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProspectorAnvilwardGossip.html#ab759ce1e355ea2bc5e77ee21eae4f0ea">onSelectOption</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *Plr, uint32_t Id, const char *EnteredCode, uint32_t gossipId) override</td></tr>
 <tr class="separator:ab759ce1e355ea2bc5e77ee21eae4f0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2deaf935947c4a6e5ebe99802ba1fb5" id="r_af2deaf935947c4a6e5ebe99802ba1fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProspectorAnvilwardGossip.html#af2deaf935947c4a6e5ebe99802ba1fb5">destroy</a> () override</td></tr>
 <tr class="separator:af2deaf935947c4a6e5ebe99802ba1fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,14 +208,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Quest__EversongWoods_8cpp_source.html#l00046">46</a> of file <a class="el" href="Quest__EversongWoods_8cpp_source.html">Quest_EversongWoods.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="classGossipMenu.html">GossipMenu</a> menu(pObject-&gt;<a class="code hl_function" href="classObject.html#a0f6639fef4e90bc57ee1b34a81d6d489">getGuid</a>(), <a class="code hl_enumvalue" href="Quest__EversongWoods_8cpp.html#aad393aa3e173d7f081ab4bbc6ba5027da8ab06c4c3a8e3c8b32ddca783fe7db75">ANVILWARD_1</a>, Plr-&gt;<a class="code hl_function" href="classPlayer.html#aee195158e07a0138b257f8d1ede0cc6b">getSession</a>()-&gt;<a class="code hl_variable" href="classWorldSession.html#ae0e5de7217814dd5034fae1208f46db4">language</a>);</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="classGossipMenu.html">GossipMenu</a> menu(pObject-&gt;<a class="code hl_function" href="classObject.html#a0f6639fef4e90bc57ee1b34a81d6d489">getGuid</a>(), <a class="code hl_enumvalue" href="Quest__EversongWoods_8cpp.html#aae05225933a42f81e7c4a9fb286596f9a8ab06c4c3a8e3c8b32ddca783fe7db75">ANVILWARD_1</a>, Plr-&gt;<a class="code hl_function" href="classPlayer.html#aee195158e07a0138b257f8d1ede0cc6b">getSession</a>()-&gt;<a class="code hl_variable" href="classWorldSession.html#ae0e5de7217814dd5034fae1208f46db4">language</a>);</div>
 <div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (Plr-&gt;<a class="code hl_function" href="classPlayer.html#acc04b159107a1083b4e6c21f7c2b7c01">hasQuestInQuestLog</a>(8483))</div>
 <div class="line"><span class="lineno">   50</span>        menu.addItem(<a class="code hl_enumvalue" href="GossipDefines_8hpp.html#a3770455dce49810658d31ed0f3a663bea1a460e97e269ca0a62d06279484d4428">GOSSIP_ICON_CHAT</a>, 460, 1);     <span class="comment">// I need a moment of your time, Sir.</span></div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span>    menu.sendGossipPacket(Plr);</div>
 <div class="line"><span class="lineno">   53</span>}</div>
 <div class="ttc" id="aGossipDefines_8hpp_html_a3770455dce49810658d31ed0f3a663bea1a460e97e269ca0a62d06279484d4428"><div class="ttname"><a href="GossipDefines_8hpp.html#a3770455dce49810658d31ed0f3a663bea1a460e97e269ca0a62d06279484d4428">GOSSIP_ICON_CHAT</a></div><div class="ttdeci">@ GOSSIP_ICON_CHAT</div><div class="ttdef"><b>Definition</b> <a href="GossipDefines_8hpp_source.html#l00052">GossipDefines.hpp:52</a></div></div>
-<div class="ttc" id="aQuest__EversongWoods_8cpp_html_aad393aa3e173d7f081ab4bbc6ba5027da8ab06c4c3a8e3c8b32ddca783fe7db75"><div class="ttname"><a href="Quest__EversongWoods_8cpp.html#aad393aa3e173d7f081ab4bbc6ba5027da8ab06c4c3a8e3c8b32ddca783fe7db75">ANVILWARD_1</a></div><div class="ttdeci">@ ANVILWARD_1</div><div class="ttdef"><b>Definition</b> <a href="Quest__EversongWoods_8cpp_source.html#l00031">Quest_EversongWoods.cpp:31</a></div></div>
+<div class="ttc" id="aQuest__EversongWoods_8cpp_html_aae05225933a42f81e7c4a9fb286596f9a8ab06c4c3a8e3c8b32ddca783fe7db75"><div class="ttname"><a href="Quest__EversongWoods_8cpp.html#aae05225933a42f81e7c4a9fb286596f9a8ab06c4c3a8e3c8b32ddca783fe7db75">ANVILWARD_1</a></div><div class="ttdeci">@ ANVILWARD_1</div><div class="ttdef"><b>Definition</b> <a href="Quest__EversongWoods_8cpp_source.html#l00031">Quest_EversongWoods.cpp:31</a></div></div>
 <div class="ttc" id="aclassGossipMenu_html"><div class="ttname"><a href="classGossipMenu.html">GossipMenu</a></div><div class="ttdef"><b>Definition</b> <a href="GossipMenu_8hpp_source.html#l00018">GossipMenu.hpp:19</a></div></div>
 <div class="ttc" id="aclassObject_html_a0f6639fef4e90bc57ee1b34a81d6d489"><div class="ttname"><a href="classObject.html#a0f6639fef4e90bc57ee1b34a81d6d489">Object::getGuid</a></div><div class="ttdeci">uint64_t getGuid() const</div><div class="ttdef"><b>Definition</b> <a href="Object_8cpp_source.html#l00295">Object.cpp:295</a></div></div>
 <div class="ttc" id="aclassPlayer_html_acc04b159107a1083b4e6c21f7c2b7c01"><div class="ttname"><a href="classPlayer.html#acc04b159107a1083b4e6c21f7c2b7c01">Player::hasQuestInQuestLog</a></div><div class="ttdeci">bool hasQuestInQuestLog(uint32_t questId) const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l08842">Player.cpp:8842</a></div></div>
@@ -253,19 +253,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>Id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>EnteredCode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>gossipId</em>&#160;</td>
         </tr>
         <tr>

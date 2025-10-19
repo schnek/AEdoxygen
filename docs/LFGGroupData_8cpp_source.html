@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('LFGGroupData_8cpp_source.html',''); in
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#a6fa2c2f5bc5da6e42e0c756bb321c705">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLfgGroupData.html#a6fa2c2f5bc5da6e42e0c756bb321c705">LfgGroupData::SetDungeon</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> dungeon)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#a6fa2c2f5bc5da6e42e0c756bb321c705">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLfgGroupData.html#a6fa2c2f5bc5da6e42e0c756bb321c705">LfgGroupData::SetDungeon</a>(uint32_t dungeon)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_variable" href="classLfgGroupData.html#a0d302bebba646ea56b5e3dfd55dc557d">m_Dungeon</a> = dungeon;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('LFGGroupData_8cpp_source.html',''); in
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#a3dd3b743acd16b2214c64c806eddb17e">   65</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classLfgGroupData.html#a3dd3b743acd16b2214c64c806eddb17e">LfgGroupData::GetDungeon</a>(<span class="keywordtype">bool</span> asId <span class="comment">/* = true */</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#a3dd3b743acd16b2214c64c806eddb17e">   65</a></span>uint32_t <a class="code hl_function" href="classLfgGroupData.html#a3dd3b743acd16b2214c64c806eddb17e">LfgGroupData::GetDungeon</a>(<span class="keywordtype">bool</span> asId <span class="comment">/* = true */</span>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (asId)</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="classLfgGroupData.html#a0d302bebba646ea56b5e3dfd55dc557d">m_Dungeon</a> &amp; 0x00FFFFFF);</div>
@@ -188,14 +188,14 @@ $(document).ready(function(){initNavTree('LFGGroupData_8cpp_source.html',''); in
 </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#ad95b4c9611b1fb70a1377cd49678c7b5">   73</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="classLfgGroupData.html#ad95b4c9611b1fb70a1377cd49678c7b5">LfgGroupData::GetVotesNeeded</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#ad95b4c9611b1fb70a1377cd49678c7b5">   73</a></span>uint8_t <a class="code hl_function" href="classLfgGroupData.html#ad95b4c9611b1fb70a1377cd49678c7b5">LfgGroupData::GetVotesNeeded</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classLfgGroupData.html#a02c67a25bcdd10b7d1ba7d0119c7ecf0">m_VotesNeeded</a>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#abb0f603003ea3cdf5dc072e01c94eef2">   78</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="classLfgGroupData.html#abb0f603003ea3cdf5dc072e01c94eef2">LfgGroupData::GetKicksLeft</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classLfgGroupData.html#abb0f603003ea3cdf5dc072e01c94eef2">   78</a></span>uint8_t <a class="code hl_function" href="classLfgGroupData.html#abb0f603003ea3cdf5dc072e01c94eef2">LfgGroupData::GetKicksLeft</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classLfgGroupData.html#a35f1b76d70522718e63ae99125b2e37c">m_KicksLeft</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
@@ -222,8 +222,6 @@ $(document).ready(function(){initNavTree('LFGGroupData_8cpp_source.html',''); in
 <div class="ttc" id="aclassLfgGroupData_html_ab67c45ac4f5dd79932734f9728a1693f"><div class="ttname"><a href="classLfgGroupData.html#ab67c45ac4f5dd79932734f9728a1693f">LfgGroupData::m_State</a></div><div class="ttdeci">LfgState m_State</div><div class="ttdoc">State if group in LFG.</div><div class="ttdef"><b>Definition</b> <a href="LFGGroupData_8hpp_source.html#l00040">LFGGroupData.hpp:40</a></div></div>
 <div class="ttc" id="aclassLfgGroupData_html_abb0f603003ea3cdf5dc072e01c94eef2"><div class="ttname"><a href="classLfgGroupData.html#abb0f603003ea3cdf5dc072e01c94eef2">LfgGroupData::GetKicksLeft</a></div><div class="ttdeci">uint8_t GetKicksLeft() const</div><div class="ttdef"><b>Definition</b> <a href="LFGGroupData_8cpp_source.html#l00078">LFGGroupData.cpp:78</a></div></div>
 <div class="ttc" id="aclassLfgGroupData_html_ad95b4c9611b1fb70a1377cd49678c7b5"><div class="ttname"><a href="classLfgGroupData.html#ad95b4c9611b1fb70a1377cd49678c7b5">LfgGroupData::GetVotesNeeded</a></div><div class="ttdeci">uint8_t GetVotesNeeded() const</div><div class="ttdef"><b>Definition</b> <a href="LFGGroupData_8cpp_source.html#l00073">LFGGroupData.cpp:73</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

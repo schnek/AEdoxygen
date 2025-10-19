@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="PowerType_8hpp.html">Spell/Definitions/PowerType.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a9f98eb0d399cc5cb1df7863fec2a95fc">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a9f98eb0d399cc5cb1df7863fec2a95fc">Execute</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> effectIndex, <a class="code hl_class" href="classSpell.html">Spell</a>* pSpell)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a9f98eb0d399cc5cb1df7863fec2a95fc">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a9f98eb0d399cc5cb1df7863fec2a95fc">Execute</a>(uint8_t effectIndex, <a class="code hl_class" href="classSpell.html">Spell</a>* pSpell)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> (pSpell-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>() == NULL || pSpell-&gt;<a class="code hl_function" href="classSpell.html#a1e87f95ab5de37341fc84eef03fdcf6f">getUnitTarget</a>() == NULL)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
@@ -140,18 +140,18 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* Caster = pSpell-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="classUnit.html">Unit</a>* Target = pSpell-&gt;<a class="code hl_function" href="classSpell.html#a1e87f95ab5de37341fc84eef03fdcf6f">getUnitTarget</a>();</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> rage = Caster-&gt;<a class="code hl_function" href="classUnit.html#ad5205943737a5fa86ce7db053518224e">getPower</a>(<a class="code hl_enumvalue" href="PowerType_8hpp.html#a516aba31f3ab08c39b6cc36d6514b0fca2cb31bc9f22d5c1d006c9cc9baaa362a">POWER_TYPE_RAGE</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    uint32_t rage = Caster-&gt;<a class="code hl_function" href="classUnit.html#ad5205943737a5fa86ce7db053518224e">getPower</a>(<a class="code hl_enumvalue" href="PowerType_8hpp.html#a516aba31f3ab08c39b6cc36d6514b0fca2cb31bc9f22d5c1d006c9cc9baaa362a">POWER_TYPE_RAGE</a>);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">if</span> (Caster-&gt;<a class="code hl_function" href="classUnit.html#a064f2f965d8ae66a4b264bb866790e8f">hasAurasWithId</a>(58367))     <span class="comment">// Glyph of Execution: Your Execute ability deals damage as if you had 10 additional rage.</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        rage += 10;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> toadd = 0;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> dmg = 0;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> multiple[] = { 0, 3, 6, 9, 12, 15, 18, 21, 30, 38, };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    uint32_t toadd = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    int32_t dmg = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    uint32_t multiple[] = { 0, 3, 6, 9, 12, 15, 18, 21, 30, 38, };</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rank = pSpell-&gt;<a class="code hl_function" href="classSpell.html#a31ea380b4c8a3126724742c792b53638">getSpellInfo</a>()-&gt;<a class="code hl_function" href="classSpellInfo.html#a167c9e4a581a536037353a6c5f42be63">hasSpellRanks</a>() ? pSpell-&gt;<a class="code hl_function" href="classSpell.html#a31ea380b4c8a3126724742c792b53638">getSpellInfo</a>()-&gt;<a class="code hl_function" href="classSpellInfo.html#ac78cb97964fc008f0cf9c434478dde80">getRankInfo</a>()-&gt;<a class="code hl_function" href="structSpellRankInfo.html#a47ab94c3a112514892574bda39950ced">getRank</a>() : 1;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> uint8_t rank = pSpell-&gt;<a class="code hl_function" href="classSpell.html#a31ea380b4c8a3126724742c792b53638">getSpellInfo</a>()-&gt;<a class="code hl_function" href="classSpellInfo.html#a167c9e4a581a536037353a6c5f42be63">hasSpellRanks</a>() ? pSpell-&gt;<a class="code hl_function" href="classSpell.html#a31ea380b4c8a3126724742c792b53638">getSpellInfo</a>()-&gt;<a class="code hl_function" href="classSpellInfo.html#ac78cb97964fc008f0cf9c434478dde80">getRankInfo</a>()-&gt;<a class="code hl_function" href="structSpellRankInfo.html#a47ab94c3a112514892574bda39950ced">getRank</a>() : 1;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (rage &gt;= 30)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        toadd = (multiple[rank] * 30);</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#ac24d41e61554bd1204660a95f9149e63">   69</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#ac24d41e61554bd1204660a95f9149e63">Vigilance</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* pSpell)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#ac24d41e61554bd1204660a95f9149e63">   69</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#ac24d41e61554bd1204660a95f9149e63">Vigilance</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* pSpell)</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (!pSpell-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>())</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a59e8c632d56a27e63ea823eee0ec1552">   81</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a59e8c632d56a27e63ea823eee0ec1552">DamageShield</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* <span class="comment">/*pAura*/</span>, <span class="keywordtype">bool</span> <span class="comment">/*apply*/</span>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a59e8c632d56a27e63ea823eee0ec1552">   81</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a59e8c632d56a27e63ea823eee0ec1552">DamageShield</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* <span class="comment">/*pAura*/</span>, <span class="keywordtype">bool</span> <span class="comment">/*apply*/</span>)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">/*Unit* target = pAura-&gt;getOwner();</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span> </div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#aa8251a9530f546c1f955babf59a8bfa4">   93</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#aa8251a9530f546c1f955babf59a8bfa4">HeroicFury</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* s)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#aa8251a9530f546c1f955babf59a8bfa4">   93</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#aa8251a9530f546c1f955babf59a8bfa4">HeroicFury</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* s)</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* p_caster = s-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
@@ -228,14 +228,14 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a186cfa8e233602c0a82e883b5948c993">  119</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a186cfa8e233602c0a82e883b5948c993">Charge</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> effectIndex, <a class="code hl_class" href="classSpell.html">Spell</a>* s)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a186cfa8e233602c0a82e883b5948c993">  119</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a186cfa8e233602c0a82e883b5948c993">Charge</a>(uint8_t effectIndex, <a class="code hl_class" href="classSpell.html">Spell</a>* s)</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">if</span> (!s-&gt;<a class="code hl_function" href="classSpell.html#a14e746295821f52d56fe840007e3f8b0">getUnitCaster</a>())</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> rage_to_gen = s-&gt;<a class="code hl_function" href="classSpell.html#a31ea380b4c8a3126724742c792b53638">getSpellInfo</a>()-&gt;<a class="code hl_function" href="classSpellInfo.html#ab115673eb42fcac7d70554cf8e34e412">getEffectBasePoints</a>(effectIndex) + 1;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    uint32_t rage_to_gen = s-&gt;<a class="code hl_function" href="classSpell.html#a31ea380b4c8a3126724742c792b53638">getSpellInfo</a>()-&gt;<a class="code hl_function" href="classSpellInfo.html#ab115673eb42fcac7d70554cf8e34e412">getEffectBasePoints</a>(effectIndex) + 1;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">if</span> (s-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>())</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    {</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> itr = s-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>()-&gt;<a class="code hl_function" href="classPlayer.html#aee20b609366d711782a61a5db1c4e13e">getSpellSet</a>().begin(); itr != s-&gt;<a class="code hl_function" href="classSpell.html#a6f4b91dff46faee2e9e077814b7d3917">getPlayerCaster</a>()-&gt;<a class="code hl_function" href="classPlayer.html#aee20b609366d711782a61a5db1c4e13e">getSpellSet</a>().end(); ++itr)</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#ae99f71605588509b9313ab5a2f60160e">  149</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#ae99f71605588509b9313ab5a2f60160e">LastStand</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* s)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#ae99f71605588509b9313ab5a2f60160e">  149</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#ae99f71605588509b9313ab5a2f60160e">LastStand</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* s)</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>{</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* playerTarget = s-&gt;<a class="code hl_function" href="classSpell.html#a1a2149cd7cc490bcb0c8fea1497bc560">getPlayerTarget</a>();</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a37704970f7e4e95d1e979c3d2a898c57">  167</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a37704970f7e4e95d1e979c3d2a898c57">BerserkerRage</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a37704970f7e4e95d1e979c3d2a898c57">  167</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a37704970f7e4e95d1e979c3d2a898c57">BerserkerRage</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <a class="code hl_class" href="classUnit.html">Unit</a>* u = a-&gt;<a class="code hl_function" href="classAura.html#a65b9a2cb49279d129328f9b6f58166cc">getOwner</a>();</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* p_target = NULL;</div>
@@ -305,7 +305,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_enumeration" href="SpellMechanics_8hpp.html#a3cbeac7c94e7e956f0e1ebb55fe11048">SpellMechanic</a> mechanics[4] = { <a class="code hl_enumvalue" href="SpellMechanics_8hpp.html#a3cbeac7c94e7e956f0e1ebb55fe11048a1453d37a26c481492f102112f5067647">MECHANIC_NONE</a> };</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; 3; i++)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 3; i++)</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    {</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">if</span> (apply)</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        {</div>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a1fade259ff48140f36032ec3ee717714">  211</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a1fade259ff48140f36032ec3ee717714">SweepingStrikes</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a1fade259ff48140f36032ec3ee717714">  211</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a1fade259ff48140f36032ec3ee717714">SweepingStrikes</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>{</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_class" href="classUnit.html">Unit</a>* m_target = a-&gt;<a class="code hl_function" href="classAura.html#a65b9a2cb49279d129328f9b6f58166cc">getOwner</a>();</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
@@ -340,7 +340,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
 <div class="foldopen" id="foldopen00223" data-start="{" data-end="}">
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a0344bb8090499056a217d40c0afd4a3a">  223</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a0344bb8090499056a217d40c0afd4a3a">TacticalAndStanceMastery</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> effectIndex, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a0344bb8090499056a217d40c0afd4a3a">  223</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a0344bb8090499056a217d40c0afd4a3a">TacticalAndStanceMastery</a>(uint8_t effectIndex, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_class" href="classUnit.html">Unit</a>* u_target = a-&gt;<a class="code hl_function" href="classAura.html#a65b9a2cb49279d129328f9b6f58166cc">getOwner</a>();</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="foldopen" id="foldopen00243" data-start="{" data-end="}">
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#ad5e9cf687af3240b0d00957054bbf1be">  243</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#ad5e9cf687af3240b0d00957054bbf1be">SecondWind</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#ad5e9cf687af3240b0d00957054bbf1be">  243</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#ad5e9cf687af3240b0d00957054bbf1be">SecondWind</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>{</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* caster = a-&gt;<a class="code hl_function" href="classAura.html#ac041323e976dd174b613a34e18c5f01c">GetPlayerCaster</a>();</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
@@ -379,7 +379,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
 <div class="foldopen" id="foldopen00258" data-start="{" data-end="}">
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#aa6f10e2fa35be93ed4c3ef9c3c888f07">  258</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#aa6f10e2fa35be93ed4c3ef9c3c888f07">SecondWind2</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#aa6f10e2fa35be93ed4c3ef9c3c888f07">  258</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#aa6f10e2fa35be93ed4c3ef9c3c888f07">SecondWind2</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classAura.html">Aura</a>* a, <span class="keywordtype">bool</span> apply)</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>{</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* caster = a-&gt;<a class="code hl_function" href="classAura.html#ac041323e976dd174b613a34e18c5f01c">GetPlayerCaster</a>();</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
 <div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#afcb4383e34b273b46f03b57e43728e8c">  273</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#afcb4383e34b273b46f03b57e43728e8c">ArmoredToTheTeeth</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* <span class="comment">/*s*/</span>)</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#afcb4383e34b273b46f03b57e43728e8c">  273</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#afcb4383e34b273b46f03b57e43728e8c">ArmoredToTheTeeth</a>(uint8_t <span class="comment">/*effectIndex*/</span>, <a class="code hl_class" href="classSpell.html">Spell</a>* <span class="comment">/*s*/</span>)</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>{</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="comment">// Same as Death Knight&#39;s Bladed Armor. See DeathKnightSpells.cpp line 276 for detailed explanation.</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="foldopen" id="foldopen00279" data-start="{" data-end="}">
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="WarriorSpells_8cpp.html#a0a423e62fc3d9680f2cb29636b53d59c">  279</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="WarriorSpells_8cpp.html#a0a423e62fc3d9680f2cb29636b53d59c">SetupLegacyWarriorSpells</a>(<a class="code hl_class" href="classScriptMgr.html">ScriptMgr</a>* mgr)</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>{</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ExecuteIds[] =</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    uint32_t ExecuteIds[] =</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    {</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        5308,  <span class="comment">// Rank 1</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        20658, <span class="comment">// Rank 2</span></div>
@@ -437,7 +437,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(12328, &amp;<a class="code hl_function" href="WarriorSpells_8cpp.html#a1fade259ff48140f36032ec3ee717714">SweepingStrikes</a>);</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> tacticalandstancemasteryids[] =</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    uint32_t tacticalandstancemasteryids[] =</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    {</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        12295,</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        12676,</div>
@@ -450,7 +450,7 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(29834, &amp;<a class="code hl_function" href="WarriorSpells_8cpp.html#ad5e9cf687af3240b0d00957054bbf1be">SecondWind</a>);</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(29838, &amp;<a class="code hl_function" href="WarriorSpells_8cpp.html#aa6f10e2fa35be93ed4c3ef9c3c888f07">SecondWind2</a>);</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ArmoredToTheTeethIDs[] =</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    uint32_t ArmoredToTheTeethIDs[] =</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    {</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        61216,</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        61221,</div>
@@ -530,9 +530,6 @@ $(document).ready(function(){initNavTree('WarriorSpells_8cpp_source.html',''); i
 <div class="ttc" id="aclassUnit_html_ae350263fded46877dad8eb0175557a14"><div class="ttname"><a href="classUnit.html#ae350263fded46877dad8eb0175557a14">Unit::removeExtraStrikeTarget</a></div><div class="ttdeci">void removeExtraStrikeTarget(SpellInfo const *spellInfo)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l09227">Unit.cpp:9227</a></div></div>
 <div class="ttc" id="aclassUnit_html_afbe37c94a3ead36fbfbd9cf1535c63ef"><div class="ttname"><a href="classUnit.html#afbe37c94a3ead36fbfbd9cf1535c63ef">Unit::removeAllAurasBySpellMechanic</a></div><div class="ttdeci">void removeAllAurasBySpellMechanic(SpellMechanic mechanic, bool negativeOnly=true)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l05331">Unit.cpp:5331</a></div></div>
 <div class="ttc" id="astructSpellRankInfo_html_a47ab94c3a112514892574bda39950ced"><div class="ttname"><a href="structSpellRankInfo.html#a47ab94c3a112514892574bda39950ced">SpellRankInfo::getRank</a></div><div class="ttdeci">uint8_t getRank() const</div><div class="ttdef"><b>Definition</b> <a href="SpellInfo_8cpp_source.html#l00031">SpellInfo.cpp:31</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_ab1967d8591af1a4e48c37fd2b0f184d0"><div class="ttname"><a href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a></div><div class="ttdeci">signed int int32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00077">winvs_stdint.h:77</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -105,12 +105,12 @@ $(document).ready(function(){initNavTree('structVMAP_1_1WorldModel__Raw.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a652bcf37d435efc3fb82f4d8cbf00e51" id="r_a652bcf37d435efc3fb82f4d8cbf00e51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVMAP_1_1WorldModel__Raw.html#a652bcf37d435efc3fb82f4d8cbf00e51">Read</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *path)</td></tr>
+<tr class="memitem:a652bcf37d435efc3fb82f4d8cbf00e51" id="r_a652bcf37d435efc3fb82f4d8cbf00e51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVMAP_1_1WorldModel__Raw.html#a652bcf37d435efc3fb82f4d8cbf00e51">Read</a> (const char *path)</td></tr>
 <tr class="separator:a652bcf37d435efc3fb82f4d8cbf00e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6a0d961f7065f7e44b584a476c6e3a1c" id="r_a6a0d961f7065f7e44b584a476c6e3a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVMAP_1_1WorldModel__Raw.html#a6a0d961f7065f7e44b584a476c6e3a1c">RootWMOID</a></td></tr>
+<tr class="memitem:a6a0d961f7065f7e44b584a476c6e3a1c" id="r_a6a0d961f7065f7e44b584a476c6e3a1c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVMAP_1_1WorldModel__Raw.html#a6a0d961f7065f7e44b584a476c6e3a1c">RootWMOID</a></td></tr>
 <tr class="separator:a6a0d961f7065f7e44b584a476c6e3a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b2d93c2929aaddac1004aed4ecdd85" id="r_a79b2d93c2929aaddac1004aed4ecdd85"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVMAP_1_1GroupModel__Raw.html">GroupModel_Raw</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVMAP_1_1WorldModel__Raw.html#a79b2d93c2929aaddac1004aed4ecdd85">groupsArray</a></td></tr>
 <tr class="separator:a79b2d93c2929aaddac1004aed4ecdd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +126,9 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> VMAP::WorldModel_Raw::Read </td>
+          <td class="memname">bool VMAP::WorldModel_Raw::Read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
@@ -141,7 +141,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  612</span>        FILE* rf = fopen(path, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><span class="lineno">  613</span>        <span class="keywordflow">if</span> (!rf)</div>
 <div class="line"><span class="lineno">  614</span>        {</div>
-<div class="line"><span class="lineno">  615</span>            <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;ERROR: Can&#39;t open raw model file: %s\n&quot;</span>, path);</div>
+<div class="line"><span class="lineno">  615</span>            printf(<span class="stringliteral">&quot;ERROR: Can&#39;t open raw model file: %s\n&quot;</span>, path);</div>
 <div class="line"><span class="lineno">  616</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  617</span>        }</div>
 <div class="line"><span class="lineno">  618</span> </div>
@@ -155,16 +155,16 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  626</span>        <a class="code hl_define" href="TileAssembler_8cpp.html#abb356574335eee18efd5e1f4ed707637">CMP_OR_RETURN</a>(ident, <a class="code hl_variable" href="namespaceVMAP.html#a8730823eb8cf00ace91d4033e120bf71">RAW_VMAP_MAGIC</a>);</div>
 <div class="line"><span class="lineno">  627</span> </div>
 <div class="line"><span class="lineno">  628</span>        <span class="comment">// we have to read one int. This is needed during the export and we have to skip it here</span></div>
-<div class="line"><span class="lineno">  629</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> tempNVectors;</div>
+<div class="line"><span class="lineno">  629</span>        uint32_t tempNVectors;</div>
 <div class="line"><span class="lineno">  630</span>        <a class="code hl_define" href="TileAssembler_8cpp.html#ab09a5bc19f9a9f62a1f60dd7741b4d6d">READ_OR_RETURN</a>(&amp;tempNVectors, <span class="keyword">sizeof</span>(tempNVectors));</div>
 <div class="line"><span class="lineno">  631</span> </div>
-<div class="line"><span class="lineno">  632</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> groups;</div>
-<div class="line"><span class="lineno">  633</span>        <a class="code hl_define" href="TileAssembler_8cpp.html#ab09a5bc19f9a9f62a1f60dd7741b4d6d">READ_OR_RETURN</a>(&amp;groups, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>));</div>
-<div class="line"><span class="lineno">  634</span>        <a class="code hl_define" href="TileAssembler_8cpp.html#ab09a5bc19f9a9f62a1f60dd7741b4d6d">READ_OR_RETURN</a>(&amp;<a class="code hl_variable" href="structVMAP_1_1WorldModel__Raw.html#a6a0d961f7065f7e44b584a476c6e3a1c">RootWMOID</a>, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>));</div>
+<div class="line"><span class="lineno">  632</span>        uint32_t groups;</div>
+<div class="line"><span class="lineno">  633</span>        <a class="code hl_define" href="TileAssembler_8cpp.html#ab09a5bc19f9a9f62a1f60dd7741b4d6d">READ_OR_RETURN</a>(&amp;groups, <span class="keyword">sizeof</span>(uint32_t));</div>
+<div class="line"><span class="lineno">  634</span>        <a class="code hl_define" href="TileAssembler_8cpp.html#ab09a5bc19f9a9f62a1f60dd7741b4d6d">READ_OR_RETURN</a>(&amp;<a class="code hl_variable" href="structVMAP_1_1WorldModel__Raw.html#a6a0d961f7065f7e44b584a476c6e3a1c">RootWMOID</a>, <span class="keyword">sizeof</span>(uint32_t));</div>
 <div class="line"><span class="lineno">  635</span> </div>
 <div class="line"><span class="lineno">  636</span>        <a class="code hl_variable" href="structVMAP_1_1WorldModel__Raw.html#a79b2d93c2929aaddac1004aed4ecdd85">groupsArray</a>.resize(groups);</div>
 <div class="line"><span class="lineno">  637</span>        <span class="keywordtype">bool</span> succeed = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  638</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> g = 0; g &lt; groups &amp;&amp; succeed; ++g)</div>
+<div class="line"><span class="lineno">  638</span>        <span class="keywordflow">for</span> (uint32_t g = 0; g &lt; groups &amp;&amp; succeed; ++g)</div>
 <div class="line"><span class="lineno">  639</span>        {</div>
 <div class="line"><span class="lineno">  640</span>            succeed = <a class="code hl_variable" href="structVMAP_1_1WorldModel__Raw.html#a79b2d93c2929aaddac1004aed4ecdd85">groupsArray</a>[g].Read(rf);</div>
 <div class="line"><span class="lineno">  641</span>        }</div>
@@ -179,16 +179,9 @@ Public Attributes</h2></td></tr>
 <div class="ttc" id="aTileAssembler_8cpp_html_ab09a5bc19f9a9f62a1f60dd7741b4d6d"><div class="ttname"><a href="TileAssembler_8cpp.html#ab09a5bc19f9a9f62a1f60dd7741b4d6d">READ_OR_RETURN</a></div><div class="ttdeci">#define READ_OR_RETURN(V, S)</div><div class="ttdef"><b>Definition</b> <a href="TileAssembler_8cpp_source.html#l00512">TileAssembler.cpp:512</a></div></div>
 <div class="ttc" id="aTileAssembler_8cpp_html_abb356574335eee18efd5e1f4ed707637"><div class="ttname"><a href="TileAssembler_8cpp.html#abb356574335eee18efd5e1f4ed707637">CMP_OR_RETURN</a></div><div class="ttdeci">#define CMP_OR_RETURN(V, S)</div><div class="ttdef"><b>Definition</b> <a href="TileAssembler_8cpp_source.html#l00516">TileAssembler.cpp:516</a></div></div>
 <div class="ttc" id="anamespaceVMAP_html_a8730823eb8cf00ace91d4033e120bf71"><div class="ttname"><a href="namespaceVMAP.html#a8730823eb8cf00ace91d4033e120bf71">VMAP::RAW_VMAP_MAGIC</a></div><div class="ttdeci">const char RAW_VMAP_MAGIC[]</div><div class="ttdef"><b>Definition</b> <a href="VMapDefinitions_8h_source.html#l00030">VMapDefinitions.h:30</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aee3ed3a831f25f07e7be3919fff2203a"><div class="ttname"><a href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a></div><div class="ttdeci">auto printf(string_view fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00663">printf.h:663</a></div></div>
 <div class="ttc" id="astructVMAP_1_1WorldModel__Raw_html_a6a0d961f7065f7e44b584a476c6e3a1c"><div class="ttname"><a href="structVMAP_1_1WorldModel__Raw.html#a6a0d961f7065f7e44b584a476c6e3a1c">VMAP::WorldModel_Raw::RootWMOID</a></div><div class="ttdeci">uint32_t RootWMOID</div><div class="ttdef"><b>Definition</b> <a href="TileAssembler_8h_source.html#l00092">TileAssembler.h:92</a></div></div>
 <div class="ttc" id="astructVMAP_1_1WorldModel__Raw_html_a79b2d93c2929aaddac1004aed4ecdd85"><div class="ttname"><a href="structVMAP_1_1WorldModel__Raw.html#a79b2d93c2929aaddac1004aed4ecdd85">VMAP::WorldModel_Raw::groupsArray</a></div><div class="ttdeci">std::vector&lt; GroupModel_Raw &gt; groupsArray</div><div class="ttdef"><b>Definition</b> <a href="TileAssembler_8h_source.html#l00093">TileAssembler.h:93</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structVMAP_1_1WorldModel__Raw_a652bcf37d435efc3fb82f4d8cbf00e51_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structVMAP_1_1WorldModel__Raw_a652bcf37d435efc3fb82f4d8cbf00e51_icgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
@@ -220,7 +213,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> VMAP::WorldModel_Raw::RootWMOID</td>
+          <td class="memname">uint32_t VMAP::WorldModel_Raw::RootWMOID</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -256,8 +256,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   75</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSpeedCheatDetector.html#abfb78233f6d9ea9ba0723d09e1ff6fef">last_stamp</a> != 0)</div>
 <div class="line"><span class="lineno">   76</span>    {</div>
 <div class="line"><span class="lineno">   77</span>        <span class="comment">//get current speed</span></div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordtype">float</span> dif_x = <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a> - <a class="code hl_variable" href="classSpeedCheatDetector.html#aeddf0535d308abeb391e3f7e16817450">last_x</a>;</div>
-<div class="line"><span class="lineno">   79</span>        <span class="keywordtype">float</span> dif_y = <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a> - <a class="code hl_variable" href="classSpeedCheatDetector.html#a5bd915ab1d9be867aef95d26b18169b7">last_y</a>;</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordtype">float</span> dif_x = x - <a class="code hl_variable" href="classSpeedCheatDetector.html#aeddf0535d308abeb391e3f7e16817450">last_x</a>;</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordtype">float</span> dif_y = y - <a class="code hl_variable" href="classSpeedCheatDetector.html#a5bd915ab1d9be867aef95d26b18169b7">last_y</a>;</div>
 <div class="line"><span class="lineno">   80</span>        <span class="keywordtype">float</span> dist = std::sqrt(dif_x * dif_x + dif_y * dif_y);</div>
 <div class="line"><span class="lineno">   81</span>        <span class="keywordtype">float</span> cur_speed = dist / (float)time_dif * 1000.0f;</div>
 <div class="line"><span class="lineno">   82</span> </div>
@@ -274,13 +274,11 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    }</div>
 <div class="line"><span class="lineno">   95</span>    <a class="code hl_variable" href="classSpeedCheatDetector.html#abfb78233f6d9ea9ba0723d09e1ff6fef">last_stamp</a> = stamp;</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="classSpeedCheatDetector.html#aeddf0535d308abeb391e3f7e16817450">last_x</a> = <a class="code hl_variable" href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">x</a>;</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="classSpeedCheatDetector.html#a5bd915ab1d9be867aef95d26b18169b7">last_y</a> = <a class="code hl_variable" href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a>;</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="classSpeedCheatDetector.html#aeddf0535d308abeb391e3f7e16817450">last_x</a> = x;</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="classSpeedCheatDetector.html#a5bd915ab1d9be867aef95d26b18169b7">last_y</a> = y;</div>
 <div class="line"><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aSpeedDetector_8h_html_a5eae583d3d33e6cf1c74015538795f8a"><div class="ttname"><a href="SpeedDetector_8h.html#a5eae583d3d33e6cf1c74015538795f8a">SPDT_DETECTION_ERROR</a></div><div class="ttdeci">#define SPDT_DETECTION_ERROR</div><div class="ttdef"><b>Definition</b> <a href="SpeedDetector_8h_source.html#l00024">SpeedDetector.h:24</a></div></div>
 <div class="ttc" id="aSpeedDetector_8h_html_a96d7f59409fe36de6df6b2cf7e8d3766"><div class="ttname"><a href="SpeedDetector_8h.html#a96d7f59409fe36de6df6b2cf7e8d3766">SPDT_SAMPLINGRATE</a></div><div class="ttdeci">#define SPDT_SAMPLINGRATE</div><div class="ttdef"><b>Definition</b> <a href="SpeedDetector_8h_source.html#l00023">SpeedDetector.h:23</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a55ae91213b07da3a9e14fcd5068d497f"><div class="ttname"><a href="namespaceG3D.html#a55ae91213b07da3a9e14fcd5068d497f">G3D::x</a></div><div class="ttdeci">G3D::int16 x</div><div class="ttdef"><b>Definition</b> <a href="Vector2int16_8h_source.html#l00037">Vector2int16.h:37</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a8942ba929b21cfdf30bd22fe36baaefa"><div class="ttname"><a href="namespaceG3D.html#a8942ba929b21cfdf30bd22fe36baaefa">G3D::y</a></div><div class="ttdeci">G3D::int16 y</div><div class="ttdef"><b>Definition</b> <a href="Vector2int16_8h_source.html#l00038">Vector2int16.h:38</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

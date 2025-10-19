@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('BigNumber_8cpp_source.html',''); initR
 </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classBigNumber.html#a502c50367ef1c78623b331707a4ac2c5">   37</a></span><a class="code hl_function" href="classBigNumber.html#a0d12fbec476322042ba36e61e1b0db82">BigNumber::BigNumber</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> val)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classBigNumber.html#a502c50367ef1c78623b331707a4ac2c5">   37</a></span><a class="code hl_function" href="classBigNumber.html#a0d12fbec476322042ba36e61e1b0db82">BigNumber::BigNumber</a>(uint32_t val)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a> = BN_new();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    BN_set_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, val);</div>
@@ -158,27 +158,27 @@ $(document).ready(function(){initNavTree('BigNumber_8cpp_source.html',''); initR
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classBigNumber.html#aa39b17b0e44af600d4371fbf4a9da35e">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBigNumber.html#aa39b17b0e44af600d4371fbf4a9da35e">BigNumber::SetDword</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> val)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classBigNumber.html#aa39b17b0e44af600d4371fbf4a9da35e">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBigNumber.html#aa39b17b0e44af600d4371fbf4a9da35e">BigNumber::SetDword</a>(uint32_t val)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    BN_set_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, val);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classBigNumber.html#a2e8c5c13e0a8bc72ddc253ebc9943aaa">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBigNumber.html#a2e8c5c13e0a8bc72ddc253ebc9943aaa">BigNumber::SetQword</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> val)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classBigNumber.html#a2e8c5c13e0a8bc72ddc253ebc9943aaa">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBigNumber.html#a2e8c5c13e0a8bc72ddc253ebc9943aaa">BigNumber::SetQword</a>(uint64_t val)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    BN_add_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(val &gt;&gt; 32));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    BN_add_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, (uint32_t)(val &gt;&gt; 32));</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    BN_lshift(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, <a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, 32);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    BN_add_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)(val &amp; 0xFFFFFFFF));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    BN_add_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, (uint32_t)(val &amp; 0xFFFFFFFF));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classBigNumber.html#a1e1342bd34c22768feda1d47f1e89168">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBigNumber.html#a1e1342bd34c22768feda1d47f1e89168">BigNumber::SetBinary</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* <a class="code hl_class" href="classbytes.html">bytes</a>, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classBigNumber.html#a1e1342bd34c22768feda1d47f1e89168">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classBigNumber.html#a1e1342bd34c22768feda1d47f1e89168">BigNumber::SetBinary</a>(<span class="keyword">const</span> uint8_t* bytes, <span class="keywordtype">int</span> len)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>[1000];</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; len; i++) <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>[i] = <a class="code hl_class" href="classbytes.html">bytes</a>[len - 1 - i];</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    BN_bin2bn(<a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>, len, <a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    uint8_t t[1000];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; len; i++) t[i] = bytes[len - 1 - i];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    BN_bin2bn(t, len, <a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
@@ -296,14 +296,14 @@ $(document).ready(function(){initNavTree('BigNumber_8cpp_source.html',''); initR
 </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classBigNumber.html#a49661e70ccb2904ccc39ca19869a868b">  159</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code hl_function" href="classBigNumber.html#a49661e70ccb2904ccc39ca19869a868b">BigNumber::AsDword</a>()</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classBigNumber.html#a49661e70ccb2904ccc39ca19869a868b">  159</a></span>uint32_t <a class="code hl_function" href="classBigNumber.html#a49661e70ccb2904ccc39ca19869a868b">BigNumber::AsDword</a>()</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)BN_get_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">return</span> (uint32_t)BN_get_word(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
 </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classBigNumber.html#aa18eadb6929b151cbb9de5074b37ddc0">  164</a></span><a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* <a class="code hl_function" href="classBigNumber.html#aa18eadb6929b151cbb9de5074b37ddc0">BigNumber::AsByteArray</a>()</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classBigNumber.html#aa18eadb6929b151cbb9de5074b37ddc0">  164</a></span>uint8_t* <a class="code hl_function" href="classBigNumber.html#aa18eadb6929b151cbb9de5074b37ddc0">BigNumber::AsByteArray</a>()</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <a class="code hl_variable" href="classBigNumber.html#a0c5d60ea79d4bb0311e7c4a9860ee866">_array</a> = std::make_unique&lt;uint8_t[]&gt;(<a class="code hl_function" href="classBigNumber.html#ae81809bd760592d8268f1a63aef0d146">GetNumBytes</a>());</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    BN_bn2bin(<a class="code hl_variable" href="classBigNumber.html#a97db62040b8cb3cdefeeee9e697b0cd2">_bn</a>, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)<a class="code hl_variable" href="classBigNumber.html#a0c5d60ea79d4bb0311e7c4a9860ee866">_array</a>.get());</div>
@@ -347,7 +347,6 @@ $(document).ready(function(){initNavTree('BigNumber_8cpp_source.html',''); initR
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
 </div>
 <div class="ttc" id="aBigNumber_8h_html"><div class="ttname"><a href="BigNumber_8h.html">BigNumber.h</a></div></div>
-<div class="ttc" id="abn__mp__prime__rabin__miller__trials_8c_html_ac310d9181e916ba43604099aee272c71"><div class="ttname"><a href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a></div><div class="ttdeci">int t</div><div class="ttdef"><b>Definition</b> <a href="bn__mp__prime__rabin__miller__trials_8c_source.html#l00020">bn_mp_prime_rabin_miller_trials.c:20</a></div></div>
 <div class="ttc" id="aclassBigNumber_html"><div class="ttname"><a href="classBigNumber.html">BigNumber</a></div><div class="ttdef"><b>Definition</b> <a href="BigNumber_8h_source.html#l00029">BigNumber.h:30</a></div></div>
 <div class="ttc" id="aclassBigNumber_html_a0c5d60ea79d4bb0311e7c4a9860ee866"><div class="ttname"><a href="classBigNumber.html#a0c5d60ea79d4bb0311e7c4a9860ee866">BigNumber::_array</a></div><div class="ttdeci">std::unique_ptr&lt; uint8_t[]&gt; _array</div><div class="ttdef"><b>Definition</b> <a href="BigNumber_8h_source.html#l00094">BigNumber.h:94</a></div></div>
 <div class="ttc" id="aclassBigNumber_html_a0d12fbec476322042ba36e61e1b0db82"><div class="ttname"><a href="classBigNumber.html#a0d12fbec476322042ba36e61e1b0db82">BigNumber::BigNumber</a></div><div class="ttdeci">BigNumber()</div><div class="ttdef"><b>Definition</b> <a href="BigNumber_8cpp_source.html#l00025">BigNumber.cpp:25</a></div></div>
@@ -376,10 +375,6 @@ $(document).ready(function(){initNavTree('BigNumber_8cpp_source.html',''); initR
 <div class="ttc" id="aclassByteBuffer_html"><div class="ttname"><a href="classByteBuffer.html">ByteBuffer</a></div><div class="ttdef"><b>Definition</b> <a href="ByteBuffer_8h_source.html#l00039">ByteBuffer.h:40</a></div></div>
 <div class="ttc" id="aclassByteBuffer_html_a4062fd07fb3de1b099c21fe98e73751c"><div class="ttname"><a href="classByteBuffer.html#a4062fd07fb3de1b099c21fe98e73751c">ByteBuffer::resize</a></div><div class="ttdeci">void resize(size_t newsize)</div><div class="ttdef"><b>Definition</b> <a href="ByteBuffer_8h_source.html#l00516">ByteBuffer.h:516</a></div></div>
 <div class="ttc" id="aclassByteBuffer_html_a5811e6da355e8c3d0f45997a557a666b"><div class="ttname"><a href="classByteBuffer.html#a5811e6da355e8c3d0f45997a557a666b">ByteBuffer::append</a></div><div class="ttdeci">void append(T value)</div><div class="ttdef"><b>Definition</b> <a href="ByteBuffer_8h_source.html#l00078">ByteBuffer.h:78</a></div></div>
-<div class="ttc" id="aclassbytes_html"><div class="ttname"><a href="classbytes.html">bytes</a></div><div class="ttdef"><b>Definition</b> <a href="fmt_2include_2fmt_2format_8h_source.html#l04101">format.h:4101</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

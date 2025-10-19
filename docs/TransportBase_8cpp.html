@@ -134,15 +134,14 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
 <div class="line"><span class="lineno">   12</span>    <span class="keywordflow">if</span> (o &lt; 0)</div>
 <div class="line"><span class="lineno">   13</span>    {</div>
-<div class="line"><span class="lineno">   14</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="namespacedetail.html#a83a5217291c4a1514faa2878775ac94a">mod</a> = o * -1;</div>
-<div class="line"><span class="lineno">   15</span>        <a class="code hl_function" href="namespacedetail.html#a83a5217291c4a1514faa2878775ac94a">mod</a> = std::fmod(mod, 2.0f * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="CommonDefines_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>));</div>
-<div class="line"><span class="lineno">   16</span>        <a class="code hl_function" href="namespacedetail.html#a83a5217291c4a1514faa2878775ac94a">mod</a> = -<a class="code hl_function" href="namespacedetail.html#a83a5217291c4a1514faa2878775ac94a">mod</a> + 2.0f * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="CommonDefines_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>);</div>
-<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedetail.html#a83a5217291c4a1514faa2878775ac94a">mod</a>;</div>
+<div class="line"><span class="lineno">   14</span>        <span class="keywordtype">float</span> mod = o * -1;</div>
+<div class="line"><span class="lineno">   15</span>        mod = std::fmod(mod, 2.0f * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="CommonDefines_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>));</div>
+<div class="line"><span class="lineno">   16</span>        mod = -mod + 2.0f * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="CommonDefines_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>);</div>
+<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">return</span> mod;</div>
 <div class="line"><span class="lineno">   18</span>    }</div>
 <div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> std::fmod(o, 2.0f * <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_define" href="CommonDefines_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>));</div>
 <div class="line"><span class="lineno">   20</span>}</div>
 <div class="ttc" id="aCommonDefines_8hpp_html_ae71449b1cc6e6250b91f539153a7a0d3"><div class="ttname"><a href="CommonDefines_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></div><div class="ttdeci">#define M_PI</div><div class="ttdef"><b>Definition</b> <a href="CommonDefines_8hpp_source.html#l00027">CommonDefines.hpp:27</a></div></div>
-<div class="ttc" id="anamespacedetail_html_a83a5217291c4a1514faa2878775ac94a"><div class="ttname"><a href="namespacedetail.html#a83a5217291c4a1514faa2878775ac94a">detail::mod</a></div><div class="ttdeci">auto mod(T x, int y) -&gt; T</div><div class="ttdef"><b>Definition</b> <a href="chrono_8h_source.html#l01652">chrono.h:1652</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -112,7 +112,7 @@ Include dependency graph for adtfile.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a939d4568b4058bf826a517f55cb963af" id="r_a939d4568b4058bf826a517f55cb963af"><td class="memItemLeft" align="right" valign="top">char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a939d4568b4058bf826a517f55cb963af">GetPlainName</a> (char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *FileName)</td></tr>
+<tr class="memitem:a939d4568b4058bf826a517f55cb963af" id="r_a939d4568b4058bf826a517f55cb963af"><td class="memItemLeft" align="right" valign="top">char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a939d4568b4058bf826a517f55cb963af">GetPlainName</a> (char const *FileName)</td></tr>
 <tr class="separator:a939d4568b4058bf826a517f55cb963af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e577b4c8e75312883ba4e8c571908ca" id="r_a5e577b4c8e75312883ba4e8c571908ca"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmap__tools_2vmap4__extractor_2adtfile_8cpp.html#a5e577b4c8e75312883ba4e8c571908ca">GetPlainName</a> (char *FileName)</td></tr>
 <tr class="separator:a5e577b4c8e75312883ba4e8c571908ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,10 +155,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i&lt;len-3; i++)</div>
 <div class="line"><span class="lineno">   65</span>    {</div>
 <div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span>(name[i] == <span class="charliteral">&#39; &#39;</span>)</div>
-<div class="line"><span class="lineno">   67</span>        <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">name</a>[i] = <span class="charliteral">&#39;_&#39;</span>;</div>
+<div class="line"><span class="lineno">   67</span>        name[i] = <span class="charliteral">&#39;_&#39;</span>;</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
 <div class="line"><span class="lineno">   69</span>}</div>
-<div class="ttc" id="anamespacedetail_html_ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297"><div class="ttname"><a href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">detail::arg_id_kind::name</a></div><div class="ttdeci">@ name</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -198,9 +197,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; len-3; i++)</div>
 <div class="line"><span class="lineno">   51</span>    {</div>
 <div class="line"><span class="lineno">   52</span>        <span class="keywordflow">if</span> (i &gt; 0 &amp;&amp; name[i] &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; name[i] &lt;= <span class="charliteral">&#39;Z&#39;</span> &amp;&amp; isalpha(name[i-1]))</div>
-<div class="line"><span class="lineno">   53</span>            <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">name</a>[i] |= 0x20;</div>
+<div class="line"><span class="lineno">   53</span>            name[i] |= 0x20;</div>
 <div class="line"><span class="lineno">   54</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((i == 0 || !isalpha(name[i-1])) &amp;&amp; name[i]&gt;=<span class="charliteral">&#39;a&#39;</span> &amp;&amp; name[i]&lt;=<span class="charliteral">&#39;z&#39;</span>)</div>
-<div class="line"><span class="lineno">   55</span>            <a class="code hl_enumvalue" href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330ab068931cc450442b63f5b3d276ea4297">name</a>[i] &amp;= ~0x20;</div>
+<div class="line"><span class="lineno">   55</span>            name[i] &amp;= ~0x20;</div>
 <div class="line"><span class="lineno">   56</span>    }</div>
 <div class="line"><span class="lineno">   57</span>    <span class="comment">//extension in lowercase</span></div>
 <div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = len - 3; i &lt; len; i++)</div>
@@ -273,9 +272,9 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>  * GetPlainName </td>
+          <td class="memname">char const  * GetPlainName </td>
           <td>(</td>
-          <td class="paramtype">char <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>FileName</em></td><td>)</td>
           <td></td>
         </tr>

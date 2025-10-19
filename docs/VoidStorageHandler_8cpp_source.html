@@ -118,11 +118,11 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="Item_8hpp.html">Objects/Item.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classWorldSession.html#a35b7e092f24e0d5fd1962aa1fbf6bf90">   17</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classWorldSession.html#a35b7e092f24e0d5fd1962aa1fbf6bf90">WorldSession::sendVoidStorageTransferResult</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> result)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classWorldSession.html#a35b7e092f24e0d5fd1962aa1fbf6bf90">   17</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classWorldSession.html#a35b7e092f24e0d5fd1962aa1fbf6bf90">WorldSession::sendVoidStorageTransferResult</a>(uint8_t result)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#if VERSION_STRING &gt;= Cata</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="classWorldPacket.html">WorldPacket</a> data(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca009ced1eb7fb4358989fa5077917b32e">SMSG_VOID_TRANSFER_RESULT</a>, 4);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(result);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    data &lt;&lt; uint32_t(result);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="classWorldSession.html#a87a1bd80483f57f33a127d12c51d2331">SendPacket</a>(&amp;data);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
@@ -158,14 +158,14 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="classCreature.html">Creature</a>* creature = player-&gt;<a class="code hl_function" href="classObject.html#a044f4e4a75b7f0a9b23eb6b22cb92f6c">getWorldMapCreature</a>(npcGuid);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">if</span> (!creature)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageUnlock - Unit (GUID: {}) not found.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageUnlock - Unit (GUID: {}) not found.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// Validate</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span> (!creature-&gt;<a class="code hl_function" href="classCreature.html#a33620100e9a6be4d8b1d1030e4849276">isVoidStorage</a>() &amp;&amp; creature-&gt;<a class="code hl_function" href="classObject.html#adcb0d373c2c4bdcb0c2e12387f345de7">getDistance</a>(player) &gt; 5.0f)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageUnlock - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageUnlock - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    player-&gt;<a class="code hl_function" href="classPlayer.html#a61ef506fc2623db02c73fe8ed3b6cac6">modCoinage</a>(-<a class="code hl_typedef" href="winvs__stdint_8h.html#a414156feea104f8f75b4ed9e3121b2f6">int64_t</a>(<a class="code hl_define" href="ItemDefines_8hpp.html#acfafa4984e9e1088411630fd47cce715">VOID_STORAGE_UNLOCK</a>));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    player-&gt;<a class="code hl_function" href="classPlayer.html#a61ef506fc2623db02c73fe8ed3b6cac6">modCoinage</a>(-int64_t(<a class="code hl_define" href="ItemDefines_8hpp.html#acfafa4984e9e1088411630fd47cce715">VOID_STORAGE_UNLOCK</a>));</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    player-&gt;unlockVoidStorage();</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
@@ -210,14 +210,14 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_class" href="classCreature.html">Creature</a>* creature = player-&gt;<a class="code hl_function" href="classObject.html#a044f4e4a75b7f0a9b23eb6b22cb92f6c">getWorldMapCreature</a>(npcGuid);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span> (!creature)</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageQuery - Unit (GUID: {}) not found.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageQuery - Unit (GUID: {}) not found.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// Validate</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span> (!creature-&gt;<a class="code hl_function" href="classCreature.html#a33620100e9a6be4d8b1d1030e4849276">isVoidStorage</a>() &amp;&amp; creature-&gt;<a class="code hl_function" href="classObject.html#adcb0d373c2c4bdcb0c2e12387f345de7">getDistance</a>(player) &gt; 5.0f)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageQuery - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageQuery - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
@@ -227,8 +227,8 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> count = 0;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; <a class="code hl_define" href="ItemDefines_8hpp.html#a6b6d2a7d318f61ee9dc927e6bd3757dd">VOID_STORAGE_MAX_SLOT</a>; ++i)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    uint8_t count = 0;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; <a class="code hl_define" href="ItemDefines_8hpp.html#a6b6d2a7d318f61ee9dc927e6bd3757dd">VOID_STORAGE_MAX_SLOT</a>; ++i)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">if</span> (player-&gt;getVoidStorageItem(i))</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            ++count;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_class" href="classByteBuffer.html">ByteBuffer</a> itemData((14 + 4 + 4 + 4 + 4) * count);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; <a class="code hl_define" href="ItemDefines_8hpp.html#a6b6d2a7d318f61ee9dc927e6bd3757dd">VOID_STORAGE_MAX_SLOT</a>; ++i)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; <a class="code hl_define" href="ItemDefines_8hpp.html#a6b6d2a7d318f61ee9dc927e6bd3757dd">VOID_STORAGE_MAX_SLOT</a>; ++i)</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    {</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_struct" href="structVoidStorageItem.html">VoidStorageItem</a>* item = player-&gt;getVoidStorageItem(i);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">if</span> (!item)</div>
@@ -266,17 +266,17 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[3]);</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        itemData &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(item-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#a0f81cb1757475ab836d7eac6bcb6b8a5">itemSuffixFactor</a>);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        itemData &lt;&lt; uint32_t(item-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#a0f81cb1757475ab836d7eac6bcb6b8a5">itemSuffixFactor</a>);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[4]);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        itemData &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(i);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        itemData &lt;&lt; uint32_t(i);</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[0]);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[6]);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[0]);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        itemData &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(item-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#a9963466428e3a324267c530c75ede1fd">itemRandomPropertyId</a>);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        itemData &lt;&lt; uint32_t(item-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#a9963466428e3a324267c530c75ede1fd">itemRandomPropertyId</a>);</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[4]);</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[5]);</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[5]);</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[7]);</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        itemData &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(item-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#a5719ee63130793b69bf7c49dd1f9bb9a">itemEntry</a>);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        itemData &lt;&lt; uint32_t(item-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#a5719ee63130793b69bf7c49dd1f9bb9a">itemEntry</a>);</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        itemData.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[7]);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
@@ -313,7 +313,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> npcGuid;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    npcGuid[1] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> countDeposit = recvData.<a class="code hl_function" href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">readBits</a>(26);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    uint32_t countDeposit = recvData.<a class="code hl_function" href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">readBits</a>(26);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordflow">if</span> (countDeposit &gt; 9)</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    {</div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    std::vector&lt;ObjectGuid&gt; itemGuids(countDeposit);</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; countDeposit; ++i)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; countDeposit; ++i)</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    {</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        itemGuids[i][4] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        itemGuids[i][6] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    npcGuid[6] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    npcGuid[4] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> countWithdraw = recvData.<a class="code hl_function" href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">readBits</a>(26);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    uint32_t countWithdraw = recvData.<a class="code hl_function" href="classByteBuffer.html#a887ee4c93dc24e3b0364e5a7afda5b45">readBits</a>(26);</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">if</span> (countWithdraw &gt; 9)</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    {</div>
@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    std::vector&lt;ObjectGuid&gt; itemIds(countWithdraw);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; countWithdraw; ++i)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; countWithdraw; ++i)</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    {</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        itemIds[i][4] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        itemIds[i][7] = recvData.<a class="code hl_function" href="classByteBuffer.html#a4e57b72f1270acfc2ff74037b60e9f7e">readBit</a>();</div>
@@ -366,7 +366,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    recvData.<a class="code hl_function" href="classByteBuffer.html#a0d8a5fc4f9d6ee46c14ff3fae8b5cfc5">flushBits</a>();</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; countDeposit; ++i)</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; countDeposit; ++i)</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    {</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        recvData.<a class="code hl_function" href="classByteBuffer.html#af60af480079f3fe5c0a374fd4fefc3c8">ReadByteSeq</a>(itemGuids[i][6]);</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        recvData.<a class="code hl_function" href="classByteBuffer.html#af60af480079f3fe5c0a374fd4fefc3c8">ReadByteSeq</a>(itemGuids[i][1]);</div>
@@ -381,7 +381,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    recvData.<a class="code hl_function" href="classByteBuffer.html#af60af480079f3fe5c0a374fd4fefc3c8">ReadByteSeq</a>(npcGuid[5]);</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    recvData.<a class="code hl_function" href="classByteBuffer.html#af60af480079f3fe5c0a374fd4fefc3c8">ReadByteSeq</a>(npcGuid[6]);</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; countWithdraw; ++i)</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; countWithdraw; ++i)</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    {</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        recvData.<a class="code hl_function" href="classByteBuffer.html#af60af480079f3fe5c0a374fd4fefc3c8">ReadByteSeq</a>(itemIds[i][3]);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        recvData.<a class="code hl_function" href="classByteBuffer.html#af60af480079f3fe5c0a374fd4fefc3c8">ReadByteSeq</a>(itemIds[i][1]);</div>
@@ -403,14 +403,14 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <a class="code hl_class" href="classCreature.html">Creature</a>* creature = player-&gt;<a class="code hl_function" href="classObject.html#a044f4e4a75b7f0a9b23eb6b22cb92f6c">getWorldMapCreature</a>(npcGuid);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">if</span> (!creature)</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    {</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Unit (GUID: {}) not found.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Unit (GUID: {}) not found.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="comment">// Validate</span></div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordflow">if</span> (!creature-&gt;<a class="code hl_function" href="classCreature.html#a33620100e9a6be4d8b1d1030e4849276">isVoidStorage</a>() &amp;&amp; creature-&gt;<a class="code hl_function" href="classObject.html#adcb0d373c2c4bdcb0c2e12387f345de7">getDistance</a>(player) &gt; 5.0f)</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    }</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
@@ -426,7 +426,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    }</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> freeBagSlots = 0;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    uint32_t freeBagSlots = 0;</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">if</span> (itemIds.size() != 0)</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    {</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        freeBagSlots = player-&gt;<a class="code hl_function" href="classPlayer.html#a0d789feb80d9a2315d2aba24c75a07a8">getItemInterface</a>()-&gt;<a class="code hl_function" href="classItemInterface.html#a75a909d0c9413d9913be7bfccdf1bbff">CalculateFreeSlots</a>(<span class="keyword">nullptr</span>);</div>
@@ -438,26 +438,26 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">if</span> (player-&gt;<a class="code hl_function" href="classPlayer.html#a2c6928cac1332a53caacb9654c7ec64c">getCoinage</a>() &lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(itemGuids.size() * <a class="code hl_define" href="ItemDefines_8hpp.html#a40dd03853d243fe185b179c1cfda6ba5">VOID_STORAGE_STORE_ITEM</a>))</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">if</span> (player-&gt;<a class="code hl_function" href="classPlayer.html#a2c6928cac1332a53caacb9654c7ec64c">getCoinage</a>() &lt; uint64_t(itemGuids.size() * <a class="code hl_define" href="ItemDefines_8hpp.html#a40dd03853d243fe185b179c1cfda6ba5">VOID_STORAGE_STORE_ITEM</a>))</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    {</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <a class="code hl_function" href="classWorldSession.html#a35b7e092f24e0d5fd1962aa1fbf6bf90">sendVoidStorageTransferResult</a>(<a class="code hl_enumvalue" href="ItemDefines_8hpp.html#a7b972041b7f001df3eb443b33c9c52b4a751647b5101dfe5f7aee26d5f59e9ea3">VOID_TRANSFER_ERROR_NOT_ENOUGH_MONEY</a>);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    }</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    std::pair&lt;VoidStorageItem, uint8_t&gt; depositItems[<a class="code hl_define" href="ItemDefines_8hpp.html#a57008d9bf9cd081a3c952422c846442e">VOID_STORAGE_MAX_DEPOSIT</a>];</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> depositCount = 0;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    uint8_t depositCount = 0;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="keywordflow">for</span> (std::vector&lt;ObjectGuid&gt;::iterator itr = itemGuids.begin(); itr != itemGuids.end(); ++itr)</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    {</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_class" href="classItem.html">Item</a>* item = player-&gt;<a class="code hl_function" href="classPlayer.html#a0d789feb80d9a2315d2aba24c75a07a8">getItemInterface</a>()-&gt;<a class="code hl_function" href="classItemInterface.html#a8fc143daf7b1c92c7cd1b84a2e65c422">GetItemByGUID</a>(*itr);</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">if</span> (!item)</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        {</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Player (GUID: {}, name: {}) wants to deposit an invalid item (item guid: %I64u).&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(*itr));</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Player (GUID: {}, name: {}) wants to deposit an invalid item (item guid: %I64u).&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), uint64_t(*itr));</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <a class="code hl_struct" href="structVoidStorageItem.html">VoidStorageItem</a> itemVS(<a class="code hl_define" href="ObjectMgr_8hpp.html#a736e30da2b5261060ac6cdbb5de3b787">sObjectMgr</a>.generateVoidStorageItemId(), item-&gt;<a class="code hl_function" href="classObject.html#ad4e6bfe8fd236724215bc3e671eee225">getEntry</a>(), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a><span class="keyword">&gt;</span>(item-&gt;<a class="code hl_function" href="classItem.html#a31640c43ff9b8d894604f4e00fbbde21">getCreatorGuid</a>()), item-&gt;<a class="code hl_function" href="classItem.html#a477ab56fadf27909daca80310e8776de">getRandomPropertiesId</a>(), item-&gt;<a class="code hl_function" href="classItem.html#adcf3aff6f319782923fe9d6ef47648b0">getPropertySeed</a>());</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <a class="code hl_struct" href="structVoidStorageItem.html">VoidStorageItem</a> itemVS(<a class="code hl_define" href="ObjectMgr_8hpp.html#a736e30da2b5261060ac6cdbb5de3b787">sObjectMgr</a>.generateVoidStorageItemId(), item-&gt;<a class="code hl_function" href="classObject.html#ad4e6bfe8fd236724215bc3e671eee225">getEntry</a>(), <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(item-&gt;<a class="code hl_function" href="classItem.html#a31640c43ff9b8d894604f4e00fbbde21">getCreatorGuid</a>()), item-&gt;<a class="code hl_function" href="classItem.html#a477ab56fadf27909daca80310e8776de">getRandomPropertiesId</a>(), item-&gt;<a class="code hl_function" href="classItem.html#adcf3aff6f319782923fe9d6ef47648b0">getPropertySeed</a>());</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot = player-&gt;addVoidStorageItem(itemVS);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        uint8_t slot = player-&gt;addVoidStorageItem(itemVS);</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        depositItems[depositCount++] = std::make_pair(itemVS, slot);</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
@@ -465,19 +465,19 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        item-&gt;<a class="code hl_function" href="classItem.html#a9bdd46988167ab05ff08263bbbf7520a">deleteFromDB</a>();</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    }</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a414156feea104f8f75b4ed9e3121b2f6">int64_t</a> cost = depositCount * <a class="code hl_define" href="ItemDefines_8hpp.html#a40dd03853d243fe185b179c1cfda6ba5">VOID_STORAGE_STORE_ITEM</a>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    int64_t cost = depositCount * <a class="code hl_define" href="ItemDefines_8hpp.html#a40dd03853d243fe185b179c1cfda6ba5">VOID_STORAGE_STORE_ITEM</a>;</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    player-&gt;<a class="code hl_function" href="classPlayer.html#a61ef506fc2623db02c73fe8ed3b6cac6">modCoinage</a>(-cost);</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <a class="code hl_struct" href="structVoidStorageItem.html">VoidStorageItem</a> withdrawItems[<a class="code hl_define" href="ItemDefines_8hpp.html#ae1894f34c0eebe78e0acdafc8af0357c">VOID_STORAGE_MAX_WITHDRAW</a>];</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> withdrawCount = 0;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    uint8_t withdrawCount = 0;</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">for</span> (std::vector&lt;ObjectGuid&gt;::iterator itr = itemIds.begin(); itr != itemIds.end(); ++itr)</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    {</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slot;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        uint8_t slot;</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <a class="code hl_struct" href="structVoidStorageItem.html">VoidStorageItem</a>* itemVS = player-&gt;getVoidStorageItem(*itr, slot);</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">if</span> (!itemVS)</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Player (GUID: {}, name: {}) tried to withdraw an invalid item (id: %I64u)&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(*itr));</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Player (GUID: {}, name: {}) tried to withdraw an invalid item (id: %I64u)&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), uint64_t(*itr));</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        }</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
@@ -488,11 +488,11 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        <span class="keywordflow">if</span> (msg != <a class="code hl_enumvalue" href="ItemDefines_8hpp.html#a5bece5b37a2e761a48a38580fb3827ffae892668e6c906dac10cdfbd268111d53">ADD_ITEM_RESULT_OK</a>)</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        {</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            <a class="code hl_function" href="classWorldSession.html#a35b7e092f24e0d5fd1962aa1fbf6bf90">sendVoidStorageTransferResult</a>(<a class="code hl_enumvalue" href="ItemDefines_8hpp.html#a7b972041b7f001df3eb443b33c9c52b4aa38b4bb723c63a6c669c04e14409ea87">VOID_TRANSFER_ERROR_INVENTORY_FULL</a>);</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Player (GUID: {}, name: {}) couldn&#39;t withdraw item id %I64u because inventory was full.&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(*itr));</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidStorageTransfer - Player (GUID: {}, name: {}) couldn&#39;t withdraw item id %I64u because inventory was full.&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), uint64_t(*itr));</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        }</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        item-&gt;setCreatorGuid(<a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(itemVS-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#ae89fbfbc9d2104f15b5963ce71e5e6d1">creatorGuid</a>));</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        item-&gt;setCreatorGuid(uint64_t(itemVS-&gt;<a class="code hl_variable" href="structVoidStorageItem.html#ae89fbfbc9d2104f15b5963ce71e5e6d1">creatorGuid</a>));</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        item-&gt;addFlags(<a class="code hl_enumvalue" href="ItemDefines_8hpp.html#a16e1845ce8ea1575c28dc79d81beac15ab3227d83593cceb3a03fba2dba1d2eb4">ITEM_FLAG_SOULBOUND</a>);</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        withdrawItems[withdrawCount++] = *itemVS;</div>
@@ -506,7 +506,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    data.<a class="code hl_function" href="classByteBuffer.html#a1d490bab3bd96c7da0d16cf61daac9b4">writeBits</a>(depositCount, 5);</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    data.<a class="code hl_function" href="classByteBuffer.html#a1d490bab3bd96c7da0d16cf61daac9b4">writeBits</a>(withdrawCount, 5);</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; depositCount; ++i)</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; depositCount; ++i)</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    {</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> itemId = depositItems[i].first.itemId;</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> creatorGuid = depositItems[i].first.creatorGuid;</div>
@@ -528,7 +528,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        data.<a class="code hl_function" href="classByteBuffer.html#a733a0eb5380bf8c1d2dcc8427cd207af">writeBit</a>(itemId[6]);</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    }</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; withdrawCount; ++i)</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; withdrawCount; ++i)</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    {</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> itemId = withdrawItems[i].<a class="code hl_variable" href="structVoidStorageItem.html#a6bcdc74e848f0ac3459d4a1c4e0e0e97">itemId</a>;</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        data.<a class="code hl_function" href="classByteBuffer.html#a733a0eb5380bf8c1d2dcc8427cd207af">writeBit</a>(itemId[1]);</div>
@@ -543,7 +543,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    data.<a class="code hl_function" href="classByteBuffer.html#a0d8a5fc4f9d6ee46c14ff3fae8b5cfc5">flushBits</a>();</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; withdrawCount; ++i)</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; withdrawCount; ++i)</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    {</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> itemId = withdrawItems[i].<a class="code hl_variable" href="structVoidStorageItem.html#a6bcdc74e848f0ac3459d4a1c4e0e0e97">itemId</a>;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[3]);</div>
@@ -556,12 +556,12 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[4]);</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    }</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i &lt; depositCount; ++i)</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; depositCount; ++i)</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    {</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> itemId = depositItems[i].first.itemId;</div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> creatorGuid = depositItems[i].first.creatorGuid;</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(depositItems[i].first.itemSuffixFactor);</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        data &lt;&lt; uint32_t(depositItems[i].first.itemSuffixFactor);</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[6]);</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[4]);</div>
@@ -577,16 +577,16 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[5]);</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[7]);</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span> </div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(depositItems[i].first.itemEntry);</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        data &lt;&lt; uint32_t(depositItems[i].first.itemEntry);</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[1]);</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span> </div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(depositItems[i].second); <span class="comment">// slot</span></div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>        data &lt;&lt; uint32_t(depositItems[i].second); <span class="comment">// slot</span></div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span> </div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(creatorGuid[2]);</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>        data.<a class="code hl_function" href="classByteBuffer.html#a69f930038e7f5def8eb567bc0d738380">WriteByteSeq</a>(itemId[7]);</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span> </div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(depositItems[i].first.itemRandomPropertyId);</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>        data &lt;&lt; uint32_t(depositItems[i].first.itemRandomPropertyId);</div>
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>    }</div>
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>    <a class="code hl_function" href="classWorldSession.html#a87a1bd80483f57f33a127d12c51d2331">SendPacket</a>(&amp;data);</div>
@@ -605,7 +605,7 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debugFlag(<a class="code hl_enumvalue" href="namespaceAscEmu_1_1Logging.html#ae95a0917e684bc883290e2deeca999d5aafe4cd3cba6a820330fe96580d847ba5">AscEmu::Logging::LF_OPCODE</a>, <span class="stringliteral">&quot;Received CMSG_VOID_SWAP_ITEM&quot;</span>);</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span> </div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* player = <a class="code hl_function" href="classWorldSession.html#a014d7fdeb157410b75dfd4bd0fe0efc2">GetPlayer</a>();</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> newSlot;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    uint32_t newSlot;</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> npcGuid;</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <a class="code hl_struct" href="structObjectGuid.html">ObjectGuid</a> itemId;</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
@@ -648,14 +648,14 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    <a class="code hl_class" href="classCreature.html">Creature</a>* creature = player-&gt;<a class="code hl_function" href="classObject.html#a044f4e4a75b7f0a9b23eb6b22cb92f6c">getWorldMapCreature</a>(npcGuid);</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    <span class="keywordflow">if</span> (!creature)</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    {</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidSwapItem - Unit (GUID: {}) not found.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidSwapItem - Unit (GUID: {}) not found.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    }</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="comment">// Validate</span></div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="keywordflow">if</span> (!creature-&gt;<a class="code hl_function" href="classCreature.html#a33620100e9a6be4d8b1d1030e4849276">isVoidStorage</a>() &amp;&amp; creature-&gt;<a class="code hl_function" href="classObject.html#adcb0d373c2c4bdcb0c2e12387f345de7">getDistance</a>(player) &gt; 5.0f)</div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    {</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidSwapItem - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(npcGuid));</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidSwapItem - Unit (GUID: {}) can&#39;t interact with it or is no Void Storage.&quot;</span>, uint64_t(npcGuid));</div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    }</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
@@ -665,10 +665,10 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    }</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> oldSlot;</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    uint8_t oldSlot;</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    <span class="keywordflow">if</span> (!player-&gt;getVoidStorageItem(itemId, oldSlot))</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    {</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidSwapItem - Player (GUID: {}, name: {}) requested swapping an invalid item (slot: {}, itemid: %I64u).&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), newSlot, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>(itemId));</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.debug(<span class="stringliteral">&quot;handleVoidSwapItem - Player (GUID: {}, name: {}) requested swapping an invalid item (slot: {}, itemid: %I64u).&quot;</span>, player-&gt;<a class="code hl_function" href="classObject.html#ad4bcb83b6b6f44f83f42dac01b12b339">getGuidLow</a>(), player-&gt;<a class="code hl_function" href="classPlayer.html#a406231b7f86c1622142ea0ad1dfa773a">getName</a>(), newSlot, uint64_t(itemId));</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    }</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
@@ -744,10 +744,10 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    }</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keywordflow">if</span> (usedDestSlot)</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(oldSlot);</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        data &lt;&lt; uint32_t(oldSlot);</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordflow">if</span> (usedSrcSlot)</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        data &lt;&lt; <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>(newSlot);</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        data &lt;&lt; uint32_t(newSlot);</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <a class="code hl_function" href="classWorldSession.html#a87a1bd80483f57f33a127d12c51d2331">SendPacket</a>(&amp;data);</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
@@ -827,10 +827,6 @@ $(document).ready(function(){initNavTree('VoidStorageHandler_8cpp_source.html','
 <div class="ttc" id="astructVoidStorageItem_html_a6bcdc74e848f0ac3459d4a1c4e0e0e97"><div class="ttname"><a href="structVoidStorageItem.html#a6bcdc74e848f0ac3459d4a1c4e0e0e97">VoidStorageItem::itemId</a></div><div class="ttdeci">uint64_t itemId</div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00056">ItemInterface.h:56</a></div></div>
 <div class="ttc" id="astructVoidStorageItem_html_a9963466428e3a324267c530c75ede1fd"><div class="ttname"><a href="structVoidStorageItem.html#a9963466428e3a324267c530c75ede1fd">VoidStorageItem::itemRandomPropertyId</a></div><div class="ttdeci">uint32_t itemRandomPropertyId</div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00059">ItemInterface.h:59</a></div></div>
 <div class="ttc" id="astructVoidStorageItem_html_ae89fbfbc9d2104f15b5963ce71e5e6d1"><div class="ttname"><a href="structVoidStorageItem.html#ae89fbfbc9d2104f15b5963ce71e5e6d1">VoidStorageItem::creatorGuid</a></div><div class="ttdeci">uint32_t creatorGuid</div><div class="ttdef"><b>Definition</b> <a href="ItemInterface_8h_source.html#l00058">ItemInterface.h:58</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a414156feea104f8f75b4ed9e3121b2f6"><div class="ttname"><a href="winvs__stdint_8h.html#a414156feea104f8f75b4ed9e3121b2f6">int64_t</a></div><div class="ttdeci">signed __int64 int64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00089">winvs_stdint.h:89</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

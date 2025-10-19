@@ -121,7 +121,7 @@ Include dependency graph for Northrend_Beasts.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5620e00aa2192c08cd949d9ac0d866a7" id="r_a5620e00aa2192c08cd949d9ac0d866a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Northrend__Beasts_8cpp.html#a5620e00aa2192c08cd949d9ac0d866a7">ArcticBreathEffect</a> (<a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> effectIndex, <a class="el" href="classSpell.html">Spell</a> *pSpell)</td></tr>
+<tr class="memitem:a5620e00aa2192c08cd949d9ac0d866a7" id="r_a5620e00aa2192c08cd949d9ac0d866a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Northrend__Beasts_8cpp.html#a5620e00aa2192c08cd949d9ac0d866a7">ArcticBreathEffect</a> (uint8_t effectIndex, <a class="el" href="classSpell.html">Spell</a> *pSpell)</td></tr>
 <tr class="memdesc:a5620e00aa2192c08cd949d9ac0d866a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSpell.html">Spell</a> Arctic Breath.  <br /></td></tr>
 <tr class="separator:a5620e00aa2192c08cd949d9ac0d866a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -133,9 +133,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> ArcticBreathEffect </td>
+          <td class="memname">bool ArcticBreathEffect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>effectIndex</em>, </td>
         </tr>
         <tr>
@@ -158,7 +158,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno"> 1217</span>{</div>
 <div class="line"><span class="lineno"> 1218</span>    <span class="keywordflow">if</span> (effectIndex == <a class="code hl_enumvalue" href="SpellScriptDefines_8hpp.html#a2cb5a990f487214463602754e618d7c8a4078f853495718b8cf1d893ea3d6008d">EFF_INDEX_0</a>)</div>
 <div class="line"><span class="lineno"> 1219</span>    {</div>
-<div class="line"><span class="lineno"> 1220</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> spellId = pSpell-&gt;<a class="code hl_function" href="classSpell.html#a1b106244568a758443b4d44cdec6bac3">calculateEffect</a>(effectIndex);</div>
+<div class="line"><span class="lineno"> 1220</span>        uint32_t spellId = pSpell-&gt;<a class="code hl_function" href="classSpell.html#a1b106244568a758443b4d44cdec6bac3">calculateEffect</a>(effectIndex);</div>
 <div class="line"><span class="lineno"> 1221</span>        pSpell-&gt;<a class="code hl_function" href="classSpell.html#a14e746295821f52d56fe840007e3f8b0">getUnitCaster</a>()-&gt;<a class="code hl_function" href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">castSpell</a>(pSpell-&gt;<a class="code hl_function" href="classSpell.html#a1e87f95ab5de37341fc84eef03fdcf6f">getUnitTarget</a>(), spellId, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno"> 1222</span>    }</div>
 <div class="line"><span class="lineno"> 1223</span> </div>
@@ -169,7 +169,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassSpell_html_a1b106244568a758443b4d44cdec6bac3"><div class="ttname"><a href="classSpell.html#a1b106244568a758443b4d44cdec6bac3">Spell::calculateEffect</a></div><div class="ttdeci">int32_t calculateEffect(uint8_t effIndex)</div><div class="ttdef"><b>Definition</b> <a href="Spell_8cpp_source.html#l01469">Spell.cpp:1469</a></div></div>
 <div class="ttc" id="aclassSpell_html_a1e87f95ab5de37341fc84eef03fdcf6f"><div class="ttname"><a href="classSpell.html#a1e87f95ab5de37341fc84eef03fdcf6f">Spell::getUnitTarget</a></div><div class="ttdeci">Unit * getUnitTarget() const</div><div class="ttdef"><b>Definition</b> <a href="Spell_8cpp_source.html#l05682">Spell.cpp:5682</a></div></div>
 <div class="ttc" id="aclassUnit_html_a0dae38077fd2ab3a5da5ad5433f67e5f"><div class="ttname"><a href="classUnit.html#a0dae38077fd2ab3a5da5ad5433f67e5f">Unit::castSpell</a></div><div class="ttdeci">SpellCastResult castSpell(uint64_t targetGuid, uint32_t spellId, bool triggered=false)</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l03564">Unit.cpp:3564</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

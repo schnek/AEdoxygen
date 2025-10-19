@@ -127,9 +127,9 @@ Include dependency graph for QuestCommands.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaa203dc4c7969a9f439a991f9f417142" id="r_aaa203dc4c7969a9f439a991f9f417142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="QuestCommands_8cpp.html#aaa203dc4c7969a9f439a991f9f417142">GetQuestIDFromLink</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *questlink)</td></tr>
+<tr class="memitem:aaa203dc4c7969a9f439a991f9f417142" id="r_aaa203dc4c7969a9f439a991f9f417142"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="QuestCommands_8cpp.html#aaa203dc4c7969a9f439a991f9f417142">GetQuestIDFromLink</a> (const char *questlink)</td></tr>
 <tr class="separator:aaa203dc4c7969a9f439a991f9f417142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538bdfa709cd3199622d19c45548626d" id="r_a538bdfa709cd3199622d19c45548626d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="QuestCommands_8cpp.html#a538bdfa709cd3199622d19c45548626d">RemoveQuestFromPlayer</a> (<a class="el" href="classPlayer.html">Player</a> *plr, <a class="el" href="structQuestProperties.html">QuestProperties</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *qst)</td></tr>
+<tr class="memitem:a538bdfa709cd3199622d19c45548626d" id="r_a538bdfa709cd3199622d19c45548626d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="QuestCommands_8cpp.html#a538bdfa709cd3199622d19c45548626d">RemoveQuestFromPlayer</a> (<a class="el" href="classPlayer.html">Player</a> *plr, <a class="el" href="structQuestProperties.html">QuestProperties</a> const *qst)</td></tr>
 <tr class="separator:a538bdfa709cd3199622d19c45548626d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -140,9 +140,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> GetQuestIDFromLink </td>
+          <td class="memname">uint32_t GetQuestIDFromLink </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>questlink</em></td><td>)</td>
           <td></td>
         </tr>
@@ -154,21 +154,15 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   28</span>    <span class="keywordflow">if</span> (questlink == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> = strstr(questlink, <span class="stringliteral">&quot;|Hquest:&quot;</span>);</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* ptr = strstr(questlink, <span class="stringliteral">&quot;|Hquest:&quot;</span>);</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (ptr == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   33</span>    {</div>
 <div class="line"><span class="lineno">   34</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">   35</span>    }</div>
 <div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> std::stoul(<a class="code hl_function" href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a> + 8);       <span class="comment">// quest id is just past &quot;|Hquest:&quot; (8 bytes)</span></div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> std::stoul(ptr + 8);       <span class="comment">// quest id is just past &quot;|Hquest:&quot; (8 bytes)</span></div>
 <div class="line"><span class="lineno">   38</span>}</div>
-<div class="ttc" id="afmt_2include_2fmt_2format_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdef"><b>Definition</b> <a href="fmt_2include_2fmt_2format_8h_source.html#l04067">format.h:4067</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="QuestCommands_8cpp_aaa203dc4c7969a9f439a991f9f417142_cgraph.svg" width="256" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="QuestCommands_8cpp_aaa203dc4c7969a9f439a991f9f417142_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
@@ -191,7 +185,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structQuestProperties.html">QuestProperties</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structQuestProperties.html">QuestProperties</a> const *&#160;</td>
           <td class="paramname"><em>qst</em>&#160;</td>
         </tr>
         <tr>
@@ -222,7 +216,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   57</span>                questLog-&gt;finishAndRemove();</div>
 <div class="line"><span class="lineno">   58</span> </div>
 <div class="line"><span class="lineno">   59</span>                <span class="comment">// Remove all items given by the questgiver at the beginning</span></div>
-<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> itemId : qst-&gt;receive_items)</div>
+<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">for</span> (uint32_t itemId : qst-&gt;receive_items)</div>
 <div class="line"><span class="lineno">   61</span>                {</div>
 <div class="line"><span class="lineno">   62</span>                    <span class="keywordflow">if</span> (itemId)</div>
 <div class="line"><span class="lineno">   63</span>                        plr-&gt;<a class="code hl_function" href="classPlayer.html#a0d789feb80d9a2315d2aba24c75a07a8">getItemInterface</a>()-&gt;<a class="code hl_function" href="classItemInterface.html#afab4c9d521218ee3b2dacbae4d0c409e">RemoveItemAmt</a>(itemId, 1);</div>
@@ -251,7 +245,6 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassPlayer_html_a8b93cd9b8b8d818eaba584313fe31ed3"><div class="ttname"><a href="classPlayer.html#a8b93cd9b8b8d818eaba584313fe31ed3">Player::hasQuestFinished</a></div><div class="ttdeci">bool hasQuestFinished(uint32_t questId) const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l08935">Player.cpp:8935</a></div></div>
 <div class="ttc" id="aclassPlayer_html_aaa3ccb5fdef21b0a171ef321312c089d"><div class="ttname"><a href="classPlayer.html#aaa3ccb5fdef21b0a171ef321312c089d">Player::getQuestLogByQuestId</a></div><div class="ttdeci">QuestLogEntry * getQuestLogByQuestId(uint32_t questId) const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l08859">Player.cpp:8859</a></div></div>
 <div class="ttc" id="aclassPlayer_html_afef800dab6e3369aafbc1dbc8e742748"><div class="ttname"><a href="classPlayer.html#afef800dab6e3369aafbc1dbc8e742748">Player::updateNearbyQuestGameObjects</a></div><div class="ttdeci">void updateNearbyQuestGameObjects()</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l09043">Player.cpp:9043</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

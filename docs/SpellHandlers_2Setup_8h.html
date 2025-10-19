@@ -374,13 +374,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  338</span>    <span class="comment">// Call legacy script setup</span></div>
 <div class="line"><span class="lineno">  339</span>    <a class="code hl_function" href="ItemSpells__1_8cpp.html#aabdcc69c6b3b580308ffcf62cfd772c9">SetupLegacyItemSpells_1</a>(mgr);</div>
 <div class="line"><span class="lineno">  340</span> </div>
-<div class="line"><span class="lineno">  341</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> deathbringerWillIds[] =</div>
+<div class="line"><span class="lineno">  341</span>    uint32_t deathbringerWillIds[] =</div>
 <div class="line"><span class="lineno">  342</span>    {</div>
 <div class="line"><span class="lineno">  343</span>        <a class="code hl_enumvalue" href="Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaf12dff7bb24d2bbebc128e60ab7d6f8a">SPELL_DEATHBRINGERS_WILL_NORMAL_DUMMY</a>,</div>
 <div class="line"><span class="lineno">  344</span>        <a class="code hl_enumvalue" href="Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa620c8a268a8d600b7709f2dbd5563644">SPELL_DEATHBRINGERS_WILL_HEROIC_DUMMY</a>,</div>
 <div class="line"><span class="lineno">  345</span>        0</div>
 <div class="line"><span class="lineno">  346</span>    };</div>
-<div class="line"><span class="lineno">  347</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#afe9fb211c842aa6757f1fe737dda8669">register_spell_script</a>(deathbringerWillIds, <span class="keyword">new</span> <a class="code hl_class" href="classDeathbringersWill.html">DeathbringersWill</a>(105 * <a class="code hl_enumvalue" href="namespaceTimeVarsMs.html#a7ee1bac77b02e5403983f80c3310bed5a67c58631f7a312f864b95d8ae595c34f">TimeVarsMs::Second</a>));</div>
+<div class="line"><span class="lineno">  347</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#afe9fb211c842aa6757f1fe737dda8669">register_spell_script</a>(deathbringerWillIds, <span class="keyword">new</span> <a class="code hl_class" href="classDeathbringersWill.html">DeathbringersWill</a>(105 * <a class="code hl_enumvalue" href="namespaceTimeVarsMs.html#a3cbd5930a0734293c36f6bea018a7161a67c58631f7a312f864b95d8ae595c34f">TimeVarsMs::Second</a>));</div>
 <div class="line"><span class="lineno">  348</span> </div>
 <div class="line"><span class="lineno">  349</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#afe9fb211c842aa6757f1fe737dda8669">register_spell_script</a>(<a class="code hl_enumvalue" href="Items_8cpp.html#aa77213609694db5041a17c0d1d1282efa7a1a8d6b16cefc0a44f4ed821ee5250b">SPELL_MURLOC_COSTUME</a>, <span class="keyword">new</span> <a class="code hl_class" href="classMurlocCostume.html">MurlocCostume</a>);</div>
 <div class="line"><span class="lineno">  350</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#afe9fb211c842aa6757f1fe737dda8669">register_spell_script</a>(<a class="code hl_enumvalue" href="Items_8cpp.html#aa77213609694db5041a17c0d1d1282efaf2377f09a2fc2329a291e2dbf331a033">SPELL_ORB_OF_DECEPTION</a>, <span class="keyword">new</span> <a class="code hl_class" href="classOrbOfDeception.html">OrbOfDeception</a>);</div>
@@ -400,8 +400,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassOrbOfDeception_html"><div class="ttname"><a href="classOrbOfDeception.html">OrbOfDeception</a></div><div class="ttdef"><b>Definition</b> <a href="Items_8cpp_source.html#l00199">Items.cpp:200</a></div></div>
 <div class="ttc" id="aclassShadowmourne_html"><div class="ttname"><a href="classShadowmourne.html">Shadowmourne</a></div><div class="ttdef"><b>Definition</b> <a href="Items_8cpp_source.html#l00255">Items.cpp:256</a></div></div>
 <div class="ttc" id="aclassSoulFragment_html"><div class="ttname"><a href="classSoulFragment.html">SoulFragment</a></div><div class="ttdef"><b>Definition</b> <a href="Items_8cpp_source.html#l00310">Items.cpp:311</a></div></div>
-<div class="ttc" id="anamespaceTimeVarsMs_html_a7ee1bac77b02e5403983f80c3310bed5a67c58631f7a312f864b95d8ae595c34f"><div class="ttname"><a href="namespaceTimeVarsMs.html#a7ee1bac77b02e5403983f80c3310bed5a67c58631f7a312f864b95d8ae595c34f">TimeVarsMs::Second</a></div><div class="ttdeci">@ Second</div><div class="ttdef"><b>Definition</b> <a href="CommonTime_8hpp_source.html#l00025">CommonTime.hpp:25</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
+<div class="ttc" id="anamespaceTimeVarsMs_html_a3cbd5930a0734293c36f6bea018a7161a67c58631f7a312f864b95d8ae595c34f"><div class="ttname"><a href="namespaceTimeVarsMs.html#a3cbd5930a0734293c36f6bea018a7161a67c58631f7a312f864b95d8ae595c34f">TimeVarsMs::Second</a></div><div class="ttdeci">@ Second</div><div class="ttdef"><b>Definition</b> <a href="CommonTime_8hpp_source.html#l00025">CommonTime.hpp:25</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -434,7 +433,7 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="DeathKnightSpells_8cpp_source.html#l00356">356</a> of file <a class="el" href="DeathKnightSpells_8cpp_source.html">DeathKnightSpells.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  357</span>{</div>
 <div class="line"><span class="lineno">  358</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(50842, &amp;<a class="code hl_function" href="DeathKnightSpells_8cpp.html#a02ee7404661cfbf35323bdbba7051b10">Pestilence</a>);</div>
-<div class="line"><span class="lineno">  359</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> DeathStrikeIds[] =</div>
+<div class="line"><span class="lineno">  359</span>    uint32_t DeathStrikeIds[] =</div>
 <div class="line"><span class="lineno">  360</span>    {</div>
 <div class="line"><span class="lineno">  361</span>        49998, <span class="comment">// Rank 1</span></div>
 <div class="line"><span class="lineno">  362</span>        49999, <span class="comment">// Rank 2</span></div>
@@ -461,7 +460,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  383</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(49894, &amp;<a class="code hl_function" href="DeathKnightSpells_8cpp.html#a0cc77cb51464516cfab4bd0fea761cdf">DeathCoil</a>);   <span class="comment">// Rank 4</span></div>
 <div class="line"><span class="lineno">  384</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(49895, &amp;<a class="code hl_function" href="DeathKnightSpells_8cpp.html#a0cc77cb51464516cfab4bd0fea761cdf">DeathCoil</a>);   <span class="comment">// Rank 5</span></div>
 <div class="line"><span class="lineno">  385</span> </div>
-<div class="line"><span class="lineno">  386</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> bladedarmorids[] =</div>
+<div class="line"><span class="lineno">  386</span>    uint32_t bladedarmorids[] =</div>
 <div class="line"><span class="lineno">  387</span>    {</div>
 <div class="line"><span class="lineno">  388</span>        48978,</div>
 <div class="line"><span class="lineno">  389</span>        49390,</div>
@@ -526,7 +525,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="DruidSpells_8cpp_source.html#l00125">125</a> of file <a class="el" href="DruidSpells_8cpp_source.html">DruidSpells.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> StarfallIds[] =</div>
+<div class="line"><span class="lineno">  127</span>    uint32_t StarfallIds[] =</div>
 <div class="line"><span class="lineno">  128</span>    {</div>
 <div class="line"><span class="lineno">  129</span>        50286, <span class="comment">// Rank 1</span></div>
 <div class="line"><span class="lineno">  130</span>        53196, <span class="comment">// Rank 2</span></div>
@@ -536,7 +535,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  134</span>    };</div>
 <div class="line"><span class="lineno">  135</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(StarfallIds, &amp;<a class="code hl_function" href="DruidSpells_8cpp.html#a95cb777da3b9fd61a11229942886b529">Starfall</a>);</div>
 <div class="line"><span class="lineno">  136</span> </div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> predatorystrikesids[] =</div>
+<div class="line"><span class="lineno">  137</span>    uint32_t predatorystrikesids[] =</div>
 <div class="line"><span class="lineno">  138</span>    {</div>
 <div class="line"><span class="lineno">  139</span>        16972,</div>
 <div class="line"><span class="lineno">  140</span>        16974,</div>
@@ -545,7 +544,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  143</span>    };</div>
 <div class="line"><span class="lineno">  144</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(predatorystrikesids, &amp;<a class="code hl_function" href="DruidSpells_8cpp.html#a5b2684d9e025adb2da9a430c4de57721">PredatoryStrikes</a>);</div>
 <div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> tranquilityids[] =</div>
+<div class="line"><span class="lineno">  146</span>    uint32_t tranquilityids[] =</div>
 <div class="line"><span class="lineno">  147</span>    {</div>
 <div class="line"><span class="lineno">  148</span>        740,</div>
 <div class="line"><span class="lineno">  149</span>        8918,</div>
@@ -558,7 +557,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  156</span>    };</div>
 <div class="line"><span class="lineno">  157</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(tranquilityids, &amp;<a class="code hl_function" href="DruidSpells_8cpp.html#a95f2f238c41a9bb2503a71251eed1d7c">Tranquility</a>);</div>
 <div class="line"><span class="lineno">  158</span> </div>
-<div class="line"><span class="lineno">  159</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> lifebloomids[] =</div>
+<div class="line"><span class="lineno">  159</span>    uint32_t lifebloomids[] =</div>
 <div class="line"><span class="lineno">  160</span>    {</div>
 <div class="line"><span class="lineno">  161</span>        33763,</div>
 <div class="line"><span class="lineno">  162</span>        48450,</div>
@@ -610,7 +609,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  336</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(34471, &amp;<a class="code hl_function" href="HunterSpells_8cpp.html#aee754b9b73115024382ccaeed503c52a">TheBeastWithin</a>);</div>
 <div class="line"><span class="lineno">  337</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(34477, &amp;<a class="code hl_function" href="HunterSpells_8cpp.html#aa3f30312b8feda2f82244d2a4e5ae818">Misdirection</a>);</div>
 <div class="line"><span class="lineno">  338</span> </div>
-<div class="line"><span class="lineno">  339</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> explosiveshotids[] =</div>
+<div class="line"><span class="lineno">  339</span>    uint32_t explosiveshotids[] =</div>
 <div class="line"><span class="lineno">  340</span>    {</div>
 <div class="line"><span class="lineno">  341</span>        53301,</div>
 <div class="line"><span class="lineno">  342</span>        60051,</div>
@@ -668,7 +667,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  896</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(8213, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a967081d043091e66a5759c4439da621d">CookedDeviateFish</a>);            <span class="comment">// Savory Deviate Delight</span></div>
 <div class="line"><span class="lineno">  897</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(26074, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a241984c3c7d37ea0ee96773961929e65">HolidayCheer</a>);                <span class="comment">// Holiday Cheer</span></div>
 <div class="line"><span class="lineno">  898</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(13120, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a050228a9ad391f8c1b21c0e98a2ea8cc">NetOMatic</a>);                   <span class="comment">// Net-o-Matic</span></div>
-<div class="line"><span class="lineno">  899</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> BanishExileIds[] = { 4130, 4131, 4132, 0 };</div>
+<div class="line"><span class="lineno">  899</span>    uint32_t BanishExileIds[] = { 4130, 4131, 4132, 0 };</div>
 <div class="line"><span class="lineno">  900</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(BanishExileIds, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a17af66c051b23e2b7a3be1b6032f953c">BanishExile</a>);        <span class="comment">// Essence of the Exile Quest</span></div>
 <div class="line"><span class="lineno">  901</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(39105, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a2502ac10288c544a5bfc267bd4ed2cff">NetherWraithBeacon</a>);          <span class="comment">// Spellfire Tailor Quest</span></div>
 <div class="line"><span class="lineno">  902</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(30458, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#aaa7cedb2fc5ca5b576bbdf18aa3b1915">NighInvulnBelt</a>);              <span class="comment">// Nigh Invulnerability Belt</span></div>
@@ -702,7 +701,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  930</span> </div>
 <div class="line"><span class="lineno">  931</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(13006, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a02a742c5ad079944421317fa0d414124">ShrinkRay</a>);</div>
 <div class="line"><span class="lineno">  932</span> </div>
-<div class="line"><span class="lineno">  933</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> championingspellids[] =</div>
+<div class="line"><span class="lineno">  933</span>    uint32_t championingspellids[] =</div>
 <div class="line"><span class="lineno">  934</span>    {</div>
 <div class="line"><span class="lineno">  935</span>        57819,</div>
 <div class="line"><span class="lineno">  936</span>        57820,</div>
@@ -716,7 +715,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  944</span> </div>
 <div class="line"><span class="lineno">  945</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(50493, &amp;<a class="code hl_function" href="ItemSpells__1_8cpp.html#a9c18a703e5777c3b2c7d726661108d01">ListeningToMusic</a>);</div>
 <div class="line"><span class="lineno">  946</span> </div>
-<div class="line"><span class="lineno">  947</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> DrinkDummySpellIDs[] =</div>
+<div class="line"><span class="lineno">  947</span>    uint32_t DrinkDummySpellIDs[] =</div>
 <div class="line"><span class="lineno">  948</span>    {</div>
 <div class="line"><span class="lineno">  949</span>        430,</div>
 <div class="line"><span class="lineno">  950</span>        431,</div>
@@ -815,7 +814,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  133</span> </div>
 <div class="line"><span class="lineno">  134</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(31687, &amp;<a class="code hl_function" href="MageSpells_8cpp.html#ae26a7efc8bcb8c8030a9f558041f77a7">SummonWaterElemental</a>);</div>
 <div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> tormentoftheweakids[] =</div>
+<div class="line"><span class="lineno">  136</span>    uint32_t tormentoftheweakids[] =</div>
 <div class="line"><span class="lineno">  137</span>    {</div>
 <div class="line"><span class="lineno">  138</span>        29447,</div>
 <div class="line"><span class="lineno">  139</span>        55339,</div>
@@ -824,7 +823,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  142</span>    };</div>
 <div class="line"><span class="lineno">  143</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(tormentoftheweakids, &amp;<a class="code hl_function" href="MageSpells_8cpp.html#a4ef01cf5d0356de119f96b24091a73e0">TormentOfTheWeak</a>);</div>
 <div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> fingersoffrostids[] =</div>
+<div class="line"><span class="lineno">  145</span>    uint32_t fingersoffrostids[] =</div>
 <div class="line"><span class="lineno">  146</span>    {</div>
 <div class="line"><span class="lineno">  147</span>        44543,</div>
 <div class="line"><span class="lineno">  148</span>        44545,</div>
@@ -832,7 +831,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  150</span>    };</div>
 <div class="line"><span class="lineno">  151</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(fingersoffrostids, &amp;<a class="code hl_function" href="MageSpells_8cpp.html#acfcabfa1cbb418b5f378c1af1a617f12">FingersOfFrost</a>);</div>
 <div class="line"><span class="lineno">  152</span> </div>
-<div class="line"><span class="lineno">  153</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> brainfreezeids[] =</div>
+<div class="line"><span class="lineno">  153</span>    uint32_t brainfreezeids[] =</div>
 <div class="line"><span class="lineno">  154</span>    {</div>
 <div class="line"><span class="lineno">  155</span>        44546,</div>
 <div class="line"><span class="lineno">  156</span>        44548,</div>
@@ -841,7 +840,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  159</span>    };</div>
 <div class="line"><span class="lineno">  160</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(brainfreezeids, &amp;<a class="code hl_function" href="MageSpells_8cpp.html#a7efbe2f099558785c69cbac73a00547e">BrainFreeze</a>);</div>
 <div class="line"><span class="lineno">  161</span> </div>
-<div class="line"><span class="lineno">  162</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> magicabsorbtionids[] =</div>
+<div class="line"><span class="lineno">  162</span>    uint32_t magicabsorbtionids[] =</div>
 <div class="line"><span class="lineno">  163</span>    {</div>
 <div class="line"><span class="lineno">  164</span>        29441,</div>
 <div class="line"><span class="lineno">  165</span>        29444,</div>
@@ -899,7 +898,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  662</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(66550, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#ada2aea0d79ce1bd52be961a5f6d47e9c">IOCTeleporterOut</a>);</div>
 <div class="line"><span class="lineno">  663</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(66551, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a87958550d995bf9bd92c72f217b42674">IOCTeleporterIn</a>);</div>
 <div class="line"><span class="lineno">  664</span> </div>
-<div class="line"><span class="lineno">  665</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> SpellTeleports[] =</div>
+<div class="line"><span class="lineno">  665</span>    uint32_t SpellTeleports[] =</div>
 <div class="line"><span class="lineno">  666</span>    {</div>
 <div class="line"><span class="lineno">  667</span>        <span class="comment">// ICCTeleports</span></div>
 <div class="line"><span class="lineno">  668</span>        70781,</div>
@@ -952,7 +951,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  715</span> </div>
 <div class="line"><span class="lineno">  716</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(2584, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a86754b9379d6e6fd5673efb9386ae102">WaitingToResurrect</a>);</div>
 <div class="line"><span class="lineno">  717</span> </div>
-<div class="line"><span class="lineno">  718</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> negativecrapids[] =</div>
+<div class="line"><span class="lineno">  718</span>    uint32_t negativecrapids[] =</div>
 <div class="line"><span class="lineno">  719</span>    {</div>
 <div class="line"><span class="lineno">  720</span>        26013,</div>
 <div class="line"><span class="lineno">  721</span>        41425,</div>
@@ -975,12 +974,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  738</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(53341, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a8d7829e6b39e38208494c03f7c0a2f21">PreparationForBattle</a>);</div>
 <div class="line"><span class="lineno">  739</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(53343, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a8d7829e6b39e38208494c03f7c0a2f21">PreparationForBattle</a>);</div>
 <div class="line"><span class="lineno">  740</span> </div>
-<div class="line"><span class="lineno">  741</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(<a class="code hl_enumvalue" href="MiscSpells_8cpp.html#a0b887f38fa71033f0904f8e2330b6815a01066a66f07c702d8a27fa3c0d8ede10">CRYSTAL_SPIKES</a>, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a0c1163d1cb08b22c08439601ee52fbbc">CrystalSpikes</a>);</div>
-<div class="line"><span class="lineno">  742</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(<a class="code hl_enumvalue" href="MiscSpells_8cpp.html#a0b887f38fa71033f0904f8e2330b6815a50643d8dacb8390797e8299969578263">CRYSTAL_SPIKES_H</a>, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a0c1163d1cb08b22c08439601ee52fbbc">CrystalSpikes</a>);</div>
+<div class="line"><span class="lineno">  741</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(<a class="code hl_enumvalue" href="MiscSpells_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa01066a66f07c702d8a27fa3c0d8ede10">CRYSTAL_SPIKES</a>, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a0c1163d1cb08b22c08439601ee52fbbc">CrystalSpikes</a>);</div>
+<div class="line"><span class="lineno">  742</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(<a class="code hl_enumvalue" href="MiscSpells_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa50643d8dacb8390797e8299969578263">CRYSTAL_SPIKES_H</a>, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a0c1163d1cb08b22c08439601ee52fbbc">CrystalSpikes</a>);</div>
 <div class="line"><span class="lineno">  743</span> </div>
 <div class="line"><span class="lineno">  744</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(50499, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#af0128841465554a3bcd19260a161c6ef">ListeningToMusicParent</a>);</div>
 <div class="line"><span class="lineno">  745</span> </div>
-<div class="line"><span class="lineno">  746</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> teleportToCoordinates[] =</div>
+<div class="line"><span class="lineno">  746</span>    uint32_t teleportToCoordinates[] =</div>
 <div class="line"><span class="lineno">  747</span>    {</div>
 <div class="line"><span class="lineno">  748</span>        25140,</div>
 <div class="line"><span class="lineno">  749</span>        25143,</div>
@@ -996,7 +995,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  759</span>    };</div>
 <div class="line"><span class="lineno">  760</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(teleportToCoordinates, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#a0ccdb513d712a485a8ece86dbbd3bf02">TeleportToCoordinates</a>);</div>
 <div class="line"><span class="lineno">  761</span> </div>
-<div class="line"><span class="lineno">  762</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> auraWithoutNeededEffect[] =</div>
+<div class="line"><span class="lineno">  762</span>    uint32_t auraWithoutNeededEffect[] =</div>
 <div class="line"><span class="lineno">  763</span>    {</div>
 <div class="line"><span class="lineno">  764</span>        71764,      <span class="comment">// DiseasedWolf just apply GFX</span></div>
 <div class="line"><span class="lineno">  765</span>        33209,      <span class="comment">// Gossip NPC Periodic - Despawn (Aura hidden, Cast time hidden, no clue what it should do)</span></div>
@@ -1008,7 +1007,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  771</span>    };</div>
 <div class="line"><span class="lineno">  772</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(auraWithoutNeededEffect, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#ae08a4b94dc7de5c6bccee32e2a34f198">GeneralDummyAura</a>);</div>
 <div class="line"><span class="lineno">  773</span> </div>
-<div class="line"><span class="lineno">  774</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> spellWithoutNeededEffect[] =</div>
+<div class="line"><span class="lineno">  774</span>    uint32_t spellWithoutNeededEffect[] =</div>
 <div class="line"><span class="lineno">  775</span>    {</div>
 <div class="line"><span class="lineno">  776</span>        29403,      <span class="comment">// Holiday Breath of Fire, Effect (NPC) Triggered by 29421 Apply Aura 29402 (Aura is hidden)</span></div>
 <div class="line"><span class="lineno">  777</span>        52124,      <span class="comment">// Sky Darkener Assault. Triggered by 52147 (Apply Aura: Periodically trigger spell) (Aura is hidden)</span></div>
@@ -1018,8 +1017,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  781</span>    };</div>
 <div class="line"><span class="lineno">  782</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(spellWithoutNeededEffect, &amp;<a class="code hl_function" href="MiscSpells_8cpp.html#af804a868472a3d89cb7ac981ae119394">GeneralDummyEffect</a>);</div>
 <div class="line"><span class="lineno">  783</span>}</div>
-<div class="ttc" id="aMiscSpells_8cpp_html_a0b887f38fa71033f0904f8e2330b6815a01066a66f07c702d8a27fa3c0d8ede10"><div class="ttname"><a href="MiscSpells_8cpp.html#a0b887f38fa71033f0904f8e2330b6815a01066a66f07c702d8a27fa3c0d8ede10">CRYSTAL_SPIKES</a></div><div class="ttdeci">@ CRYSTAL_SPIKES</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00048">MiscSpells.cpp:48</a></div></div>
-<div class="ttc" id="aMiscSpells_8cpp_html_a0b887f38fa71033f0904f8e2330b6815a50643d8dacb8390797e8299969578263"><div class="ttname"><a href="MiscSpells_8cpp.html#a0b887f38fa71033f0904f8e2330b6815a50643d8dacb8390797e8299969578263">CRYSTAL_SPIKES_H</a></div><div class="ttdeci">@ CRYSTAL_SPIKES_H</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00050">MiscSpells.cpp:49</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a0c1163d1cb08b22c08439601ee52fbbc"><div class="ttname"><a href="MiscSpells_8cpp.html#a0c1163d1cb08b22c08439601ee52fbbc">CrystalSpikes</a></div><div class="ttdeci">bool CrystalSpikes(uint8_t, Spell *pSpell)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00418">MiscSpells.cpp:418</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a0c205553964e2f3d0eb0ab52ab3b3745"><div class="ttname"><a href="MiscSpells_8cpp.html#a0c205553964e2f3d0eb0ab52ab3b3745">Give5kGold</a></div><div class="ttdeci">bool Give5kGold(uint8_t, Spell *s)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00164">MiscSpells.cpp:164</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a0ccdb513d712a485a8ece86dbbd3bf02"><div class="ttname"><a href="MiscSpells_8cpp.html#a0ccdb513d712a485a8ece86dbbd3bf02">TeleportToCoordinates</a></div><div class="ttdeci">bool TeleportToCoordinates(uint8_t, Spell *s)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00481">MiscSpells.cpp:481</a></div></div>
@@ -1029,6 +1026,8 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a21da29254d3b3084b150e6b245941d34"><div class="ttname"><a href="MiscSpells_8cpp.html#a21da29254d3b3084b150e6b245941d34">MoltenShields</a></div><div class="ttdeci">bool MoltenShields(uint8_t, Spell *s)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00070">MiscSpells.cpp:70</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a44f7c266db193bc947f2b2421d4e8c27"><div class="ttname"><a href="MiscSpells_8cpp.html#a44f7c266db193bc947f2b2421d4e8c27">Dummy_Solarian_WrathOfTheAstromancer</a></div><div class="ttdeci">bool Dummy_Solarian_WrathOfTheAstromancer(uint8_t, Spell *pSpell)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00387">MiscSpells.cpp:387</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a5552c5df7e703d643030563756d55dc4"><div class="ttname"><a href="MiscSpells_8cpp.html#a5552c5df7e703d643030563756d55dc4">GnomishBattleChicken</a></div><div class="ttdeci">bool GnomishBattleChicken(uint8_t, Spell *s)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00143">MiscSpells.cpp:143</a></div></div>
+<div class="ttc" id="aMiscSpells_8cpp_html_a5d76b81b0ad4c19007a781d4edb8181fa01066a66f07c702d8a27fa3c0d8ede10"><div class="ttname"><a href="MiscSpells_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa01066a66f07c702d8a27fa3c0d8ede10">CRYSTAL_SPIKES</a></div><div class="ttdeci">@ CRYSTAL_SPIKES</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00048">MiscSpells.cpp:48</a></div></div>
+<div class="ttc" id="aMiscSpells_8cpp_html_a5d76b81b0ad4c19007a781d4edb8181fa50643d8dacb8390797e8299969578263"><div class="ttname"><a href="MiscSpells_8cpp.html#a5d76b81b0ad4c19007a781d4edb8181fa50643d8dacb8390797e8299969578263">CRYSTAL_SPIKES_H</a></div><div class="ttdeci">@ CRYSTAL_SPIKES_H</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00050">MiscSpells.cpp:49</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a86754b9379d6e6fd5673efb9386ae102"><div class="ttname"><a href="MiscSpells_8cpp.html#a86754b9379d6e6fd5673efb9386ae102">WaitingToResurrect</a></div><div class="ttdeci">bool WaitingToResurrect(uint8_t, Aura *a, bool apply)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00278">MiscSpells.cpp:278</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a87958550d995bf9bd92c72f217b42674"><div class="ttname"><a href="MiscSpells_8cpp.html#a87958550d995bf9bd92c72f217b42674">IOCTeleporterIn</a></div><div class="ttdeci">bool IOCTeleporterIn(uint8_t, Spell *s)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00519">MiscSpells.cpp:519</a></div></div>
 <div class="ttc" id="aMiscSpells_8cpp_html_a8d7829e6b39e38208494c03f7c0a2f21"><div class="ttname"><a href="MiscSpells_8cpp.html#a8d7829e6b39e38208494c03f7c0a2f21">PreparationForBattle</a></div><div class="ttdeci">bool PreparationForBattle(uint8_t, Spell *pSpell)</div><div class="ttdef"><b>Definition</b> <a href="MiscSpells_8cpp_source.html#l00406">MiscSpells.cpp:406</a></div></div>
@@ -1081,7 +1080,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="PaladinSpells_8cpp_source.html#l00340">340</a> of file <a class="el" href="PaladinSpells_8cpp_source.html">PaladinSpells.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  341</span>{</div>
-<div class="line"><span class="lineno">  342</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> HolyShockIds[] = { 20473, 20929, 20930, 27174, 33072, 48824, 48825, 0 };</div>
+<div class="line"><span class="lineno">  342</span>    uint32_t HolyShockIds[] = { 20473, 20929, 20930, 27174, 33072, 48824, 48825, 0 };</div>
 <div class="line"><span class="lineno">  343</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(HolyShockIds, &amp;<a class="code hl_function" href="PaladinSpells_8cpp.html#afbfc8d19fe2ad55ba35ef3ae64c281c5">HolyShock</a>);</div>
 <div class="line"><span class="lineno">  344</span> </div>
 <div class="line"><span class="lineno">  345</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(20271, &amp;<a class="code hl_function" href="PaladinSpells_8cpp.html#abaf786beb1f2853457688a1c8e7bae5b">JudgementLightWisdomJustice</a>); <span class="comment">//light</span></div>
@@ -1175,7 +1174,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="PriestSpells_8cpp_source.html#l00150">150</a> of file <a class="el" href="PriestSpells_8cpp_source.html">PriestSpells.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
-<div class="line"><span class="lineno">  152</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> PenanceIds[] =</div>
+<div class="line"><span class="lineno">  152</span>    uint32_t PenanceIds[] =</div>
 <div class="line"><span class="lineno">  153</span>    {</div>
 <div class="line"><span class="lineno">  154</span>        47540, <span class="comment">// Rank 1</span></div>
 <div class="line"><span class="lineno">  155</span>        53005, <span class="comment">// Rank 2</span></div>
@@ -1282,7 +1281,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno"> 3147</span> </div>
 <div class="line"><span class="lineno"> 3148</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a0f12417e87510181f1504b57851edef3">register_script_effect</a>(29297, &amp;<a class="code hl_function" href="QIspells_8cpp.html#a2d71e22e463205ace75362c43a171d52">CleansingVial</a>);</div>
 <div class="line"><span class="lineno"> 3149</span> </div>
-<div class="line"><span class="lineno"> 3150</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> huntertamingquestspellids[] =</div>
+<div class="line"><span class="lineno"> 3150</span>    uint32_t huntertamingquestspellids[] =</div>
 <div class="line"><span class="lineno"> 3151</span>    {</div>
 <div class="line"><span class="lineno"> 3152</span>        19548,</div>
 <div class="line"><span class="lineno"> 3153</span>        19674,</div>
@@ -1510,7 +1509,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  281</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(45182, &amp;<a class="code hl_function" href="RogueSpells_8cpp.html#afb8c5bdeb114b4affd0997a1b9557a99">CheatDeath</a>);</div>
 <div class="line"><span class="lineno">  282</span> </div>
 <div class="line"><span class="lineno">  283</span> </div>
-<div class="line"><span class="lineno">  284</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> masterofsubtletyids[] =</div>
+<div class="line"><span class="lineno">  284</span>    uint32_t masterofsubtletyids[] =</div>
 <div class="line"><span class="lineno">  285</span>    {</div>
 <div class="line"><span class="lineno">  286</span>        31223,</div>
 <div class="line"><span class="lineno">  287</span>        31222,</div>
@@ -1519,7 +1518,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  290</span>    };</div>
 <div class="line"><span class="lineno">  291</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(masterofsubtletyids, &amp;<a class="code hl_function" href="RogueSpells_8cpp.html#aa5361e576ae2cd7ffedec2a657015347">MasterOfSubtlety</a>);</div>
 <div class="line"><span class="lineno">  292</span> </div>
-<div class="line"><span class="lineno">  293</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> preyontheweakids[] =</div>
+<div class="line"><span class="lineno">  293</span>    uint32_t preyontheweakids[] =</div>
 <div class="line"><span class="lineno">  294</span>    {</div>
 <div class="line"><span class="lineno">  295</span>        51685,</div>
 <div class="line"><span class="lineno">  296</span>        51686,</div>
@@ -1573,7 +1572,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ShamanSpells_8cpp_source.html#l00104">104</a> of file <a class="el" href="ShamanSpells_8cpp_source.html">ShamanSpells.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> FlametongueWeaponPassiveIds[] = { 10400, 15567, 15568, 15569, 16311, 16312, 16313, 58784, 58791, 58792, 0 };</div>
+<div class="line"><span class="lineno">  106</span>    uint32_t FlametongueWeaponPassiveIds[] = { 10400, 15567, 15568, 15569, 16311, 16312, 16313, 58784, 58791, 58792, 0 };</div>
 <div class="line"><span class="lineno">  107</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(FlametongueWeaponPassiveIds, &amp;<a class="code hl_function" href="ShamanSpells_8cpp.html#a9717b696bdd28550da882756a6f458ef">FlametongueWeaponPassive</a>);</div>
 <div class="line"><span class="lineno">  108</span> </div>
 <div class="line"><span class="lineno">  109</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#a05d74ebe41c9667d0cb4d3033e79aad8">register_dummy_spell</a>(38443, &amp;<a class="code hl_function" href="ShamanSpells_8cpp.html#a57ec8dc1f2e8073bd3d5c12f6ac2c81f">SkyShatterRegalia</a>);</div>
@@ -1675,7 +1674,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  735</span> </div>
 <div class="line"><span class="lineno">  736</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(35696, &amp;<a class="code hl_function" href="WarlockSpells_8cpp.html#ae14d67564b68c9e3b6045edaec2a04b1">DemonicKnowledge</a>);</div>
 <div class="line"><span class="lineno">  737</span> </div>
-<div class="line"><span class="lineno">  738</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> improvedlifetapids[] =</div>
+<div class="line"><span class="lineno">  738</span>    uint32_t improvedlifetapids[] =</div>
 <div class="line"><span class="lineno">  739</span>    {</div>
 <div class="line"><span class="lineno">  740</span>        18182,</div>
 <div class="line"><span class="lineno">  741</span>        18183,</div>
@@ -1683,7 +1682,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  743</span>    };</div>
 <div class="line"><span class="lineno">  744</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(improvedlifetapids, &amp;<a class="code hl_function" href="WarlockSpells_8cpp.html#ab41e4b0c10a65cd3629870479267af63">ImprovedLifeTap</a>);</div>
 <div class="line"><span class="lineno">  745</span> </div>
-<div class="line"><span class="lineno">  746</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> soulsiphonids[] =</div>
+<div class="line"><span class="lineno">  746</span>    uint32_t soulsiphonids[] =</div>
 <div class="line"><span class="lineno">  747</span>    {</div>
 <div class="line"><span class="lineno">  748</span>        17804,</div>
 <div class="line"><span class="lineno">  749</span>        17805,</div>
@@ -1691,7 +1690,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  751</span>    };</div>
 <div class="line"><span class="lineno">  752</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(soulsiphonids, &amp;<a class="code hl_function" href="WarlockSpells_8cpp.html#a469edbda960ed526b167b0afd8188b96">SoulSiphon</a>);</div>
 <div class="line"><span class="lineno">  753</span> </div>
-<div class="line"><span class="lineno">  754</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> soulstoneresurrectionids[] =</div>
+<div class="line"><span class="lineno">  754</span>    uint32_t soulstoneresurrectionids[] =</div>
 <div class="line"><span class="lineno">  755</span>    {</div>
 <div class="line"><span class="lineno">  756</span>        20707,</div>
 <div class="line"><span class="lineno">  757</span>        20762,</div>
@@ -1761,7 +1760,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="WarriorSpells_8cpp_source.html#l00279">279</a> of file <a class="el" href="WarriorSpells_8cpp_source.html">WarriorSpells.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  280</span>{</div>
-<div class="line"><span class="lineno">  281</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ExecuteIds[] =</div>
+<div class="line"><span class="lineno">  281</span>    uint32_t ExecuteIds[] =</div>
 <div class="line"><span class="lineno">  282</span>    {</div>
 <div class="line"><span class="lineno">  283</span>        5308,  <span class="comment">// Rank 1</span></div>
 <div class="line"><span class="lineno">  284</span>        20658, <span class="comment">// Rank 2</span></div>
@@ -1792,7 +1791,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  309</span> </div>
 <div class="line"><span class="lineno">  310</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(12328, &amp;<a class="code hl_function" href="WarriorSpells_8cpp.html#a1fade259ff48140f36032ec3ee717714">SweepingStrikes</a>);</div>
 <div class="line"><span class="lineno">  311</span> </div>
-<div class="line"><span class="lineno">  312</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> tacticalandstancemasteryids[] =</div>
+<div class="line"><span class="lineno">  312</span>    uint32_t tacticalandstancemasteryids[] =</div>
 <div class="line"><span class="lineno">  313</span>    {</div>
 <div class="line"><span class="lineno">  314</span>        12295,</div>
 <div class="line"><span class="lineno">  315</span>        12676,</div>
@@ -1805,7 +1804,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  322</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(29834, &amp;<a class="code hl_function" href="WarriorSpells_8cpp.html#ad5e9cf687af3240b0d00957054bbf1be">SecondWind</a>);</div>
 <div class="line"><span class="lineno">  323</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#ac572b6af9bd2bb039fa2f93d5475ec44">register_dummy_aura</a>(29838, &amp;<a class="code hl_function" href="WarriorSpells_8cpp.html#aa6f10e2fa35be93ed4c3ef9c3c888f07">SecondWind2</a>);</div>
 <div class="line"><span class="lineno">  324</span> </div>
-<div class="line"><span class="lineno">  325</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ArmoredToTheTeethIDs[] =</div>
+<div class="line"><span class="lineno">  325</span>    uint32_t ArmoredToTheTeethIDs[] =</div>
 <div class="line"><span class="lineno">  326</span>    {</div>
 <div class="line"><span class="lineno">  327</span>        61216,</div>
 <div class="line"><span class="lineno">  328</span>        61221,</div>
@@ -1887,7 +1886,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  384</span>    mgr-&gt;<a class="code hl_function" href="classScriptMgr.html#afe9fb211c842aa6757f1fe737dda8669">register_spell_script</a>(<a class="code hl_enumvalue" href="Mage_8cpp.html#ab25cd6fd3bfda5736fd43f449c1b5124aef0b3c4b12f2bcd461bd4ff657f4665d">SPELL_MASTER_OF_ELEMENTS</a>, <span class="keyword">new</span> MasterOfElements);</div>
 <div class="line"><span class="lineno">  385</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  386</span> </div>
-<div class="line"><span class="lineno">  387</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> polymorphIds[] =</div>
+<div class="line"><span class="lineno">  387</span>    uint32_t polymorphIds[] =</div>
 <div class="line"><span class="lineno">  388</span>    {</div>
 <div class="line"><span class="lineno">  389</span>        <a class="code hl_enumvalue" href="Mage_8cpp.html#ab25cd6fd3bfda5736fd43f449c1b5124a7d242576d44e02ca42d77b490554c85c">SPELL_POLYMORPH_R1</a>,</div>
 <div class="line"><span class="lineno">  390</span>        <a class="code hl_enumvalue" href="Mage_8cpp.html#ab25cd6fd3bfda5736fd43f449c1b5124a969451fef8e17fc1e88fd6df1275772d">SPELL_POLYMORPH_TURTLE</a>,</div>

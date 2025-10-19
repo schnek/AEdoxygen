@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('AIUtils_8cpp_source.html',''); initRes
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">long</span> <span class="keywordtype">long</span> diff = max.count() - min.count();</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_define" href="Errors_8h.html#af343b20373ba49a92fce523e948f2ab3">ASSERT</a>(diff &gt;= 0)</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_define" href="Errors_8h.html#af343b20373ba49a92fce523e948f2ab3">ASSERT</a>(diff &lt;= (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>)-1)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_define" href="Errors_8h.html#af343b20373ba49a92fce523e948f2ab3">ASSERT</a>(diff &lt;= (uint32_t)-1)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">auto</span>&amp; rng = <a class="code hl_function" href="namespaceUtil.html#ad2d18dd8c199519634c5bb98f96fb7a2">Util::getRandomEngine</a>();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    std::uniform_int_distribution&lt;long long&gt; uni(0, diff);</div>
@@ -127,9 +127,8 @@ $(document).ready(function(){initNavTree('AIUtils_8cpp_source.html',''); initRes
 <div class="ttc" id="aErrors_8h_html"><div class="ttname"><a href="Errors_8h.html">Errors.h</a></div></div>
 <div class="ttc" id="aErrors_8h_html_af343b20373ba49a92fce523e948f2ab3"><div class="ttname"><a href="Errors_8h.html#af343b20373ba49a92fce523e948f2ab3">ASSERT</a></div><div class="ttdeci">#define ASSERT</div><div class="ttdef"><b>Definition</b> <a href="Errors_8h_source.html#l00045">Errors.h:45</a></div></div>
 <div class="ttc" id="aRandom_8hpp_html"><div class="ttname"><a href="Random_8hpp.html">Random.hpp</a></div></div>
-<div class="ttc" id="anamespaceUtil_html_ad2d18dd8c199519634c5bb98f96fb7a2"><div class="ttname"><a href="namespaceUtil.html#ad2d18dd8c199519634c5bb98f96fb7a2">Util::getRandomEngine</a></div><div class="ttdeci">std::mt19937 &amp; getRandomEngine()</div><div class="ttdef"><b>Definition</b> <a href="src_2shared_2Utilities_2Random_8cpp_source.html#l00010">Random.cpp:10</a></div></div>
+<div class="ttc" id="anamespaceUtil_html_ad2d18dd8c199519634c5bb98f96fb7a2"><div class="ttname"><a href="namespaceUtil.html#ad2d18dd8c199519634c5bb98f96fb7a2">Util::getRandomEngine</a></div><div class="ttdeci">std::mt19937 &amp; getRandomEngine()</div><div class="ttdef"><b>Definition</b> <a href="Random_8cpp_source.html#l00010">Random.cpp:10</a></div></div>
 <div class="ttc" id="astructSchedulerArgs_html_add25e9ace8960af57d9b9080f9a07057"><div class="ttname"><a href="structSchedulerArgs.html#add25e9ace8960af57d9b9080f9a07057">SchedulerArgs::randtime</a></div><div class="ttdeci">std::chrono::milliseconds randtime(std::chrono::milliseconds min, std::chrono::milliseconds max)</div><div class="ttdef"><b>Definition</b> <a href="AIUtils_8cpp_source.html#l00010">AIUtils.cpp:10</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

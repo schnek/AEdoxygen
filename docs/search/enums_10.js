@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['quest_5fmob_5ftypes_0',['QUEST_MOB_TYPES',['../QuestDefines_8hpp.html#af525ceef6a2257f11a83d0929a63e3f4',1,'QuestDefines.hpp']]],
-  ['quest_5fshare_1',['QUEST_SHARE',['../QuestDefines_8hpp.html#a41f89d356b65df847ce47acbe4053c4e',1,'QuestDefines.hpp']]],
-  ['quest_5ftype_2',['QUEST_TYPE',['../QuestDefines_8hpp.html#ab6496f7a6c2539b35c0f16bc1d4f9274',1,'QuestDefines.hpp']]],
-  ['questcompletionstatus_3',['QuestCompletionStatus',['../QuestDefines_8hpp.html#a0939f02a61d8f0dfac125c19b8d69905',1,'QuestDefines.hpp']]],
-  ['questevents_4',['QuestEvents',['../LUAEngine_8hpp.html#aad260e9bce6ec137e360d4e9166d7ec4',1,'LUAEngine.hpp']]],
-  ['questflag_5',['QuestFlag',['../QuestDefines_8hpp.html#a1fb7e49e31dad84ea74f4b47425dd56f',1,'QuestDefines.hpp']]],
-  ['questgiver_5fquest_5ftype_6',['QUESTGIVER_QUEST_TYPE',['../QuestDefines_8hpp.html#ab3302e0c12c010d64bc0a7c8bb4fb92e',1,'QuestDefines.hpp']]],
-  ['questlogstate_7',['QuestLogState',['../QuestLogEntry_8hpp.html#a5d82d6624079635030de8a580242017d',1,'QuestLogEntry.hpp']]],
-  ['quickgroupupdateflags_8',['QuickGroupUpdateFlags',['../Group_8h.html#a140ec3360fd8df2c07d87c041fd553e7',1,'Group.h']]]
+  ['races_0',['Races',['../PlayerDefines_8hpp.html#abece64758d84aa91fa2b6bb82123cc80',1,'PlayerDefines.hpp']]],
+  ['randomenchantmenttype_1',['RandomEnchantmentType',['../ItemDefines_8hpp.html#ab72c8ff04d9b287625af339f1589e071',1,'ItemDefines.hpp']]],
+  ['randomflags_2',['RandomFlags',['../LUAEngine_8hpp.html#aa85979800d209202d8c2107365e34d75',1,'LUAEngine.hpp']]],
+  ['rangestatus_3',['RangeStatus',['../ScriptMgrDefines_8hpp.html#a16b074ab1b8225e2ce92b48f23a561ce',1,'ScriptMgrDefines.hpp']]],
+  ['ranktitles_4',['RankTitles',['../PlayerDefines_8hpp.html#a0e1dc422d53dc26142f35d3e04b03d6f',1,'PlayerDefines.hpp']]],
+  ['reactstates_5',['ReactStates',['../AIInterface_8h.html#ae6fa4a646fe27564cc228dbb762a5836',1,'AIInterface.h']]],
+  ['realmflag_6',['RealmFlag',['../namespaceAscEmu_1_1Realm.html#acb940065ccb9539130024fbb1f951757',1,'AscEmu::Realm']]],
+  ['realmtype_7',['RealmType',['../LogonCommHandler_8h.html#ae8ff852caf6f88797c9c3716d1acbe59',1,'LogonCommHandler.h']]],
+  ['remoteconsolestate_8',['RemoteConsoleState',['../namespaceConsoleDefines.html#aa77e2c75f252d857560217d167a1fa4a',1,'ConsoleDefines']]],
+  ['reststate_9',['RestState',['../PlayerDefines_8hpp.html#a4b699d5a3102e63912167cce3148ae99',1,'PlayerDefines.hpp']]],
+  ['roguespells_10',['RogueSpells',['../Rogue_8cpp.html#a8b34bf8ceba4b8c2efea84d90002d523',1,'Rogue.cpp']]],
+  ['rotatedirection_11',['RotateDirection',['../MovementDefines_8h.html#acbae0933f16c578b467478a9edc05a78',1,'MovementDefines.h']]]
 ];

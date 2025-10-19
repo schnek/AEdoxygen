@@ -119,7 +119,7 @@ Include dependency graph for FlightPathMovementGenerator.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a15504713c584f77baca305817819ec81" id="r_a15504713c584f77baca305817819ec81"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FlightPathMovementGenerator_8cpp.html#a15504713c584f77baca305817819ec81">isNodeIncludedInShortenedPath</a> (<a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *path1, <a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *path2)</td></tr>
+<tr class="memitem:a15504713c584f77baca305817819ec81" id="r_a15504713c584f77baca305817819ec81"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FlightPathMovementGenerator_8cpp.html#a15504713c584f77baca305817819ec81">isNodeIncludedInShortenedPath</a> (<a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> const *path1, <a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> const *path2)</td></tr>
 <tr class="separator:a15504713c584f77baca305817819ec81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -133,15 +133,15 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="StormPort_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> isNodeIncludedInShortenedPath </td>
+          <td class="memname">static bool isNodeIncludedInShortenedPath </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> const *&#160;</td>
           <td class="paramname"><em>path1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structWDB_1_1Structures_1_1TaxiPathNodeEntry.html">WDB::Structures::TaxiPathNodeEntry</a> const *&#160;</td>
           <td class="paramname"><em>path2</em>&#160;</td>
         </tr>
         <tr>
@@ -159,15 +159,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FlightPathMovementGenerator_8cpp_source.html#l00031">31</a> of file <a class="el" href="FlightPathMovementGenerator_8cpp_source.html">FlightPathMovementGenerator.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> path1-&gt;mapid != path2-&gt;mapid || <a class="code hl_function" href="namespacestd.html#ad45390caf51ab055838b2ad1c7d44a66">std::pow</a>(path1-&gt;x - path2-&gt;x, 2) + <a class="code hl_function" href="namespacestd.html#ad45390caf51ab055838b2ad1c7d44a66">std::pow</a>(path1-&gt;y - path2-&gt;y, 2) &gt; (40.0f * 40.0f);</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> path1-&gt;mapid != path2-&gt;mapid || std::pow(path1-&gt;x - path2-&gt;x, 2) + std::pow(path1-&gt;y - path2-&gt;y, 2) &gt; (40.0f * 40.0f);</div>
 <div class="line"><span class="lineno">   34</span>}</div>
-<div class="ttc" id="anamespacestd_html_ad45390caf51ab055838b2ad1c7d44a66"><div class="ttname"><a href="namespacestd.html#ad45390caf51ab055838b2ad1c7d44a66">std::pow</a></div><div class="ttdeci">int pow(int a, int b)</div><div class="ttdef"><b>Definition</b> <a href="g3dmath_8h_source.html#l00936">g3dmath.h:936</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="FlightPathMovementGenerator_8cpp_a15504713c584f77baca305817819ec81_cgraph.svg" width="364" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="FlightPathMovementGenerator_8cpp_a15504713c584f77baca305817819ec81_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>

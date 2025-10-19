@@ -112,7 +112,7 @@ Collaboration diagram for LockedQueue&lt; TYPE &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa46b0480f4b2175f3bc52d5fa6c8c7a7" id="r_aa46b0480f4b2175f3bc52d5fa6c8c7a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLockedQueue.html#aa46b0480f4b2175f3bc52d5fa6c8c7a7">~LockedQueue</a> ()=default</td></tr>
 <tr class="separator:aa46b0480f4b2175f3bc52d5fa6c8c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeede0bb935d9911324052d0dbf2e9e96" id="r_aeede0bb935d9911324052d0dbf2e9e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLockedQueue.html#aeede0bb935d9911324052d0dbf2e9e96">add</a> (<a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> &amp;element)</td></tr>
+<tr class="memitem:aeede0bb935d9911324052d0dbf2e9e96" id="r_aeede0bb935d9911324052d0dbf2e9e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLockedQueue.html#aeede0bb935d9911324052d0dbf2e9e96">add</a> (const <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> &amp;element)</td></tr>
 <tr class="separator:aeede0bb935d9911324052d0dbf2e9e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d79c552406678a2596f88a78e7e5b2" id="r_ae1d79c552406678a2596f88a78e7e5b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLockedQueue.html#ae1d79c552406678a2596f88a78e7e5b2">next</a> ()</td></tr>
 <tr class="separator:ae1d79c552406678a2596f88a78e7e5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ template&lt;class <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7
         <tr>
           <td class="memname">void <a class="el" href="classLockedQueue.html">LockedQueue</a>&lt; <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> &gt;::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> &amp;&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
           <td></td>
         </tr>
@@ -276,16 +276,15 @@ template&lt;class <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7
 <p class="definition">Definition at line <a class="el" href="LockedQueue_8h_source.html#l00057">57</a> of file <a class="el" href="LockedQueue_8h_source.html">LockedQueue.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>        {</div>
 <div class="line"><span class="lineno">   59</span>            <a class="code hl_variable" href="classLockedQueue.html#a31bde9b0415a5c7195906198c92bbef0">mutex</a>.<a class="code hl_function" href="classMutex.html#a82f17ffc2852d2ea1b498b7331e1eebe">acquire</a>();</div>
-<div class="line"><span class="lineno">   60</span>            <a class="code hl_enumeration" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
+<div class="line"><span class="lineno">   60</span>            <a class="code hl_enumeration" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> t;</div>
 <div class="line"><span class="lineno">   61</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.size() == 0)</div>
-<div class="line"><span class="lineno">   62</span>                <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a> = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_enumeration" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a><span class="keyword">&gt;</span>(0);</div>
+<div class="line"><span class="lineno">   62</span>                t = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_enumeration" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a><span class="keyword">&gt;</span>(0);</div>
 <div class="line"><span class="lineno">   63</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   64</span>                <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a> = <a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.front();</div>
+<div class="line"><span class="lineno">   64</span>                t = <a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.front();</div>
 <div class="line"><span class="lineno">   65</span>            <a class="code hl_variable" href="classLockedQueue.html#a31bde9b0415a5c7195906198c92bbef0">mutex</a>.<a class="code hl_function" href="classMutex.html#ad43ff97f225007f2fbb0da2e98676b07">release</a>();</div>
-<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
+<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">return</span> t;</div>
 <div class="line"><span class="lineno">   67</span>        }</div>
 <div class="ttc" id="aObjectDefines_8hpp_html_a0bc6723d5d4776ab7cdc646728b775f7"><div class="ttname"><a href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a></div><div class="ttdeci">TYPE</div><div class="ttdef"><b>Definition</b> <a href="ObjectDefines_8hpp_source.html#l00032">ObjectDefines.hpp:33</a></div></div>
-<div class="ttc" id="abn__mp__prime__rabin__miller__trials_8c_html_ac310d9181e916ba43604099aee272c71"><div class="ttname"><a href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a></div><div class="ttdeci">int t</div><div class="ttdef"><b>Definition</b> <a href="bn__mp__prime__rabin__miller__trials_8c_source.html#l00020">bn_mp_prime_rabin_miller_trials.c:20</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -323,10 +322,10 @@ template&lt;class <a class="el" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7
 <div class="fragment"><div class="line"><span class="lineno">   40</span>        {</div>
 <div class="line"><span class="lineno">   41</span>            <a class="code hl_variable" href="classLockedQueue.html#a31bde9b0415a5c7195906198c92bbef0">mutex</a>.<a class="code hl_function" href="classMutex.html#a82f17ffc2852d2ea1b498b7331e1eebe">acquire</a>();</div>
 <div class="line"><span class="lineno">   42</span>            assert(<a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.size() &gt; 0);</div>
-<div class="line"><span class="lineno">   43</span>            <a class="code hl_enumeration" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a> = <a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.front();</div>
+<div class="line"><span class="lineno">   43</span>            <a class="code hl_enumeration" href="ObjectDefines_8hpp.html#a0bc6723d5d4776ab7cdc646728b775f7">TYPE</a> t = <a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.front();</div>
 <div class="line"><span class="lineno">   44</span>            <a class="code hl_variable" href="classLockedQueue.html#a82396a4c82ae30e42e29daf1feef7537">queue</a>.pop_front();</div>
 <div class="line"><span class="lineno">   45</span>            <a class="code hl_variable" href="classLockedQueue.html#a31bde9b0415a5c7195906198c92bbef0">mutex</a>.<a class="code hl_function" href="classMutex.html#ad43ff97f225007f2fbb0da2e98676b07">release</a>();</div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="bn__mp__prime__rabin__miller__trials_8c.html#ac310d9181e916ba43604099aee272c71">t</a>;</div>
+<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">return</span> t;</div>
 <div class="line"><span class="lineno">   47</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['eventableobjectholder_0',['EventableObjectHolder',['../classEventableObject.html#a9fe9200ef20cf3726e30d81584b15270',1,'EventableObject']]],
-  ['eventmgr_1',['EventMgr',['../classEventableObject.html#ac6c441f50f473ecd706002e9a8634532',1,'EventableObject']]]
+  ['grandwidowfaerlinaai_0',['grandwidowfaerlinaai',['../classNaxxramasWorshipperAI.html#af8fc1dec031e959b5be764a2949bc971',1,'NaxxramasWorshipperAI::GrandWidowFaerlinaAI'],['../classNaxxramasFollowerAI.html#af8fc1dec031e959b5be764a2949bc971',1,'NaxxramasFollowerAI::GrandWidowFaerlinaAI']]],
+  ['group_1',['Group',['../classSubGroup.html#a2697825715974a353728f0d4d5658112',1,'SubGroup']]]
 ];

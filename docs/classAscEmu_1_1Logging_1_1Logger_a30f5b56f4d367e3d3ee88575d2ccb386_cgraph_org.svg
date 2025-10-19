@@ -36,13 +36,32 @@
 </a>
 </g>
 </g>
-<!-- Node4 -->
-<g id="Node000004" class="node">
-<title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#ab525b5aae7f328a27637131d40e76045" target="_top" xlink:title=" ">
+<!-- Node3 -->
+<g id="Node000003" class="node">
+<title>Node3</title>
+<g id="a_Node000003"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#ab525b5aae7f328a27637131d40e76045" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="317.5,-126 178.5,-126 178.5,-96 317.5,-96 317.5,-126"/>
 <text text-anchor="start" x="186.5" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
 <text text-anchor="middle" x="248" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">::getMessageTypeText</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge2_Node000001_Node000003" class="edge">
+<title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M139.24,-96.35C148.8,-97.65 158.68,-98.99 168.39,-100.31"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="168.06,-103.8 178.44,-101.68 169.01,-96.86 168.06,-103.8"/>
+</a>
+</g>
+</g>
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#a9941f8ccf8ff0d6355995dd4f47fd720" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="317.5,-78 178.5,-78 178.5,-48 317.5,-48 317.5,-78"/>
+<text text-anchor="start" x="186.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
+<text text-anchor="middle" x="248" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::getSeverityText</text>
 </a>
 </g>
 </g>
@@ -50,18 +69,18 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M139.24,-96.35C148.8,-97.65 158.68,-98.99 168.39,-100.31"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="168.06,-103.8 178.44,-101.68 169.01,-96.86 168.06,-103.8"/>
+<path fill="none" stroke="#63b8ff" d="M139.24,-77.65C148.8,-76.35 158.68,-75.01 168.39,-73.69"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="169.01,-77.14 178.44,-72.32 168.06,-70.2 169.01,-77.14"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#a9941f8ccf8ff0d6355995dd4f47fd720" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="317.5,-78 178.5,-78 178.5,-48 317.5,-48 317.5,-78"/>
-<text text-anchor="start" x="186.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
-<text text-anchor="middle" x="248" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::getSeverityText</text>
+<g id="a_Node000005"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#a4cfc18f368921145c9c4da9d444553b8" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="317.5,-30 178.5,-30 178.5,0 317.5,0 317.5,-30"/>
+<text text-anchor="start" x="186.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
+<text text-anchor="middle" x="248" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::writeFile</text>
 </a>
 </g>
 </g>
@@ -69,55 +88,36 @@
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M139.24,-77.65C148.8,-76.35 158.68,-75.01 168.39,-73.69"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="169.01,-77.14 178.44,-72.32 168.06,-70.2 169.01,-77.14"/>
+<path fill="none" stroke="#63b8ff" d="M101.21,-71.82C121.83,-61.9 149.75,-48.97 175,-39 179.78,-37.11 184.77,-35.24 189.81,-33.43"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="191.21,-36.64 199.49,-30.02 188.89,-30.04 191.21,-36.64"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#a4cfc18f368921145c9c4da9d444553b8" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="317.5,-30 178.5,-30 178.5,0 317.5,0 317.5,-30"/>
-<text text-anchor="start" x="186.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
-<text text-anchor="middle" x="248" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::writeFile</text>
+<g id="a_Node000006"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#a716a55055a51efa7e8bb1b3926a853a6" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="496,-30 357,-30 357,0 496,0 496,-30"/>
+<text text-anchor="start" x="365" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
+<text text-anchor="middle" x="426.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::file</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M101.21,-71.82C121.83,-61.9 149.75,-48.97 175,-39 179.78,-37.11 184.77,-35.24 189.81,-33.43"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="191.21,-36.64 199.49,-30.02 188.89,-30.04 191.21,-36.64"/>
-</a>
-</g>
-</g>
-<!-- Node3 -->
-<g id="Node000003" class="node">
-<title>Node3</title>
-<g id="a_Node000003"><a xlink:href="chrono_8h.html#a206f24de3f0fff46c4daeb318c02a45e" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="457.5,-163.5 395.5,-163.5 395.5,-144.5 457.5,-144.5 457.5,-163.5"/>
-<text text-anchor="middle" x="426.5" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">localtime</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
-<title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M321.04,-154C342.92,-154 366.17,-154 385.17,-154"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="385.25,-157.5 395.25,-154 385.25,-150.5 385.25,-157.5"/>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge5_Node000005_Node000006" class="edge">
+<title>Node5&#45;&gt;Node6</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M317.74,-15C327.3,-15 337.18,-15 346.89,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="346.94,-18.5 356.94,-15 346.94,-11.5 346.94,-18.5"/>
 </a>
 </g>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classAscEmu_1_1Logging_1_1Logger.html#a716a55055a51efa7e8bb1b3926a853a6" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="496,-30 357,-30 357,0 496,0 496,-30"/>
-<text text-anchor="start" x="365" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Logging::Logger</text>
-<text text-anchor="middle" x="426.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::file</text>
+<g id="a_Node000007"><a xlink:href="namespaceAscEmu.html#af79227cb68117f159a0cf3232904123a" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="657,-24.5 532,-24.5 532,-5.5 657,-5.5 657,-24.5"/>
+<text text-anchor="middle" x="594.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::StringFormat</text>
 </a>
 </g>
 </g>
@@ -125,24 +125,6 @@
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node6&#45;&gt;Node7</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M317.74,-15C327.3,-15 337.18,-15 346.89,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="346.94,-18.5 356.94,-15 346.94,-11.5 346.94,-18.5"/>
-</a>
-</g>
-</g>
-<!-- Node8 -->
-<g id="Node000008" class="node">
-<title>Node8</title>
-<g id="a_Node000008"><a xlink:href="namespaceAscEmu.html#af79227cb68117f159a0cf3232904123a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="657,-24.5 532,-24.5 532,-5.5 657,-5.5 657,-24.5"/>
-<text text-anchor="middle" x="594.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::StringFormat</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7_Node000007_Node000008" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M496.46,-15C504.82,-15 513.37,-15 521.77,-15"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="521.91,-18.5 531.91,-15 521.91,-11.5 521.91,-18.5"/>
 </a>

@@ -29,7 +29,6 @@ jobs:
         run: |
           echo "Cloning AscEmu sources..."
           git clone --depth 1 https://github.com/AscEmu/AscEmu.git
-          cp AscEmu/README.md README.md
 
       - name: Install Doxygen & Graphviz
         run: |
@@ -39,19 +38,6 @@ jobs:
 
       - name: Prepare output directory
         run: mkdir -p build/docs
-
-      - name: Adjust Doxyfile paths
-        run: |
-          echo "Configuring Doxyfile for AscEmu..."
-          sed -i 's|^INPUT .*|INPUT = AscEmu README.md|' Doxyfile
-          sed -i 's|^OUTPUT_DIRECTORY .*|OUTPUT_DIRECTORY = build/docs|' Doxyfile
-          sed -i 's|^GENERATE_LATEX .*|GENERATE_LATEX = NO|' Doxyfile
-
-          if grep -q "^USE_MDFILE_AS_MAINPAGE" Doxyfile; then
-            sed -i 's|^USE_MDFILE_AS_MAINPAGE .*|USE_MDFILE_AS_MAINPAGE = README.md|' Doxyfile
-          else
-            echo "USE_MDFILE_AS_MAINPAGE = README.md" >> Doxyfile
-          fi
 
       - name: Generate AE Doxygen documentation
         run: |

@@ -1,8 +1,0 @@
-var classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f =
-[
-    [ "iterator_buffer", "classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f.html#afe4b9e77306339e62303a7eb15ee0ef2", null ],
-    [ "iterator_buffer", "classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f.html#a54514fa99fafd880633d03f427768e9a", null ],
-    [ "grow", "classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f.html#a1af4b95b03d67cfc8254f10ec8592b46", null ],
-    [ "out", "classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f.html#aa9227d14ccef4f44110ffded45747dbe", null ],
-    [ "container_", "classdetail_1_1iterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enablea2d579bc6466b5382e01854ff6e2d68f.html#a3dfe5d70dda63c215af7aa850e589404", null ]
-];

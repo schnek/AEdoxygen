@@ -145,25 +145,19 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   28</span><span class="preprocessor">#ifndef WIN32</span></div>
 <div class="line"><span class="lineno">   29</span>    rlimit rl;</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (getrlimit(RLIMIT_CORE, &amp;rl) == -1)</div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;getrlimit failed. This could be problem.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   31</span>        printf(<span class="stringliteral">&quot;getrlimit failed. This could be problem.\n&quot;</span>);</div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   33</span>    {</div>
 <div class="line"><span class="lineno">   34</span>        rl.rlim_cur = rl.rlim_max;</div>
 <div class="line"><span class="lineno">   35</span>        <span class="keywordflow">if</span> (setrlimit(RLIMIT_CORE, &amp;rl) == -1)</div>
-<div class="line"><span class="lineno">   36</span>            <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;setrlimit failed. Server may not save core.dump files.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   36</span>            printf(<span class="stringliteral">&quot;setrlimit failed. Server may not save core.dump files.\n&quot;</span>);</div>
 <div class="line"><span class="lineno">   37</span>    }</div>
 <div class="line"><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">   39</span> </div>
 <div class="line"><span class="lineno">   40</span>    <a class="code hl_define" href="Master_8hpp.html#a3195dca197b410f331dbcd8bf76ecb81">sMasterLogon</a>.Run(argc, argv);</div>
 <div class="line"><span class="lineno">   41</span>}</div>
 <div class="ttc" id="aMaster_8hpp_html_a3195dca197b410f331dbcd8bf76ecb81"><div class="ttname"><a href="Master_8hpp.html#a3195dca197b410f331dbcd8bf76ecb81">sMasterLogon</a></div><div class="ttdeci">#define sMasterLogon</div><div class="ttdef"><b>Definition</b> <a href="Master_8hpp_source.html#l00065">Master.hpp:65</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aee3ed3a831f25f07e7be3919fff2203a"><div class="ttname"><a href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a></div><div class="ttdeci">auto printf(string_view fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00663">printf.h:663</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="logonserver_2Server_2Main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

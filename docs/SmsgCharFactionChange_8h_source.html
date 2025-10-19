@@ -119,15 +119,15 @@ $(document).ready(function(){initNavTree('SmsgCharFactionChange_8h_source.html',
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#if VERSION_STRING &gt; TBC</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> result;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        uint8_t result;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        uint64_t guid;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_struct" href="structCharCreate.html">CharCreate</a> charCreate;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgCharFactionChange.html">SmsgCharFactionChange</a>() : <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgCharFactionChange.html">SmsgCharFactionChange</a>(0, 0, <a class="code hl_struct" href="structCharCreate.html">CharCreate</a>())</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgCharFactionChange.html">SmsgCharFactionChange</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> result) :</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgCharFactionChange.html">SmsgCharFactionChange</a>(uint8_t result) :</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_class" href="classAscEmu_1_1Packets_1_1ManagedPacket.html">ManagedPacket</a>(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca218397395817b6f7b54bf5699a230293">SMSG_CHAR_FACTION_CHANGE</a>, 1),</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            result(result),</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            guid(0),</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('SmsgCharFactionChange_8h_source.html',
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgCharFactionChange.html">SmsgCharFactionChange</a>(<a class="code hl_typedef" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> result, <a class="code hl_typedef" href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> guid, <a class="code hl_struct" href="structCharCreate.html">CharCreate</a> charCreate) :</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classAscEmu_1_1Packets_1_1SmsgCharFactionChange.html">SmsgCharFactionChange</a>(uint8_t result, uint64_t guid, <a class="code hl_struct" href="structCharCreate.html">CharCreate</a> charCreate) :</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_class" href="classAscEmu_1_1Packets_1_1ManagedPacket.html">ManagedPacket</a>(<a class="code hl_enumvalue" href="Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002caca218397395817b6f7b54bf5699a230293">SMSG_CHAR_FACTION_CHANGE</a>, 9 + charCreate.<a class="code hl_variable" href="structCharCreate.html#a2a18d18c43929e92f0cc43ab057286d5">name</a>.size() + 10),</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            result(result),</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            guid(guid),</div>
@@ -185,8 +185,6 @@ $(document).ready(function(){initNavTree('SmsgCharFactionChange_8h_source.html',
 <div class="ttc" id="astructCharCreate_html_acfa3a9d09327d733486654599b60e42d"><div class="ttname"><a href="structCharCreate.html#acfa3a9d09327d733486654599b60e42d">CharCreate::_race</a></div><div class="ttdeci">uint8_t _race</div><div class="ttdef"><b>Definition</b> <a href="PlayerDefines_8hpp_source.html#l01023">PlayerDefines.hpp:1023</a></div></div>
 <div class="ttc" id="astructCharCreate_html_ae0a86eee00543b667281dbeaecff7b32"><div class="ttname"><a href="structCharCreate.html#ae0a86eee00543b667281dbeaecff7b32">CharCreate::skin</a></div><div class="ttdeci">uint8_t skin</div><div class="ttdef"><b>Definition</b> <a href="PlayerDefines_8hpp_source.html#l01026">PlayerDefines.hpp:1026</a></div></div>
 <div class="ttc" id="astructCharCreate_html_aedad0e092f734bccb24114e841598553"><div class="ttname"><a href="structCharCreate.html#aedad0e092f734bccb24114e841598553">CharCreate::face</a></div><div class="ttdeci">uint8_t face</div><div class="ttdef"><b>Definition</b> <a href="PlayerDefines_8hpp_source.html#l01027">PlayerDefines.hpp:1027</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00078">winvs_stdint.h:78</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aec6fcb673ff035718c238c8c9d544c47"><div class="ttname"><a href="winvs__stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a></div><div class="ttdeci">unsigned __int64 uint64_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00090">winvs_stdint.h:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

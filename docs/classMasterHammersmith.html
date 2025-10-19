@@ -114,7 +114,7 @@ Collaboration diagram for MasterHammersmith:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6045a2aaca69cabaa8047d42d7a5b77d" id="r_a6045a2aaca69cabaa8047d42d7a5b77d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMasterHammersmith.html#a6045a2aaca69cabaa8047d42d7a5b77d">onHello</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *plr) override</td></tr>
 <tr class="separator:a6045a2aaca69cabaa8047d42d7a5b77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace0aa75cf14ed600ec7c30cad9eb71f" id="r_aace0aa75cf14ed600ec7c30cad9eb71f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMasterHammersmith.html#aace0aa75cf14ed600ec7c30cad9eb71f">onSelectOption</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *plr, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> Id, <a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *, <a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>) override</td></tr>
+<tr class="memitem:aace0aa75cf14ed600ec7c30cad9eb71f" id="r_aace0aa75cf14ed600ec7c30cad9eb71f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMasterHammersmith.html#aace0aa75cf14ed600ec7c30cad9eb71f">onSelectOption</a> (<a class="el" href="classObject.html">Object</a> *pObject, <a class="el" href="classPlayer.html">Player</a> *plr, uint32_t Id, const char *, uint32_t) override</td></tr>
 <tr class="separator:aace0aa75cf14ed600ec7c30cad9eb71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75cd700992b79d6904483d57ffae7fbf" id="r_a75cd700992b79d6904483d57ffae7fbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMasterHammersmith.html#a75cd700992b79d6904483d57ffae7fbf">destroy</a> () override</td></tr>
 <tr class="separator:a75cd700992b79d6904483d57ffae7fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,19 +251,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>Id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -283,7 +283,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="Gossip__Trainer_8cpp_source.html#l00025">25</a> of file <a class="el" href="Gossip__Trainer_8cpp_source.html">Gossip_Trainer.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> textid;</div>
+<div class="line"><span class="lineno">   27</span>        uint32_t textid;</div>
 <div class="line"><span class="lineno">   28</span>        <span class="keywordflow">if</span> (1 == Id)</div>
 <div class="line"><span class="lineno">   29</span>        {</div>
 <div class="line"><span class="lineno">   30</span>            <span class="keywordflow">if</span> (!plr-&gt;<a class="code hl_function" href="classPlayer.html#a1385bccb875f3168b2cc734a70849590">hasSkillLine</a>(164) || plr-&gt;<a class="code hl_function" href="classPlayer.html#a099ed23261deea7c122a3d35a53eff83">getSkillLineCurrent</a>(164, <span class="keyword">false</span>) &lt; 300)</div>
@@ -316,7 +316,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   57</span>                textid = 20008;</div>
 <div class="line"><span class="lineno">   58</span>            <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   59</span>            {</div>
-<div class="line"><span class="lineno">   60</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> unlearnGold = 0;</div>
+<div class="line"><span class="lineno">   60</span>                int32_t unlearnGold = 0;</div>
 <div class="line"><span class="lineno">   61</span>                <span class="keywordflow">if</span> (plr-&gt;<a class="code hl_function" href="classUnit.html#adfa16ac0ecbefbac2e41e3fb1590a1a5">getLevel</a>() &lt;= 50)</div>
 <div class="line"><span class="lineno">   62</span>                    unlearnGold = 250000;</div>
 <div class="line"><span class="lineno">   63</span>                <span class="keywordflow">if</span> (plr-&gt;<a class="code hl_function" href="classUnit.html#adfa16ac0ecbefbac2e41e3fb1590a1a5">getLevel</a>() &gt; 50 &amp;&amp; plr-&gt;<a class="code hl_function" href="classUnit.html#adfa16ac0ecbefbac2e41e3fb1590a1a5">getLevel</a>() &lt;= 65)</div>
@@ -340,8 +340,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassPlayer_html_a84011ae284906994291542182680fad6"><div class="ttname"><a href="classPlayer.html#a84011ae284906994291542182680fad6">Player::removeSpell</a></div><div class="ttdeci">bool removeSpell(uint32_t spellId, bool moveToDeleted)</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l03945">Player.cpp:3945</a></div></div>
 <div class="ttc" id="aclassPlayer_html_ac838cec35ceafdc36e3e03a284955fd6"><div class="ttname"><a href="classPlayer.html#ac838cec35ceafdc36e3e03a284955fd6">Player::hasEnoughCoinage</a></div><div class="ttdeci">bool hasEnoughCoinage(uint64_t coinage) const</div><div class="ttdef"><b>Definition</b> <a href="Player_8cpp_source.html#l01186">Player.cpp:1186</a></div></div>
 <div class="ttc" id="aclassUnit_html_adfa16ac0ecbefbac2e41e3fb1590a1a5"><div class="ttname"><a href="classUnit.html#adfa16ac0ecbefbac2e41e3fb1590a1a5">Unit::getLevel</a></div><div class="ttdeci">uint32_t getLevel() const</div><div class="ttdef"><b>Definition</b> <a href="Unit_8cpp_source.html#l00936">Unit.cpp:936</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_ab1967d8591af1a4e48c37fd2b0f184d0"><div class="ttname"><a href="winvs__stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a></div><div class="ttdeci">signed int int32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00077">winvs_stdint.h:77</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

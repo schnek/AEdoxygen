@@ -127,10 +127,10 @@ $(document).ready(function(){initNavTree('Errors_8h_source.html',''); initResiza
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="Errors_8h.html#a30cf9cebcc66bdb5cd547260e26b7339">   26</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Errors_8h.html#a30cf9cebcc66bdb5cd547260e26b7339">arcAssertFailed</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fname, <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="lparser_8c.html#af2c543df6cbb49247cd0a71956786d92">expr</a>)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="Errors_8h.html#a30cf9cebcc66bdb5cd547260e26b7339">   26</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="Errors_8h.html#a30cf9cebcc66bdb5cd547260e26b7339">arcAssertFailed</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fname, <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span>* expr)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;Assertion Failed: (%s)\n&quot;</span>, <a class="code hl_function" href="lparser_8c.html#af2c543df6cbb49247cd0a71956786d92">expr</a>);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a>(<span class="stringliteral">&quot;Location: %s(%i)\n&quot;</span>, fname, line);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    printf(<span class="stringliteral">&quot;Assertion Failed: (%s)\n&quot;</span>, expr);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    printf(<span class="stringliteral">&quot;Location: %s(%i)\n&quot;</span>, fname, line);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
@@ -151,8 +151,6 @@ $(document).ready(function(){initNavTree('Errors_8h_source.html',''); initResiza
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif      </span><span class="comment">//_ERRORS_H</span></div>
 <div class="ttc" id="aErrors_8h_html_a30cf9cebcc66bdb5cd547260e26b7339"><div class="ttname"><a href="Errors_8h.html#a30cf9cebcc66bdb5cd547260e26b7339">arcAssertFailed</a></div><div class="ttdeci">static void arcAssertFailed(const char *fname, int line, const char *expr)</div><div class="ttdef"><b>Definition</b> <a href="Errors_8h_source.html#l00026">Errors.h:26</a></div></div>
-<div class="ttc" id="alparser_8c_html_af2c543df6cbb49247cd0a71956786d92"><div class="ttname"><a href="lparser_8c.html#af2c543df6cbb49247cd0a71956786d92">expr</a></div><div class="ttdeci">static void expr(LexState *ls, expdesc *v)</div><div class="ttdef"><b>Definition</b> <a href="lparser_8c_source.html#l01289">lparser.c:1289</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aee3ed3a831f25f07e7be3919fff2203a"><div class="ttname"><a href="printf_8h.html#aee3ed3a831f25f07e7be3919fff2203a">printf</a></div><div class="ttdeci">auto printf(string_view fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00663">printf.h:663</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

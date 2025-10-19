@@ -48,7 +48,7 @@
 <script type="application/ecmascript">
 var viewWidth = 547;
 var viewHeight = 162;
-var sectionId = 'dynsection-22';
+var sectionId = 'dynsection-20';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -78,36 +78,54 @@ var sectionId = 'dynsection-22';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M138.93,-88.54C162.62,-96.09 191.81,-105.35 218,-113.5 225.21,-115.74 232.79,-118.08 240.3,-120.39"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="239.52,-123.81 250.1,-123.39 241.57,-117.11 239.52,-123.81"/>
+<path fill="none" stroke="#63b8ff" d="M137.09,-88.53C161.07,-96.44 191.08,-106.18 218,-114.5 224.47,-116.5 231.25,-118.55 238.01,-120.57"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="237.29,-124.01 247.88,-123.5 239.28,-117.3 237.29,-124.01"/>
 </a>
 </g>
 </g>
-<!-- Node4 -->
-<g id="Node000004" class="node">
-<title>Node4</title>
-<g id="a_Node000004"><a xlink:href="namespaceUtil.html#ae4992dee3a5c6109f45e1c3ff831dee3" target="_top" xlink:title="Returns calculated time based on (second) values e.g. 5h will return 5 * 60 * 60.">
+<!-- Node3 -->
+<g id="Node000003" class="node">
+<title>Node3</title>
+<g id="a_Node000003"><a xlink:href="namespaceUtil.html#ae4992dee3a5c6109f45e1c3ff831dee3" target="_top" xlink:title="Returns calculated time based on (second) values e.g. 5h will return 5 * 60 * 60.">
 <polygon fill="white" stroke="#666666" points="384,-105 218,-105 218,-86 384,-86 384,-105"/>
 <text text-anchor="middle" x="301" y="-93" font-family="Helvetica,sans-Serif" font-size="10.00">Util::GetTimePeriodFromString</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node4 -->
-<g id="edge3_Node000001_Node000004" class="edge">
-<title>Node1&#45;&gt;Node4</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge2_Node000001_Node000003" class="edge">
+<title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M182.02,-83.02C190.54,-83.92 199.2,-84.84 207.74,-85.74"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="207.39,-89.22 217.7,-86.8 208.13,-82.26 207.39,-89.22"/>
+</a>
+</g>
+</g>
+<!-- Node5 -->
+<g id="Node000005" class="node">
+<title>Node5</title>
+<g id="a_Node000005"><a xlink:href="classChatCommandHandler.html#a562947bc81997bcf5225df5cf1fbcaa6" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="366.5,-67.5 235.5,-67.5 235.5,-37.5 366.5,-37.5 366.5,-67.5"/>
+<text text-anchor="start" x="243.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">ChatCommandHandler</text>
+<text text-anchor="middle" x="301" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::greenSystemMessage</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4_Node000001_Node000005" class="edge">
+<title>Node1&#45;&gt;Node5</title>
+<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M182.02,-64.41C196.42,-62.96 211.19,-61.47 225.19,-60.05"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="225.63,-63.53 235.23,-59.04 224.93,-56.56 225.63,-63.53"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classChatCommandHandler.html#a562947bc81997bcf5225df5cf1fbcaa6" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="366.5,-67.5 235.5,-67.5 235.5,-37.5 366.5,-37.5 366.5,-67.5"/>
-<text text-anchor="start" x="243.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">ChatCommandHandler</text>
-<text text-anchor="middle" x="301" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::greenSystemMessage</text>
+<g id="a_Node000006"><a xlink:href="AccountCommands_8cpp.html#a3141afa4393ff8afee6dce496ee8eb69" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="351.5,-19 250.5,-19 250.5,0 351.5,0 351.5,-19"/>
+<text text-anchor="middle" x="301" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ParseAccBanArgs</text>
 </a>
 </g>
 </g>
@@ -115,61 +133,25 @@ var sectionId = 'dynsection-22';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M182.02,-64.41C196.42,-62.96 211.19,-61.47 225.19,-60.05"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="225.63,-63.53 235.23,-59.04 224.93,-56.56 225.63,-63.53"/>
-</a>
-</g>
-</g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="AccountCommands_8cpp.html#a3141afa4393ff8afee6dce496ee8eb69" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="351.5,-19 250.5,-19 250.5,0 351.5,0 351.5,-19"/>
-<text text-anchor="middle" x="301" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ParseAccBanArgs</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6_Node000001_Node000007" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M130.5,-58.45C155.26,-49.09 188.24,-37.23 218,-28.5 226.56,-25.99 235.7,-23.6 244.65,-21.41"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="245.73,-24.75 254.64,-19.03 244.1,-17.94 245.73,-24.75"/>
 </a>
 </g>
 </g>
-<!-- Node3 -->
-<g id="Node000003" class="node">
-<title>Node3</title>
-<g id="a_Node000003"><a xlink:href="chrono_8h.html#a206f24de3f0fff46c4daeb318c02a45e" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="510.5,-148 448.5,-148 448.5,-129 510.5,-129 510.5,-148"/>
-<text text-anchor="middle" x="479.5" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">localtime</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
-<title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M380.19,-138.5C400.19,-138.5 420.9,-138.5 438.12,-138.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="438.35,-142 448.35,-138.5 438.35,-135 438.35,-142"/>
-</a>
-</g>
-</g>
-<!-- Node5 -->
-<g id="Node000005" class="node">
-<title>Node5</title>
-<g id="a_Node000005"><a xlink:href="namespaceAscEmu_1_1Util_1_1Strings.html#a699f98b9b7e53ab90e9ebd266bf91a42" target="_top" xlink:title="Manipulates the string to lowercase.">
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="namespaceAscEmu_1_1Util_1_1Strings.html#a699f98b9b7e53ab90e9ebd266bf91a42" target="_top" xlink:title="Manipulates the string to lowercase.">
 <polygon fill="white" stroke="#666666" points="539,-110.5 420,-110.5 420,-80.5 539,-80.5 539,-110.5"/>
 <text text-anchor="start" x="428" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">AscEmu::Util::Strings</text>
 <text text-anchor="middle" x="479.5" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">::toLowerCase</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge4_Node000004_Node000005" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
+<!-- Node3&#45;&gt;Node4 -->
+<g id="edge3_Node000003_Node000004" class="edge">
+<title>Node3&#45;&gt;Node4</title>
+<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M384.05,-95.5C392.63,-95.5 401.28,-95.5 409.69,-95.5"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="409.8,-99 419.8,-95.5 409.8,-92 409.8,-99"/>
 </a>

@@ -102,22 +102,17 @@ $(document).ready(function(){initNavTree('structMMAP_1_1MMapData.html',''); init
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="MMapManager_8h_source.html">MMapManager.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for MMAP::MMapData:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structMMAP_1_1MMapData__coll__graph.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab6aa577df2b8bc749e68515b7b5ef96c" id="r_ab6aa577df2b8bc749e68515b7b5ef96c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMMAP_1_1MMapData.html#ab6aa577df2b8bc749e68515b7b5ef96c">MMapData</a> (<a class="el" href="classdtNavMesh.html">dtNavMesh</a> *mesh)</td></tr>
+<tr class="memitem:ab6aa577df2b8bc749e68515b7b5ef96c" id="r_ab6aa577df2b8bc749e68515b7b5ef96c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMMAP_1_1MMapData.html#ab6aa577df2b8bc749e68515b7b5ef96c">MMapData</a> (dtNavMesh *mesh)</td></tr>
 <tr class="separator:ab6aa577df2b8bc749e68515b7b5ef96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ad87f05014c49373557369e9177df5" id="r_a28ad87f05014c49373557369e9177df5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMMAP_1_1MMapData.html#a28ad87f05014c49373557369e9177df5">~MMapData</a> ()</td></tr>
 <tr class="separator:a28ad87f05014c49373557369e9177df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a786a4b43773e4402451bed82cf221f66" id="r_a786a4b43773e4402451bed82cf221f66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdtNavMesh.html">dtNavMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMMAP_1_1MMapData.html#a786a4b43773e4402451bed82cf221f66">navMesh</a></td></tr>
+<tr class="memitem:a786a4b43773e4402451bed82cf221f66" id="r_a786a4b43773e4402451bed82cf221f66"><td class="memItemLeft" align="right" valign="top">dtNavMesh *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMMAP_1_1MMapData.html#a786a4b43773e4402451bed82cf221f66">navMesh</a></td></tr>
 <tr class="separator:a786a4b43773e4402451bed82cf221f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb7a9f9131b3657eff54ed17fc329b43" id="r_abb7a9f9131b3657eff54ed17fc329b43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceMMAP.html#ac1ddb923268989fba3e11b870d09e85e">NavMeshQuerySet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMMAP_1_1MMapData.html#abb7a9f9131b3657eff54ed17fc329b43">navMeshQueries</a></td></tr>
 <tr class="separator:abb7a9f9131b3657eff54ed17fc329b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +135,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">MMAP::MMapData::MMapData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdtNavMesh.html">dtNavMesh</a> *&#160;</td>
+          <td class="paramtype">dtNavMesh *&#160;</td>
           <td class="paramname"><em>mesh</em></td><td>)</td>
           <td></td>
         </tr>
@@ -184,20 +179,13 @@ Public Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MMapManager_8h_source.html#l00041">41</a> of file <a class="el" href="MMapManager_8h_source.html">MMapManager.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>        {</div>
 <div class="line"><span class="lineno">   43</span>            <span class="keywordflow">for</span> (NavMeshQuerySet::iterator i = <a class="code hl_variable" href="structMMAP_1_1MMapData.html#abb7a9f9131b3657eff54ed17fc329b43">navMeshQueries</a>.begin(); i != <a class="code hl_variable" href="structMMAP_1_1MMapData.html#abb7a9f9131b3657eff54ed17fc329b43">navMeshQueries</a>.end(); ++i)</div>
-<div class="line"><span class="lineno">   44</span>                <a class="code hl_function" href="group__detour.html#ga24ccc133f15a0aa85f06f1c1ead2e6c4">dtFreeNavMeshQuery</a>(i-&gt;second);</div>
+<div class="line"><span class="lineno">   44</span>                dtFreeNavMeshQuery(i-&gt;second);</div>
 <div class="line"><span class="lineno">   45</span> </div>
 <div class="line"><span class="lineno">   46</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="structMMAP_1_1MMapData.html#a786a4b43773e4402451bed82cf221f66">navMesh</a>)</div>
-<div class="line"><span class="lineno">   47</span>                <a class="code hl_function" href="group__detour.html#gad938af5675a2f62c7c3830b38ea9a184">dtFreeNavMesh</a>(<a class="code hl_variable" href="structMMAP_1_1MMapData.html#a786a4b43773e4402451bed82cf221f66">navMesh</a>);</div>
+<div class="line"><span class="lineno">   47</span>                dtFreeNavMesh(<a class="code hl_variable" href="structMMAP_1_1MMapData.html#a786a4b43773e4402451bed82cf221f66">navMesh</a>);</div>
 <div class="line"><span class="lineno">   48</span>        }</div>
-<div class="ttc" id="agroup__detour_html_ga24ccc133f15a0aa85f06f1c1ead2e6c4"><div class="ttname"><a href="group__detour.html#ga24ccc133f15a0aa85f06f1c1ead2e6c4">dtFreeNavMeshQuery</a></div><div class="ttdeci">void dtFreeNavMeshQuery(dtNavMeshQuery *query)</div><div class="ttdef"><b>Definition</b> <a href="DetourNavMeshQuery_8cpp_source.html#l00113">DetourNavMeshQuery.cpp:113</a></div></div>
-<div class="ttc" id="agroup__detour_html_gad938af5675a2f62c7c3830b38ea9a184"><div class="ttname"><a href="group__detour.html#gad938af5675a2f62c7c3830b38ea9a184">dtFreeNavMesh</a></div><div class="ttdeci">void dtFreeNavMesh(dtNavMesh *navmesh)</div><div class="ttdef"><b>Definition</b> <a href="DetourNavMesh_8cpp_source.html#l00149">DetourNavMesh.cpp:149</a></div></div>
 <div class="ttc" id="astructMMAP_1_1MMapData_html_abb7a9f9131b3657eff54ed17fc329b43"><div class="ttname"><a href="structMMAP_1_1MMapData.html#abb7a9f9131b3657eff54ed17fc329b43">MMAP::MMapData::navMeshQueries</a></div><div class="ttdeci">NavMeshQuerySet navMeshQueries</div><div class="ttdef"><b>Definition</b> <a href="MMapManager_8h_source.html#l00053">MMapManager.h:53</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structMMAP_1_1MMapData_a28ad87f05014c49373557369e9177df5_cgraph.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -224,7 +212,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdtNavMesh.html">dtNavMesh</a>* MMAP::MMapData::navMesh</td>
+          <td class="memname">dtNavMesh* MMAP::MMapData::navMesh</td>
         </tr>
       </table>
 </div><div class="memdoc">

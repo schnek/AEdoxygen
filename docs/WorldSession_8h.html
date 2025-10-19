@@ -161,9 +161,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8bb56b020392c64a5b47235bc4e11dd2" id="r_a8bb56b020392c64a5b47235bc4e11dd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="WorldSession_8h.html#a8bb56b020392c64a5b47235bc4e11dd2">GLOBAL_CACHE_MASK</a> = 0x15</td></tr>
+<tr class="memitem:a8bb56b020392c64a5b47235bc4e11dd2" id="r_a8bb56b020392c64a5b47235bc4e11dd2"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="WorldSession_8h.html#a8bb56b020392c64a5b47235bc4e11dd2">GLOBAL_CACHE_MASK</a> = 0x15</td></tr>
 <tr class="separator:a8bb56b020392c64a5b47235bc4e11dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a912131f53d01e523768e652f27ff3b64" id="r_a912131f53d01e523768e652f27ff3b64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="WorldSession_8h.html#a912131f53d01e523768e652f27ff3b64">PER_CHARACTER_CACHE_MASK</a> = 0xEA</td></tr>
+<tr class="memitem:a912131f53d01e523768e652f27ff3b64" id="r_a912131f53d01e523768e652f27ff3b64"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="WorldSession_8h.html#a912131f53d01e523768e652f27ff3b64">PER_CHARACTER_CACHE_MASK</a> = 0xEA</td></tr>
 <tr class="separator:a912131f53d01e523768e652f27ff3b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -290,7 +290,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span>(!<a class="code hl_function" href="namespaceAscEmu_1_1Util_1_1utf8.html#a2932e25280548e2ff80707d67b77f924">AscEmu::Util::utf8::is_valid</a>(name))</div>
 <div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="CharacterErrors_8h.html#a34e1340fe79b2c3f389d64ebb5433785a7f11119d2cb5b61f8c1669cfe2112ae8">E_CHAR_NAME_INVALID_CHARACTER</a>;</div>
 <div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>        <span class="keyword">const</span> std::size_t <a class="code hl_function" href="namespaceG3D.html#a69a355f92fa3aab4f301667be00cd3eb">length</a> = <a class="code hl_function" href="namespaceAscEmu_1_1Util_1_1utf8.html#a20868a4c9bab51097db2934b6f65d24d">AscEmu::Util::utf8::length</a>(name);</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keyword">const</span> std::size_t <a class="code hl_function" href="namespaceAscEmu_1_1Util_1_1utf8.html#a20868a4c9bab51097db2934b6f65d24d">length</a> = <a class="code hl_function" href="namespaceAscEmu_1_1Util_1_1utf8.html#a20868a4c9bab51097db2934b6f65d24d">AscEmu::Util::utf8::length</a>(name);</div>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (length == 0)</div>
 <div class="line"><span class="lineno">   68</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="CharacterErrors_8h.html#a34e1340fe79b2c3f389d64ebb5433785a97389dd8879f8af0e4b2ad1776bce697">E_CHAR_NAME_NO_NAME</a>;</div>
@@ -311,7 +311,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="aWorld_8h_html_aea0df2a51a52c20517af81710295423d"><div class="ttname"><a href="World_8h.html#aea0df2a51a52c20517af81710295423d">worldConfig</a></div><div class="ttdeci">#define worldConfig</div><div class="ttdef"><b>Definition</b> <a href="World_8h_source.html#l00245">World.h:245</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Util_1_1utf8_html_a20868a4c9bab51097db2934b6f65d24d"><div class="ttname"><a href="namespaceAscEmu_1_1Util_1_1utf8.html#a20868a4c9bab51097db2934b6f65d24d">AscEmu::Util::utf8::length</a></div><div class="ttdeci">std::size_t length(const utf8_string &amp;string)</div><div class="ttdef"><b>Definition</b> <a href="utf8_8cpp_source.html#l00013">utf8.cpp:13</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Util_1_1utf8_html_a2932e25280548e2ff80707d67b77f924"><div class="ttname"><a href="namespaceAscEmu_1_1Util_1_1utf8.html#a2932e25280548e2ff80707d67b77f924">AscEmu::Util::utf8::is_valid</a></div><div class="ttdeci">bool is_valid(const utf8_string &amp;string)</div><div class="ttdef"><b>Definition</b> <a href="utf8_8cpp_source.html#l00018">utf8.cpp:18</a></div></div>
-<div class="ttc" id="anamespaceG3D_html_a69a355f92fa3aab4f301667be00cd3eb"><div class="ttname"><a href="namespaceG3D.html#a69a355f92fa3aab4f301667be00cd3eb">G3D::length</a></div><div class="ttdeci">float length(float v)</div><div class="ttdef"><b>Definition</b> <a href="vectorMath_8h_source.html#l00208">vectorMath.h:208</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -333,7 +332,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> GLOBAL_CACHE_MASK = 0x15</td>
+          <td class="memname">const uint8_t GLOBAL_CACHE_MASK = 0x15</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -349,7 +348,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="StormLib_2src_2zlib_2zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="winvs__stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PER_CHARACTER_CACHE_MASK = 0xEA</td>
+          <td class="memname">const uint8_t PER_CHARACTER_CACHE_MASK = 0xEA</td>
         </tr>
       </table>
 </div><div class="memdoc">

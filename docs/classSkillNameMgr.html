@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4b5ae42fffbac07b65871027d3be44ff" id="r_a4b5ae42fffbac07b65871027d3be44ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::unique_ptr&lt; char[]&gt;[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkillNameMgr.html#a4b5ae42fffbac07b65871027d3be44ff">SkillNames</a></td></tr>
 <tr class="separator:a4b5ae42fffbac07b65871027d3be44ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3277d54923c9fa3529d96c9cd2978b08" id="r_a3277d54923c9fa3529d96c9cd2978b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkillNameMgr.html#a3277d54923c9fa3529d96c9cd2978b08">maxskill</a></td></tr>
+<tr class="memitem:a3277d54923c9fa3529d96c9cd2978b08" id="r_a3277d54923c9fa3529d96c9cd2978b08"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSkillNameMgr.html#a3277d54923c9fa3529d96c9cd2978b08">maxskill</a></td></tr>
 <tr class="separator:a3277d54923c9fa3529d96c9cd2978b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -155,13 +155,13 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   85</span><span class="comment"></span>            <a class="code hl_variable" href="classSkillNameMgr.html#a4b5ae42fffbac07b65871027d3be44ff">SkillNames</a> = std::make_unique&lt;std::unique_ptr&lt;char[]&gt;[]&gt;(<a class="code hl_variable" href="classSkillNameMgr.html#a3277d54923c9fa3529d96c9cd2978b08">maxskill</a> + 1); <span class="comment">//(+1, arrays count from 0.. not 1.)</span></div>
 <div class="line"><span class="lineno">   86</span>            std::fill(<a class="code hl_variable" href="classSkillNameMgr.html#a4b5ae42fffbac07b65871027d3be44ff">SkillNames</a>.get(), <a class="code hl_variable" href="classSkillNameMgr.html#a4b5ae42fffbac07b65871027d3be44ff">SkillNames</a>.get(), <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">for</span> (<a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> i = 0; i &lt; <a class="code hl_variable" href="WDBStores_8cpp.html#a4902ff51d3c7252200e70894276050e3">sSkillLineStore</a>.getNumRows(); ++i)</div>
+<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; <a class="code hl_variable" href="WDBStores_8cpp.html#a4902ff51d3c7252200e70894276050e3">sSkillLineStore</a>.getNumRows(); ++i)</div>
 <div class="line"><span class="lineno">   89</span>            {</div>
 <div class="line"><span class="lineno">   90</span>                <span class="keyword">auto</span> skill_line = <a class="code hl_variable" href="WDBStores_8cpp.html#a4902ff51d3c7252200e70894276050e3">sSkillLineStore</a>.lookupEntry(i);</div>
 <div class="line"><span class="lineno">   91</span>                <span class="keywordflow">if</span> (skill_line == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   92</span>                    <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>                <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> SkillID = skill_line-&gt;id;</div>
+<div class="line"><span class="lineno">   94</span>                uint32_t SkillID = skill_line-&gt;id;</div>
 <div class="line"><span class="lineno">   95</span><span class="preprocessor">#if VERSION_STRING &lt; Cata</span></div>
 <div class="line"><span class="lineno">   96</span>                <span class="keywordtype">char</span>* SkillName = skill_line-&gt;Name[<a class="code hl_define" href="World_8h.html#a05dfb35c344e5b947a19e4284e7f5fa7">sWorld</a>.getDbcLocaleLanguageId()];</div>
 <div class="line"><span class="lineno">   97</span><span class="preprocessor">#else</span></div>
@@ -177,7 +177,6 @@ Public Attributes</h2></td></tr>
 <div class="ttc" id="aWorld_8h_html_a05dfb35c344e5b947a19e4284e7f5fa7"><div class="ttname"><a href="World_8h.html#a05dfb35c344e5b947a19e4284e7f5fa7">sWorld</a></div><div class="ttdeci">#define sWorld</div><div class="ttdef"><b>Definition</b> <a href="World_8h_source.html#l00244">World.h:244</a></div></div>
 <div class="ttc" id="aclassSkillNameMgr_html_a3277d54923c9fa3529d96c9cd2978b08"><div class="ttname"><a href="classSkillNameMgr.html#a3277d54923c9fa3529d96c9cd2978b08">SkillNameMgr::maxskill</a></div><div class="ttdeci">uint32_t maxskill</div><div class="ttdef"><b>Definition</b> <a href="SkillNameMgr_8h_source.html#l00077">SkillNameMgr.h:77</a></div></div>
 <div class="ttc" id="aclassSkillNameMgr_html_a4b5ae42fffbac07b65871027d3be44ff"><div class="ttname"><a href="classSkillNameMgr.html#a4b5ae42fffbac07b65871027d3be44ff">SkillNameMgr::SkillNames</a></div><div class="ttdeci">std::unique_ptr&lt; std::unique_ptr&lt; char[]&gt;[]&gt; SkillNames</div><div class="ttdef"><b>Definition</b> <a href="SkillNameMgr_8h_source.html#l00076">SkillNameMgr.h:76</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,7 +213,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> SkillNameMgr::maxskill</td>
+          <td class="memname">uint32_t SkillNameMgr::maxskill</td>
         </tr>
       </table>
 </div><div class="memdoc">

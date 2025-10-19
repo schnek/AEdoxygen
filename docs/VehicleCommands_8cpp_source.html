@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('VehicleCommands_8cpp_source.html','');
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> seat = atoi(args);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint32_t seat = atoi(args);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="classPlayer.html">Player</a>* p = session-&gt;<a class="code hl_function" href="classWorldSession.html#a014d7fdeb157410b75dfd4bd0fe0efc2">GetPlayer</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (p-&gt;<a class="code hl_function" href="classUnit.html#a50e5b30e1c170be2c8415a84d0e78cc8">getTargetGuid</a>() == 0)</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('VehicleCommands_8cpp_source.html','');
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">if</span> (u-&gt;getVehicleKit())</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="classUnit.html">Unit</a>* passenger = u-&gt;getVehicleKit()-&gt;getPassenger(<span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="winvs__stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a><span class="keyword">&gt;</span>(seat)))</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="classUnit.html">Unit</a>* passenger = u-&gt;getVehicleKit()-&gt;getPassenger(<span class="keyword">static_cast&lt;</span>int8_t<span class="keyword">&gt;</span>(seat)))</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            passenger-&gt;callExitVehicle();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('VehicleCommands_8cpp_source.html','');
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keywordtype">bool</span> ChatCommandHandler::HandleVehicleAddPassengerCommand(<span class="keyword">const</span> <span class="keywordtype">char</span>* args, <a class="code hl_class" href="classWorldSession.html">WorldSession</a>* session)</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::stringstream ss(args);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_typedef" href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> creature_entry;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    uint32_t creature_entry;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    ss &gt;&gt; creature_entry;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">if</span> (ss.fail())</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
@@ -269,8 +269,6 @@ $(document).ready(function(){initNavTree('VehicleCommands_8cpp_source.html','');
 <div class="ttc" id="aclassWorldSession_html"><div class="ttname"><a href="classWorldSession.html">WorldSession</a></div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8h_source.html#l00092">WorldSession.h:93</a></div></div>
 <div class="ttc" id="aclassWorldSession_html_a014d7fdeb157410b75dfd4bd0fe0efc2"><div class="ttname"><a href="classWorldSession.html#a014d7fdeb157410b75dfd4bd0fe0efc2">WorldSession::GetPlayer</a></div><div class="ttdeci">Player * GetPlayer()</div><div class="ttdef"><b>Definition</b> <a href="WorldSession_8h_source.html#l00113">WorldSession.h:113</a></div></div>
 <div class="ttc" id="astructCreatureProperties_html"><div class="ttname"><a href="structCreatureProperties.html">CreatureProperties</a></div><div class="ttdef"><b>Definition</b> <a href="CreatureDefines_8hpp_source.html#l00171">CreatureDefines.hpp:172</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="winvs__stdint_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00080">winvs_stdint.h:80</a></div></div>
-<div class="ttc" id="awinvs__stdint_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="winvs__stdint_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdef"><b>Definition</b> <a href="winvs__stdint_8h_source.html#l00075">winvs_stdint.h:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

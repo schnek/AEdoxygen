@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['nandosaispells_0',['NandosAISpells',['../classNandosAI.html#a3a031bb5f67c0be3faa2413a02b4aef7',1,'NandosAI']]],
-  ['navarea_1',['NavArea',['../MapDefines_8h.html#a2fb297540471eca73a5755d904155b5c',1,'MapDefines.h']]],
-  ['navterrain_2',['navterrain',['../mmaps__generator_2PathCommon_8h.html#a8a4d0b36dd46d60b691b894fb8c1c5db',1,'NavTerrain:&#160;PathCommon.h'],['../ToolsCataMop_2mmaps__generator_2PathCommon_8h.html#a8a4d0b36dd46d60b691b894fb8c1c5db',1,'NavTerrain:&#160;PathCommon.h']]],
-  ['navterrainflag_3',['NavTerrainFlag',['../MapDefines_8h.html#a1c7bf519d4de26352ba4473d716133b8',1,'MapDefines.h']]],
-  ['nazanspells_4',['NazanSpells',['../NazanAndVazruden_8hpp.html#a3dfabcedc4db9bcc916f5bb9363abb1a',1,'NazanAndVazruden.hpp']]],
-  ['newlinestyle_5',['NewlineStyle',['../classG3D_1_1TextOutput_1_1Settings.html#aa33100f0b08c357b59463f63b81c2c13',1,'G3D::TextOutput::Settings']]],
-  ['northrendbeasts_6',['NorthrendBeasts',['../Raid__TrialOfTheCrusader_8hpp.html#aac0c808754c02d055c4d2407db085020',1,'Raid_TrialOfTheCrusader.hpp']]],
-  ['northrendbeastspoint_7',['NorthrendBeastsPoint',['../namespaceBeasts.html#a9016884b7c57c0ef374d7546cb00138f',1,'Beasts']]],
-  ['npcflags_8',['NPCFlags',['../CreatureDefines_8hpp.html#a2b8bde300b9beef2e5d69b28d2777212',1,'CreatureDefines.hpp']]],
-  ['npcs_9',['NPCs',['../namespaceXevozz.html#a0ccd5fd9da48d9547a5b919bed6f4697',1,'Xevozz']]],
-  ['numberformat_10',['NumberFormat',['../classG3D_1_1ImageFormat.html#aeeb46a03d04ec98390843771f90e74df',1,'G3D::ImageFormat']]],
-  ['numeric_5fsystem_11',['numeric_system',['../namespacedetail.html#a4938659a89541ba388c06c6a33e0c8ad',1,'detail']]]
+  ['object_5fupdate_5ftype_0',['OBJECT_UPDATE_TYPE',['../ObjectDefines_8hpp.html#a4c86a7054bc355950e6890b15c28e9c5',1,'ObjectDefines.hpp']]],
+  ['objectactivestate_1',['ObjectActiveState',['../MapMgrDefines_8hpp.html#a50d1aaf8a9655091e76165f934eec71d',1,'MapMgrDefines.hpp']]],
+  ['objectupdateflags_2',['objectupdateflags',['../Flags_8hpp.html#ab6c8a3eedfe00e15b5c6995bd136bf1a',1,'ObjectUpdateFlags:&#160;Flags.hpp'],['../Flags_8hpp.html#ab6c8a3eedfe00e15b5c6995bd136bf1a',1,'ObjectUpdateFlags:&#160;Flags.hpp'],['../Flags_8hpp.html#ab6c8a3eedfe00e15b5c6995bd136bf1a',1,'ObjectUpdateFlags:&#160;Flags.hpp'],['../Flags_8hpp.html#a04c0363f149d69391e79faf6568dcb4c',1,'ObjectUpdateFlags:&#160;Flags.hpp'],['../Flags_8hpp.html#ab6c8a3eedfe00e15b5c6995bd136bf1a',1,'ObjectUpdateFlags:&#160;Flags.hpp']]],
+  ['odo_5fthe_5fblindwatcher_5fspells_3',['ODO_THE_BLINDWATCHER_SPELLS',['../classBlindWatcherAI.html#a18a68a3b3cdde12f8e9f93df3d34cee4',1,'BlindWatcherAI']]],
+  ['ohf_5fentries_4',['OHF_ENTRIES',['../Instance__OldHillsbradFoothills_8h.html#a9740ab44677b2dac759328d8aa670f72',1,'Instance_OldHillsbradFoothills.h']]],
+  ['omorsay_5',['OmorSay',['../Omor_8hpp.html#a7623a8c1c517f7b44a6aaf12cd69d7bb',1,'Omor.hpp']]],
+  ['omorspells_6',['OmorSpells',['../Omor_8hpp.html#ab01e05631ca205e72cbdc841843ca555',1,'Omor.hpp']]],
+  ['onlinestate_7',['OnlineState',['../classThreatReference.html#a43ab9ac10caef78cdbffa76cc5966136',1,'ThreatReference']]],
+  ['opcodedevelopmentstate_8',['OpcodeDevelopmentState',['../Opcodes_8hpp.html#ac541f5d410cadb42ef47e48500590245',1,'Opcodes.hpp']]],
+  ['opcodes_9',['Opcodes',['../Opcodes_8hpp.html#abeeee4622d9285fa92e9b61857002cac',1,'Opcodes.hpp']]],
+  ['opcodestate_10',['OpcodeState',['../OpcodeHandlerRegistry_8hpp.html#abe58eb39dd085f30c92a12b73ea28175',1,'OpcodeHandlerRegistry.hpp']]],
+  ['outpacket_5fresult_11',['OUTPACKET_RESULT',['../WorldSocket_8h.html#a20b544ec098e528a2d7d061a900a0644',1,'WorldSocket.h']]]
 ];

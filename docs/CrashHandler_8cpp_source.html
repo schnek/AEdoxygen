@@ -131,16 +131,16 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="Mutex_8hpp.html">Threading/Mutex.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="CrashHandler_8cpp.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">   30</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="CrashHandler_8cpp.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">OutputCrashLogLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>, ...)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="CrashHandler_8cpp.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">   30</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="CrashHandler_8cpp.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">OutputCrashLogLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* format, ...)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::string s = <a class="code hl_function" href="namespaceAscEmu_1_1Logging.html#aee471bb56ae81bfebd18cc3a43f498a6">AscEmu::Logging::getFormattedFileName</a>(<span class="stringliteral">&quot;logs&quot;</span>, <span class="stringliteral">&quot;CrashLog&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    FILE* m_file = fopen(s.c_str(), <span class="stringliteral">&quot;a&quot;</span>);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span>(!m_file) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    va_list ap;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    va_start(ap, <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="printf_8h.html#aa80a935767017049bd5427afbe5b5912">vfprintf</a>(m_file, <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>, ap);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a>(m_file, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    va_start(ap, format);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    vfprintf(m_file, format, ap);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    fprintf(m_file, <span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    fclose(m_file);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    va_end(ap);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
@@ -172,17 +172,17 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Check for a debugger.</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#if !(defined(__x86_64__) || defined(__x86_64) || defined(__amd64__) || defined(_WIN64))</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> <a class="code hl_struct" href="structcode.html">code</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    DWORD code;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    __asm</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        MOV EAX, FS:[0x18]</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        MOV EAX, <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> PTR [EAX + 0x30]</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        MOV ECX, <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> PTR [EAX]</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        MOV [<a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> PTR <a class="code hl_struct" href="structcode.html">code</a>], ECX</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        MOV EAX, DWORD PTR [EAX + 0x30]</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        MOV ECX, DWORD PTR [EAX]</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        MOV [DWORD PTR code], ECX</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="structcode.html">code</a> &amp; 0x00010000)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span>(code &amp; 0x00010000)</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    {</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">// We got a debugger. We&#39;ll tell it to not exit on a crash but instead break into debugger.</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        ON_CRASH_BREAK_DEBUGGER = <span class="keyword">true</span>;</div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        ON_CRASH_BREAK_DEBUGGER = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    ON_CRASH_BREAK_DEBUGGER = (IsDebuggerPresent() == <a class="code hl_define" href="mpq-internal_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) ? <span class="keyword">true</span> : <a class="code hl_define" href="StormPort_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    ON_CRASH_BREAK_DEBUGGER = (IsDebuggerPresent() == TRUE) ? <span class="keyword">true</span> : false;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span>(!ON_CRASH_BREAK_DEBUGGER)</div>
@@ -289,11 +289,11 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">//    return _T(&quot;an Unknown exception type&quot;);</span></div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">//}</span></div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keywordtype">void</span> echo(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>, ...)</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keywordtype">void</span> echo(<span class="keyword">const</span> <span class="keywordtype">char</span>* format, ...)</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>{</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    va_list ap;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    va_start(ap, <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>);</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_function" href="printf_8h.html#af5cd87bd4916d3e44fac6ff3940b4a69">vprintf</a>(<a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>, ap);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    va_start(ap, format);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    vprintf(format, ap);</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    std::string s = <a class="code hl_function" href="namespaceAscEmu_1_1Logging.html#aee471bb56ae81bfebd18cc3a43f498a6">AscEmu::Logging::getFormattedFileName</a>(<span class="stringliteral">&quot;logs&quot;</span>, <span class="stringliteral">&quot;CrashLog&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    FILE* m_file = fopen(s.c_str(), <span class="stringliteral">&quot;a&quot;</span>);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">if</span>(!m_file)</div>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <a class="code hl_function" href="printf_8h.html#aa80a935767017049bd5427afbe5b5912">vfprintf</a>(m_file, <a class="code hl_function" href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a>, ap);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    vfprintf(m_file, format, ap);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    fclose(m_file);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    va_end(ap);</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
@@ -317,21 +317,21 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">//    echo(&quot;-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n&quot;);</span></div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">//}</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keywordtype">void</span> CStackWalker::OnSymInit(<a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*szSearchPath*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> <span class="comment">/*symOptions*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*szUserName*/</span>)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keywordtype">void</span> CStackWalker::OnSymInit(LPCSTR <span class="comment">/*szSearchPath*/</span>, DWORD <span class="comment">/*symOptions*/</span>, LPCSTR <span class="comment">/*szUserName*/</span>)</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>{</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="keywordtype">void</span> CStackWalker::OnLoadModule(<a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*img*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*mod*/</span>, DWORD64 <span class="comment">/*baseAddr*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> <span class="comment">/*size*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> <span class="comment">/*result*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*symType*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*pdbName*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#abb9abb9ce956f1a9e5a4081ac40e5649">ULONGLONG</a> <span class="comment">/*fileVersion*/</span>)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="keywordtype">void</span> CStackWalker::OnLoadModule(LPCSTR <span class="comment">/*img*/</span>, LPCSTR <span class="comment">/*mod*/</span>, DWORD64 <span class="comment">/*baseAddr*/</span>, DWORD <span class="comment">/*size*/</span>, DWORD <span class="comment">/*result*/</span>, LPCSTR <span class="comment">/*symType*/</span>, LPCSTR <span class="comment">/*pdbName*/</span>, ULONGLONG <span class="comment">/*fileVersion*/</span>)</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>{</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keywordtype">void</span> CStackWalker::OnDbgHelpErr(<a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> <span class="comment">/*szFuncName*/</span>, <a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> <span class="comment">/*gle*/</span>, DWORD64 <span class="comment">/*addr*/</span>)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keywordtype">void</span> CStackWalker::OnDbgHelpErr(LPCSTR <span class="comment">/*szFuncName*/</span>, DWORD <span class="comment">/*gle*/</span>, DWORD64 <span class="comment">/*addr*/</span>)</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>}</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keywordtype">void</span> CStackWalker::OnCallstackEntry(CallstackEntryType eType, CallstackEntry &amp; entry)</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>{</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    CHAR <a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a>[STACKWALK_MAX_NAMELEN];</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    CHAR buffer[STACKWALK_MAX_NAMELEN];</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">if</span>((eType != lastEntry) &amp;&amp; (entry.offset != 0))</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    {</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordflow">if</span>(entry.name[0] == 0)</div>
@@ -350,25 +350,25 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">if</span>(entry.lineFileName[0] == 0)</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        {</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">if</span>(entry.name[0] == 0)</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                <a class="code hl_function" href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a>(entry.name, <span class="stringliteral">&quot;%lld&quot;</span>, entry.offset);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                sprintf(entry.name, <span class="stringliteral">&quot;%lld&quot;</span>, entry.offset);</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <a class="code hl_function" href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a>(<a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a>, <span class="stringliteral">&quot;%s!%s Line %u\n&quot;</span>, p, entry.name, entry.lineNumber);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            sprintf(buffer, <span class="stringliteral">&quot;%s!%s Line %u\n&quot;</span>, p, entry.name, entry.lineNumber);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <a class="code hl_function" href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a>(<a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a>, <span class="stringliteral">&quot;%s!%s Line %u\n&quot;</span>, p, entry.name, entry.lineNumber);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            sprintf(buffer, <span class="stringliteral">&quot;%s!%s Line %u\n&quot;</span>, p, entry.name, entry.lineNumber);</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        OnOutput(<a class="code hl_variable" href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a>);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        OnOutput(buffer);</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>}</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keywordtype">void</span> CStackWalker::OnOutput(<a class="code hl_typedef" href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> szText)</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keywordtype">void</span> CStackWalker::OnOutput(LPCSTR szText)</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>{</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    std::string s = <a class="code hl_function" href="namespaceAscEmu_1_1Logging.html#aee471bb56ae81bfebd18cc3a43f498a6">AscEmu::Logging::getFormattedFileName</a>(<span class="stringliteral">&quot;logs&quot;</span>, <span class="stringliteral">&quot;CrashLog&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    FILE* m_file = fopen(s.c_str(), <span class="stringliteral">&quot;a&quot;</span>);</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordflow">if</span>(!m_file) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;   {}&quot;</span>, szText);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <a class="code hl_function" href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a>(m_file, <span class="stringliteral">&quot;   %s&quot;</span>, szText);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    fprintf(m_file, <span class="stringliteral">&quot;   %s&quot;</span>, szText);</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    fclose(m_file);</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
@@ -391,7 +391,7 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="comment">/* only allow one thread to crash. */</span></div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">if</span>(!m_crashLock.<a class="code hl_function" href="classMutex.html#a3828547015b9172a5fc24c003098e8f1">attemptAcquire</a>())</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    {</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        TerminateThread(GetCurrentThread(), <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a><span class="keyword">&gt;</span>(-1));</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        TerminateThread(GetCurrentThread(), <span class="keyword">static_cast&lt;</span>DWORD<span class="keyword">&gt;</span>(-1));</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="comment">// not reached</span></div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    }</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
@@ -405,9 +405,9 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// Create the date/time string</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    time_t curtime = time(NULL);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    tm* pTime = <a class="code hl_function" href="chrono_8h.html#a206f24de3f0fff46c4daeb318c02a45e">localtime</a>(&amp;curtime);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    tm* pTime = localtime(&amp;curtime);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">char</span> filename[<a class="code hl_variable" href="CommonFilesystem_8hpp.html#a50e9946ce7a0249bf5607f1e27a83757">maxPathLength</a>];</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <a class="code hl_typedef" href="StormPort_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a> modname[<a class="code hl_variable" href="CommonFilesystem_8hpp.html#a50e9946ce7a0249bf5607f1e27a83757">maxPathLength</a> * 2];</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    TCHAR modname[<a class="code hl_variable" href="CommonFilesystem_8hpp.html#a50e9946ce7a0249bf5607f1e27a83757">maxPathLength</a> * 2];</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    ZeroMemory(modname, <span class="keyword">sizeof</span>(modname));</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">if</span>(GetModuleFileName(0, modname, <a class="code hl_variable" href="CommonFilesystem_8hpp.html#a50e9946ce7a0249bf5607f1e27a83757">maxPathLength</a> * 2 - 2) &lt;= 0)</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        strcpy(modname, <span class="stringliteral">&quot;UNKNOWN&quot;</span>);</div>
@@ -415,15 +415,15 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordtype">char</span>* mname = strrchr(modname, <span class="charliteral">&#39;\\&#39;</span>);</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    (<span class="keywordtype">void</span>*)mname++;     <span class="comment">// Remove the last</span></div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <a class="code hl_function" href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a>(filename, <span class="stringliteral">&quot;CrashDumps\\dump-%s-%s-%u-%u-%u-%u-%u-%u-%u.dmp&quot;</span>,</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    sprintf(filename, <span class="stringliteral">&quot;CrashDumps\\dump-%s-%s-%u-%u-%u-%u-%u-%u-%u.dmp&quot;</span>,</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        mname, AE_BUILD_HASH, pTime-&gt;tm_year + 1900, pTime-&gt;tm_mon + 1, pTime-&gt;tm_mday,</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        pTime-&gt;tm_hour, pTime-&gt;tm_min, pTime-&gt;tm_sec, GetCurrentThreadId());</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <a class="code hl_typedef" href="StormPort_8h.html#aa8c0374618b33785ccb02f74bcfebc46">HANDLE</a> hDump = CreateFile(filename, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS,</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    HANDLE hDump = CreateFile(filename, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS,</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                              FILE_ATTRIBUTE_NORMAL | FILE_FLAG_WRITE_THROUGH, 0);</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordflow">if</span>(hDump == <a class="code hl_define" href="FileStream_8cpp.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordflow">if</span>(hDump == INVALID_HANDLE_VALUE)</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    {</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="comment">// Create the directory first</span></div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        CreateDirectory(<span class="stringliteral">&quot;CrashDumps&quot;</span>, 0);</div>
@@ -433,14 +433,14 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;Server has crashed. Creating crash dump file {}&quot;</span>, filename);</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">if</span>(hDump == <a class="code hl_define" href="FileStream_8cpp.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">if</span>(hDump == INVALID_HANDLE_VALUE)</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    {</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <a class="code hl_define" href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a>.failure(<span class="stringliteral">&quot;Could not open crash dump file.&quot;</span>);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    }</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    {</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        MINIDUMP_EXCEPTION_INFORMATION info;</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        info.ClientPointers = <a class="code hl_define" href="mpq-internal_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        info.ClientPointers = FALSE;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        info.ExceptionPointers = pExceptPtrs;</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        info.ThreadId = GetCurrentThreadId();</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
@@ -463,30 +463,13 @@ $(document).ready(function(){initNavTree('CrashHandler_8cpp_source.html',''); in
 <div class="ttc" id="aCommonFilesystem_8hpp_html_a50e9946ce7a0249bf5607f1e27a83757"><div class="ttname"><a href="CommonFilesystem_8hpp.html#a50e9946ce7a0249bf5607f1e27a83757">maxPathLength</a></div><div class="ttdeci">unsigned const maxPathLength</div><div class="ttdef"><b>Definition</b> <a href="CommonFilesystem_8hpp_source.html#l00012">CommonFilesystem.hpp:12</a></div></div>
 <div class="ttc" id="aCrashHandler_8cpp_html_a874ddcdcdb8b77fcfc8f5ebb86e55d0f"><div class="ttname"><a href="CrashHandler_8cpp.html#a874ddcdcdb8b77fcfc8f5ebb86e55d0f">OutputCrashLogLine</a></div><div class="ttdeci">void OutputCrashLogLine(const char *format,...)</div><div class="ttdef"><b>Definition</b> <a href="CrashHandler_8cpp_source.html#l00030">CrashHandler.cpp:30</a></div></div>
 <div class="ttc" id="aCrashHandler_8h_html"><div class="ttname"><a href="CrashHandler_8h.html">CrashHandler.h</a></div></div>
-<div class="ttc" id="aFileStream_8cpp_html_a5fdc7facea201bfce4ad308105f88d0c"><div class="ttname"><a href="FileStream_8cpp.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a></div><div class="ttdeci">#define INVALID_HANDLE_VALUE</div><div class="ttdef"><b>Definition</b> <a href="FileStream_8cpp_source.html#l00030">FileStream.cpp:30</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html"><div class="ttname"><a href="Logger_8hpp.html">Logger.hpp</a></div></div>
 <div class="ttc" id="aLogger_8hpp_html_a50320f857c38e7c413b48a556ad30e83"><div class="ttname"><a href="Logger_8hpp.html#a50320f857c38e7c413b48a556ad30e83">sLogger</a></div><div class="ttdeci">#define sLogger</div><div class="ttdef"><b>Definition</b> <a href="Logger_8hpp_source.html#l00136">Logger.hpp:136</a></div></div>
 <div class="ttc" id="aMutex_8hpp_html"><div class="ttname"><a href="Mutex_8hpp.html">Mutex.hpp</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_a03bdb8ce5895c7e261aadc2529637546"><div class="ttname"><a href="StormPort_8h.html#a03bdb8ce5895c7e261aadc2529637546">TCHAR</a></div><div class="ttdeci">char TCHAR</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00344">StormPort.h:344</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_a65e9886d74aaee76545e83dd09011727"><div class="ttname"><a href="StormPort_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></div><div class="ttdeci">#define false</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00033">StormPort.h:33</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_a798af1e30bc65f319c1a246cecf59e39"><div class="ttname"><a href="StormPort_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></div><div class="ttdeci">unsigned int DWORD</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00336">StormPort.h:336</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_aa8c0374618b33785ccb02f74bcfebc46"><div class="ttname"><a href="StormPort_8h.html#aa8c0374618b33785ccb02f74bcfebc46">HANDLE</a></div><div class="ttdeci">void * HANDLE</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00342">StormPort.h:342</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_abb9abb9ce956f1a9e5a4081ac40e5649"><div class="ttname"><a href="StormPort_8h.html#abb9abb9ce956f1a9e5a4081ac40e5649">ULONGLONG</a></div><div class="ttdeci">unsigned long long ULONGLONG</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00341">StormPort.h:341</a></div></div>
-<div class="ttc" id="aStormPort_8h_html_adbea528b1294c9a1dfda3dfa33ff1472"><div class="ttname"><a href="StormPort_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a></div><div class="ttdeci">const char * LPCSTR</div><div class="ttdef"><b>Definition</b> <a href="StormPort_8h_source.html#l00350">StormPort.h:350</a></div></div>
-<div class="ttc" id="achrono_8h_html_a206f24de3f0fff46c4daeb318c02a45e"><div class="ttname"><a href="chrono_8h.html#a206f24de3f0fff46c4daeb318c02a45e">localtime</a></div><div class="ttdeci">FMT_BEGIN_EXPORT auto localtime(std::time_t time) -&gt; std::tm</div><div class="ttdef"><b>Definition</b> <a href="chrono_8h_source.html#l00489">chrono.h:489</a></div></div>
 <div class="ttc" id="aclassMutex_html"><div class="ttname"><a href="classMutex.html">Mutex</a></div><div class="ttdef"><b>Definition</b> <a href="Mutex_8hpp_source.html#l00011">Mutex.hpp:12</a></div></div>
 <div class="ttc" id="aclassMutex_html_a3828547015b9172a5fc24c003098e8f1"><div class="ttname"><a href="classMutex.html#a3828547015b9172a5fc24c003098e8f1">Mutex::attemptAcquire</a></div><div class="ttdeci">bool attemptAcquire()</div><div class="ttdef"><b>Definition</b> <a href="Mutex_8cpp_source.html#l00018">Mutex.cpp:18</a></div></div>
-<div class="ttc" id="acolor_8h_html_af4a3b7f252e457605de5440249a15699"><div class="ttname"><a href="color_8h.html#af4a3b7f252e457605de5440249a15699">format</a></div><div class="ttdeci">auto format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args) -&gt; std::basic_string&lt; Char &gt;</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00543">color.h:543</a></div></div>
-<div class="ttc" id="acrypt__buf__gen_8c_html_a74644aa51cc16278dbd041542e13afd0"><div class="ttname"><a href="crypt__buf__gen_8c.html#a74644aa51cc16278dbd041542e13afd0">buffer</a></div><div class="ttdeci">static uint32_t * buffer</div><div class="ttdef"><b>Definition</b> <a href="crypt__buf__gen_8c_source.html#l00031">crypt_buf_gen.c:31</a></div></div>
 <div class="ttc" id="alogonserver_2Server_2Master_8cpp_html_a0fe715a84a06ad7d88257604148a8b79"><div class="ttname"><a href="logonserver_2Server_2Master_8cpp.html#a0fe715a84a06ad7d88257604148a8b79">OnCrash</a></div><div class="ttdeci">void OnCrash(bool)</div><div class="ttdef"><b>Definition</b> <a href="logonserver_2Server_2Master_8cpp_source.html#l00191">Master.cpp:191</a></div></div>
-<div class="ttc" id="ampq-internal_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="mpq-internal_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="mpq-internal_8h_source.html#l00062">mpq-internal.h:62</a></div></div>
-<div class="ttc" id="ampq-internal_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="mpq-internal_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="mpq-internal_8h_source.html#l00059">mpq-internal.h:59</a></div></div>
 <div class="ttc" id="anamespaceAscEmu_1_1Logging_html_aee471bb56ae81bfebd18cc3a43f498a6"><div class="ttname"><a href="namespaceAscEmu_1_1Logging.html#aee471bb56ae81bfebd18cc3a43f498a6">AscEmu::Logging::getFormattedFileName</a></div><div class="ttdeci">std::string getFormattedFileName(const std::string &amp;path_prefix, const std::string &amp;file_prefix, bool use_date_time)</div><div class="ttdef"><b>Definition</b> <a href="Logger_8cpp_source.html#l00212">Logger.cpp:212</a></div></div>
-<div class="ttc" id="aprintf_8h_html_a9f315126362cae9675de1642105e631e"><div class="ttname"><a href="printf_8h.html#a9f315126362cae9675de1642105e631e">fprintf</a></div><div class="ttdeci">auto fprintf(std::FILE *f, const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00640">printf.h:640</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aa7d2e7e454d3fe606a71504a119dc894"><div class="ttname"><a href="printf_8h.html#aa7d2e7e454d3fe606a71504a119dc894">sprintf</a></div><div class="ttdeci">auto sprintf(const S &amp;fmt, const T &amp;... args) -&gt; std::basic_string&lt; Char &gt;</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00612">printf.h:612</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aa80a935767017049bd5427afbe5b5912"><div class="ttname"><a href="printf_8h.html#aa80a935767017049bd5427afbe5b5912">vfprintf</a></div><div class="ttdeci">auto vfprintf(std::FILE *f, basic_string_view&lt; Char &gt; fmt, basic_format_args&lt; basic_printf_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00618">printf.h:618</a></div></div>
-<div class="ttc" id="aprintf_8h_html_af5cd87bd4916d3e44fac6ff3940b4a69"><div class="ttname"><a href="printf_8h.html#af5cd87bd4916d3e44fac6ff3940b4a69">vprintf</a></div><div class="ttdeci">FMT_DEPRECATED auto vprintf(basic_string_view&lt; Char &gt; fmt, basic_format_args&lt; basic_printf_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args) -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="printf_8h_source.html#l00646">printf.h:646</a></div></div>
-<div class="ttc" id="astructcode_html"><div class="ttname"><a href="structcode.html">code</a></div><div class="ttdef"><b>Definition</b> <a href="StormLib_2src_2zlib_2inftrees_8h_source.html#l00027">inftrees.h:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
