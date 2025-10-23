@@ -46,6 +46,77 @@ jobs:
           echo "Listing generated files:"
           ls -R build/docs/html | head -n 20 || true
 
+      - name: Inject custom homepage (index.html)
+        run: |
+          echo "Injecting custom homepage..."
+          mkdir -p build/docs/html
+          cat > build/docs/html/index.html <<'HTML'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AscEmu Documentation</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #161b22;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #30363d;
+    }
+    h1 {
+      color: #58a6ff;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #8b949e;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+    }
+    .links a {
+      color: #58a6ff;
+      text-decoration: none;
+      margin: 0 0.8rem;
+      font-weight: 500;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      padding: 1.5rem;
+      border-top: 1px solid #30363d;
+      font-size: 0.85rem;
+      color: #6e7681;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AscEmu Documentation</h1>
+    <p>AscEmu is an open-source World of Warcraft emulator derived from ArcEmu.<br>
+       We focus on performance, modular design, and continuous improvement of gameplay systems.</p>
+    <div class="links">
+      <a href="https://ascemu.org">Official Website</a>
+      <a href="https://github.com/AscEmu/AscEmu">GitHub Repository</a>
+      <a href="https://discord.gg/ascemu">Discord</a>
+      <a href="annotated.html">API Reference</a>
+    </div>
+  </header>
+  <footer>
+    © AscEmu Project — Automatically generated documentation.
+  </footer>
+</body>
+</html>
+HTML
+
       - name: Commit generated docs to main
         run: |
           echo "Deploying documentation to /docs..."
