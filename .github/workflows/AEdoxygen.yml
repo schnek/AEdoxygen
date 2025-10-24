@@ -46,11 +46,18 @@ jobs:
           echo "Listing generated files:"
           ls -R build/docs/html | head -n 20 || true
 
-      - name: Inject custom homepage (index.html)
+      - name: Deploy generated docs
         run: |
-          echo "Injecting custom homepage..."
-          mkdir -p build/docs/html
-          cat > build/docs/html/index.html <<'HTML'
+          echo "Deploying documentation to /docs..."
+          rm -rf docs
+          mkdir -p docs
+          rsync -av --delete build/docs/html/ docs/
+
+      # ⚡ Custom index.html injected AFTER copying to /docs
+      - name: Overwrite with custom index.html
+        run: |
+          echo "Injecting custom homepage into /docs..."
+          cat > docs/index.html <<'HTML'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,14 +124,11 @@ jobs:
 </html>
 HTML
 
-      - name: Commit generated docs to main
+      - name: Commit updated docs to main
         run: |
-          echo "Deploying documentation to /docs..."
-          rm -rf docs
-          mkdir -p docs
-          rsync -av --delete build/docs/html/ docs/
+          echo "Pushing documentation..."
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add docs
-          git diff --cached --quiet || git commit -m "📰 Auto-update AscEmu Doxygen documentation"
+          git diff --cached --quiet || git commit -m "📰 Auto-update AscEmu Doxygen documentation (custom index)"
           git push
